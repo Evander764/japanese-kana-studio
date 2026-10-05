@@ -37,5 +37,6 @@ node tests/browser-smoke.js
 ```
 
 第二条命令使用本机 Chrome 的无界面模式，检查桌面与手机断点、首次自测、练习和转换流程。若 Chrome 不在默认路径，可用 `CHROME_PATH` 环境变量指定其可执行文件。
+发布后可设置 `PAGE_URL=https://evander764.github.io/japanese-kana-studio/`，用同一条命令对公开站点做回归检查。
 
 `tools/generate_audio.py` 是可选的音频制作脚本，需要另行准备 Kokoro 日语 ONNX 模型、`jf_alpha.bin`、`kokoro-onnx-ja` 与 `ffmpeg`。普通学习和播放音频无需运行此脚本。

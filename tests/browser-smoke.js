@@ -1,4 +1,4 @@
-// Dependency-free, invisible Chrome DevTools smoke test for the local file page.
+// Dependency-free, invisible Chrome DevTools smoke test for the local or deployed page.
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const os = require('node:os');
@@ -8,9 +8,9 @@ const { pathToFileURL } = require('node:url');
 
 const chrome = process.env.CHROME_PATH || 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
 const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'kana-cdp-'));
-const pageUrl = pathToFileURL(path.resolve(__dirname, '..', 'index.html')).href;
+const pageUrl = process.env.PAGE_URL || pathToFileURL(path.resolve(__dirname, '..', 'index.html')).href;
 const browser = spawn(chrome, [
-  '--headless=new', '--disable-gpu', '--no-first-run', '--no-default-browser-check',
+  '--headless=new', '--disable-gpu', '--no-proxy-server', '--no-first-run', '--no-default-browser-check',
   '--remote-debugging-port=0', '--remote-allow-origins=*', `--user-data-dir=${profile}`, 'about:blank'
 ], { windowsHide: true, stdio: 'ignore' });
 
