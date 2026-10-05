@@ -119,9 +119,14 @@ async function main() {
     document.getElementById('detailStart').click();
     const input = document.getElementById('detailInput'); input.value = 'a'; input.dispatchEvent(new Event('input', {bubbles:true}));
     input.focus();
-    return document.getElementById('detailPreview').textContent;
+    const originalPlay = HTMLMediaElement.prototype.play;
+    let source = '';
+    HTMLMediaElement.prototype.play = function () { source = this.src; return Promise.resolve(); };
+    document.getElementById('detailTestAudio').click();
+    HTMLMediaElement.prototype.play = originalPlay;
+    return { preview: document.getElementById('detailPreview').textContent, audioVisible: !document.getElementById('detailTestAudio').hidden, answerHidden: document.getElementById('detailAnswer').hidden, focused: document.activeElement === input, input: input.value, source };
   })()`);
-  assert.equal(detailPrepared, 'あ');
+  assert.deepEqual({ ...detailPrepared, source: detailPrepared.source.endsWith('/audio/base-a.mp3') }, { preview: 'あ', audioVisible: true, answerHidden: true, focused: true, input: 'a', source: true });
   await pressEnter();
   const detailAdvanced = await evaluate(`({ glyph: document.getElementById('detailGlyph').textContent, focused: document.activeElement === document.getElementById('detailInput'), saved: JSON.parse(localStorage.getItem('kana-studio-progress-v1')).records['hiragana:base:a'].attemptCount })`);
   assert.deepEqual(detailAdvanced, { glyph: 'い', focused: true, saved: 1 });
@@ -132,15 +137,20 @@ async function main() {
     const glyph = document.getElementById('questionGlyph').textContent;
     const input = document.getElementById('practiceInput'); input.value = 'a'; input.dispatchEvent(new Event('input', {bubbles:true}));
     input.focus();
-    return { glyph, preview: document.getElementById('practicePreview').textContent };
+    const originalPlay = HTMLMediaElement.prototype.play;
+    let source = '';
+    HTMLMediaElement.prototype.play = function () { source = this.src; return Promise.resolve(); };
+    document.getElementById('questionAudio').click();
+    HTMLMediaElement.prototype.play = originalPlay;
+    return { glyph, preview: document.getElementById('practicePreview').textContent, audioVisible: !document.getElementById('questionAudio').hidden, focused: document.activeElement === input, input: input.value, source };
   })()`);
-  assert.deepEqual(practicePrepared, { glyph: 'あ', preview: 'あ' });
+  assert.deepEqual({ ...practicePrepared, source: practicePrepared.source.endsWith('/audio/base-a.mp3') }, { glyph: 'あ', preview: 'あ', audioVisible: true, focused: true, input: 'a', source: true });
   await pressEnter();
   const practiceAdvanced = await evaluate(`({ counter: document.getElementById('questionCounter').textContent, feedback: document.getElementById('practiceFeedback').textContent, focused: document.activeElement === document.getElementById('practiceInput'), audioHidden: document.getElementById('questionAudio').hidden, previous: document.getElementById('previousReading').textContent, previousShown: !document.getElementById('previousAnswer').hidden })`);
   assert.equal(practiceAdvanced.counter, '第 3 题');
   assert.match(practiceAdvanced.feedback, /上一题答对/);
   assert.equal(practiceAdvanced.focused, true);
-  assert.equal(practiceAdvanced.audioHidden, true);
+  assert.equal(practiceAdvanced.audioHidden, false);
   assert.equal(practiceAdvanced.previous, 'あ · a');
   assert.equal(practiceAdvanced.previousShown, true);
 
@@ -230,17 +240,28 @@ async function main() {
     return { scrollWidth: document.documentElement.scrollWidth, width: innerWidth, audioHidden: document.getElementById('questionAudio').hidden, saved: JSON.parse(localStorage.getItem('kana-studio-progress-v1')).records['hiragana:base:a'].attemptCount };
   })()`);
   assert.ok(mobilePractice.scrollWidth <= mobilePractice.width, 'practice has no horizontal overflow');
-  assert.equal(mobilePractice.audioHidden, true);
+  assert.equal(mobilePractice.audioHidden, false);
   assert.equal(mobilePractice.saved, 3);
   await evaluate('document.getElementById("practiceView").scrollIntoView({block:"start",behavior:"instant"})');
   const mobilePracticeShot = path.join(os.tmpdir(), 'kana-mobile-practice-cdp.png');
   await screenshot(mobilePracticeShot);
+  const mobileSelfTest = await evaluate(`(() => {
+    document.querySelector('[data-view="learn"]').click();
+    document.querySelector('.card-open').click();
+    document.getElementById('detailStart').click();
+    return { audioVisible: !document.getElementById('detailTestAudio').hidden, answerHidden: document.getElementById('detailAnswer').hidden, scrollWidth: document.documentElement.scrollWidth, width: innerWidth };
+  })()`);
+  assert.equal(mobileSelfTest.audioVisible, true);
+  assert.equal(mobileSelfTest.answerHidden, true);
+  assert.ok(mobileSelfTest.scrollWidth <= mobileSelfTest.width);
+  const mobileSelfTestShot = path.join(os.tmpdir(), 'kana-mobile-self-test-cdp.png');
+  await screenshot(mobileSelfTestShot);
   await viewport(320, 700, true);
   await send('Page.navigate', { url: pageUrl });
   await sleep(500);
   const narrow = await evaluate('({ width: innerWidth, scrollWidth: document.documentElement.scrollWidth })');
   assert.ok(narrow.scrollWidth <= narrow.width, `narrow mobile overflow: ${narrow.scrollWidth} > ${narrow.width}`);
-  console.log(JSON.stringify({ passed: true, desktopShot, mobileShot, mobileChartShot, mobilePracticeShot, mobile, mobilePractice, narrow }));
+  console.log(JSON.stringify({ passed: true, desktopShot, mobileShot, mobileChartShot, mobilePracticeShot, mobileSelfTestShot, mobile, mobilePractice, mobileSelfTest, narrow }));
   ws.close();
 }
 

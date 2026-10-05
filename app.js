@@ -142,6 +142,7 @@
     detailItem = core.byId.get(id);
     selfTestActive = false; selfTestAnswered = false;
     $('detailAudioMessage').textContent = '';
+    $('detailTestAudioMessage').textContent = '';
     renderDetail();
     if (!$('detailDialog').open) $('detailDialog').showModal();
   }
@@ -172,6 +173,7 @@
     $('detailInput').disabled = false;
     $('detailInput').value = '';
     $('detailPreview').textContent = '—';
+    $('detailTestAudioMessage').textContent = '';
     $('detailFeedback').hidden = true;
     renderDetail(); $('detailInput').focus();
   }
@@ -223,7 +225,7 @@
     if (showSuccess === true) feedback.textContent = '✓ 上一题答对，继续输入。';
     $('questionExplanation').hidden = true;
     $('showAnswer').hidden = false;
-    $('questionAudio').hidden = true;
+    $('questionAudio').hidden = false;
     $('nextQuestion').hidden = true;
     $('questionAudioMessage').textContent = '';
     renderPrevious();
@@ -250,7 +252,7 @@
     feedback.textContent = correct ? `答对了！${question.kana} 读作 ${question.romaji}。` : revealed ? `已记作一次未答对。${question.kana} 读作 ${question.romaji}。` : `再记住它：${question.kana} 读作 ${question.romaji}。`;
     $('questionExplanation').hidden = !question.meaning;
     $('questionExplanation').textContent = question.meaning ? `意思：${question.meaning}｜节拍：${question.rhythm}` : '';
-    $('showAnswer').hidden = true; $('questionAudio').hidden = false; $('nextQuestion').hidden = false;
+    $('showAnswer').hidden = true; $('nextQuestion').hidden = false;
     previousItem = question;
     renderOverview(); renderLearn(); renderStats();
   }
@@ -328,10 +330,19 @@
   $('detailForm').addEventListener('submit', submitSelfTest);
   $('detailInput').addEventListener('input', () => { $('detailPreview').textContent = core.convertRomaji($('detailInput').value, detailItem.script, detailItem).text || '—'; });
   $('detailAudio').addEventListener('click', () => speak(detailItem, 'detailAudioMessage'));
+  $('detailTestAudio').addEventListener('click', () => {
+    if (!detailItem || !selfTestActive) return;
+    speak(detailItem, 'detailTestAudioMessage');
+    if (!selfTestAnswered) $('detailInput').focus({ preventScroll: true });
+  });
   $('practiceForm').addEventListener('submit', submitQuestion);
   $('practiceInput').addEventListener('input', () => { $('practicePreview').textContent = question ? core.convertRomaji($('practiceInput').value, question.script, question).text || '—' : '—'; });
   $('showAnswer').addEventListener('click', () => { finishQuestion(false, true); $('nextQuestion').focus({ preventScroll: true }); });
-  $('questionAudio').addEventListener('click', () => { if (questionAnswered) speak(question, 'questionAudioMessage'); });
+  $('questionAudio').addEventListener('click', () => {
+    if (!question) return;
+    speak(question, 'questionAudioMessage');
+    (questionAnswered ? $('nextQuestion') : $('practiceInput')).focus({ preventScroll: true });
+  });
   $('previousAudio').addEventListener('click', () => { if (previousItem) speak(previousItem, 'previousAudioMessage'); });
   document.addEventListener('keydown', event => {
     if (view === 'practice' && previousItem && event.altKey && !event.ctrlKey && !event.metaKey && event.key.toLowerCase() === 'p') {
