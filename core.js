@@ -17,6 +17,8 @@
       filter: 'all',
       records: {},
       questionCount: 0,
+      journeyTurns: 0,
+      journeyStreak: 0,
       recentQuestionIds: []
     };
   }
@@ -116,6 +118,13 @@
     return active[active.length - 1];
   }
 
+  function chooseJourneyNext(state, rng = Math.random) {
+    const unseen = items.find(item => getStatus(state, item.id) === 'unseen');
+    const learned = eligibleItems(state, 'mixed');
+    if (unseen && (learned.length < 6 || state.journeyTurns % 3 === 0)) return unseen;
+    return chooseNext(state, 'mixed', rng, null, false) || unseen;
+  }
+
   function normalizeRomaji(value) {
     return String(value || '').normalize('NFKC').trim().toLowerCase().replace(/\s+/g, '');
   }
@@ -199,10 +208,12 @@
     const clean = newState();
     if (!raw || typeof raw !== 'object' || raw.version !== VERSION) return clean;
     clean.mode = MODES.includes(raw.mode) ? raw.mode : clean.mode;
-    clean.practicePool = ['all', 'learned'].includes(raw.practicePool) ? raw.practicePool : clean.practicePool;
+    clean.practicePool = ['all', 'learned', 'journey'].includes(raw.practicePool) ? raw.practicePool : clean.practicePool;
     clean.group = GROUPS.includes(raw.group) ? raw.group : clean.group;
     clean.filter = FILTERS.includes(raw.filter) ? raw.filter : clean.filter;
     clean.questionCount = Number.isSafeInteger(raw.questionCount) ? clamp(raw.questionCount, 0, 1000000000) : 0;
+    clean.journeyTurns = Number.isSafeInteger(raw.journeyTurns) ? clamp(raw.journeyTurns, 0, clean.questionCount) : 0;
+    clean.journeyStreak = Number.isSafeInteger(raw.journeyStreak) ? clamp(raw.journeyStreak, 0, clean.journeyTurns) : 0;
     if (raw.records && typeof raw.records === 'object') {
       for (const [id, value] of Object.entries(raw.records)) {
         if (!byId.has(id) || !value || typeof value !== 'object') continue;
@@ -221,7 +232,7 @@
     return clean;
   }
 
-  const api = { VERSION, items, byId, newState, sanitizeState, recordFor, getStatus, getMetrics, recordAnswer, setLearned, eligibleItems, chooseNext, normalizeRomaji, isCorrect, convertRomaji, targetMs };
+  const api = { VERSION, items, byId, newState, sanitizeState, recordFor, getStatus, getMetrics, recordAnswer, setLearned, eligibleItems, chooseNext, chooseJourneyNext, normalizeRomaji, isCorrect, convertRomaji, targetMs };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   root.KanaCore = api;
 })(typeof globalThis !== 'undefined' ? globalThis : window);

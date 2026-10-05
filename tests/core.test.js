@@ -127,6 +127,34 @@ test('recent questions are suppressed and overdue questions are recovered', () =
   assert.equal(core.chooseNext(state, 'hiragana', () => 0.99).id, sample[0].id);
 });
 
+test('infinite mixed learning introduces both scripts, then interleaves adaptive review', () => {
+  let state = core.newState();
+  state.mode = 'mixed'; state.practicePool = 'journey';
+  const first = [];
+  for (let turn = 0; turn < 6; turn++) {
+    const next = core.chooseJourneyNext(state, () => 0);
+    first.push(next.kana);
+    state = core.recordAnswer(state, next.id, true, 1000);
+    state.journeyTurns++;
+  }
+  assert.deepEqual(first, ['あ', 'ア', 'い', 'イ', 'う', 'ウ']);
+  const seventh = core.chooseJourneyNext(state, () => 0);
+  assert.equal(seventh.kana, 'え');
+  state = core.recordAnswer(state, seventh.id, true, 1000);
+  state.journeyTurns++;
+  const review = core.chooseJourneyNext(state, () => 0);
+  assert.equal(core.getStatus(state, review.id), 'learning');
+  state = core.recordAnswer(state, review.id, true, 1000);
+  state.journeyTurns++;
+  state = core.recordAnswer(state, core.chooseJourneyNext(state, () => 0).id, true, 1000);
+  state.journeyTurns++;
+  assert.equal(core.chooseJourneyNext(state, () => 0).kana, 'エ');
+
+  for (const entry of core.items) state = core.setLearned(state, entry.id, true);
+  assert.ok(core.chooseJourneyNext(state, () => 0));
+  assert.notEqual(core.getStatus(state, core.chooseJourneyNext(state, () => 0).id), 'unseen');
+});
+
 test('saved progress is sanitized without losing valid independent records', () => {
   const hira = item('hiragana', 'あ');
   const kata = item('katakana', 'ア');
@@ -141,4 +169,11 @@ test('saved progress is sanitized without losing valid independent records', () 
   const restoredManual = core.sanitizeState(JSON.parse(JSON.stringify(state)));
   assert.equal(restoredManual.practicePool, 'learned');
   assert.equal(core.getStatus(restoredManual, hira.id), 'unseen');
+  state.mode = 'mixed'; state.practicePool = 'journey';
+  state.journeyTurns = 2; state.journeyStreak = 1;
+  const journeyRestored = core.sanitizeState(JSON.parse(JSON.stringify(state)));
+  assert.equal(journeyRestored.practicePool, 'journey');
+  assert.equal(journeyRestored.journeyTurns, 2);
+  assert.equal(journeyRestored.journeyStreak, 1);
+  assert.equal(core.sanitizeState({ version: core.VERSION, records: {} }).journeyTurns, 0);
 });

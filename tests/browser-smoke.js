@@ -220,7 +220,42 @@ async function main() {
   assert.equal(backup.restored, 3);
   assert.match(backup.message, /已导入/);
 
+  const priorProgress = await evaluate(`localStorage.getItem('kana-studio-progress-v1')`);
+  const journeyStart = await evaluate(`(() => {
+    document.getElementById('heroJourney').click();
+    return { mode: document.querySelector('[data-mode="mixed"]').classList.contains('active'), pool: document.getElementById('practicePool').value, groupDisabled: document.getElementById('practiceGroup').disabled, glyph: document.getElementById('questionGlyph').textContent, banner: !document.getElementById('journeyProgress').hidden };
+  })()`);
+  assert.deepEqual(journeyStart, { mode: true, pool: 'journey', groupDisabled: true, glyph: 'ア', banner: true });
+  // The restored backup already contains one answer for あ, so the journey starts at ア.
+  const journeyShot = path.join(os.tmpdir(), 'kana-journey-cdp.png');
+  await evaluate('document.getElementById("practiceView").scrollIntoView({block:"start",behavior:"instant"})');
+  await screenshot(journeyShot);
+  const journeyRun = await evaluate(`(() => {
+    const seen = [];
+    for (let turn = 0; turn < 7; turn++) {
+      const glyph = document.getElementById('questionGlyph').textContent;
+      seen.push({ glyph, kind: document.getElementById('questionKind').textContent });
+      const item = window.KanaCore.items.find(entry => entry.kana === glyph);
+      const input = document.getElementById('practiceInput');
+      input.value = item.romaji; input.dispatchEvent(new Event('input', {bubbles:true}));
+      document.getElementById('practiceForm').requestSubmit();
+    }
+    const saved = JSON.parse(localStorage.getItem('kana-studio-progress-v1'));
+    return { seen, turns: saved.journeyTurns, streak: saved.journeyStreak, nextKind: document.getElementById('questionKind').textContent, started: document.getElementById('journeyStarted').textContent };
+  })()`);
+  assert.deepEqual(journeyRun.seen.slice(0, 5).map(entry => entry.glyph), ['ア', 'い', 'イ', 'う', 'ウ']);
+  assert.equal(journeyRun.turns, 7);
+  assert.equal(journeyRun.streak, 7);
+  assert.match(journeyRun.nextKind, /复习/);
+  assert.match(journeyRun.started, /^7 \/ 233/);
   await viewport(390, 844, true);
+  const mobileJourney = await evaluate(`({ width: innerWidth, scrollWidth: document.documentElement.scrollWidth, banner: !document.getElementById('journeyProgress').hidden, groupDisabled: document.getElementById('practiceGroup').disabled })`);
+  assert.deepEqual(mobileJourney, { width: 390, scrollWidth: 390, banner: true, groupDisabled: true });
+  await evaluate('document.getElementById("practiceView").scrollIntoView({block:"start",behavior:"instant"})');
+  const mobileJourneyShot = path.join(os.tmpdir(), 'kana-mobile-journey-cdp.png');
+  await screenshot(mobileJourneyShot);
+  await evaluate(`localStorage.setItem('kana-studio-progress-v1', ${JSON.stringify(priorProgress)})`);
+
   await send('Page.navigate', { url: pageUrl });
   await sleep(800);
   await evaluate(`(() => { document.querySelector('[data-mode="hiragana"]').click(); document.querySelector('[data-view="learn"]').click(); })()`);
@@ -261,7 +296,7 @@ async function main() {
   await sleep(500);
   const narrow = await evaluate('({ width: innerWidth, scrollWidth: document.documentElement.scrollWidth })');
   assert.ok(narrow.scrollWidth <= narrow.width, `narrow mobile overflow: ${narrow.scrollWidth} > ${narrow.width}`);
-  console.log(JSON.stringify({ passed: true, desktopShot, mobileShot, mobileChartShot, mobilePracticeShot, mobileSelfTestShot, mobile, mobilePractice, mobileSelfTest, narrow }));
+  console.log(JSON.stringify({ passed: true, desktopShot, journeyShot, mobileJourneyShot, mobileShot, mobileChartShot, mobilePracticeShot, mobileSelfTestShot, mobile, mobileJourney, mobilePractice, mobileSelfTest, narrow }));
   ws.close();
 }
 

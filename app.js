@@ -41,6 +41,7 @@
     $('learnFilter').value = state.filter;
     $('practicePool').value = state.practicePool;
     $('practiceGroup').value = practiceGroup || 'all';
+    $('practiceGroup').disabled = state.practicePool === 'journey';
     for (const name of ['learn', 'practice', 'stats', 'convert']) $(`${name}View`).hidden = view !== name;
   }
   function renderOverview() {
@@ -129,7 +130,22 @@
     $('convertOutput').textContent = input.trim() ? result.text : 'ここに表示';
     $('convertCandidates').textContent = result.candidates.length ? `同音候选：${result.candidates.join('；')}` : '';
   }
-  function renderAll() { renderControls(); renderOverview(); renderLearn(); renderStats(); renderConvert(); }
+  function renderJourneyProgress() {
+    const active = state.mode === 'mixed' && state.practicePool === 'journey';
+    $('journeyProgress').hidden = !active;
+    if (!active) return;
+    const started = items.filter(item => core.getStatus(state, item.id) !== 'unseen').length;
+    const complete = started === items.length;
+    $('journeyHeadline').textContent = complete ? '所有项目都已见过，继续巩固' : '逐步认识新假名';
+    $('journeyDescription').textContent = complete
+      ? '接下来持续复习；答错或答得慢的项目会更常出现。'
+      : '清音、浊音、拗音和词例依次加入，中间穿插复习。';
+    $('journeyStarted').textContent = `${started} / ${items.length} 已开始`;
+    $('journeyStreak').textContent = `连续答对 ${state.journeyStreak} 题 · 累计 ${state.journeyTurns} 题`;
+    $('journeyBarFill').style.width = `${started / items.length * 100}%`;
+    $('journeyProgress').querySelector('[role="progressbar"]').setAttribute('aria-valuenow', String(started));
+  }
+  function renderAll() { renderControls(); renderOverview(); renderJourneyProgress(); renderLearn(); renderStats(); renderConvert(); }
   function setView(next) {
     view = next;
     renderControls();
@@ -206,13 +222,19 @@
   }
 
   function setQuestion(showSuccess = false) {
-    question = core.chooseNext(state, state.mode, Math.random, practiceGroup, state.practicePool === 'all');
+    const journey = state.mode === 'mixed' && state.practicePool === 'journey';
+    question = journey
+      ? core.chooseJourneyNext(state, Math.random)
+      : core.chooseNext(state, state.mode, Math.random, practiceGroup, state.practicePool === 'all');
+    renderJourneyProgress();
     questionAnswered = false;
     $('practiceEmpty').hidden = Boolean(question);
     $('practiceContent').hidden = !question;
     if (!question) return;
     questionStartedAt = performance.now(); pausedAt = document.hidden ? performance.now() : 0; pausedDuration = 0;
-    $('questionKind').textContent = describe(question);
+    $('questionKind').textContent = journey
+      ? `${core.getStatus(state, question.id) === 'unseen' ? '新字' : '复习'} · ${describe(question)}`
+      : describe(question);
     $('questionCounter').textContent = `第 ${state.questionCount + 1} 题`;
     $('questionGlyph').textContent = question.kana;
     $('questionGlyph').classList.toggle('word', question.kind === 'word');
@@ -246,6 +268,10 @@
   function finishQuestion(correct, revealed = false) {
     if (!question || questionAnswered) return;
     state = core.recordAnswer(state, question.id, correct, elapsedQuestionMs());
+    if (state.mode === 'mixed' && state.practicePool === 'journey') {
+      state.journeyTurns += 1;
+      state.journeyStreak = correct ? state.journeyStreak + 1 : 0;
+    }
     persist(); questionAnswered = true;
     $('practiceInput').disabled = true;
     const feedback = $('practiceFeedback'); feedback.hidden = false; feedback.classList.toggle('wrong', !correct);
@@ -254,7 +280,7 @@
     $('questionExplanation').textContent = question.meaning ? `意思：${question.meaning}｜节拍：${question.rhythm}` : '';
     $('showAnswer').hidden = true; $('nextQuestion').hidden = false;
     previousItem = question;
-    renderOverview(); renderLearn(); renderStats();
+    renderOverview(); renderJourneyProgress(); renderLearn(); renderStats();
   }
   function submitQuestion(event) {
     event.preventDefault();
@@ -292,6 +318,8 @@
 
   document.querySelectorAll('[data-mode]').forEach(button => button.addEventListener('click', () => {
     state.mode = button.dataset.mode;
+    if (state.mode === 'mixed') { state.practicePool = 'journey'; practiceGroup = null; }
+    else if (state.practicePool === 'journey') state.practicePool = 'all';
     previousItem = null;
     $('learnActionMessage').textContent = '';
     if ($('detailDialog').open) $('detailDialog').close();
@@ -303,10 +331,18 @@
   document.querySelectorAll('[data-group]').forEach(button => button.addEventListener('click', () => { state.group = button.dataset.group; $('learnActionMessage').textContent = ''; persist(); renderControls(); renderLearn(); }));
   document.querySelectorAll('[data-convert-script]').forEach(button => button.addEventListener('click', () => { convertScript = button.dataset.convertScript; renderControls(); renderConvert(); }));
   $('learnFilter').addEventListener('change', event => { state.filter = event.target.value; $('learnActionMessage').textContent = ''; persist(); renderLearn(); });
-  $('practicePool').addEventListener('change', event => { state.practicePool = event.target.value; previousItem = null; persist(); setQuestion(); });
+  $('practicePool').addEventListener('change', event => {
+    state.practicePool = event.target.value;
+    if (state.practicePool === 'journey') { state.mode = 'mixed'; practiceGroup = null; }
+    previousItem = null; persist(); renderAll(); setQuestion();
+  });
   $('practiceGroup').addEventListener('change', event => { practiceGroup = event.target.value === 'all' ? null : event.target.value; previousItem = null; setQuestion(); });
   $('heroLearn').addEventListener('click', () => setView('learn'));
   $('heroPractice').addEventListener('click', () => { state.practicePool = 'all'; persist(); setView('practice'); });
+  $('heroJourney').addEventListener('click', () => {
+    state.mode = 'mixed'; state.practicePool = 'journey'; practiceGroup = null; previousItem = null;
+    persist(); renderAll(); setView('practice');
+  });
   $('practiceToLearn').addEventListener('click', () => setView('learn'));
   $('startUnseen').addEventListener('click', () => nextUnseen());
   $('learnGrid').addEventListener('click', event => {
@@ -383,7 +419,9 @@
   $('resetProgress').addEventListener('click', () => {
     if (!confirm('确定清空所有学习记录吗？此操作不能撤销，建议先导出进度。')) return;
     const selectedMode = state.mode;
+    const selectedPool = state.practicePool;
     state = core.newState(); state.mode = selectedMode;
+    if (selectedMode === 'mixed' && selectedPool === 'journey') state.practicePool = 'journey';
     previousItem = null;
     persist(); renderAll(); if (view === 'practice') setQuestion();
     $('storageMessage').textContent = '学习记录已重置。';

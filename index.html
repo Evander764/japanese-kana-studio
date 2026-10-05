@@ -18,7 +18,7 @@
       <div class="mode-switch" role="group" aria-label="学习专区">
         <button type="button" data-mode="hiragana">平假名</button>
         <button type="button" data-mode="katakana">片假名</button>
-        <button type="button" data-mode="mixed">混合练习</button>
+        <button type="button" data-mode="mixed">混合学习</button>
       </div>
     </header>
 
@@ -27,9 +27,10 @@
         <div class="hero-copy">
           <p class="eyebrow"><span class="eyebrow-line"></span> 从认出一个字开始</p>
           <h1 id="page-title">看到假名，<br><em>立刻读出来。</em></h1>
-          <p class="hero-lead">可以按行认识，也可以直接自测。答得慢或容易错的音会更常出现，熟悉后自然减少。</p>
+          <p class="hero-lead">可以按行认识、直接自测，或进入无限混合学习。新假名逐步出现，旧假名穿插复习。</p>
           <div class="hero-actions">
-            <button type="button" class="primary-button" id="heroLearn">开始认识 <span aria-hidden="true">↗</span></button>
+            <button type="button" class="primary-button" id="heroJourney">开始无限混合学习 <span aria-hidden="true">→</span></button>
+            <button type="button" class="outline-button" id="heroLearn">按行认识 <span aria-hidden="true">↗</span></button>
             <button type="button" class="text-button" id="heroPractice">直接开始自测 <span aria-hidden="true">→</span></button>
           </div>
         </div>
@@ -64,7 +65,11 @@
       </section>
 
       <section class="view" id="practiceView" aria-labelledby="practiceTitle" hidden>
-        <div class="section-heading"><div><p class="section-kicker">PRACTICE / 练习</p><h2 id="practiceTitle">看字输入，慢慢变快。</h2><p>可以直接测试未学的假名；首次作答后自动加入已学题库。想不起来时，可以点“听发音”提示。</p></div><div class="practice-selectors"><label class="filter-label">题库 <select id="practicePool"><option value="all">全部项目 · 可直接自测</option><option value="learned">只练已学项目</option></select></label><label class="filter-label">分类 <select id="practiceGroup"><option value="all">全部分类</option><option value="base">清音</option><option value="voiced">浊音·半浊音</option><option value="yoon">拗音</option><option value="special">促音·长音</option></select></label></div></div>
+        <div class="section-heading"><div><p class="section-kicker">PRACTICE / 练习</p><h2 id="practiceTitle">看字输入，慢慢变快。</h2><p>混合学习会逐步加入未学项目，穿插旧题；也可直接测试全部项目。想不起来时，点“听发音”提示。</p></div><div class="practice-selectors"><label class="filter-label">题库 <select id="practicePool"><option value="journey">无限混合学习 · 新字优先</option><option value="all">全部项目 · 可直接自测</option><option value="learned">只练已学项目</option></select></label><label class="filter-label">分类 <select id="practiceGroup"><option value="all">全部分类</option><option value="base">清音</option><option value="voiced">浊音·半浊音</option><option value="yoon">拗音</option><option value="special">促音·长音</option></select></label></div></div>
+        <div id="journeyProgress" class="journey-progress" hidden>
+          <div class="journey-progress-top"><div><span class="journey-kicker">∞ 无限混合学习</span><strong id="journeyHeadline">正在认识新假名</strong><span id="journeyDescription">清音、浊音、拗音和词例会逐步加入。</span></div><div class="journey-numbers"><span id="journeyStarted">0 / 233 已开始</span><span id="journeyStreak">连续答对 0 题</span></div></div>
+          <div class="journey-bar" role="progressbar" aria-label="已经开始的学习项目" aria-valuemin="0" aria-valuemax="233" aria-valuenow="0"><span id="journeyBarFill"></span></div>
+        </div>
         <div id="practiceEmpty" class="practice-empty" hidden><span class="empty-glyph">あ</span><h3>这个范围还没有已学项目</h3><p>切换到“全部项目”即可直接自测，或先在假名表中标记已学。</p><button type="button" class="primary-button" id="practiceToLearn">去认识假名 →</button></div>
         <div class="practice-layout" id="practiceContent">
           <div class="question-panel">
