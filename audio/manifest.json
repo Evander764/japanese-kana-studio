@@ -1,0 +1,884 @@
+[
+  {
+    "id": "hiragana:base:a",
+    "kana": "あ",
+    "phonemes": "a",
+    "file": "base-a.mp3",
+    "seconds": 0.44
+  },
+  {
+    "id": "hiragana:base:i",
+    "kana": "い",
+    "phonemes": "i",
+    "file": "base-i.mp3",
+    "seconds": 0.537
+  },
+  {
+    "id": "hiragana:base:u",
+    "kana": "う",
+    "phonemes": "ɯ",
+    "file": "base-u.mp3",
+    "seconds": 0.351
+  },
+  {
+    "id": "hiragana:base:e",
+    "kana": "え",
+    "phonemes": "e",
+    "file": "base-e.mp3",
+    "seconds": 0.363
+  },
+  {
+    "id": "hiragana:base:o",
+    "kana": "お",
+    "phonemes": "o",
+    "file": "base-o.mp3",
+    "seconds": 0.419
+  },
+  {
+    "id": "hiragana:base:ka",
+    "kana": "か",
+    "phonemes": "ka",
+    "file": "base-ka.mp3",
+    "seconds": 0.373
+  },
+  {
+    "id": "hiragana:base:ki",
+    "kana": "き",
+    "phonemes": "kʲi",
+    "file": "base-ki.mp3",
+    "seconds": 0.448
+  },
+  {
+    "id": "hiragana:base:ku",
+    "kana": "く",
+    "phonemes": "kɯ",
+    "file": "base-ku.mp3",
+    "seconds": 0.326
+  },
+  {
+    "id": "hiragana:base:ke",
+    "kana": "け",
+    "phonemes": "ke",
+    "file": "base-ke.mp3",
+    "seconds": 0.405
+  },
+  {
+    "id": "hiragana:base:ko",
+    "kana": "こ",
+    "phonemes": "ko",
+    "file": "base-ko.mp3",
+    "seconds": 0.363
+  },
+  {
+    "id": "hiragana:base:sa",
+    "kana": "さ",
+    "phonemes": "sa",
+    "file": "base-sa.mp3",
+    "seconds": 0.369
+  },
+  {
+    "id": "hiragana:base:shi",
+    "kana": "し",
+    "phonemes": "ɕi",
+    "file": "base-shi.mp3",
+    "seconds": 0.465
+  },
+  {
+    "id": "hiragana:base:su",
+    "kana": "す",
+    "phonemes": "sɨ",
+    "file": "base-su.mp3",
+    "seconds": 0.319
+  },
+  {
+    "id": "hiragana:base:se",
+    "kana": "せ",
+    "phonemes": "se",
+    "file": "base-se.mp3",
+    "seconds": 0.419
+  },
+  {
+    "id": "hiragana:base:so",
+    "kana": "そ",
+    "phonemes": "so",
+    "file": "base-so.mp3",
+    "seconds": 0.419
+  },
+  {
+    "id": "hiragana:base:ta",
+    "kana": "た",
+    "phonemes": "ta",
+    "file": "base-ta.mp3",
+    "seconds": 0.373
+  },
+  {
+    "id": "hiragana:base:chi",
+    "kana": "ち",
+    "phonemes": "ʨi",
+    "file": "base-chi.mp3",
+    "seconds": 0.394
+  },
+  {
+    "id": "hiragana:base:tsu",
+    "kana": "つ",
+    "phonemes": "ʦɨ",
+    "file": "base-tsu.mp3",
+    "seconds": 0.265
+  },
+  {
+    "id": "hiragana:base:te",
+    "kana": "て",
+    "phonemes": "te",
+    "file": "base-te.mp3",
+    "seconds": 0.448
+  },
+  {
+    "id": "hiragana:base:to",
+    "kana": "と",
+    "phonemes": "to",
+    "file": "base-to.mp3",
+    "seconds": 0.405
+  },
+  {
+    "id": "hiragana:base:na",
+    "kana": "な",
+    "phonemes": "na",
+    "file": "base-na.mp3",
+    "seconds": 0.398
+  },
+  {
+    "id": "hiragana:base:ni",
+    "kana": "に",
+    "phonemes": "ɲi",
+    "file": "base-ni.mp3",
+    "seconds": 0.373
+  },
+  {
+    "id": "hiragana:base:nu",
+    "kana": "ぬ",
+    "phonemes": "nɯ",
+    "file": "base-nu.mp3",
+    "seconds": 0.423
+  },
+  {
+    "id": "hiragana:base:ne",
+    "kana": "ね",
+    "phonemes": "ne",
+    "file": "base-ne.mp3",
+    "seconds": 0.427
+  },
+  {
+    "id": "hiragana:base:no",
+    "kana": "の",
+    "phonemes": "no",
+    "file": "base-no.mp3",
+    "seconds": 0.427
+  },
+  {
+    "id": "hiragana:base:ha",
+    "kana": "は",
+    "phonemes": "ha",
+    "file": "base-ha.mp3",
+    "seconds": 0.323
+  },
+  {
+    "id": "hiragana:base:hi",
+    "kana": "ひ",
+    "phonemes": "çi",
+    "file": "base-hi.mp3",
+    "seconds": 0.373
+  },
+  {
+    "id": "hiragana:base:fu",
+    "kana": "ふ",
+    "phonemes": "ɸɯ",
+    "file": "base-fu.mp3",
+    "seconds": 0.298
+  },
+  {
+    "id": "hiragana:base:he",
+    "kana": "へ",
+    "phonemes": "he",
+    "file": "base-he.mp3",
+    "seconds": 0.394
+  },
+  {
+    "id": "hiragana:base:ho",
+    "kana": "ほ",
+    "phonemes": "ho",
+    "file": "base-ho.mp3",
+    "seconds": 0.394
+  },
+  {
+    "id": "hiragana:base:ma",
+    "kana": "ま",
+    "phonemes": "ma",
+    "file": "base-ma.mp3",
+    "seconds": 0.373
+  },
+  {
+    "id": "hiragana:base:mi",
+    "kana": "み",
+    "phonemes": "mʲi",
+    "file": "base-mi.mp3",
+    "seconds": 0.491
+  },
+  {
+    "id": "hiragana:base:mu",
+    "kana": "む",
+    "phonemes": "mɯ",
+    "file": "base-mu.mp3",
+    "seconds": 0.398
+  },
+  {
+    "id": "hiragana:base:me",
+    "kana": "め",
+    "phonemes": "me",
+    "file": "base-me.mp3",
+    "seconds": 0.423
+  },
+  {
+    "id": "hiragana:base:mo",
+    "kana": "も",
+    "phonemes": "mo",
+    "file": "base-mo.mp3",
+    "seconds": 0.448
+  },
+  {
+    "id": "hiragana:base:ya",
+    "kana": "や",
+    "phonemes": "ja",
+    "file": "base-ya.mp3",
+    "seconds": 0.373
+  },
+  {
+    "id": "hiragana:base:yu",
+    "kana": "ゆ",
+    "phonemes": "jɯ",
+    "file": "base-yu.mp3",
+    "seconds": 0.423
+  },
+  {
+    "id": "hiragana:base:yo",
+    "kana": "よ",
+    "phonemes": "jo",
+    "file": "base-yo.mp3",
+    "seconds": 0.427
+  },
+  {
+    "id": "hiragana:base:ra",
+    "kana": "ら",
+    "phonemes": "ɾa",
+    "file": "base-ra.mp3",
+    "seconds": 0.369
+  },
+  {
+    "id": "hiragana:base:ri",
+    "kana": "り",
+    "phonemes": "ɾʲi",
+    "file": "base-ri.mp3",
+    "seconds": 0.469
+  },
+  {
+    "id": "hiragana:base:ru",
+    "kana": "る",
+    "phonemes": "ɾɯ",
+    "file": "base-ru.mp3",
+    "seconds": 0.298
+  },
+  {
+    "id": "hiragana:base:re",
+    "kana": "れ",
+    "phonemes": "ɾe",
+    "file": "base-re.mp3",
+    "seconds": 0.448
+  },
+  {
+    "id": "hiragana:base:ro",
+    "kana": "ろ",
+    "phonemes": "ɾo",
+    "file": "base-ro.mp3",
+    "seconds": 0.427
+  },
+  {
+    "id": "hiragana:base:wa",
+    "kana": "わ",
+    "phonemes": "βa",
+    "file": "base-wa.mp3",
+    "seconds": 0.348
+  },
+  {
+    "id": "hiragana:base:wo",
+    "kana": "を",
+    "phonemes": "o",
+    "file": "base-wo.mp3",
+    "seconds": 0.419
+  },
+  {
+    "id": "hiragana:base:n",
+    "kana": "ん",
+    "phonemes": "ɴ",
+    "file": "base-n.mp3",
+    "seconds": 0.219
+  },
+  {
+    "id": "hiragana:voiced:ga",
+    "kana": "が",
+    "phonemes": "ɡa",
+    "file": "voiced-ga.mp3",
+    "seconds": 0.394
+  },
+  {
+    "id": "hiragana:voiced:gi",
+    "kana": "ぎ",
+    "phonemes": "ɡʲi",
+    "file": "voiced-gi.mp3",
+    "seconds": 0.469
+  },
+  {
+    "id": "hiragana:voiced:gu",
+    "kana": "ぐ",
+    "phonemes": "ɡɯ",
+    "file": "voiced-gu.mp3",
+    "seconds": 0.423
+  },
+  {
+    "id": "hiragana:voiced:ge",
+    "kana": "げ",
+    "phonemes": "ɡe",
+    "file": "voiced-ge.mp3",
+    "seconds": 0.427
+  },
+  {
+    "id": "hiragana:voiced:go",
+    "kana": "ご",
+    "phonemes": "ɡo",
+    "file": "voiced-go.mp3",
+    "seconds": 0.427
+  },
+  {
+    "id": "hiragana:voiced:za",
+    "kana": "ざ",
+    "phonemes": "ʣa",
+    "file": "voiced-za.mp3",
+    "seconds": 0.348
+  },
+  {
+    "id": "hiragana:voiced:ji",
+    "kana": "じ",
+    "phonemes": "ʥi",
+    "file": "voiced-ji.mp3",
+    "seconds": 0.419
+  },
+  {
+    "id": "hiragana:voiced:zu",
+    "kana": "ず",
+    "phonemes": "zɨ",
+    "file": "voiced-zu.mp3",
+    "seconds": 0.394
+  },
+  {
+    "id": "hiragana:voiced:ze",
+    "kana": "ぜ",
+    "phonemes": "ʣe",
+    "file": "voiced-ze.mp3",
+    "seconds": 0.405
+  },
+  {
+    "id": "hiragana:voiced:zo",
+    "kana": "ぞ",
+    "phonemes": "ʣo",
+    "file": "voiced-zo.mp3",
+    "seconds": 0.427
+  },
+  {
+    "id": "hiragana:voiced:da",
+    "kana": "だ",
+    "phonemes": "da",
+    "file": "voiced-da.mp3",
+    "seconds": 0.394
+  },
+  {
+    "id": "hiragana:voiced:di",
+    "kana": "ぢ",
+    "phonemes": "ʥi",
+    "file": "voiced-di.mp3",
+    "seconds": 0.419
+  },
+  {
+    "id": "hiragana:voiced:du",
+    "kana": "づ",
+    "phonemes": "zɨ",
+    "file": "voiced-du.mp3",
+    "seconds": 0.394
+  },
+  {
+    "id": "hiragana:voiced:de",
+    "kana": "で",
+    "phonemes": "de",
+    "file": "voiced-de.mp3",
+    "seconds": 0.427
+  },
+  {
+    "id": "hiragana:voiced:do",
+    "kana": "ど",
+    "phonemes": "do",
+    "file": "voiced-do.mp3",
+    "seconds": 0.419
+  },
+  {
+    "id": "hiragana:voiced:ba",
+    "kana": "ば",
+    "phonemes": "ba",
+    "file": "voiced-ba.mp3",
+    "seconds": 0.344
+  },
+  {
+    "id": "hiragana:voiced:bi",
+    "kana": "び",
+    "phonemes": "bʲi",
+    "file": "voiced-bi.mp3",
+    "seconds": 0.469
+  },
+  {
+    "id": "hiragana:voiced:bu",
+    "kana": "ぶ",
+    "phonemes": "bɯ",
+    "file": "voiced-bu.mp3",
+    "seconds": 0.444
+  },
+  {
+    "id": "hiragana:voiced:be",
+    "kana": "べ",
+    "phonemes": "be",
+    "file": "voiced-be.mp3",
+    "seconds": 0.419
+  },
+  {
+    "id": "hiragana:voiced:bo",
+    "kana": "ぼ",
+    "phonemes": "bo",
+    "file": "voiced-bo.mp3",
+    "seconds": 0.419
+  },
+  {
+    "id": "hiragana:voiced:pa",
+    "kana": "ぱ",
+    "phonemes": "pa",
+    "file": "voiced-pa.mp3",
+    "seconds": 0.326
+  },
+  {
+    "id": "hiragana:voiced:pi",
+    "kana": "ぴ",
+    "phonemes": "pʲi",
+    "file": "voiced-pi.mp3",
+    "seconds": 0.427
+  },
+  {
+    "id": "hiragana:voiced:pu",
+    "kana": "ぷ",
+    "phonemes": "pɯ",
+    "file": "voiced-pu.mp3",
+    "seconds": 0.423
+  },
+  {
+    "id": "hiragana:voiced:pe",
+    "kana": "ぺ",
+    "phonemes": "pe",
+    "file": "voiced-pe.mp3",
+    "seconds": 0.376
+  },
+  {
+    "id": "hiragana:voiced:po",
+    "kana": "ぽ",
+    "phonemes": "po",
+    "file": "voiced-po.mp3",
+    "seconds": 0.376
+  },
+  {
+    "id": "hiragana:yoon:kya",
+    "kana": "きゃ",
+    "phonemes": "kʲa",
+    "file": "yoon-kya.mp3",
+    "seconds": 0.401
+  },
+  {
+    "id": "hiragana:yoon:kyu",
+    "kana": "きゅ",
+    "phonemes": "kʲɨ",
+    "file": "yoon-kyu.mp3",
+    "seconds": 0.323
+  },
+  {
+    "id": "hiragana:yoon:kyo",
+    "kana": "きょ",
+    "phonemes": "kʲo",
+    "file": "yoon-kyo.mp3",
+    "seconds": 0.405
+  },
+  {
+    "id": "hiragana:yoon:sha",
+    "kana": "しゃ",
+    "phonemes": "ɕa",
+    "file": "yoon-sha.mp3",
+    "seconds": 0.427
+  },
+  {
+    "id": "hiragana:yoon:shu",
+    "kana": "しゅ",
+    "phonemes": "ɕɨ",
+    "file": "yoon-shu.mp3",
+    "seconds": 0.469
+  },
+  {
+    "id": "hiragana:yoon:sho",
+    "kana": "しょ",
+    "phonemes": "ɕo",
+    "file": "yoon-sho.mp3",
+    "seconds": 0.427
+  },
+  {
+    "id": "hiragana:yoon:cha",
+    "kana": "ちゃ",
+    "phonemes": "ʨa",
+    "file": "yoon-cha.mp3",
+    "seconds": 0.348
+  },
+  {
+    "id": "hiragana:yoon:chu",
+    "kana": "ちゅ",
+    "phonemes": "ʨɨ",
+    "file": "yoon-chu.mp3",
+    "seconds": 0.24
+  },
+  {
+    "id": "hiragana:yoon:cho",
+    "kana": "ちょ",
+    "phonemes": "ʨo",
+    "file": "yoon-cho.mp3",
+    "seconds": 0.427
+  },
+  {
+    "id": "hiragana:yoon:nya",
+    "kana": "にゃ",
+    "phonemes": "ɲa",
+    "file": "yoon-nya.mp3",
+    "seconds": 0.323
+  },
+  {
+    "id": "hiragana:yoon:nyu",
+    "kana": "にゅ",
+    "phonemes": "ɲɨ",
+    "file": "yoon-nyu.mp3",
+    "seconds": 0.24
+  },
+  {
+    "id": "hiragana:yoon:nyo",
+    "kana": "にょ",
+    "phonemes": "ɲo",
+    "file": "yoon-nyo.mp3",
+    "seconds": 0.384
+  },
+  {
+    "id": "hiragana:yoon:hya",
+    "kana": "ひゃ",
+    "phonemes": "ça",
+    "file": "yoon-hya.mp3",
+    "seconds": 0.326
+  },
+  {
+    "id": "hiragana:yoon:hyu",
+    "kana": "ひゅ",
+    "phonemes": "çɨ",
+    "file": "yoon-hyu.mp3",
+    "seconds": 0.24
+  },
+  {
+    "id": "hiragana:yoon:hyo",
+    "kana": "ひょ",
+    "phonemes": "ço",
+    "file": "yoon-hyo.mp3",
+    "seconds": 0.448
+  },
+  {
+    "id": "hiragana:yoon:mya",
+    "kana": "みゃ",
+    "phonemes": "mʲa",
+    "file": "yoon-mya.mp3",
+    "seconds": 0.448
+  },
+  {
+    "id": "hiragana:yoon:myu",
+    "kana": "みゅ",
+    "phonemes": "mʲɨ",
+    "file": "yoon-myu.mp3",
+    "seconds": 0.469
+  },
+  {
+    "id": "hiragana:yoon:myo",
+    "kana": "みょ",
+    "phonemes": "mʲo",
+    "file": "yoon-myo.mp3",
+    "seconds": 0.491
+  },
+  {
+    "id": "hiragana:yoon:rya",
+    "kana": "りゃ",
+    "phonemes": "ɾʲa",
+    "file": "yoon-rya.mp3",
+    "seconds": 0.384
+  },
+  {
+    "id": "hiragana:yoon:ryu",
+    "kana": "りゅ",
+    "phonemes": "ɾʲɨ",
+    "file": "yoon-ryu.mp3",
+    "seconds": 0.448
+  },
+  {
+    "id": "hiragana:yoon:ryo",
+    "kana": "りょ",
+    "phonemes": "ɾʲo",
+    "file": "yoon-ryo.mp3",
+    "seconds": 0.448
+  },
+  {
+    "id": "hiragana:yoon:gya",
+    "kana": "ぎゃ",
+    "phonemes": "ɡʲa",
+    "file": "yoon-gya.mp3",
+    "seconds": 0.398
+  },
+  {
+    "id": "hiragana:yoon:gyu",
+    "kana": "ぎゅ",
+    "phonemes": "ɡʲɨ",
+    "file": "yoon-gyu.mp3",
+    "seconds": 0.469
+  },
+  {
+    "id": "hiragana:yoon:gyo",
+    "kana": "ぎょ",
+    "phonemes": "ɡʲo",
+    "file": "yoon-gyo.mp3",
+    "seconds": 0.427
+  },
+  {
+    "id": "hiragana:yoon:ja",
+    "kana": "じゃ",
+    "phonemes": "ʥa",
+    "file": "yoon-ja.mp3",
+    "seconds": 0.348
+  },
+  {
+    "id": "hiragana:yoon:ju",
+    "kana": "じゅ",
+    "phonemes": "ʥɨ",
+    "file": "yoon-ju.mp3",
+    "seconds": 0.24
+  },
+  {
+    "id": "hiragana:yoon:jo",
+    "kana": "じょ",
+    "phonemes": "ʥo",
+    "file": "yoon-jo.mp3",
+    "seconds": 0.49
+  },
+  {
+    "id": "hiragana:yoon:dya",
+    "kana": "ぢゃ",
+    "phonemes": "ʥa",
+    "file": "yoon-dya.mp3",
+    "seconds": 0.348
+  },
+  {
+    "id": "hiragana:yoon:dyu",
+    "kana": "ぢゅ",
+    "phonemes": "ʥɨ",
+    "file": "yoon-dyu.mp3",
+    "seconds": 0.24
+  },
+  {
+    "id": "hiragana:yoon:dyo",
+    "kana": "ぢょ",
+    "phonemes": "ʥo",
+    "file": "yoon-dyo.mp3",
+    "seconds": 0.49
+  },
+  {
+    "id": "hiragana:yoon:bya",
+    "kana": "びゃ",
+    "phonemes": "bʲa",
+    "file": "yoon-bya.mp3",
+    "seconds": 0.394
+  },
+  {
+    "id": "hiragana:yoon:byu",
+    "kana": "びゅ",
+    "phonemes": "bʲɨ",
+    "file": "yoon-byu.mp3",
+    "seconds": 0.427
+  },
+  {
+    "id": "hiragana:yoon:byo",
+    "kana": "びょ",
+    "phonemes": "bʲo",
+    "file": "yoon-byo.mp3",
+    "seconds": 0.427
+  },
+  {
+    "id": "hiragana:yoon:pya",
+    "kana": "ぴゃ",
+    "phonemes": "pʲa",
+    "file": "yoon-pya.mp3",
+    "seconds": 0.398
+  },
+  {
+    "id": "hiragana:yoon:pyu",
+    "kana": "ぴゅ",
+    "phonemes": "pʲɨ",
+    "file": "yoon-pyu.mp3",
+    "seconds": 0.376
+  },
+  {
+    "id": "hiragana:yoon:pyo",
+    "kana": "ぴょ",
+    "phonemes": "pʲo",
+    "file": "yoon-pyo.mp3",
+    "seconds": 0.405
+  },
+  {
+    "id": "hiragana:special:kippu",
+    "kana": "きっぷ",
+    "phonemes": "kʲiʔpɯ",
+    "file": "special-kippu.mp3",
+    "seconds": 0.661
+  },
+  {
+    "id": "hiragana:special:gakki",
+    "kana": "がっき",
+    "phonemes": "ɡaʔkʲi",
+    "file": "special-gakki.mp3",
+    "seconds": 0.683
+  },
+  {
+    "id": "hiragana:special:asatte",
+    "kana": "あさって",
+    "phonemes": "asaʔte",
+    "file": "special-asatte.mp3",
+    "seconds": 0.853
+  },
+  {
+    "id": "hiragana:special:zasshi",
+    "kana": "ざっし",
+    "phonemes": "ʣaʔɕi",
+    "file": "special-zasshi.mp3",
+    "seconds": 0.576
+  },
+  {
+    "id": "hiragana:special:obaasan",
+    "kana": "おばあさん",
+    "phonemes": "o baː saɴ",
+    "file": "special-obaasan.mp3",
+    "seconds": 1.024
+  },
+  {
+    "id": "hiragana:special:ojiisan",
+    "kana": "おじいさん",
+    "phonemes": "oʥiːsaɴ",
+    "file": "special-ojiisan.mp3",
+    "seconds": 0.939
+  },
+  {
+    "id": "hiragana:special:suuji",
+    "kana": "すうじ",
+    "phonemes": "sɨːʥi",
+    "file": "special-suuji.mp3",
+    "seconds": 0.768
+  },
+  {
+    "id": "hiragana:special:oneesan",
+    "kana": "おねえさん",
+    "phonemes": "oneːsaɴ",
+    "file": "special-oneesan.mp3",
+    "seconds": 0.896
+  },
+  {
+    "id": "hiragana:special:koori",
+    "kana": "こおり",
+    "phonemes": "koːɾʲi",
+    "file": "special-koori.mp3",
+    "seconds": 0.64
+  },
+  {
+    "id": "hiragana:special:hikouki",
+    "kana": "ひこうき",
+    "phonemes": "çikoːkʲi",
+    "file": "special-hikouki.mp3",
+    "seconds": 0.789
+  },
+  {
+    "id": "katakana:special:koppu",
+    "kana": "コップ",
+    "phonemes": "koʔpɯ",
+    "file": "special-koppu.mp3",
+    "seconds": 0.64
+  },
+  {
+    "id": "katakana:special:beddo",
+    "kana": "ベッド",
+    "phonemes": "beʔdo",
+    "file": "special-beddo.mp3",
+    "seconds": 0.683
+  },
+  {
+    "id": "katakana:special:torakku",
+    "kana": "トラック",
+    "phonemes": "toɾaʔkɯ",
+    "file": "special-torakku.mp3",
+    "seconds": 0.768
+  },
+  {
+    "id": "katakana:special:suicchi",
+    "kana": "スイッチ",
+    "phonemes": "sɨiʔʨi",
+    "file": "special-suicchi.mp3",
+    "seconds": 0.811
+  },
+  {
+    "id": "katakana:special:kaaten",
+    "kana": "カーテン",
+    "phonemes": "kaːteɴ",
+    "file": "special-kaaten.mp3",
+    "seconds": 0.704
+  },
+  {
+    "id": "katakana:special:takushii",
+    "kana": "タクシー",
+    "phonemes": "takɯɕiː",
+    "file": "special-takushii.mp3",
+    "seconds": 0.832
+  },
+  {
+    "id": "katakana:special:juusu",
+    "kana": "ジュース",
+    "phonemes": "ʥɨːsɨ",
+    "file": "special-juusu.mp3",
+    "seconds": 0.576
+  },
+  {
+    "id": "katakana:special:keeki",
+    "kana": "ケーキ",
+    "phonemes": "keːkʲi",
+    "file": "special-keeki.mp3",
+    "seconds": 0.64
+  },
+  {
+    "id": "katakana:special:nooto",
+    "kana": "ノート",
+    "phonemes": "noːto",
+    "file": "special-nooto.mp3",
+    "seconds": 0.619
+  }
+]

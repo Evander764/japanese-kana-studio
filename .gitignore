@@ -1,0 +1,13 @@
+# Personal progress exports and local authoring dependencies stay off GitHub.
+kana-progress-*.json
+.env
+.env.*
+node_modules/
+.venv/
+venv/
+*.onnx
+*.safetensors
+*.bin
+*.log
+Thumbs.db
+.DS_Store

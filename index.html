@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="离线可用的日语五十音学习网站：认识平假名和片假名，输入罗马字自测，听发音并复习促音与长音词例。">
+  <meta name="theme-color" content="#f5f2eb">
+  <title>假名练习室 · 五十音识读</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="kana-data.js" defer></script>
+  <script src="core.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">あ</span><span><strong>假名练习室</strong><small>KANA STUDIO</small></span></div>
+      <div class="mode-switch" role="group" aria-label="学习专区">
+        <button type="button" data-mode="hiragana">平假名</button>
+        <button type="button" data-mode="katakana">片假名</button>
+        <button type="button" data-mode="mixed">混合练习</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> 从认出一个字开始</p>
+          <h1 id="page-title">看到假名，<br><em>立刻读出来。</em></h1>
+          <p class="hero-lead">可以按行认识，也可以直接自测。答得慢或容易错的音会更常出现，熟悉后自然减少。</p>
+          <div class="hero-actions">
+            <button type="button" class="primary-button" id="heroLearn">开始认识 <span aria-hidden="true">↗</span></button>
+            <button type="button" class="text-button" id="heroPractice">直接开始自测 <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true"><span class="hero-kana hero-kana-main">あ</span><span class="hero-kana hero-kana-secondary">ア</span><span class="hero-art-caption">a · 一个读音，两种写法</span></div>
+      </section>
+
+      <section class="overview" aria-label="学习概况">
+        <div><span class="overview-value" id="countTotal">—</span><span class="overview-label">当前专区项目</span></div>
+        <div><span class="overview-value" id="countStarted">—</span><span class="overview-label">已经开始</span></div>
+        <div><span class="overview-value" id="countMastered">—</span><span class="overview-label">达到熟练</span></div>
+        <p id="overviewMessage">打开任意假名，听一听，再做首次自测。</p>
+      </section>
+
+      <nav class="section-nav" aria-label="功能导航">
+        <button type="button" data-view="learn" class="active">01 <span>认识假名</span></button>
+        <button type="button" data-view="practice">02 <span>识读练习</span></button>
+        <button type="button" data-view="stats">03 <span>学习进度</span></button>
+        <button type="button" data-view="convert">04 <span>罗马字转换</span></button>
+      </nav>
+
+      <section class="view" id="learnView" aria-labelledby="learnTitle">
+        <div class="section-heading"><div><p class="section-kicker">STUDY / 学习</p><h2 id="learnTitle">按行认识，每个字都能点开。</h2><p>点字形查看读音；点卡片下方可直接标记学过或未学。也能跳过学习直接自测。</p></div><button type="button" class="outline-button" id="startUnseen">学习下一个未学项目 →</button></div>
+        <div class="toolbar">
+          <div class="chip-group" id="groupTabs" role="group" aria-label="假名分类">
+            <button type="button" data-group="base">清音</button><button type="button" data-group="voiced">浊音·半浊音</button><button type="button" data-group="yoon">拗音</button><button type="button" data-group="special">促音·长音</button>
+          </div>
+          <label class="filter-label">显示 <select id="learnFilter"><option value="all">全部</option><option value="unseen">未学</option><option value="learning">学习中</option><option value="mastered">熟练</option></select></label>
+        </div>
+        <p id="learnActionMessage" class="learn-action-message" role="status" aria-live="polite"></p>
+        <div id="learnGrid" class="learn-grid"></div>
+        <p class="empty-message" id="learnEmpty" hidden>这个筛选条件下没有项目。换个分类或状态试试。</p>
+      </section>
+
+      <section class="view" id="practiceView" aria-labelledby="practiceTitle" hidden>
+        <div class="section-heading"><div><p class="section-kicker">PRACTICE / 练习</p><h2 id="practiceTitle">看字输入，慢慢变快。</h2><p>可以直接测试未学的假名；首次作答后自动加入已学题库。发音在作答后开放。</p></div><div class="practice-selectors"><label class="filter-label">题库 <select id="practicePool"><option value="all">全部项目 · 可直接自测</option><option value="learned">只练已学项目</option></select></label><label class="filter-label">分类 <select id="practiceGroup"><option value="all">全部分类</option><option value="base">清音</option><option value="voiced">浊音·半浊音</option><option value="yoon">拗音</option><option value="special">促音·长音</option></select></label></div></div>
+        <div id="practiceEmpty" class="practice-empty" hidden><span class="empty-glyph">あ</span><h3>这个范围还没有已学项目</h3><p>切换到“全部项目”即可直接自测，或先在假名表中标记已学。</p><button type="button" class="primary-button" id="practiceToLearn">去认识假名 →</button></div>
+        <div class="practice-layout" id="practiceContent">
+          <div class="question-panel">
+            <div class="question-top"><span class="question-label" id="questionKind">清音 · 平假名</span><span class="question-counter" id="questionCounter">第 1 题</span></div>
+            <div class="question-glyph" id="questionGlyph">あ</div>
+            <p class="question-instruction">这个假名怎么读？输入罗马字，按 Enter 提交。</p>
+            <form id="practiceForm" class="answer-form" autocomplete="off"><label for="practiceInput">你的答案</label><div class="input-row"><input id="practiceInput" inputmode="latin" autocapitalize="off" autocomplete="off" spellcheck="false" placeholder="例如：a" required><button type="submit" class="primary-button">提交答案</button></div><p class="live-preview">即时转换 <strong id="practicePreview">—</strong></p></form>
+            <p class="keyboard-hint">答对自动进入下一题；答错查看答案后，再按 Enter 继续。Alt+P 可重听上一题。</p>
+            <div id="practiceFeedback" class="feedback" role="status" aria-live="polite" hidden></div>
+            <p id="questionExplanation" class="word-explanation" hidden></p>
+            <div id="previousAnswer" class="previous-answer" hidden><div><span class="previous-label">上一题 · 答对后可回听</span><strong id="previousReading"></strong><p id="previousMeaning"></p></div><button type="button" class="outline-button" id="previousAudio">▶ 重听</button></div>
+            <p class="audio-message" id="previousAudioMessage" role="status"></p>
+            <div class="question-actions"><button type="button" class="text-button" id="showAnswer">查看答案</button><button type="button" class="outline-button" id="questionAudio" hidden>▶ 听发音</button><button type="button" class="primary-button" id="nextQuestion" hidden>下一题 →</button></div>
+            <p class="audio-message" id="questionAudioMessage" role="status"></p>
+          </div>
+          <aside class="practice-aside"><p class="aside-label">练习提示 / NOTE</p><h3>想不起来也没关系。</h3><p>答错和用时较长的项目会更常出现。查看答案会记作一次未答对，方便安排复习。</p><div class="aside-rule"><span>01</span><p>先看字形，自己读出声音。</p></div><div class="aside-rule"><span>02</span><p>再输入英文字母，确认读音。</p></div><div class="aside-rule"><span>03</span><p>提交后听一遍，进入下一题。</p></div></aside>
+        </div>
+      </section>
+
+      <section class="view" id="statsView" aria-labelledby="statsTitle" hidden>
+        <div class="section-heading"><div><p class="section-kicker">PROGRESS / 进度</p><h2 id="statsTitle">哪里熟悉，哪里还需要练。</h2><p>平假名与片假名分别统计；优先复习慢或经常答错的项目。</p></div></div>
+        <div class="stats-summary" id="statsSummary"></div>
+        <div class="stats-table-wrap"><table class="stats-table"><thead><tr><th>假名</th><th>读音 / 分类</th><th>状态</th><th>最近正确率</th><th>答对用时</th><th>抽题权重</th></tr></thead><tbody id="statsBody"></tbody></table></div>
+        <div class="data-tools"><div><h3>把进度留在自己手里</h3><p>进度默认只保存在这个浏览器。可导出文件，换浏览器后再导入。</p></div><div class="data-actions"><button type="button" class="outline-button" id="exportProgress">导出进度</button><label class="outline-button import-button">导入进度<input type="file" id="importProgress" accept="application/json,.json" hidden></label><button type="button" class="danger-button" id="resetProgress">重置进度</button></div></div>
+        <p id="storageMessage" class="utility-message" role="status"></p>
+      </section>
+
+      <section class="view" id="convertView" aria-labelledby="convertTitle" hidden>
+        <div class="section-heading"><div><p class="section-kicker">CONVERT / 转换</p><h2 id="convertTitle">输入罗马字，看看它会变成什么。</h2><p>切换书写形式，直接对照平假名和片假名。</p></div></div>
+        <div class="converter-layout"><div class="converter-input"><div class="converter-head"><label for="convertInput">罗马字输入</label><div class="mini-switch" role="group" aria-label="转换目标"><button type="button" data-convert-script="hiragana">平假名</button><button type="button" data-convert-script="katakana">片假名</button></div></div><textarea id="convertInput" rows="6" autocapitalize="off" spellcheck="false" placeholder="试试输入：konnichiha / juusu"></textarea></div><div class="converter-output"><span>转换结果</span><div id="convertOutput" aria-live="polite">ここに表示</div><p id="convertCandidates"></p><small>长音和同音异形可能有不同写法；练习题以题目所示字形判定。</small></div></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>假名练习室 · 离线可用</span><span>字表依据 <a href="https://www.irodori.jpf.go.jp/assets/data/Kana_all.pdf" target="_blank" rel="noopener noreferrer">日本国际交流基金《いろどり》</a></span></footer>
+  </div>
+
+  <dialog id="detailDialog" class="detail-dialog" aria-labelledby="detailTitle"><div class="dialog-inner"><button type="button" class="dialog-close" id="closeDetail" aria-label="关闭">×</button><p class="section-kicker" id="detailCategory">清音 / 平假名</p><div class="detail-glyph" id="detailGlyph">あ</div><h2 id="detailTitle">あ</h2><div id="detailAnswer" class="detail-answer"><p class="reading-label">读作</p><p id="detailRomaji" class="detail-romaji">a</p><p id="detailMeaning" class="detail-meaning" hidden></p><p id="detailRhythm" class="detail-rhythm" hidden></p><p id="detailAliases" class="detail-aliases"></p><p id="detailNote" class="detail-note"></p><button type="button" class="outline-button" id="detailAudio">▶ 听发音</button><p id="detailAudioMessage" class="audio-message" role="status"></p></div><div id="detailTest" hidden><p class="detail-test-note">遮住读音后按 Enter 自测；答对自动跳到下一个，答错可按 Enter 重试。</p><form id="detailForm" class="answer-form" autocomplete="off"><label for="detailInput">输入罗马字</label><div class="input-row"><input id="detailInput" inputmode="latin" autocapitalize="off" autocomplete="off" spellcheck="false" required><button type="submit" class="primary-button">确认</button></div><p class="live-preview">即时转换 <strong id="detailPreview">—</strong></p></form><p id="detailFeedback" class="feedback" role="status" aria-live="polite" hidden></p></div><div class="dialog-actions"><button type="button" class="primary-button" id="detailStart">开始自测</button><button type="button" class="text-button" id="detailNext">下一个未学项目 →</button></div></div></dialog>
+</body>
+</html>
