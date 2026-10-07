@@ -1,0 +1,65 @@
+[
+  {
+    "id": "mixed:special:phrase-pan-taberu",
+    "kana": "パンをたべる",
+    "phonemes": "paɴ o tabeɾɯ",
+    "file": "special-phrase-pan-taberu.mp3",
+    "seconds": 1.131
+  },
+  {
+    "id": "mixed:special:phrase-coohii-nomu",
+    "kana": "コーヒーをのむ",
+    "phonemes": "koːçiː o nomɯ",
+    "file": "special-phrase-coohii-nomu.mp3",
+    "seconds": 1.173
+  },
+  {
+    "id": "mixed:special:phrase-basu-iku",
+    "kana": "バスでいく",
+    "phonemes": "basɨ de ikɯ",
+    "file": "special-phrase-basu-iku.mp3",
+    "seconds": 1.067
+  },
+  {
+    "id": "mixed:special:phrase-hoteru-tomaru",
+    "kana": "ホテルにとまる",
+    "phonemes": "hoteɾɯ ɲi tomaɾɯ",
+    "file": "special-phrase-hoteru-tomaru.mp3",
+    "seconds": 1.301
+  },
+  {
+    "id": "mixed:special:phrase-suupaa-kau",
+    "kana": "スーパーでかう",
+    "phonemes": "sɨːpaː de kaɯ",
+    "file": "special-phrase-suupaa-kau.mp3",
+    "seconds": 1.216
+  },
+  {
+    "id": "mixed:special:phrase-terebi-miru",
+    "kana": "テレビをみる",
+    "phonemes": "teɾebʲi o mʲiɾɯ",
+    "file": "special-phrase-terebi-miru.mp3",
+    "seconds": 1.173
+  },
+  {
+    "id": "mixed:special:phrase-takushii-noru",
+    "kana": "タクシーにのる",
+    "phonemes": "takɯɕiː ɲi noɾɯ",
+    "file": "special-phrase-takushii-noru.mp3",
+    "seconds": 1.216
+  },
+  {
+    "id": "mixed:special:phrase-meeru-okuru",
+    "kana": "メールをおくる",
+    "phonemes": "meːɾɯ o okɯɾɯ",
+    "file": "special-phrase-meeru-okuru.mp3",
+    "seconds": 1.195
+  },
+  {
+    "id": "mixed:special:phrase-sumaho-shashin",
+    "kana": "スマホでしゃしんをとる",
+    "phonemes": "sɨmaho de ɕaɕiɴ o toɾɯ",
+    "file": "special-phrase-sumaho-shashin.mp3",
+    "seconds": 1.664
+  }
+]

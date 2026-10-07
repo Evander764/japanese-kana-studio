@@ -247,7 +247,7 @@ async function main() {
   assert.equal(journeyRun.turns, 7);
   assert.equal(journeyRun.streak, 7);
   assert.match(journeyRun.nextKind, /复习/);
-  assert.match(journeyRun.started, /^7 \/ 233/);
+  assert.match(journeyRun.started, /^7 \/ 242/);
   await viewport(390, 844, true);
   const mobileJourney = await evaluate(`({ width: innerWidth, scrollWidth: document.documentElement.scrollWidth, banner: !document.getElementById('journeyProgress').hidden, groupDisabled: document.getElementById('practiceGroup').disabled })`);
   assert.deepEqual(mobileJourney, { width: 390, scrollWidth: 390, banner: true, groupDisabled: true });

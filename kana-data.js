@@ -123,7 +123,24 @@
     });
   }
 
-  const api = Object.freeze({ items: Object.freeze(items), scripts: Object.freeze(scripts) });
+  const mixedExamples = [
+    ['phrase-pan-taberu', 'パンをたべる', 'pan o taberu', '吃面包', 'パン是片假名外来语；を连接动作对象。', 'パ・ン・を・た・べ・る'],
+    ['phrase-coohii-nomu', 'コーヒーをのむ', 'koohii o nomu', '喝咖啡', 'コーヒー是片假名外来语；のむ是平假名动词。', 'コー・ヒー・を・の・む'],
+    ['phrase-basu-iku', 'バスでいく', 'basu de iku', '乘巴士去', 'で表示乘坐的交通工具；いく是平假名动词。', 'バ・ス・で・い・く'],
+    ['phrase-hoteru-tomaru', 'ホテルにとまる', 'hoteru ni tomaru', '住酒店', 'に表示到达或停留的地点；とまる是平假名动词。', 'ホ・テ・ル・に・と・ま・る'],
+    ['phrase-suupaa-kau', 'スーパーでかう', 'suupaa de kau', '在超市买', 'で表示动作发生的地点；かう是平假名动词。', 'スー・パー・で・か・う'],
+    ['phrase-terebi-miru', 'テレビをみる', 'terebi o miru', '看电视', 'テレビ是片假名外来语；みる是平假名动词。', 'テ・レ・ビ・を・み・る'],
+    ['phrase-takushii-noru', 'タクシーにのる', 'takushii ni noru', '乘出租车', 'に连接乘坐的对象；のる是平假名动词。', 'タ・ク・シー・に・の・る'],
+    ['phrase-meeru-okuru', 'メールをおくる', 'meeru o okuru', '发送邮件', 'メール是片假名外来语；おくる是平假名动词。', 'メー・ル・を・お・く・る'],
+    ['phrase-sumaho-shashin', 'スマホでしゃしんをとる', 'sumaho de shashin o toru', '用手机拍照片', 'しゃしん是平假名词；スマホ是片假名外来语。', 'ス・マ・ホ・で・しゃ・しん・を・と・る']
+  ].map(([key, kana, romaji, meaning, note, rhythm]) => ({
+    id: `mixed:special:${key}`,
+    script: 'mixed', group: 'special', row: '平假名＋片假名短语', key, kana, pair: '',
+    romaji, aliases: [romaji], kind: 'word', note, meaning, rhythm,
+    audio: `audio/special-${key}.mp3`
+  }));
+
+  const api = Object.freeze({ items: Object.freeze(items), mixedExamples: Object.freeze(mixedExamples), scripts: Object.freeze(scripts) });
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   root.KanaData = api;
 })(typeof globalThis !== 'undefined' ? globalThis : window);

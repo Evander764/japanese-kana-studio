@@ -12,8 +12,13 @@ AUDIO_DIR = ROOT / "audio"
 
 
 def main():
-    manifest = json.loads((AUDIO_DIR / "manifest.json").read_text(encoding="utf-8"))
-    files = sorted({entry["file"] for entry in manifest})
+    manifests = [AUDIO_DIR / "manifest.json", AUDIO_DIR / "phrase-manifest.json"]
+    files = set()
+    for manifest_path in manifests:
+        if manifest_path.exists():
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            files.update(entry["file"] for entry in manifest)
+    files = sorted(files)
     with tempfile.TemporaryDirectory(prefix="kana-audio-") as temporary:
         temporary_dir = Path(temporary)
         for index, filename in enumerate(files, 1):

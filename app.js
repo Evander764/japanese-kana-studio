@@ -76,6 +76,7 @@
     }
     for (const rowItems of rows.values()) {
       const row = document.createElement('div'); row.className = `kana-row ${rowItems[0].group === 'special' ? 'special' : ''}`;
+      row.classList.toggle('mixed-phrases', rowItems[0].script === 'mixed');
       const heading = document.createElement('div'); heading.className = 'row-heading';
       const title = document.createElement('strong'); title.textContent = rowItems[0].row;
       const subtitle = document.createElement('span'); subtitle.textContent = `${labels[rowItems[0].script]} · ${rowItems.length} 项`;
@@ -143,14 +144,16 @@
     if (!active) return;
     const started = items.filter(item => core.getStatus(state, item.id) !== 'unseen').length;
     const complete = started === items.length;
-    $('journeyHeadline').textContent = complete ? '所有项目都已见过，继续巩固' : '逐步认识新假名';
+    $('journeyHeadline').textContent = complete ? '所有项目都已见过，继续巩固' : '逐步认识假名和生活短语';
     $('journeyDescription').textContent = complete
       ? '接下来持续复习；答错或答得慢的项目会更常出现。'
-      : '清音、浊音、拗音和词例依次加入，中间穿插复习。';
+      : '平假名、片假名和混合短语逐步加入，中间穿插复习。';
     $('journeyStarted').textContent = `${started} / ${items.length} 已开始`;
     $('journeyStreak').textContent = `连续答对 ${state.journeyStreak} 题 · 累计 ${state.journeyTurns} 题`;
     $('journeyBarFill').style.width = `${started / items.length * 100}%`;
-    $('journeyProgress').querySelector('[role="progressbar"]').setAttribute('aria-valuenow', String(started));
+    const bar = $('journeyProgress').querySelector('[role="progressbar"]');
+    bar.setAttribute('aria-valuemax', String(items.length));
+    bar.setAttribute('aria-valuenow', String(started));
   }
   function renderAll() { renderControls(); renderOverview(); renderJourneyProgress(); renderLearn(); renderStats(); renderConvert(); }
   function setView(next) {
@@ -240,7 +243,7 @@
     if (!question) return;
     questionStartedAt = performance.now(); pausedAt = document.hidden ? performance.now() : 0; pausedDuration = 0;
     $('questionKind').textContent = journey
-      ? `${core.getStatus(state, question.id) === 'unseen' ? '新字' : '复习'} · ${describe(question)}`
+      ? `${core.getStatus(state, question.id) === 'unseen' ? (question.kind === 'word' ? '新词组' : '新假名') : (question.kind === 'word' ? '复习词组' : '复习假名')} · ${describe(question)}`
       : describe(question);
     $('questionCounter').textContent = `第 ${state.questionCount + 1} 题`;
     $('questionGlyph').textContent = question.kana;

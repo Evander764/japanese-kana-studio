@@ -1,8 +1,22 @@
 (function (root) {
   'use strict';
 
-  const { items } = root.KanaData || (typeof require === 'function' ? require('./kana-data.js') : {});
+  const data = root.KanaData || (typeof require === 'function' ? require('./kana-data.js') : {});
+  const items = [...data.items, ...(data.mixedExamples || [])];
   const byId = new Map(items.map(item => [item.id, item]));
+  const journeyOrder = (() => {
+    const kana = items.filter(item => item.kind !== 'word');
+    const words = items.filter(item => item.kind === 'word');
+    const order = [];
+    let nextWord = 0;
+    kana.forEach((item, index) => {
+      order.push(item);
+      const due = Math.floor((index + 1) * words.length / kana.length);
+      while (nextWord < due) order.push(words[nextWord++]);
+    });
+    while (nextWord < words.length) order.push(words[nextWord++]);
+    return order;
+  })();
   const VERSION = 1;
   const MODES = ['hiragana', 'katakana', 'mixed'];
   const GROUPS = ['base', 'voiced', 'yoon', 'special'];
@@ -32,7 +46,7 @@
     return sorted.length % 2 ? sorted[middle] : (sorted[middle - 1] + sorted[middle]) / 2;
   }
   function targetMs(item) {
-    return item.kind === 'word' ? 10000 : item.kind === 'yoon' ? 6000 : 4000;
+    return item.kind === 'word' ? (item.script === 'mixed' ? 16000 : 10000) : item.kind === 'yoon' ? 6000 : 4000;
   }
   function emptyRecord() {
     return { attemptCount: 0, attempts: [], correctTimes: [], lastQuestionIndex: -1 };
@@ -120,7 +134,7 @@
   }
 
   function chooseJourneyNext(state, rng = Math.random) {
-    const unseen = items.find(item => getStatus(state, item.id) === 'unseen');
+    const unseen = journeyOrder.find(item => getStatus(state, item.id) === 'unseen');
     const learned = eligibleItems(state, 'mixed');
     if (unseen && (learned.length < 6 || state.journeyTurns % 3 === 0)) return unseen;
     return chooseNext(state, 'mixed', rng, null, false) || unseen;
@@ -147,7 +161,7 @@
   function convertRomaji(value, script = 'hiragana', targetItem = null) {
     const input = normalizeRomaji(value);
     if (!['hiragana', 'katakana'].includes(script)) script = 'hiragana';
-    if (targetItem && targetItem.script === script && isCorrect(targetItem, input)) {
+    if (targetItem && (targetItem.script === script || targetItem.script === 'mixed') && isCorrect(targetItem, input)) {
       return { text: targetItem.kana, candidates: ambiguityHints(input, script), complete: true };
     }
     let output = '';
