@@ -42,6 +42,13 @@
     $('practicePool').value = state.practicePool;
     $('practiceGroup').value = practiceGroup || 'all';
     $('practiceGroup').disabled = state.practicePool === 'journey';
+    document.querySelectorAll('[data-audio-speed]').forEach(button => {
+      const slow = state.audioSpeed === 'slow';
+      button.textContent = slow ? '慢速 0.78×' : '正常 1×';
+      button.setAttribute('aria-pressed', String(slow));
+      button.setAttribute('aria-label', slow ? '当前慢速，点击切换正常语速' : '当前正常语速，点击切换慢速');
+      button.title = slow ? '点击切换正常语速' : '点击切换慢速';
+    });
     for (const name of ['learn', 'practice', 'stats', 'convert']) $(`${name}View`).hidden = view !== name;
   }
   function renderOverview() {
@@ -299,8 +306,27 @@
       if ('speechSynthesis' in window) window.speechSynthesis.cancel();
       const clip = new Audio(item.audio);
       activeAudio = clip;
-      clip.onerror = () => { output.textContent = '词例音频无法打开，请检查 audio 文件夹。'; };
-      clip.play().catch(() => { output.textContent = '浏览器阻止了播放，请再次点击朗读按钮。'; });
+      const repetitions = item.kind === 'word' ? 1 : 2;
+      let remaining = repetitions;
+      clip.playbackRate = state.audioSpeed === 'slow' ? 0.78 : 1;
+      if ('preservesPitch' in clip) clip.preservesPitch = true;
+      if ('webkitPreservesPitch' in clip) clip.webkitPreservesPitch = true;
+      output.textContent = `${state.audioSpeed === 'slow' ? '慢速 0.78×' : '正常语速'}${repetitions === 2 ? ' · 假名单字播放两遍' : ''}`;
+      clip.onerror = () => { activeAudio = null; output.textContent = '发音音频无法打开，请检查 audio 文件夹。'; };
+      clip.addEventListener('ended', () => {
+        remaining -= 1;
+        if (remaining > 0) {
+          window.setTimeout(() => {
+            if (activeAudio !== clip) return;
+            clip.currentTime = 0;
+            clip.play().catch(() => { output.textContent = '浏览器阻止了播放，请再次点击朗读按钮。'; });
+          }, 420);
+        } else {
+          activeAudio = null;
+          output.textContent = '';
+        }
+      });
+      clip.play().catch(() => { activeAudio = null; output.textContent = '浏览器阻止了播放，请再次点击朗读按钮。'; });
       return;
     }
     if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) {
@@ -311,7 +337,7 @@
     if (!japanese) { output.textContent = '未检测到日语语音；请在系统中安装日语语音后重试。'; return; }
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(item.kana);
-    utterance.lang = 'ja-JP'; utterance.voice = japanese; utterance.rate = 0.82;
+    utterance.lang = 'ja-JP'; utterance.voice = japanese; utterance.rate = state.audioSpeed === 'slow' ? 0.72 : 0.9;
     utterance.onerror = () => { output.textContent = '朗读失败，请检查浏览器的语音设置。'; };
     window.speechSynthesis.speak(utterance);
   }
@@ -336,6 +362,10 @@
     if (state.practicePool === 'journey') { state.mode = 'mixed'; practiceGroup = null; }
     previousItem = null; persist(); renderAll(); setQuestion();
   });
+  document.querySelectorAll('[data-audio-speed]').forEach(button => button.addEventListener('click', () => {
+    state.audioSpeed = state.audioSpeed === 'slow' ? 'normal' : 'slow';
+    persist(); renderControls();
+  }));
   $('practiceGroup').addEventListener('change', event => { practiceGroup = event.target.value === 'all' ? null : event.target.value; previousItem = null; setQuestion(); });
   $('heroLearn').addEventListener('click', () => setView('learn'));
   $('heroPractice').addEventListener('click', () => { state.practicePool = 'all'; persist(); setView('practice'); });

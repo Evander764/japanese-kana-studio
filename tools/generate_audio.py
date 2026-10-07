@@ -53,6 +53,7 @@ def write_mp3(samples, sample_rate: int, target: Path):
             wav.writeframes(pcm.tobytes())
         subprocess.run([
             "ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", str(wav_path),
+            "-af", "loudnorm=I=-18:TP=-2:LRA=7",
             "-codec:a", "libmp3lame", "-q:a", "4", str(target)
         ], check=True)
     return len(samples) / sample_rate

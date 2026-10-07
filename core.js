@@ -13,6 +13,7 @@
       version: VERSION,
       mode: 'hiragana',
       practicePool: 'all',
+      audioSpeed: 'slow',
       group: 'base',
       filter: 'all',
       records: {},
@@ -209,6 +210,7 @@
     if (!raw || typeof raw !== 'object' || raw.version !== VERSION) return clean;
     clean.mode = MODES.includes(raw.mode) ? raw.mode : clean.mode;
     clean.practicePool = ['all', 'learned', 'journey'].includes(raw.practicePool) ? raw.practicePool : clean.practicePool;
+    clean.audioSpeed = ['slow', 'normal'].includes(raw.audioSpeed) ? raw.audioSpeed : clean.audioSpeed;
     clean.group = GROUPS.includes(raw.group) ? raw.group : clean.group;
     clean.filter = FILTERS.includes(raw.filter) ? raw.filter : clean.filter;
     clean.questionCount = Number.isSafeInteger(raw.questionCount) ? clamp(raw.questionCount, 0, 1000000000) : 0;

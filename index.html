@@ -76,7 +76,7 @@
             <div class="question-top"><span class="question-label" id="questionKind">清音 · 平假名</span><span class="question-counter" id="questionCounter">第 1 题</span></div>
             <div class="question-glyph" id="questionGlyph">あ</div>
             <p class="question-instruction">这个假名怎么读？输入罗马字，按 Enter 提交。</p>
-            <div class="question-audio-row"><button type="button" class="outline-button" id="questionAudio">▶ 听当前发音</button><span>只播放声音，不显示答案</span></div>
+            <div class="question-audio-row"><button type="button" class="outline-button" id="questionAudio">▶ 听当前发音</button><button type="button" class="audio-speed-toggle" data-audio-speed aria-pressed="true">慢速 0.78×</button><span>假名单字播放两遍，不显示答案</span></div>
             <p class="audio-message" id="questionAudioMessage" role="status"></p>
             <form id="practiceForm" class="answer-form" autocomplete="off"><label for="practiceInput">你的答案</label><div class="input-row"><input id="practiceInput" inputmode="latin" autocapitalize="off" autocomplete="off" spellcheck="false" placeholder="例如：a" required><button type="submit" class="primary-button">提交答案</button></div><p class="live-preview">即时转换 <strong id="practicePreview">—</strong></p></form>
             <p class="keyboard-hint">答对自动进入下一题；答错查看答案后，再按 Enter 继续。Alt+P 可重听上一题。</p>
@@ -116,12 +116,12 @@
         <p class="reading-label">读作</p><p id="detailRomaji" class="detail-romaji">a</p>
         <p id="detailMeaning" class="detail-meaning" hidden></p><p id="detailRhythm" class="detail-rhythm" hidden></p>
         <p id="detailAliases" class="detail-aliases"></p><p id="detailNote" class="detail-note"></p>
-        <button type="button" class="outline-button" id="detailAudio">▶ 听发音</button>
+        <div class="detail-learn-audio"><button type="button" class="outline-button" id="detailAudio">▶ 听发音</button><button type="button" class="audio-speed-toggle" data-audio-speed aria-pressed="true">慢速 0.78×</button></div>
         <p id="detailAudioMessage" class="audio-message" role="status"></p>
       </div>
       <div id="detailTest" hidden>
         <p class="detail-test-note">遮住读音后按 Enter 自测；答对自动跳到下一个，答错可按 Enter 重试。</p>
-        <div class="detail-test-audio"><button type="button" class="outline-button" id="detailTestAudio">▶ 听发音</button><span>只播放声音，不显示答案</span></div>
+        <div class="detail-test-audio"><button type="button" class="outline-button" id="detailTestAudio">▶ 听发音</button><button type="button" class="audio-speed-toggle" data-audio-speed aria-pressed="true">慢速 0.78×</button><span>假名单字播放两遍，不显示答案</span></div>
         <p id="detailTestAudioMessage" class="audio-message" role="status"></p>
         <form id="detailForm" class="answer-form" autocomplete="off"><label for="detailInput">输入罗马字</label><div class="input-row"><input id="detailInput" inputmode="latin" autocapitalize="off" autocomplete="off" spellcheck="false" required><button type="submit" class="primary-button">确认</button></div><p class="live-preview">即时转换 <strong id="detailPreview">—</strong></p></form>
         <p id="detailFeedback" class="feedback" role="status" aria-live="polite" hidden></p>
