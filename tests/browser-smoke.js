@@ -100,6 +100,12 @@ async function main() {
     return {initiallyVisible,kanaHidden,exampleHidden,vocabHidden,savedHidden,restored,pressed:button.getAttribute('aria-pressed')};
   })()`);
   assert.deepEqual(readingToggle, {initiallyVisible:true,kanaHidden:true,exampleHidden:true,vocabHidden:true,savedHidden:true,restored:true,pressed:'true'});
+  const versionedAudio = await evaluate(`new Promise((resolve, reject) => {
+    const clip = new Audio('audio/base-a.mp3?v=20261008-2');
+    clip.onloadedmetadata = () => resolve(clip.duration > 0.2);
+    clip.onerror = () => reject(new Error('versioned local audio did not load'));
+  })`);
+  assert.equal(versionedAudio, true);
 
   const direct = await evaluate(`(() => {
     document.getElementById('heroPractice').click();
@@ -154,7 +160,7 @@ async function main() {
     HTMLMediaElement.prototype.play = originalPlay;
     return { preview: document.getElementById('detailPreview').textContent, audioVisible: !document.getElementById('detailTestAudio').hidden, answerHidden: document.getElementById('detailAnswer').hidden, focused: document.activeElement === input, input: input.value, source };
   })()`);
-  assert.deepEqual({ ...detailPrepared, source: detailPrepared.source.endsWith('/audio/base-a.mp3') }, { preview: 'あ', audioVisible: true, answerHidden: true, focused: true, input: 'a', source: true });
+  assert.deepEqual({ ...detailPrepared, source: new URL(detailPrepared.source).pathname.endsWith('/audio/base-a.mp3') }, { preview: 'あ', audioVisible: true, answerHidden: true, focused: true, input: 'a', source: true });
   await pressEnter();
   const detailAdvanced = await evaluate(`({ glyph: document.getElementById('detailGlyph').textContent, focused: document.activeElement === document.getElementById('detailInput'), saved: JSON.parse(localStorage.getItem('kana-studio-progress-v1')).records['hiragana:base:a'].attemptCount })`);
   assert.deepEqual(detailAdvanced, { glyph: 'い', focused: true, saved: 1 });
@@ -172,7 +178,7 @@ async function main() {
     HTMLMediaElement.prototype.play = originalPlay;
     return { glyph, preview: document.getElementById('practicePreview').textContent, audioVisible: !document.getElementById('questionAudio').hidden, focused: document.activeElement === input, input: input.value, source };
   })()`);
-  assert.deepEqual({ ...practicePrepared, source: practicePrepared.source.endsWith('/audio/base-a.mp3') }, { glyph: 'あ', preview: 'あ', audioVisible: true, focused: true, input: 'a', source: true });
+  assert.deepEqual({ ...practicePrepared, source: new URL(practicePrepared.source).pathname.endsWith('/audio/base-a.mp3') }, { glyph: 'あ', preview: 'あ', audioVisible: true, focused: true, input: 'a', source: true });
   await pressEnter();
   const practiceAdvanced = await evaluate(`({ counter: document.getElementById('questionCounter').textContent, feedback: document.getElementById('practiceFeedback').textContent, focused: document.activeElement === document.getElementById('practiceInput'), audioHidden: document.getElementById('questionAudio').hidden, previous: document.getElementById('previousReading').textContent, previousShown: !document.getElementById('previousAnswer').hidden })`);
   assert.equal(practiceAdvanced.counter, '第 3 题');
@@ -357,13 +363,25 @@ async function main() {
   assert.deepEqual(foundationNavigation, {hiragana:true, katakana:true, practice:true, nextTitle:'介绍自己'});
   const speedControl = await evaluate(`(() => {
     const button = document.querySelector('#courseView [data-audio-speed]');
-    button.click();
-    const normal = JSON.parse(localStorage.getItem('kana-studio-progress-v1')).audioSpeed;
+    const initial = JSON.parse(localStorage.getItem('kana-studio-progress-v1')).audioSpeed;
     button.click();
     const slow = JSON.parse(localStorage.getItem('kana-studio-progress-v1')).audioSpeed;
-    return {normal, slow};
+    button.click();
+    const normal = JSON.parse(localStorage.getItem('kana-studio-progress-v1')).audioSpeed;
+    return {initial, slow, normal};
   })()`);
-  assert.deepEqual(speedControl, {normal: 'normal', slow: 'slow'});
+  assert.deepEqual(speedControl, {initial: 'normal', slow: 'slow', normal: 'normal'});
+  const sentencePlayCount = await evaluate(`(async () => {
+    const originalPlay = HTMLMediaElement.prototype.play;
+    let count = 0; let clip;
+    HTMLMediaElement.prototype.play = function () { count += 1; clip = this; return Promise.resolve(); };
+    document.querySelector('[data-course-audio="example0"]').click();
+    clip.dispatchEvent(new Event('ended'));
+    await new Promise(resolve => setTimeout(resolve, 480));
+    HTMLMediaElement.prototype.play = originalPlay;
+    return count;
+  })()`);
+  assert.equal(sentencePlayCount, 1, 'course sentences play once at the selected speed');
   await evaluate('document.getElementById("courseView").scrollIntoView({block:"start",behavior:"instant"})');
   const courseDesktopShot = path.join(os.tmpdir(), 'kana-course-desktop-cdp.png');
   await screenshot(courseDesktopShot);
@@ -378,7 +396,7 @@ async function main() {
       if (['meaning', 'read', 'listen'].includes(question.type)) {
         if (!promptAudio) throw new Error('Missing question audio button: ' + question.id);
         promptAudio.click();
-        if (!played.endsWith('/' + question.audio)) throw new Error('Wrong prompt audio: ' + question.id);
+        if (!new URL(played).pathname.endsWith('/' + question.audio)) throw new Error('Wrong prompt audio: ' + question.id);
       } else if (promptAudio) throw new Error('Answer revealed by audio before submission: ' + question.id);
       if (question.id === '01-q1') document.getElementById('courseView').dispatchEvent(new KeyboardEvent('keydown', {key:'2', bubbles:true}));
       else if (question.type === 'meaning') document.querySelector('[data-course-choice="' + question.options.indexOf(question.answer) + '"]').click();
@@ -402,7 +420,7 @@ async function main() {
       }
       if (['particle', 'order'].includes(question.type)) {
         document.querySelector('.course-answer [data-course-audio="question"]').click();
-        if (!played.endsWith('/' + question.audio)) throw new Error('Wrong answer audio: ' + question.id);
+        if (!new URL(played).pathname.endsWith('/' + question.audio)) throw new Error('Wrong answer audio: ' + question.id);
       }
       document.querySelector('[data-course-next]').click();
     }
@@ -526,7 +544,7 @@ async function main() {
     HTMLMediaElement.prototype.play = function () { audio = this.src; return Promise.resolve(); };
     document.querySelector('[data-vocab-audio="ほん"]').click();
     HTMLMediaElement.prototype.play = originalPlay;
-    return {visible:!document.getElementById('vocabView').hidden, chapter:document.getElementById('vocabChapter').value, chapters:document.getElementById('vocabChapter').options.length, cards:document.querySelectorAll('.vocab-card').length, audio:audio.endsWith('/audio/course-02-v1.mp3')};
+    return {visible:!document.getElementById('vocabView').hidden, chapter:document.getElementById('vocabChapter').value, chapters:document.getElementById('vocabChapter').options.length, cards:document.querySelectorAll('.vocab-card').length, audio:new URL(audio).pathname.endsWith('/audio/course-02-v1.mp3')};
   })()`);
   assert.deepEqual(vocabIntro, {visible:true, chapter:'02', chapters:14, cards:17, audio:true});
   await evaluate(`document.getElementById('vocabView').scrollIntoView({block:'start',behavior:'instant'})`);
@@ -618,7 +636,10 @@ async function main() {
 
 main().catch(error => { console.error(error); process.exitCode = 1; }).finally(async () => {
   browser.kill();
-  await sleep(250);
+  await sleep(1000);
   const temp = path.resolve(os.tmpdir()) + path.sep;
-  if (path.resolve(profile).startsWith(temp)) fs.rmSync(profile, { recursive: true, force: true, maxRetries: 5, retryDelay: 100 });
+  if (path.resolve(profile).startsWith(temp)) {
+    try { fs.rmSync(profile, { recursive: true, force: true, maxRetries: 15, retryDelay: 200 }); }
+    catch (error) { if (!['EPERM', 'EBUSY'].includes(error.code)) throw error; }
+  }
 });

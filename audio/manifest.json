@@ -2,883 +2,1261 @@
   {
     "id": "hiragana:base:a",
     "kana": "あ",
-    "phonemes": "a",
     "file": "base-a.mp3",
-    "seconds": 0.44
+    "seconds": 0.491,
+    "sha256": "f09f6591c0b465215730fedc2acbbb7d52db0253db9188a8287b0087f75381f1",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "a"
   },
   {
     "id": "hiragana:base:i",
     "kana": "い",
-    "phonemes": "i",
     "file": "base-i.mp3",
-    "seconds": 0.537
+    "seconds": 0.533,
+    "sha256": "091621babf6fec46dc37a718a810438458128569a7555476ec1acdcb736c7852",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "i"
   },
   {
     "id": "hiragana:base:u",
     "kana": "う",
-    "phonemes": "ɯ",
     "file": "base-u.mp3",
-    "seconds": 0.351
+    "seconds": 0.533,
+    "sha256": "4be6728d0b08e6b47cf567d8f78bbc22829d814770dfc2242213fb1195cf8313",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɯ"
   },
   {
     "id": "hiragana:base:e",
     "kana": "え",
-    "phonemes": "e",
     "file": "base-e.mp3",
-    "seconds": 0.363
+    "seconds": 0.512,
+    "sha256": "376e467b8f5c2a017dc4fcad89a4870c4a020d0ee8ca3a124316c9bddaa69559",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "e"
   },
   {
     "id": "hiragana:base:o",
     "kana": "お",
-    "phonemes": "o",
     "file": "base-o.mp3",
-    "seconds": 0.419
+    "seconds": 0.491,
+    "sha256": "3fe0b8a23aa41909af12e8289da293695d7a34335af6ca5623d6bfc2f4095114",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "o"
   },
   {
     "id": "hiragana:base:ka",
     "kana": "か",
-    "phonemes": "ka",
     "file": "base-ka.mp3",
-    "seconds": 0.373
+    "seconds": 0.683,
+    "sha256": "a16c7b951c2981bbec81d8b6841038888795523deb5feb568e3a1f306c1afeb1",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ka"
   },
   {
     "id": "hiragana:base:ki",
     "kana": "き",
-    "phonemes": "kʲi",
     "file": "base-ki.mp3",
-    "seconds": 0.448
+    "seconds": 0.811,
+    "sha256": "c3f72b413933fd5cb3cb989c0d1728567cd2ddc8a7fc3c9f7a9899fc395d58f5",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kʲi"
   },
   {
     "id": "hiragana:base:ku",
     "kana": "く",
-    "phonemes": "kɯ",
     "file": "base-ku.mp3",
-    "seconds": 0.326
+    "seconds": 0.555,
+    "sha256": "0fc951f7d22aa469e6aa74c71d49b9f1ab23c8e16565039f87ebfee1a4d30a82",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kɯ"
   },
   {
     "id": "hiragana:base:ke",
     "kana": "け",
-    "phonemes": "ke",
     "file": "base-ke.mp3",
-    "seconds": 0.405
+    "seconds": 0.747,
+    "sha256": "d748c3b69e00ee3c21b62dd10de3040021e3590907853821858d4fb66773e5d0",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ke"
   },
   {
     "id": "hiragana:base:ko",
     "kana": "こ",
-    "phonemes": "ko",
     "file": "base-ko.mp3",
-    "seconds": 0.363
+    "seconds": 0.619,
+    "sha256": "50d3158508ac26f4094c1d0de63ba1a61e6d354720ff34bd7e91c0a96862bb68",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ko"
   },
   {
     "id": "hiragana:base:sa",
     "kana": "さ",
-    "phonemes": "sa",
     "file": "base-sa.mp3",
-    "seconds": 0.369
+    "seconds": 0.619,
+    "sha256": "055a812289135ef216f928073b02532eb08007c66b6b71b8a5b659ccbed016b5",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "sa"
   },
   {
     "id": "hiragana:base:shi",
     "kana": "し",
-    "phonemes": "ɕi",
     "file": "base-shi.mp3",
-    "seconds": 0.465
+    "seconds": 0.661,
+    "sha256": "1d79c139372176849cfcecc89da7d41c7198a0cd4b51125190ec04dc34f86b79",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɕi"
   },
   {
     "id": "hiragana:base:su",
     "kana": "す",
-    "phonemes": "sɨ",
     "file": "base-su.mp3",
-    "seconds": 0.319
+    "seconds": 0.469,
+    "sha256": "1bf55f415f0692c11b8b10f9fe284cbe7cc847e33045f11c963fc9000506558e",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "sɨ"
   },
   {
     "id": "hiragana:base:se",
     "kana": "せ",
-    "phonemes": "se",
     "file": "base-se.mp3",
-    "seconds": 0.419
+    "seconds": 0.683,
+    "sha256": "24356617d8c42535dce0a873026d5ee6c771d98ae6a449f35f9ae6a3d7c70612",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "se"
   },
   {
     "id": "hiragana:base:so",
     "kana": "そ",
-    "phonemes": "so",
     "file": "base-so.mp3",
-    "seconds": 0.419
+    "seconds": 0.533,
+    "sha256": "159fccb249aaff707075e841b3e6b327988d64c949f9848481658dabad8e236e",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "so"
   },
   {
     "id": "hiragana:base:ta",
     "kana": "た",
-    "phonemes": "ta",
     "file": "base-ta.mp3",
-    "seconds": 0.373
+    "seconds": 0.747,
+    "sha256": "dbd61092a05e8b9c1a8744db8303b88e11cbb9b8b21eb48a8db65ce4f40e88aa",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ta"
   },
   {
     "id": "hiragana:base:chi",
     "kana": "ち",
-    "phonemes": "ʨi",
     "file": "base-chi.mp3",
-    "seconds": 0.394
+    "seconds": 0.64,
+    "sha256": "0676d8c589360238ce928a10b712f10a543b515e6b73835d64fc0a23a9a6edd4",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʨi"
   },
   {
     "id": "hiragana:base:tsu",
     "kana": "つ",
-    "phonemes": "ʦɨ",
     "file": "base-tsu.mp3",
-    "seconds": 0.265
+    "seconds": 0.554,
+    "sha256": "ca945407eaaa573fb5f8dfe264feb4ec6be6a8b35d489712c2188c38c0c66339",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʦɨ"
   },
   {
     "id": "hiragana:base:te",
     "kana": "て",
-    "phonemes": "te",
     "file": "base-te.mp3",
-    "seconds": 0.448
+    "seconds": 0.747,
+    "sha256": "eb5644b095fb10c1fb18e9c9d4efdee2c5cf697ba45a353b5bd49c14d0d5c267",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "te"
   },
   {
     "id": "hiragana:base:to",
     "kana": "と",
-    "phonemes": "to",
     "file": "base-to.mp3",
-    "seconds": 0.405
+    "seconds": 0.747,
+    "sha256": "1bca638bef18ebe9c3ded0269bcdf3e030d44e3e2f0790e22ec6dd1ae00219b5",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "to"
   },
   {
     "id": "hiragana:base:na",
     "kana": "な",
-    "phonemes": "na",
     "file": "base-na.mp3",
-    "seconds": 0.398
+    "seconds": 0.747,
+    "sha256": "02105d764c0b62f5a9ce35fea53198941ec25741ac058e4ce3a05f5d6410f759",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "na"
   },
   {
     "id": "hiragana:base:ni",
     "kana": "に",
-    "phonemes": "ɲi",
     "file": "base-ni.mp3",
-    "seconds": 0.373
+    "seconds": 0.555,
+    "sha256": "2eb173b9318b63f3a5c2429a4fc196053b8a3f100c162bba9d6182b0b3bef855",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɲi"
   },
   {
     "id": "hiragana:base:nu",
     "kana": "ぬ",
-    "phonemes": "nɯ",
     "file": "base-nu.mp3",
-    "seconds": 0.423
+    "seconds": 0.704,
+    "sha256": "c3fc40d16471197b97accf05cd48a9ac2f2805d0a6b711b01044878f3347d483",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "nɯ"
   },
   {
     "id": "hiragana:base:ne",
     "kana": "ね",
-    "phonemes": "ne",
     "file": "base-ne.mp3",
-    "seconds": 0.427
+    "seconds": 0.768,
+    "sha256": "5bac729645732efd63aa5c180b8bba6069fc0e96ab2c3951d551b1f5bacba8de",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ne"
   },
   {
     "id": "hiragana:base:no",
     "kana": "の",
-    "phonemes": "no",
     "file": "base-no.mp3",
-    "seconds": 0.427
+    "seconds": 0.747,
+    "sha256": "2f0b73c71daf1fd39a8f771313558dda38248cdc71ae283603c30a85f2d36dff",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "no"
   },
   {
     "id": "hiragana:base:ha",
     "kana": "は",
-    "phonemes": "ha",
     "file": "base-ha.mp3",
-    "seconds": 0.323
+    "seconds": 0.704,
+    "sha256": "e11ad9458f7c8a3c2c893f3401bbd7b9d0ff6ea2a7d2788bb40103de37bfb919",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ha"
   },
   {
     "id": "hiragana:base:hi",
     "kana": "ひ",
-    "phonemes": "çi",
     "file": "base-hi.mp3",
-    "seconds": 0.373
+    "seconds": 0.576,
+    "sha256": "6d38db51011bfa8ff587a35a794d614cad620ec522ef2b83bbddec93901112d6",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "çi"
   },
   {
     "id": "hiragana:base:fu",
     "kana": "ふ",
-    "phonemes": "ɸɯ",
     "file": "base-fu.mp3",
-    "seconds": 0.298
+    "seconds": 0.576,
+    "sha256": "a5df15eefa6ad5158f694d41589bb59b8c030f7fa5046e2b8a97357de316a078",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɸɯ"
   },
   {
     "id": "hiragana:base:he",
     "kana": "へ",
-    "phonemes": "he",
     "file": "base-he.mp3",
-    "seconds": 0.394
+    "seconds": 0.661,
+    "sha256": "dc25b20082e66c2cb5e593740c2a99deed4dae67d178fb37a1df1cc0eb718528",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "he"
   },
   {
     "id": "hiragana:base:ho",
     "kana": "ほ",
-    "phonemes": "ho",
     "file": "base-ho.mp3",
-    "seconds": 0.394
+    "seconds": 0.576,
+    "sha256": "8f56ba1995d2df4311d16064c96e30c49e5ff61bd158243addc5d8154891564f",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ho"
   },
   {
     "id": "hiragana:base:ma",
     "kana": "ま",
-    "phonemes": "ma",
     "file": "base-ma.mp3",
-    "seconds": 0.373
+    "seconds": 0.704,
+    "sha256": "ec3c05274f7835e8fd0a967239be1ce9a193cc16540431e03874e37d6ca5a029",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ma"
   },
   {
     "id": "hiragana:base:mi",
     "kana": "み",
-    "phonemes": "mʲi",
     "file": "base-mi.mp3",
-    "seconds": 0.491
+    "seconds": 0.896,
+    "sha256": "611db19a195509b04969ad03775a64789a55de7f0ba39cd53d51f11a8e4fae47",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mʲi"
   },
   {
     "id": "hiragana:base:mu",
     "kana": "む",
-    "phonemes": "mɯ",
     "file": "base-mu.mp3",
-    "seconds": 0.398
+    "seconds": 0.747,
+    "sha256": "add9db187e1f4fc0eba2b0fc3dbf82b3c8f73ccb92ee5962f4b844964a725458",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mɯ"
   },
   {
     "id": "hiragana:base:me",
     "kana": "め",
-    "phonemes": "me",
     "file": "base-me.mp3",
-    "seconds": 0.423
+    "seconds": 0.747,
+    "sha256": "89d5fd952528a155dd818ab8b2fee02b0c595ec4f53c33595d0b5ce731a2b89e",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "me"
   },
   {
     "id": "hiragana:base:mo",
     "kana": "も",
-    "phonemes": "mo",
     "file": "base-mo.mp3",
-    "seconds": 0.448
+    "seconds": 0.747,
+    "sha256": "d921e1e4614d18f4239edfbdfbe32e2fde1ba555351ee8274be681973adbfe44",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mo"
   },
   {
     "id": "hiragana:base:ya",
     "kana": "や",
-    "phonemes": "ja",
     "file": "base-ya.mp3",
-    "seconds": 0.373
+    "seconds": 0.747,
+    "sha256": "26e86bd5093c3f635ef8ebc9f60a4a6bf830de2bad74fb96a47d15544fe13955",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ja"
   },
   {
     "id": "hiragana:base:yu",
     "kana": "ゆ",
-    "phonemes": "jɯ",
     "file": "base-yu.mp3",
-    "seconds": 0.423
+    "seconds": 0.811,
+    "sha256": "e6ca413a2d33987fe5ad38774de8f5b7059ec29e90d926df9195d117b1c94ce6",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "jɯ"
   },
   {
     "id": "hiragana:base:yo",
     "kana": "よ",
-    "phonemes": "jo",
     "file": "base-yo.mp3",
-    "seconds": 0.427
+    "seconds": 0.768,
+    "sha256": "eaeb6746002c36a0d33efcfad1bc8cefcb28e75d062582fb072542436fe97452",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "jo"
   },
   {
     "id": "hiragana:base:ra",
     "kana": "ら",
-    "phonemes": "ɾa",
     "file": "base-ra.mp3",
-    "seconds": 0.369
+    "seconds": 0.704,
+    "sha256": "444f24baa6e020dc80b499fd5fd011d1c013806d02a6bee58cb20a7841823eb6",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɾa"
   },
   {
     "id": "hiragana:base:ri",
     "kana": "り",
-    "phonemes": "ɾʲi",
     "file": "base-ri.mp3",
-    "seconds": 0.469
+    "seconds": 0.853,
+    "sha256": "c3485ae58155e2076517276e6c37908ca75f03adce3dbb7f2176e4d1bdfee4c0",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɾʲi"
   },
   {
     "id": "hiragana:base:ru",
     "kana": "る",
-    "phonemes": "ɾɯ",
     "file": "base-ru.mp3",
-    "seconds": 0.298
+    "seconds": 0.555,
+    "sha256": "06c7c49ab00a7df5e500c2c7e7b7e34fd1da9dd57e90e387e0db3ccf42f9356c",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɾɯ"
   },
   {
     "id": "hiragana:base:re",
     "kana": "れ",
-    "phonemes": "ɾe",
     "file": "base-re.mp3",
-    "seconds": 0.448
+    "seconds": 0.747,
+    "sha256": "460a0cc73ed45da41e03f9ed1f552e9cf46ea23c07b7a74ca5f1ac54c8bad4ac",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɾe"
   },
   {
     "id": "hiragana:base:ro",
     "kana": "ろ",
-    "phonemes": "ɾo",
     "file": "base-ro.mp3",
-    "seconds": 0.427
+    "seconds": 0.683,
+    "sha256": "8649d0c2b72bd4262eaf91533fc22e19fed002923bb7f058bf568cff5bfe6941",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɾo"
   },
   {
     "id": "hiragana:base:wa",
     "kana": "わ",
-    "phonemes": "βa",
     "file": "base-wa.mp3",
-    "seconds": 0.348
+    "seconds": 0.576,
+    "sha256": "58aecbba1b2a4b4a83033c3efa6b55c416d6a4d38a57db38f4e347c63be89828",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "βa"
   },
   {
     "id": "hiragana:base:wo",
     "kana": "を",
-    "phonemes": "o",
     "file": "base-wo.mp3",
-    "seconds": 0.419
+    "seconds": 0.491,
+    "sha256": "3fe0b8a23aa41909af12e8289da293695d7a34335af6ca5623d6bfc2f4095114",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "o"
   },
   {
     "id": "hiragana:base:n",
     "kana": "ん",
-    "phonemes": "ɴ",
     "file": "base-n.mp3",
-    "seconds": 0.219
+    "seconds": 0.525,
+    "sha256": "34495b3d344b7c281b7b7e6326205a3851396a65f5b4e5f9aaa5faede079232f",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɴ"
   },
   {
     "id": "hiragana:voiced:ga",
     "kana": "が",
-    "phonemes": "ɡa",
     "file": "voiced-ga.mp3",
-    "seconds": 0.394
+    "seconds": 0.619,
+    "sha256": "4a4a34a24823f9a83b3539f8e85c09bc4dff1c6589ffa7d4d54b8e1403b82838",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɡa"
   },
   {
     "id": "hiragana:voiced:gi",
     "kana": "ぎ",
-    "phonemes": "ɡʲi",
     "file": "voiced-gi.mp3",
-    "seconds": 0.469
+    "seconds": 0.875,
+    "sha256": "70759e810cff87112075edcefc9117ed91f9095c00ed1dd85fc55f0ae8dd6f53",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɡʲi"
   },
   {
     "id": "hiragana:voiced:gu",
     "kana": "ぐ",
-    "phonemes": "ɡɯ",
     "file": "voiced-gu.mp3",
-    "seconds": 0.423
+    "seconds": 0.619,
+    "sha256": "2941acb88ee0a35e85629b8ede29995e758b128d4742ac104e99131456f3e953",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɡɯ"
   },
   {
     "id": "hiragana:voiced:ge",
     "kana": "げ",
-    "phonemes": "ɡe",
     "file": "voiced-ge.mp3",
-    "seconds": 0.427
+    "seconds": 0.683,
+    "sha256": "150aad7659fef81b2fba1eab972afc47c3112743b5a85660d824d14c3f090fc1",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɡe"
   },
   {
     "id": "hiragana:voiced:go",
     "kana": "ご",
-    "phonemes": "ɡo",
     "file": "voiced-go.mp3",
-    "seconds": 0.427
+    "seconds": 0.64,
+    "sha256": "b1e302f98610a560fd870ce1cb5153b0fac3ee71daa745b4c4d0ecc130ad9109",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɡo"
   },
   {
     "id": "hiragana:voiced:za",
     "kana": "ざ",
-    "phonemes": "ʣa",
     "file": "voiced-za.mp3",
-    "seconds": 0.348
+    "seconds": 0.555,
+    "sha256": "f2cb6847f297d534701bf2317d23bab962e7945cbaa841d8d65ddaab0476f743",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʣa"
   },
   {
     "id": "hiragana:voiced:ji",
     "kana": "じ",
-    "phonemes": "ʥi",
     "file": "voiced-ji.mp3",
-    "seconds": 0.419
+    "seconds": 0.619,
+    "sha256": "b704780b011ccf24d7ebbda06e310fc03a4a998c3dcfaad1154baeaca7d4e7c1",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥi"
   },
   {
     "id": "hiragana:voiced:zu",
     "kana": "ず",
-    "phonemes": "zɨ",
     "file": "voiced-zu.mp3",
-    "seconds": 0.394
+    "seconds": 0.476,
+    "sha256": "88e57e8409fc2c12495cadc83f285183433db2b03273d3539e87c4acfea94071",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "zɨ"
   },
   {
     "id": "hiragana:voiced:ze",
     "kana": "ぜ",
-    "phonemes": "ʣe",
     "file": "voiced-ze.mp3",
-    "seconds": 0.405
+    "seconds": 0.597,
+    "sha256": "62ec1cd207e6ed2eb3c2739ba440142bebd2f60c2e113e9d16ec75968d468ec1",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʣe"
   },
   {
     "id": "hiragana:voiced:zo",
     "kana": "ぞ",
-    "phonemes": "ʣo",
     "file": "voiced-zo.mp3",
-    "seconds": 0.427
+    "seconds": 0.619,
+    "sha256": "46063a130719efd45f1b74c974d843d2fa1593f60a172dc43bb26befc42969a0",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʣo"
   },
   {
     "id": "hiragana:voiced:da",
     "kana": "だ",
-    "phonemes": "da",
     "file": "voiced-da.mp3",
-    "seconds": 0.394
+    "seconds": 0.619,
+    "sha256": "a24f651b5c06be06f7c239d04add9b4d8d0ec4db5b09f7ecf3eae4b804c8ef2b",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "da"
   },
   {
     "id": "hiragana:voiced:di",
     "kana": "ぢ",
-    "phonemes": "ʥi",
     "file": "voiced-di.mp3",
-    "seconds": 0.419
+    "seconds": 0.619,
+    "sha256": "b704780b011ccf24d7ebbda06e310fc03a4a998c3dcfaad1154baeaca7d4e7c1",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥi"
   },
   {
     "id": "hiragana:voiced:du",
     "kana": "づ",
-    "phonemes": "zɨ",
     "file": "voiced-du.mp3",
-    "seconds": 0.394
+    "seconds": 0.476,
+    "sha256": "88e57e8409fc2c12495cadc83f285183433db2b03273d3539e87c4acfea94071",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "zɨ"
   },
   {
     "id": "hiragana:voiced:de",
     "kana": "で",
-    "phonemes": "de",
     "file": "voiced-de.mp3",
-    "seconds": 0.427
+    "seconds": 0.661,
+    "sha256": "0b0e2e1420a4cb45a882aeae7e573b83d5156094e101a435ceb1b96818f93f8d",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "de"
   },
   {
     "id": "hiragana:voiced:do",
     "kana": "ど",
-    "phonemes": "do",
     "file": "voiced-do.mp3",
-    "seconds": 0.419
+    "seconds": 0.64,
+    "sha256": "89cfc2edc5f10ee2dc6471c243e75e01df9198aeda5155b3a39b73c03cd34d28",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "do"
   },
   {
     "id": "hiragana:voiced:ba",
     "kana": "ば",
-    "phonemes": "ba",
     "file": "voiced-ba.mp3",
-    "seconds": 0.344
+    "seconds": 0.597,
+    "sha256": "d2ee9933b19ec86e6043be5a9fd4358f424c11af8f6cdbd3fdc2bd8cb6d6b235",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ba"
   },
   {
     "id": "hiragana:voiced:bi",
     "kana": "び",
-    "phonemes": "bʲi",
     "file": "voiced-bi.mp3",
-    "seconds": 0.469
+    "seconds": 0.875,
+    "sha256": "7bed8b6cae70674e02375d98be42be720075152168748abbf871bd9a67bed6a7",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "bʲi"
   },
   {
     "id": "hiragana:voiced:bu",
     "kana": "ぶ",
-    "phonemes": "bɯ",
     "file": "voiced-bu.mp3",
-    "seconds": 0.444
+    "seconds": 0.704,
+    "sha256": "daf346d7a4a4f16e4b4f8dad5591fe129c85cb8d726312be91a4b09f75b51390",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "bɯ"
   },
   {
     "id": "hiragana:voiced:be",
     "kana": "べ",
-    "phonemes": "be",
     "file": "voiced-be.mp3",
-    "seconds": 0.419
+    "seconds": 0.704,
+    "sha256": "267dd644552dd3ba472fabf9e871fac5fdcf1efb0bacbe41f4697b8d73d4f8f7",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "be"
   },
   {
     "id": "hiragana:voiced:bo",
     "kana": "ぼ",
-    "phonemes": "bo",
     "file": "voiced-bo.mp3",
-    "seconds": 0.419
+    "seconds": 0.619,
+    "sha256": "352c411bdc0ca4fe83c62968705b1c370e5a796aeebf1e8e2628988618b3b0f2",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "bo"
   },
   {
     "id": "hiragana:voiced:pa",
     "kana": "ぱ",
-    "phonemes": "pa",
     "file": "voiced-pa.mp3",
-    "seconds": 0.326
+    "seconds": 0.683,
+    "sha256": "b8ec3152e7b43918449a5a449092258838e1e941a4a5782fbc7bf8bf6fec02d1",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "pa"
   },
   {
     "id": "hiragana:voiced:pi",
     "kana": "ぴ",
-    "phonemes": "pʲi",
     "file": "voiced-pi.mp3",
-    "seconds": 0.427
+    "seconds": 0.789,
+    "sha256": "a8abb952bd38a28288563d33908a00812c59f1623f6813f2325ca3c44fe28904",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "pʲi"
   },
   {
     "id": "hiragana:voiced:pu",
     "kana": "ぷ",
-    "phonemes": "pɯ",
     "file": "voiced-pu.mp3",
-    "seconds": 0.423
+    "seconds": 0.704,
+    "sha256": "14d40bff41140ccff3e82c5d42c82450c64ffd0a0bbd4d8d2c51ec70213104ef",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "pɯ"
   },
   {
     "id": "hiragana:voiced:pe",
     "kana": "ぺ",
-    "phonemes": "pe",
     "file": "voiced-pe.mp3",
-    "seconds": 0.376
+    "seconds": 0.661,
+    "sha256": "eb9c109c6fd67d3b1b59955286aa9c6d7044e251a301cd2bf5c6c243c9c171be",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "pe"
   },
   {
     "id": "hiragana:voiced:po",
     "kana": "ぽ",
-    "phonemes": "po",
     "file": "voiced-po.mp3",
-    "seconds": 0.376
+    "seconds": 0.725,
+    "sha256": "b58b828514233ef9c07cd8c9bd0ab8e8a405442e2abe2998af037fd6bdc3facf",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "po"
   },
   {
     "id": "hiragana:yoon:kya",
     "kana": "きゃ",
-    "phonemes": "kʲa",
     "file": "yoon-kya.mp3",
-    "seconds": 0.401
+    "seconds": 0.768,
+    "sha256": "eac58d8ad78033bf8917d6349ea85f1a2ddfcb393c3b4b4925f5bb1b2dfd13c9",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kʲa"
   },
   {
     "id": "hiragana:yoon:kyu",
     "kana": "きゅ",
-    "phonemes": "kʲɨ",
     "file": "yoon-kyu.mp3",
-    "seconds": 0.323
+    "seconds": 0.469,
+    "sha256": "74b3b9ddc55bd6daf93bc210f040d20b69a53686d5629bfc5dbb4a0d3df421ba",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kʲɨ"
   },
   {
     "id": "hiragana:yoon:kyo",
     "kana": "きょ",
-    "phonemes": "kʲo",
     "file": "yoon-kyo.mp3",
-    "seconds": 0.405
+    "seconds": 0.725,
+    "sha256": "c0d5ec45048fb45e2141ba896b03d2c277758c8116b36e5bab62b4e20dd1b063",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kʲo"
   },
   {
     "id": "hiragana:yoon:sha",
     "kana": "しゃ",
-    "phonemes": "ɕa",
     "file": "yoon-sha.mp3",
-    "seconds": 0.427
+    "seconds": 0.555,
+    "sha256": "bb2e97be9b15421bbd588a44a0777c7f1cf8d5ecc5a7fc1fc425ea14d9b5adf3",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɕa"
   },
   {
     "id": "hiragana:yoon:shu",
     "kana": "しゅ",
-    "phonemes": "ɕɨ",
     "file": "yoon-shu.mp3",
-    "seconds": 0.469
+    "seconds": 0.708,
+    "sha256": "845798561944f08f363d2a60df5ac5a76c18523cef9089be99d7338b0fd7a971",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɕɨ"
   },
   {
     "id": "hiragana:yoon:sho",
     "kana": "しょ",
-    "phonemes": "ɕo",
     "file": "yoon-sho.mp3",
-    "seconds": 0.427
+    "seconds": 0.683,
+    "sha256": "ca100db5ef06c6f4f05a8a98af5f3aa75fb1021ae6f5921f26d1d4f4c405e432",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɕo"
   },
   {
     "id": "hiragana:yoon:cha",
     "kana": "ちゃ",
-    "phonemes": "ʨa",
     "file": "yoon-cha.mp3",
-    "seconds": 0.348
+    "seconds": 0.683,
+    "sha256": "373ba9445416fd3fa5bdb1f2dc13c59dd02760b11d5c77cfc1bbdf202f8068c7",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʨa"
   },
   {
     "id": "hiragana:yoon:chu",
     "kana": "ちゅ",
-    "phonemes": "ʨɨ",
     "file": "yoon-chu.mp3",
-    "seconds": 0.24
+    "seconds": 0.55,
+    "sha256": "4eb9cd78c121423636bc6c821fd956f1af4a2c0667466f51d2244fe2cfbc7ced",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʨɨ"
   },
   {
     "id": "hiragana:yoon:cho",
     "kana": "ちょ",
-    "phonemes": "ʨo",
     "file": "yoon-cho.mp3",
-    "seconds": 0.427
+    "seconds": 0.555,
+    "sha256": "9b1e15d477632cef2c5599a59fa3a825aac9d08bfc07149e354fa7d094b901f7",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʨo"
   },
   {
     "id": "hiragana:yoon:nya",
     "kana": "にゃ",
-    "phonemes": "ɲa",
     "file": "yoon-nya.mp3",
-    "seconds": 0.323
+    "seconds": 0.555,
+    "sha256": "40d4eba6fa4e0588a5d71dcc4facd25574d2fa3b97bed11b7e0be95de665d1e6",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɲa"
   },
   {
     "id": "hiragana:yoon:nyu",
     "kana": "にゅ",
-    "phonemes": "ɲɨ",
     "file": "yoon-nyu.mp3",
-    "seconds": 0.24
+    "seconds": 0.575,
+    "sha256": "bc1a7abfda5ad340c2ee937eb069f365844d3d1292d60baae87c1ea1de579992",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɲɨ"
   },
   {
     "id": "hiragana:yoon:nyo",
     "kana": "にょ",
-    "phonemes": "ɲo",
     "file": "yoon-nyo.mp3",
-    "seconds": 0.384
+    "seconds": 0.576,
+    "sha256": "7f251b82fcde61867df1d89460fab8632d2baf99f0c58bb00948566d85c7c06a",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɲo"
   },
   {
     "id": "hiragana:yoon:hya",
     "kana": "ひゃ",
-    "phonemes": "ça",
     "file": "yoon-hya.mp3",
-    "seconds": 0.326
+    "seconds": 0.683,
+    "sha256": "9843b95dea00f20d2c02cbf333a4895230645eb2ec2d87d010218d1f9da67ed4",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ça"
   },
   {
     "id": "hiragana:yoon:hyu",
     "kana": "ひゅ",
-    "phonemes": "çɨ",
     "file": "yoon-hyu.mp3",
-    "seconds": 0.24
+    "seconds": 0.6,
+    "sha256": "73c21a51a3a939d1d2ea2b7b877726628aa4d939b74b206310c02dd90187a4a3",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "çɨ"
   },
   {
     "id": "hiragana:yoon:hyo",
     "kana": "ひょ",
-    "phonemes": "ço",
     "file": "yoon-hyo.mp3",
-    "seconds": 0.448
+    "seconds": 0.683,
+    "sha256": "aa22afbe4e2266af39b4212a42df9afc9f34008ea698b3f518c64875b2cf5ad4",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ço"
   },
   {
     "id": "hiragana:yoon:mya",
     "kana": "みゃ",
-    "phonemes": "mʲa",
     "file": "yoon-mya.mp3",
-    "seconds": 0.448
+    "seconds": 0.875,
+    "sha256": "7c20c5485fe5b68e85c13f1841dd7ac443776821878cdcea7ca2719c4c24d393",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mʲa"
   },
   {
     "id": "hiragana:yoon:myu",
     "kana": "みゅ",
-    "phonemes": "mʲɨ",
     "file": "yoon-myu.mp3",
-    "seconds": 0.469
+    "seconds": 0.64,
+    "sha256": "ba507600fe9f1979e43f44cc6a67d9a635f42cd81075be1dbe70246cc5a587b3",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mʲɨ"
   },
   {
     "id": "hiragana:yoon:myo",
     "kana": "みょ",
-    "phonemes": "mʲo",
     "file": "yoon-myo.mp3",
-    "seconds": 0.491
+    "seconds": 0.875,
+    "sha256": "541baad20e36feca37111a5d565b96a9216223593b4782c8c2533c89de4e18be",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mʲo"
   },
   {
     "id": "hiragana:yoon:rya",
     "kana": "りゃ",
-    "phonemes": "ɾʲa",
     "file": "yoon-rya.mp3",
-    "seconds": 0.384
+    "seconds": 0.683,
+    "sha256": "43b3593dcb3020cb87269d102d218d31cd87c816b6cf4758bc7d66538f02e394",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɾʲa"
   },
   {
     "id": "hiragana:yoon:ryu",
     "kana": "りゅ",
-    "phonemes": "ɾʲɨ",
     "file": "yoon-ryu.mp3",
-    "seconds": 0.448
+    "seconds": 0.512,
+    "sha256": "5b4296df8c529958f95d341ed081b214548ff728e58407266a69a3f87e7ff6e1",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɾʲɨ"
   },
   {
     "id": "hiragana:yoon:ryo",
     "kana": "りょ",
-    "phonemes": "ɾʲo",
     "file": "yoon-ryo.mp3",
-    "seconds": 0.448
+    "seconds": 0.768,
+    "sha256": "08340aa0684d7e821ea023d748808022f4585090429c1e190ab487e796066e0c",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɾʲo"
   },
   {
     "id": "hiragana:yoon:gya",
     "kana": "ぎゃ",
-    "phonemes": "ɡʲa",
     "file": "yoon-gya.mp3",
-    "seconds": 0.398
+    "seconds": 0.811,
+    "sha256": "e356d10a4fc3824e4075719f3ab2d58ec5f1365801c8719dba6f0e9c75dccc09",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɡʲa"
   },
   {
     "id": "hiragana:yoon:gyu",
     "kana": "ぎゅ",
-    "phonemes": "ɡʲɨ",
     "file": "yoon-gyu.mp3",
-    "seconds": 0.469
+    "seconds": 0.747,
+    "sha256": "c2bb943b80ef8ab8ee73278f486550ac71bd957add5306001ed3be1386d61208",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɡʲɨ"
   },
   {
     "id": "hiragana:yoon:gyo",
     "kana": "ぎょ",
-    "phonemes": "ɡʲo",
     "file": "yoon-gyo.mp3",
-    "seconds": 0.427
+    "seconds": 0.811,
+    "sha256": "714e00f203d31bebf6ec165abbbde2c319e9857af052875ed3ddfe25bc0040df",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɡʲo"
   },
   {
     "id": "hiragana:yoon:ja",
     "kana": "じゃ",
-    "phonemes": "ʥa",
     "file": "yoon-ja.mp3",
-    "seconds": 0.348
+    "seconds": 0.533,
+    "sha256": "72a0b6b0c12420c6b2d76a2b54f2473d1a4d07c6fbc07f53c8040efb880f172c",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥa"
   },
   {
     "id": "hiragana:yoon:ju",
     "kana": "じゅ",
-    "phonemes": "ʥɨ",
     "file": "yoon-ju.mp3",
-    "seconds": 0.24
+    "seconds": 0.55,
+    "sha256": "88b1efa43047be1369ef1ea14da22b0c558e4b8ad34092aa4dc31980bc0abf3b",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥɨ"
   },
   {
     "id": "hiragana:yoon:jo",
     "kana": "じょ",
-    "phonemes": "ʥo",
     "file": "yoon-jo.mp3",
-    "seconds": 0.49
+    "seconds": 0.597,
+    "sha256": "2a9080793bddf341d273a3fa59484564bca458c0e745f226c92df181487296e3",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥo"
   },
   {
     "id": "hiragana:yoon:dya",
     "kana": "ぢゃ",
-    "phonemes": "ʥa",
     "file": "yoon-dya.mp3",
-    "seconds": 0.348
+    "seconds": 0.533,
+    "sha256": "72a0b6b0c12420c6b2d76a2b54f2473d1a4d07c6fbc07f53c8040efb880f172c",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥa"
   },
   {
     "id": "hiragana:yoon:dyu",
     "kana": "ぢゅ",
-    "phonemes": "ʥɨ",
     "file": "yoon-dyu.mp3",
-    "seconds": 0.24
+    "seconds": 0.55,
+    "sha256": "88b1efa43047be1369ef1ea14da22b0c558e4b8ad34092aa4dc31980bc0abf3b",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥɨ"
   },
   {
     "id": "hiragana:yoon:dyo",
     "kana": "ぢょ",
-    "phonemes": "ʥo",
     "file": "yoon-dyo.mp3",
-    "seconds": 0.49
+    "seconds": 0.597,
+    "sha256": "2a9080793bddf341d273a3fa59484564bca458c0e745f226c92df181487296e3",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥo"
   },
   {
     "id": "hiragana:yoon:bya",
     "kana": "びゃ",
-    "phonemes": "bʲa",
     "file": "yoon-bya.mp3",
-    "seconds": 0.394
+    "seconds": 0.768,
+    "sha256": "72d7bd0386d513840c40280060a102ca9b049ad0bec0f02db113c0e0ec0cc2e0",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "bʲa"
   },
   {
     "id": "hiragana:yoon:byu",
     "kana": "びゅ",
-    "phonemes": "bʲɨ",
     "file": "yoon-byu.mp3",
-    "seconds": 0.427
+    "seconds": 0.619,
+    "sha256": "655175cec56ecc49cd442b1acdd84485fca9ce9ee117eaf50502aa6ef50e7663",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "bʲɨ"
   },
   {
     "id": "hiragana:yoon:byo",
     "kana": "びょ",
-    "phonemes": "bʲo",
     "file": "yoon-byo.mp3",
-    "seconds": 0.427
+    "seconds": 0.789,
+    "sha256": "84532f5c6d9b6c9bf5a79d4ce42fa2b8e0e36d16b28b312f4fe0d6a6c5e5102b",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "bʲo"
   },
   {
     "id": "hiragana:yoon:pya",
     "kana": "ぴゃ",
-    "phonemes": "pʲa",
     "file": "yoon-pya.mp3",
-    "seconds": 0.398
+    "seconds": 0.704,
+    "sha256": "ebd7346421fa9d9ecac16f6d65a8647549310c3127b94279d74c44ddd78f458a",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "pʲa"
   },
   {
     "id": "hiragana:yoon:pyu",
     "kana": "ぴゅ",
-    "phonemes": "pʲɨ",
     "file": "yoon-pyu.mp3",
-    "seconds": 0.376
+    "seconds": 0.533,
+    "sha256": "9e9902a32aff68501331668c74aec0d2afe95de7931d18ae90a02dbbad9c5237",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "pʲɨ"
   },
   {
     "id": "hiragana:yoon:pyo",
     "kana": "ぴょ",
-    "phonemes": "pʲo",
     "file": "yoon-pyo.mp3",
-    "seconds": 0.405
+    "seconds": 0.704,
+    "sha256": "1c1b5cb2e6f50e62a3e935758cd6d6515c1068f21c7e9ef9f3e2e67ab3505294",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "pʲo"
   },
   {
     "id": "hiragana:special:kippu",
     "kana": "きっぷ",
-    "phonemes": "kʲiʔpɯ",
     "file": "special-kippu.mp3",
-    "seconds": 0.661
+    "seconds": 1.8,
+    "sha256": "260027c6fd20d0ed28a1964454c6c1ef78988925c0b7ccdd8ad89b848d131175",
+    "engine": "qwen3-tts-custom-voice",
+    "voice": "Ono_Anna",
+    "synthesisText": "きっぷ"
   },
   {
     "id": "hiragana:special:gakki",
     "kana": "がっき",
-    "phonemes": "ɡaʔkʲi",
     "file": "special-gakki.mp3",
-    "seconds": 0.683
+    "seconds": 1.045,
+    "sha256": "9e9dc5b2ebfe25d7a779595613bb8179d4f656c9f1f400dad963277968021e15",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɡaʔkʲi"
   },
   {
     "id": "hiragana:special:asatte",
     "kana": "あさって",
-    "phonemes": "asaʔte",
     "file": "special-asatte.mp3",
-    "seconds": 0.853
+    "seconds": 1.216,
+    "sha256": "ba7534a366a96cbdaff69ec8c61a6d866c27f2d849a4b51f30f3664390d7aad6",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "asaʔte"
   },
   {
     "id": "hiragana:special:zasshi",
     "kana": "ざっし",
-    "phonemes": "ʣaʔɕi",
     "file": "special-zasshi.mp3",
-    "seconds": 0.576
+    "seconds": 0.48,
+    "sha256": "6e3a7b6ba6c79931592e0c409a5b00e0428832213af1b9ca1883fcafb0132b22",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "雑誌"
   },
   {
     "id": "hiragana:special:obaasan",
     "kana": "おばあさん",
-    "phonemes": "o baː saɴ",
     "file": "special-obaasan.mp3",
-    "seconds": 1.024
+    "seconds": 0.939,
+    "sha256": "4bcac1481d5f8911be48c988018c9dc5aab983cca98659d2072b6f357fcfaff3",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "o baː saɴ"
   },
   {
     "id": "hiragana:special:ojiisan",
     "kana": "おじいさん",
-    "phonemes": "oʥiːsaɴ",
     "file": "special-ojiisan.mp3",
-    "seconds": 0.939
+    "seconds": 0.96,
+    "sha256": "72e9a230cb7a20e33443ea3add1d6e06fefa726ca01eb61f0623382441fae76d",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "oʥiːsaɴ"
   },
   {
     "id": "hiragana:special:suuji",
     "kana": "すうじ",
-    "phonemes": "sɨːʥi",
     "file": "special-suuji.mp3",
-    "seconds": 0.768
+    "seconds": 1.024,
+    "sha256": "2056a0dd9f44ee6ff6f174fd3552d132ef8e5f69393e6029cf0ea7dbb1c8574b",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "sɨːʥi"
   },
   {
     "id": "hiragana:special:oneesan",
     "kana": "おねえさん",
-    "phonemes": "oneːsaɴ",
     "file": "special-oneesan.mp3",
-    "seconds": 0.896
+    "seconds": 1.259,
+    "sha256": "ec2ab61436bd40b407dc4725fbc958894a9f11a897474e4bc89678e14d013080",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "oneːsaɴ"
   },
   {
     "id": "hiragana:special:koori",
     "kana": "こおり",
-    "phonemes": "koːɾʲi",
     "file": "special-koori.mp3",
-    "seconds": 0.64
+    "seconds": 0.789,
+    "sha256": "c1871cedc7e818925d795487971da3a4908e2fe87760ef9198d55850f4f90559",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "koːɾʲi"
   },
   {
     "id": "hiragana:special:hikouki",
     "kana": "ひこうき",
-    "phonemes": "çikoːkʲi",
     "file": "special-hikouki.mp3",
-    "seconds": 0.789
+    "seconds": 1.067,
+    "sha256": "28600798181cbc5fcd6588b3a15641b47971087dba5d3c8ce1fa9f3a1cfcceeb",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "çikoːkʲi"
   },
   {
     "id": "katakana:special:koppu",
     "kana": "コップ",
-    "phonemes": "koʔpɯ",
     "file": "special-koppu.mp3",
-    "seconds": 0.64
+    "seconds": 0.853,
+    "sha256": "601704b8404ec88240b938a4406434b437a86b62503724bb1d037a1aef789650",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "koʔpɯ"
   },
   {
     "id": "katakana:special:beddo",
     "kana": "ベッド",
-    "phonemes": "beʔdo",
     "file": "special-beddo.mp3",
-    "seconds": 0.683
+    "seconds": 1.003,
+    "sha256": "ff9dac63b40272178170f8256711858830f9d9e7559c368b57618e025ab0b84b",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "beʔdo"
   },
   {
     "id": "katakana:special:torakku",
     "kana": "トラック",
-    "phonemes": "toɾaʔkɯ",
     "file": "special-torakku.mp3",
-    "seconds": 0.768
+    "seconds": 1.173,
+    "sha256": "ad5117ac05bc286ccbe197d4c6e05efb44b0c7e77932005847b9a8ee98bc7df0",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "toɾaʔkɯ"
   },
   {
     "id": "katakana:special:suicchi",
     "kana": "スイッチ",
-    "phonemes": "sɨiʔʨi",
     "file": "special-suicchi.mp3",
-    "seconds": 0.811
+    "seconds": 0.704,
+    "sha256": "b92f32a225efce8d09ce617704b2e2ba0dce172c18d377ad779d67b403701d02",
+    "engine": "kokoro-82m",
+    "voice": "jf_alpha",
+    "phonemes": "sɨiʔʨi"
   },
   {
     "id": "katakana:special:kaaten",
     "kana": "カーテン",
-    "phonemes": "kaːteɴ",
     "file": "special-kaaten.mp3",
-    "seconds": 0.704
+    "seconds": 0.64,
+    "sha256": "9f3f2233726f4fedbec4e9dcf329fa1330cd4d5d32d0aa4beff8b623df8aa696",
+    "engine": "kokoro-82m",
+    "voice": "jf_alpha",
+    "phonemes": "kaːteɴ"
   },
   {
     "id": "katakana:special:takushii",
     "kana": "タクシー",
-    "phonemes": "takɯɕiː",
     "file": "special-takushii.mp3",
-    "seconds": 0.832
+    "seconds": 1.045,
+    "sha256": "7d7fca35a02899321432453e2fc686473cf439b49186e1f64c42f263f7b36ba7",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "takɯɕiː"
   },
   {
     "id": "katakana:special:juusu",
     "kana": "ジュース",
-    "phonemes": "ʥɨːsɨ",
     "file": "special-juusu.mp3",
-    "seconds": 0.576
+    "seconds": 0.853,
+    "sha256": "be7fdbef7a72aee314bcc69bcd1efc06d9778b641d8ea2c7e9954c16d9fd5cb3",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥɨːsɨ"
   },
   {
     "id": "katakana:special:keeki",
     "kana": "ケーキ",
-    "phonemes": "keːkʲi",
     "file": "special-keeki.mp3",
-    "seconds": 0.64
+    "seconds": 0.64,
+    "sha256": "244b11a9ee210616a295a8ccada01841a9464062949344219cfcadddbb4d1af8",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ケーキ"
   },
   {
     "id": "katakana:special:nooto",
     "kana": "ノート",
-    "phonemes": "noːto",
     "file": "special-nooto.mp3",
-    "seconds": 0.619
+    "seconds": 1.067,
+    "sha256": "3fc225a1988f972d04d6f0533cdcb91cf0a0f73f2beea095cc04955873a10e9d",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "noːto"
   }
 ]

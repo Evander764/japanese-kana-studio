@@ -2,64 +2,91 @@
   {
     "id": "mixed:special:phrase-pan-taberu",
     "kana": "パンをたべる",
-    "phonemes": "paɴ o tabeɾɯ",
     "file": "special-phrase-pan-taberu.mp3",
-    "seconds": 1.131
+    "seconds": 1.04,
+    "sha256": "54377b83772fca309e74319be2be2907a80236ea28f9ac3119a5315fc4f7131e",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "パンをたべる"
   },
   {
     "id": "mixed:special:phrase-coohii-nomu",
     "kana": "コーヒーをのむ",
-    "phonemes": "koːçiː o nomɯ",
     "file": "special-phrase-coohii-nomu.mp3",
-    "seconds": 1.173
+    "seconds": 1.12,
+    "sha256": "4a33f5fc8ee96ddf54bbe82ff887c2a52046da08443b6d2ef60061392b3dd4d0",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "コーヒーをのむ"
   },
   {
     "id": "mixed:special:phrase-basu-iku",
     "kana": "バスでいく",
-    "phonemes": "basɨ de ikɯ",
     "file": "special-phrase-basu-iku.mp3",
-    "seconds": 1.067
+    "seconds": 1.04,
+    "sha256": "fd9082816ef3c40559108b9b7a24941cfb2e53acee57d2d8731107c9828a7379",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "バスでいく"
   },
   {
     "id": "mixed:special:phrase-hoteru-tomaru",
     "kana": "ホテルにとまる",
-    "phonemes": "hoteɾɯ ɲi tomaɾɯ",
     "file": "special-phrase-hoteru-tomaru.mp3",
-    "seconds": 1.301
+    "seconds": 1.28,
+    "sha256": "a55e0c3b4e61810a1e76c39b1679d175c53b5ceafd23dc9b81e7611579e0f57f",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ホテルにとまる"
   },
   {
     "id": "mixed:special:phrase-suupaa-kau",
     "kana": "スーパーでかう",
-    "phonemes": "sɨːpaː de kaɯ",
     "file": "special-phrase-suupaa-kau.mp3",
-    "seconds": 1.216
+    "seconds": 1.92,
+    "sha256": "71d8cedd2228f127f9f69daeb67ad9ea30de94009f545373e7c41f851972dbb7",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "スーパーでかう"
   },
   {
     "id": "mixed:special:phrase-terebi-miru",
     "kana": "テレビをみる",
-    "phonemes": "teɾebʲi o mʲiɾɯ",
     "file": "special-phrase-terebi-miru.mp3",
-    "seconds": 1.173
+    "seconds": 0.8,
+    "sha256": "cf96cafb71b5c04adf1ec0a2193b9e5973169368c4dcd8918af64619fb37e600",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "テレビをみる"
   },
   {
     "id": "mixed:special:phrase-takushii-noru",
     "kana": "タクシーにのる",
-    "phonemes": "takɯɕiː ɲi noɾɯ",
     "file": "special-phrase-takushii-noru.mp3",
-    "seconds": 1.216
+    "seconds": 1.04,
+    "sha256": "5e1c85ebba0eb3e87b36633dfbe9ca79376c4aae37ad0faebdbcb1e96da20dc9",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "タクシーにのる"
   },
   {
     "id": "mixed:special:phrase-meeru-okuru",
     "kana": "メールをおくる",
-    "phonemes": "meːɾɯ o okɯɾɯ",
     "file": "special-phrase-meeru-okuru.mp3",
-    "seconds": 1.195
+    "seconds": 0.8,
+    "sha256": "c312fe8c47b18eda20cf638444671ec85d8fae903979c0998d32d34e55793bb0",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "メールをおくる"
   },
   {
     "id": "mixed:special:phrase-sumaho-shashin",
     "kana": "スマホでしゃしんをとる",
-    "phonemes": "sɨmaho de ɕaɕiɴ o toɾɯ",
     "file": "special-phrase-sumaho-shashin.mp3",
-    "seconds": 1.664
+    "seconds": 1.36,
+    "sha256": "ec967fa1e5a8be372695b4e13529d4cb1c250f887e65cf3c103aaac66af61390",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "スマホで写真を撮る。"
   }
 ]

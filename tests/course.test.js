@@ -34,7 +34,8 @@ test('all fourteen beginner lessons have expanded content and matching offline a
       assert.ok(fs.statSync(path.join(__dirname, '..', file)).size > 1000, file);
       const recording = recordings.get(path.basename(file));
       assert.equal(recording?.kana, item.spoken || item.kana, file + ' must match its spoken text');
-      assert.ok(recording.seconds > 0.2 && recording.phonemes.length > 0, file);
+      assert.ok(recording.seconds > 0.2 && recording.voice, file);
+      assert.ok(recording.engine === 'kokoro-82m' ? recording.phonemes?.length : recording.synthesisText, file);
       usedAudio.push(path.basename(file));
     }
   }

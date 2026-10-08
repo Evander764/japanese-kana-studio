@@ -2,6 +2,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const crypto = require('node:crypto');
 const data = require('../kana-data.js');
 
 test('every kana and word has a packaged local MP3', () => {
@@ -24,4 +25,17 @@ test('the synthesis manifest covers the 126 unique readings', () => {
   assert.equal(manifest.find(entry => entry.kana === 'へ').phonemes, 'he');
   assert.equal(manifest.find(entry => entry.kana === 'にゅ').phonemes, 'ɲɨ');
   assert.ok(manifest.every(entry => entry.seconds > 0.2));
+});
+
+test('every rebuilt audio file matches its recorded content hash and engine', () => {
+  const names = ['manifest.json', 'phrase-manifest.json', 'course-manifest.json'];
+  const entries = names.flatMap(name => JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'audio', name), 'utf8')));
+  assert.equal(entries.length, 527);
+  assert.equal(new Set(entries.map(entry => entry.file)).size, 527);
+  for (const entry of entries) {
+    assert.ok(['kokoro-82m', 'qwen3-tts-voice-design', 'qwen3-tts-custom-voice'].includes(entry.engine), entry.file);
+    assert.ok(entry.seconds > 0.2, entry.file);
+    const file = fs.readFileSync(path.join(__dirname, '..', 'audio', entry.file));
+    assert.equal(crypto.createHash('sha256').update(file).digest('hex'), entry.sha256, entry.file);
+  }
 });

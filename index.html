@@ -88,7 +88,7 @@
             <div class="question-top"><span class="question-label" id="questionKind">清音 · 平假名</span><span class="question-counter" id="questionCounter">第 1 题</span></div>
             <div class="question-glyph" id="questionGlyph">あ</div>
             <p class="question-instruction">这个假名怎么读？输入罗马字，按 Enter 提交。</p>
-            <div class="question-audio-row"><button type="button" class="outline-button" id="questionAudio">▶ 听当前发音</button><button type="button" class="audio-speed-toggle" data-audio-speed aria-pressed="true">慢速 0.78×</button><span>假名单字播放两遍，不显示答案</span></div>
+            <div class="question-audio-row"><button type="button" class="outline-button" id="questionAudio">▶ 听当前发音</button><button type="button" class="audio-speed-toggle" data-audio-speed aria-pressed="false">正常 1×</button><span>假名单字播放两遍，不显示答案</span></div>
             <p class="audio-message" id="questionAudioMessage" role="status"></p>
             <form id="practiceForm" class="answer-form" autocomplete="off"><label for="practiceInput">你的答案</label><div class="input-row"><input id="practiceInput" inputmode="latin" autocapitalize="off" autocomplete="off" spellcheck="false" placeholder="例如：a" required><button type="submit" class="primary-button">提交答案</button></div><p class="live-preview">即时转换 <strong id="practicePreview">—</strong></p></form>
             <p class="keyboard-hint">答对自动进入下一题；答错查看答案后，再按 Enter 继续。Alt+P 可重听上一题。</p>
@@ -115,7 +115,7 @@
         <div class="converter-layout"><div class="converter-input"><div class="converter-head"><label for="convertInput">罗马字输入</label><div class="mini-switch" role="group" aria-label="转换目标"><button type="button" data-convert-script="hiragana">平假名</button><button type="button" data-convert-script="katakana">片假名</button></div></div><textarea id="convertInput" rows="6" autocapitalize="off" spellcheck="false" placeholder="试试输入：konnichiha / juusu"></textarea></div><div class="converter-output"><span>转换结果</span><div id="convertOutput" aria-live="polite">ここに表示</div><p id="convertCandidates"></p><small>长音和同音异形可能有不同写法；练习题以题目所示字形判定。</small></div></div>
       </section>
       <section class="view" id="vocabView" aria-labelledby="vocabTitle" hidden>
-        <div class="section-heading"><div><p class="section-kicker">VOCABULARY / 每课单词</p><h2 id="vocabTitle">一章一页，把新词练熟。</h2><p>第 01—14 课的词卡都在这里。看字词、听发音、练读音与词义；熟悉的词可标记“已经学会”，以后练习会跳过它。</p></div></div>
+        <div class="section-heading"><div><p class="section-kicker">VOCABULARY / 每课单词</p><h2 id="vocabTitle">一章一页，把新词练熟。</h2><p>第 01—14 课的词卡都在这里。看字词、听发音、练读音与词义；熟悉的词可标记“已经学会”，以后练习会跳过它。</p></div><div class="course-speed"><span>单词发音速度</span><button type="button" class="audio-speed-toggle" data-audio-speed aria-pressed="false">正常 1×</button></div></div>
         <div class="vocab-toolbar"><label for="vocabChapter">选择章节 <select id="vocabChapter"></select></label><p id="vocabSummary"></p></div>
         <div id="vocabGrid" class="vocab-grid"></div>
         <p id="vocabAudioMessage" class="audio-message" role="status"></p>
@@ -123,7 +123,7 @@
         <div id="vocabPractice" class="vocab-practice" hidden></div>
       </section>
       <section class="view" id="courseView" aria-labelledby="courseTitle">
-        <div class="section-heading"><div><p class="section-kicker">COURSE / 从零开始</p><h2 id="courseTitle">从第 00 课起，按顺序学日语。</h2><p>第 00 课认识五十音；第 01—14 课各有词汇、三句例句和八道练习题。课程不锁关，可以按自己的进度选择。</p></div><div class="course-speed"><span>课程发音速度</span><button type="button" class="audio-speed-toggle" data-audio-speed aria-pressed="true">慢速 0.78×</button></div></div>
+        <div class="section-heading"><div><p class="section-kicker">COURSE / 从零开始</p><h2 id="courseTitle">从第 00 课起，按顺序学日语。</h2><p>第 00 课认识五十音；第 01—14 课各有词汇、三句例句和八道练习题。课程不锁关，可以按自己的进度选择。</p></div><div class="course-speed"><span>课程发音速度</span><button type="button" class="audio-speed-toggle" data-audio-speed aria-pressed="false">正常 1×</button></div></div>
         <div class="course-overview" id="courseOverview"></div>
         <div class="course-layout"><nav id="courseList" class="course-list" aria-label="基础课程列表"></nav><div id="coursePanel" class="course-panel"></div></div>
         <section class="course-roadmap" aria-labelledby="roadmapTitle"><p class="section-kicker">NEXT / 后续路线</p><h3 id="roadmapTitle">学完这些，再继续向前</h3><div id="courseRoadmap"></div></section>
@@ -143,12 +143,12 @@
         <p class="reading-label" data-romaji>读作</p><p id="detailRomaji" class="detail-romaji" data-romaji>a</p>
         <p id="detailMeaning" class="detail-meaning" hidden></p><p id="detailRhythm" class="detail-rhythm" hidden></p>
         <p id="detailAliases" class="detail-aliases" data-romaji></p><p id="detailNote" class="detail-note"></p>
-        <div class="detail-learn-audio"><button type="button" class="outline-button" id="detailAudio">▶ 听发音</button><button type="button" class="audio-speed-toggle" data-audio-speed aria-pressed="true">慢速 0.78×</button></div>
+        <div class="detail-learn-audio"><button type="button" class="outline-button" id="detailAudio">▶ 听发音</button><button type="button" class="audio-speed-toggle" data-audio-speed aria-pressed="false">正常 1×</button></div>
         <p id="detailAudioMessage" class="audio-message" role="status"></p>
       </div>
       <div id="detailTest" hidden>
         <p class="detail-test-note">遮住读音后按 Enter 自测；答对自动跳到下一个，答错可按 Enter 重试。</p>
-        <div class="detail-test-audio"><button type="button" class="outline-button" id="detailTestAudio">▶ 听发音</button><button type="button" class="audio-speed-toggle" data-audio-speed aria-pressed="true">慢速 0.78×</button><span>假名单字播放两遍，不显示答案</span></div>
+        <div class="detail-test-audio"><button type="button" class="outline-button" id="detailTestAudio">▶ 听发音</button><button type="button" class="audio-speed-toggle" data-audio-speed aria-pressed="false">正常 1×</button><span>假名单字播放两遍，不显示答案</span></div>
         <p id="detailTestAudioMessage" class="audio-message" role="status"></p>
         <form id="detailForm" class="answer-form" autocomplete="off"><label for="detailInput">输入罗马字</label><div class="input-row"><input id="detailInput" inputmode="latin" autocapitalize="off" autocomplete="off" spellcheck="false" required><button type="submit" class="primary-button">确认</button></div><p class="live-preview">即时转换 <strong id="detailPreview">—</strong></p></form>
         <p id="detailFeedback" class="feedback" role="status" aria-live="polite" hidden></p>

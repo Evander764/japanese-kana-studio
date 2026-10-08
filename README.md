@@ -36,9 +36,9 @@
 
 进度存于浏览器的 `localStorage`。换浏览器、清理网站数据或某些浏览器改变本地文件权限后，记录可能不再可见，建议定期导出 JSON 备份。导入会覆盖当前记录。所有进度都只留在本机。
 
-所有假名、28 个单语或混合短语都附有本地 MP3，直接打开网页也能离线朗读，不依赖系统日语语音。平假名和对应的片假名共用一段读音，共 126 段假名音频和 9 段组合短语音频；十四节课程另有 392 段例句、词卡和练习题发音。音频做过响度归一化；默认以 0.78 倍慢速播放，假名和拗音会自动读两遍，词例读一遍。朗读区的速度按钮可切换正常语速或慢速，偏好会保存在本机。短语卡片另有中文释义、助词和动词结构、节拍提示；练习答错或查看答案后会显示这些提示，答对自动跳题时仍可回听上一题。
+所有假名、28 个单语或混合短语都附有本地 MP3，直接打开网页也能离线朗读，不依赖系统日语语音。平假名和对应的片假名共用一段读音，共 126 段假名音频和 9 段组合短语音频；十四节课程另有 392 段例句、词卡和练习题发音。网页点击“听发音／听整句”时读取对应的本地 MP3，正常 1× 是文件原速；需要跟读时可切换慢速 0.78×，浏览器会尽量保持音高。选择会保存在本机。假名单字和拗音会自动读两遍，词汇、短语和整句只读一遍。短语卡片另有中文释义、助词和动词结构、节拍提示；练习答错或查看答案后会显示这些提示，答对自动跳题时仍可回听上一题。
 
-音频由 [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) 的日语合成语音生成，未包含模型文件；`audio/manifest.json`、`audio/phrase-manifest.json` 和 `audio/course-manifest.json` 记录假名、短语及课程音频的输入、音素和时长。这些是辅助认读的合成读音，不能代替母语者示范的音调和自然语流。`tools/normalize_audio.py` 可用 FFmpeg 将音频统一到合适响度；`tools/generate_audio.py` 和 `tools/generate_course_audio.py` 也会在生成时应用相同的响度处理。若音频文件丢失，网页会明确报错。
+音频由本地 [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) 和 [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) 重新合成：前者处理假名与大多数词卡，后者处理较长的短语和句子；少数短词使用识别结果更清楚的另一套音色。模型文件不在仓库内。`audio/manifest.json`、`audio/phrase-manifest.json` 和 `audio/course-manifest.json` 记录每段音频的文本、模型、时长和 SHA-256；Kokoro 片段还记录音素。合成读音供认读和跟读使用，不能代替母语者对音调与自然语流的示范。若音频文件丢失，网页会明确报错。
 
 ## 开发验证
 
@@ -52,6 +52,4 @@ node tests/browser-smoke.js
 第二条命令使用本机 Chrome 的无界面模式，检查桌面与手机断点、首次自测、练习和转换流程。若 Chrome 不在默认路径，可用 `CHROME_PATH` 环境变量指定其可执行文件。
 发布后可设置 `PAGE_URL=https://evander764.github.io/japanese-starter/`，用同一条命令对公开站点做回归检查。
 
-`tools/generate_audio.py` 是可选的音频制作脚本，需要另行准备 Kokoro 日语 ONNX 模型、`jf_alpha.bin`、`kokoro-onnx-ja` 与 `ffmpeg`。普通学习和播放音频无需运行此脚本。仅重生成混合短语时使用 `--only-mixed-examples`，清单会写入单独的 `audio/phrase-manifest.json`。
-
-只补充音频时，可给 `tools/generate_course_audio.py` 加上 `--missing-only`，保留内容匹配的现有音频；只重做指定课程可使用 `--lessons 09 10 11 12 13 14`。
+普通学习和播放音频无需安装模型。批量重做时，`tools/generate_kokoro_refresh.py` 与 `tools/generate_qwen_audio.py` 先写入仓库外的暂存目录并逐段保存检查点；`tools/audit_qwen_sentences.py` 用独立的本地日语识别模型筛出可疑片段；审核后由 `tools/publish_audio_rebuild.py` 校验 527 个文件和哈希，再复制到 `audio/` 并更新清单。Kokoro 工具需要日语 ONNX 模型、音色文件和 `ffmpeg`；Qwen 工具需要本地 VoiceDesign 模型及 `qwen-tts`，单独补录的短词还使用本地 CustomVoice 模型。旧版 `tools/generate_audio.py` 与 `tools/generate_course_audio.py` 保留作单独补录工具。

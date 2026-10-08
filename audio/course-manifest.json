@@ -2,2353 +2,3529 @@
   {
     "file": "course-01-example.mp3",
     "kana": "わたしは がくせいです。",
-    "phonemes": "βataɕi βa ɡakɯ seː desɨ.",
-    "seconds": 1.621
+    "seconds": 2.0,
+    "sha256": "8a63eeccf4fa816f09fe017c3baea31316868f99a7534d6501a0a6d95b21d894",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "わたしは がくせいです。"
   },
   {
     "file": "course-01-example-2.mp3",
     "kana": "わたしは だいがくせいです。",
-    "phonemes": "βataɕi βa daiɡakɯseː desɨ.",
-    "seconds": 1.771
+    "seconds": 2.32,
+    "sha256": "dd778d2229e87a76d78a2f341bed98833a715f2b2d3c854d93f93899fac8f40d",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "わたしは だいがくせいです。"
   },
   {
     "file": "course-01-example-3.mp3",
     "kana": "ともだちは エンジニアです。",
-    "phonemes": "tomodaʨi βa eɲʥiɲia desɨ.",
-    "seconds": 1.792
+    "seconds": 2.48,
+    "sha256": "9ff3f51e0195bb3ff9398392028bdfd822944840674b1254ef46be2672d3a005",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ともだちは エンジニアです。"
   },
   {
     "file": "course-01-v1.mp3",
     "kana": "わたし",
-    "phonemes": "βataɕi",
-    "seconds": 0.704
+    "seconds": 1.109,
+    "sha256": "0fb09d8082cff7436a3371f87daeed82256d50e11396133d807980882c707f10",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "βataɕi"
   },
   {
     "file": "course-01-v2.mp3",
     "kana": "がくせい",
-    "phonemes": "ɡakɯ seː",
-    "seconds": 0.768
+    "seconds": 1.216,
+    "sha256": "2c8d417b210b326c61602ca50de0702694cf50741ac548c2b8678fc42e795b16",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɡakɯ seː"
   },
   {
     "file": "course-01-v3.mp3",
     "kana": "せんせい",
-    "phonemes": "seɴseː",
-    "seconds": 0.747
+    "seconds": 1.088,
+    "sha256": "9beffc88fc400b398a333e83e184455834b978cd53208db9d214826f3834a948",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "seɴseː"
   },
   {
     "file": "course-01-v4.mp3",
     "kana": "かいしゃいん",
-    "phonemes": "kai ɕa iɴ",
-    "seconds": 0.96
+    "seconds": 1.259,
+    "sha256": "a73163b253bdb9d86cc3b6121962ffdb019ca5ba3f4d0bd79d708c52ba2d91f0",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kai ɕa iɴ"
   },
   {
     "file": "course-01-v5.mp3",
     "kana": "あなた",
-    "phonemes": "anata",
-    "seconds": 0.725
+    "seconds": 1.109,
+    "sha256": "83072ad1b12a5caf9522465f308a4e2f8c389400b765276d944995591100e999",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "anata"
   },
   {
     "file": "course-01-v6.mp3",
     "kana": "ともだち",
-    "phonemes": "tomodaʨi",
-    "seconds": 0.981
+    "seconds": 1.067,
+    "sha256": "57fa0d40f1f1b7dcccec5926d9d3fb3ad997518ba56bb9c8058026cafbb56631",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "tomodaʨi"
   },
   {
     "file": "course-01-v7.mp3",
     "kana": "なまえ",
-    "phonemes": "namae",
-    "seconds": 0.576
+    "seconds": 0.917,
+    "sha256": "9ed5a5428a0f388639a4eeddd55350c8fb6941445841bfb834f9f7e761ae4364",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "namae"
   },
   {
     "file": "course-01-v8.mp3",
     "kana": "にほん",
-    "phonemes": "ɲihoɴ",
-    "seconds": 0.704
+    "seconds": 0.853,
+    "sha256": "54080fecd2aabec7f2b382d35376b059052c935166d48b77e8330ecd97b23883",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɲihoɴ"
   },
   {
     "file": "course-01-v9.mp3",
     "kana": "ちゅうごく",
-    "phonemes": "ʨɨːɡokɯ",
-    "seconds": 0.768
+    "seconds": 1.045,
+    "sha256": "a2f3733bdb1213fd88201829827186dadcba9fada6516a0516bda7a315ebba91",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʨɨːɡokɯ"
   },
   {
     "file": "course-01-v10.mp3",
     "kana": "にほんじん",
-    "phonemes": "ɲihoɲʥiɴ",
-    "seconds": 0.917
+    "seconds": 0.896,
+    "sha256": "199b9b1f9c749f327b8f5ea719bf0d2aae67673c3a1f7feb4a7c8f1b2f03e343",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɲihoɲʥiɴ"
   },
   {
     "file": "course-01-v11.mp3",
     "kana": "ちゅうごくじん",
-    "phonemes": "ʨɨːɡokɯʥiɴ",
-    "seconds": 1.131
+    "seconds": 1.195,
+    "sha256": "ad9d7e1e9c3ae9b391c87326dc1ca0491a455cc77cba5ce09191d2d9c072b5f2",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʨɨːɡokɯʥiɴ"
   },
   {
     "file": "course-01-v12.mp3",
     "kana": "だいがくせい",
-    "phonemes": "daiɡakɯseː",
-    "seconds": 1.131
+    "seconds": 1.429,
+    "sha256": "698e9b0863b153bca9957cfb53478bedd2eba7323c36a036c78d887f523ef0a0",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "daiɡakɯseː"
   },
   {
     "file": "course-01-v13.mp3",
     "kana": "いしゃ",
-    "phonemes": "iɕa",
-    "seconds": 0.555
+    "seconds": 0.981,
+    "sha256": "fcd1cac758ce1167e54e26720651991b3cbe75e7384475f91e681b110fd746af",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "iɕa"
   },
   {
     "file": "course-01-v14.mp3",
     "kana": "かんごし",
-    "phonemes": "kaŋɡo ɕi",
-    "seconds": 0.832
+    "seconds": 0.896,
+    "sha256": "589d3dd524a7cac935e68376731d194d6c67a9c3beb32094f6472eaa25736068",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kaŋɡo ɕi"
   },
   {
     "file": "course-01-v15.mp3",
     "kana": "エンジニア",
-    "phonemes": "eɲʥiɲia",
-    "seconds": 1.024
+    "seconds": 1.088,
+    "sha256": "de7091ac799036e17b81cae4d347029ff174f6359b2ce0269e23a163cfefa33c",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "eɲʥiɲia"
   },
   {
     "file": "course-01-v16.mp3",
     "kana": "ひと",
-    "phonemes": "çito",
-    "seconds": 0.555
+    "seconds": 0.939,
+    "sha256": "f3c9374a463a7ab35e4d537c608f7c1391fdbe02eda12a26bf36c35bcc44a415",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "çito"
   },
   {
     "file": "course-01-q1.mp3",
     "kana": "わたしは せんせいじゃありません。",
-    "phonemes": "βataɕi βa seɴseː ʥa aɾʲimaseɴ.",
-    "seconds": 2.027
+    "seconds": 3.12,
+    "sha256": "b40d7e4cc69ff194d74f4cb81237e6beb3da172f4b98bab06b8e9104d16cf8a1",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "わたしは せんせいじゃありません。"
   },
   {
     "file": "course-01-q2.mp3",
     "kana": "わたしはかいしゃいんです。",
-    "phonemes": "βataɕi βakai ɕa iɴ desɨ.",
-    "seconds": 1.643
+    "seconds": 4.24,
+    "sha256": "7192d58ede9194646213c01d5b6f1f3379aaf271b153030b915eafb8bbad067b",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "わたしはかいしゃいんです。"
   },
   {
     "file": "course-01-q3.mp3",
     "kana": "わたしは がくせいです。",
-    "phonemes": "βataɕi βa ɡakɯ seː desɨ.",
-    "seconds": 1.621
+    "seconds": 2.0,
+    "sha256": "8a63eeccf4fa816f09fe017c3baea31316868f99a7534d6501a0a6d95b21d894",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "わたしは がくせいです。"
   },
   {
     "file": "course-01-q4.mp3",
     "kana": "がくせい",
-    "phonemes": "ɡakɯ seː",
-    "seconds": 0.768
+    "seconds": 1.216,
+    "sha256": "2c8d417b210b326c61602ca50de0702694cf50741ac548c2b8678fc42e795b16",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɡakɯ seː"
   },
   {
     "file": "course-01-listen.mp3",
     "kana": "わたしは かいしゃいんです。",
-    "phonemes": "βataɕi βakai ɕa iɴ desɨ.",
-    "seconds": 1.643
+    "seconds": 2.32,
+    "sha256": "e352aad816ed5e1fd8e96647e76eaa9fcae9aebc187aef891c5aed927f630e28",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "わたしは かいしゃいんです。"
   },
   {
     "file": "course-01-q6.mp3",
     "kana": "わたしは だいがくせいです。",
-    "phonemes": "βataɕi βa daiɡakɯseː desɨ.",
-    "seconds": 1.771
+    "seconds": 2.32,
+    "sha256": "dd778d2229e87a76d78a2f341bed98833a715f2b2d3c854d93f93899fac8f40d",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "わたしは だいがくせいです。"
   },
   {
     "file": "course-01-q7.mp3",
     "kana": "ともだちは エンジニアです。",
-    "phonemes": "tomodaʨi βa eɲʥiɲia desɨ.",
-    "seconds": 1.792
+    "seconds": 2.48,
+    "sha256": "9ff3f51e0195bb3ff9398392028bdfd822944840674b1254ef46be2672d3a005",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ともだちは エンジニアです。"
   },
   {
     "file": "course-01-q8.mp3",
     "kana": "なまえ",
-    "phonemes": "namae",
-    "seconds": 0.576
+    "seconds": 0.917,
+    "sha256": "9ed5a5428a0f388639a4eeddd55350c8fb6941445841bfb834f9f7e761ae4364",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "namae"
   },
   {
     "file": "course-02-example.mp3",
     "kana": "これは わたしの ほんです。",
-    "phonemes": "koɾe βa βataɕi no hoɴ desɨ.",
-    "seconds": 1.664
+    "seconds": 2.16,
+    "sha256": "183a274cfd271802a2dd47094549009dfdbb2e2a9a480b053378ef768939fd78",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "これは わたしの ほんです。"
   },
   {
     "file": "course-02-example-2.mp3",
     "kana": "それは だれの かぎですか。",
-    "phonemes": "soɾe βa daɾe no kaɡʲi desɨ ka.",
-    "seconds": 1.92
+    "seconds": 1.84,
+    "sha256": "f258799f1081423a0557f4237a23f6ad784eb794670cfa8f97d9dc55f0d17bd2",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "それは だれの かぎですか。"
   },
   {
     "file": "course-02-example-3.mp3",
     "kana": "この ペンは わたしのです。",
-    "phonemes": "kono peɴ βa βataɕi no desɨ.",
-    "seconds": 1.728
+    "seconds": 2.16,
+    "sha256": "8d79bb1b0daa8ab0a8a9711f9ca467239d82193e397b2ce19c8a10b320478931",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この ペンは わたしのです。"
   },
   {
     "file": "course-02-v1.mp3",
     "kana": "ほん",
-    "phonemes": "hoɴ",
-    "seconds": 0.491
+    "seconds": 0.64,
+    "sha256": "7f606ace772ca0f4de4eef7ddfd235a589aee9042b6bb10afa353e78b1d43538",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "hoɴ"
   },
   {
     "file": "course-02-v2.mp3",
     "kana": "かさ",
-    "phonemes": "kasa",
-    "seconds": 0.533
+    "seconds": 0.491,
+    "sha256": "e589247e413ebe21be8d5fc8f1e47b9818d6b20302b318203ec21e743b24394a",
+    "engine": "kokoro-82m",
+    "voice": "jf_alpha",
+    "phonemes": "kasa"
   },
   {
     "file": "course-02-v3.mp3",
     "kana": "かばん",
-    "phonemes": "kabaɴ",
-    "seconds": 0.576
+    "seconds": 0.875,
+    "sha256": "548361892f41404cc6219ede12589dba063c64c8d7ad61c8de4ba28954794433",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kabaɴ"
   },
   {
     "file": "course-02-v4.mp3",
     "kana": "ノート",
-    "phonemes": "noːto",
-    "seconds": 0.619
+    "seconds": 1.067,
+    "sha256": "3fc225a1988f972d04d6f0533cdcb91cf0a0f73f2beea095cc04955873a10e9d",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "noːto"
   },
   {
     "file": "course-02-v5.mp3",
     "kana": "これ",
-    "phonemes": "koɾe",
-    "seconds": 0.512
+    "seconds": 0.832,
+    "sha256": "fc7b00ebea62d98ffe88660e2ed6e25ddc6b93f7096d665fa1b33065f614bd79",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "koɾe"
   },
   {
     "file": "course-02-v6.mp3",
     "kana": "それ",
-    "phonemes": "soɾe",
-    "seconds": 0.533
+    "seconds": 1.024,
+    "sha256": "1ab1674710c7199264b781d5bb3ae020ed6998b788596c4c1229ff9d7a419240",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "soɾe"
   },
   {
     "file": "course-02-v7.mp3",
     "kana": "あれ",
-    "phonemes": "aɾe",
-    "seconds": 0.597
+    "seconds": 0.853,
+    "sha256": "e4824ca2bd76adaeeb1f7143bcaa5a8e6e9820f1777a387814cbef9f04fbaa4f",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "aɾe"
   },
   {
     "file": "course-02-v8.mp3",
     "kana": "この",
-    "phonemes": "kono",
-    "seconds": 0.533
+    "seconds": 0.853,
+    "sha256": "41b6a1a6ff47146380b4d774ae24121566c954265a86ec9e751eeedf97b3df16",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kono"
   },
   {
     "file": "course-02-v9.mp3",
     "kana": "その",
-    "phonemes": "sono",
-    "seconds": 0.555
+    "seconds": 0.917,
+    "sha256": "ef14debfa6bfd374a85044db02b6ecd3a8cf1c56e6bf395414c2de9d47e28775",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "sono"
   },
   {
     "file": "course-02-v10.mp3",
     "kana": "あの",
-    "phonemes": "ano",
-    "seconds": 0.597
+    "seconds": 0.939,
+    "sha256": "b99f83d23023656e60d8d036a622e9b6a3cee7a2cbb713cdc3afc7a3f3a8bb1e",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ano"
   },
   {
     "file": "course-02-v11.mp3",
     "kana": "だれ",
-    "phonemes": "daɾe",
-    "seconds": 0.512
+    "seconds": 0.896,
+    "sha256": "1aaa8712a987185c120aa6b252689d0f4ca04471321d1ed201c09def8f8d2232",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "daɾe"
   },
   {
     "file": "course-02-v12.mp3",
     "kana": "じしょ",
-    "phonemes": "ʥi ɕo",
-    "seconds": 0.555
+    "seconds": 1.067,
+    "sha256": "1a8a00e554a6ba699de183db0c37d6df374ea71f7437d1aad9baa2558a811976",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥi ɕo"
   },
   {
     "file": "course-02-v13.mp3",
     "kana": "えんぴつ",
-    "phonemes": "empʲiʦɨ",
-    "seconds": 0.853
+    "seconds": 1.024,
+    "sha256": "3215b6e9ef8f32c8a5f0cd112ea0da3abed52c34958ec4c03782b0fbf886340d",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "empʲiʦɨ"
   },
   {
     "file": "course-02-v14.mp3",
     "kana": "ペン",
-    "phonemes": "peɴ",
-    "seconds": 0.533
+    "seconds": 0.768,
+    "sha256": "77ee7521a3a343fec854859301008b12584ff8c794fa5630cc7363d33fbccba2",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "peɴ"
   },
   {
     "file": "course-02-v15.mp3",
     "kana": "けしゴム",
-    "phonemes": "keɕiɡomɯ",
-    "seconds": 1.024
+    "seconds": 1.067,
+    "sha256": "ce36ddf9b389e8088a73e2f5bc3edf40cb227f53ff6b34c308b96cc764e740cf",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "keɕiɡomɯ"
   },
   {
     "file": "course-02-v16.mp3",
     "kana": "くつ",
-    "phonemes": "kɯʦɨ",
-    "seconds": 0.64
+    "seconds": 0.789,
+    "sha256": "f8550de5d8c4730ba62dc80c5af7025475362dc7d7a311cc7e9fcd4e91a821f0",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kɯʦɨ"
   },
   {
     "file": "course-02-v17.mp3",
     "kana": "かぎ",
-    "phonemes": "kaɡʲi",
-    "seconds": 0.619
+    "seconds": 0.875,
+    "sha256": "10dd6af2b843db38233eee1afe58a460bffa14ecbc567533557939e7a536e99b",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kaɡʲi"
   },
   {
     "file": "course-02-q1.mp3",
     "kana": "それは かさです。",
-    "phonemes": "soɾe βa kasa desɨ.",
-    "seconds": 1.387
+    "seconds": 1.12,
+    "sha256": "2ad43ab9fc6e568f3e0c40204c36c141272b7c77598f05b5bcd93aacecb3cd57",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "それは かさです。"
   },
   {
     "file": "course-02-q2.mp3",
     "kana": "これは わたしのほんです。",
-    "phonemes": "koɾe βa βataɕi no hoɴ desɨ.",
-    "seconds": 1.664
+    "seconds": 2.0,
+    "sha256": "58c74edd69d9082ab192b90d391f3f81db3bc0a6fd9c0c5c3712a6b16909772b",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "これは わたしのほんです。"
   },
   {
     "file": "course-02-q3.mp3",
     "kana": "あれは わたしの かばんです。",
-    "phonemes": "aɾe βa βataɕi no kabaɴ desɨ.",
-    "seconds": 1.835
+    "seconds": 2.4,
+    "sha256": "1dd1125b30a39e668b1ac9edb2a55f994c2ee55bbd6394e8b0887ce234c73cce",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あれは わたしの かばんです。"
   },
   {
     "file": "course-02-q4.mp3",
     "kana": "かばん",
-    "phonemes": "kabaɴ",
-    "seconds": 0.576
+    "seconds": 0.875,
+    "sha256": "548361892f41404cc6219ede12589dba063c64c8d7ad61c8de4ba28954794433",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kabaɴ"
   },
   {
     "file": "course-02-listen.mp3",
     "kana": "これは ノートです。",
-    "phonemes": "koɾe βa noːto desɨ.",
-    "seconds": 1.408
+    "seconds": 3.04,
+    "sha256": "94cac88849f8a93b3834b8ee7ccd898c8a8c3aa263db12327d1c6ba7845bbb49",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "これはノートです。"
   },
   {
     "file": "course-02-q6.mp3",
     "kana": "それは だれの かぎですか。",
-    "phonemes": "soɾe βa daɾe no kaɡʲi desɨ ka.",
-    "seconds": 1.92
+    "seconds": 1.84,
+    "sha256": "f258799f1081423a0557f4237a23f6ad784eb794670cfa8f97d9dc55f0d17bd2",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "それは だれの かぎですか。"
   },
   {
     "file": "course-02-q7.mp3",
     "kana": "この ペンは わたしのです。",
-    "phonemes": "kono peɴ βa βataɕi no desɨ.",
-    "seconds": 1.728
+    "seconds": 2.16,
+    "sha256": "8d79bb1b0daa8ab0a8a9711f9ca467239d82193e397b2ce19c8a10b320478931",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この ペンは わたしのです。"
   },
   {
     "file": "course-02-q8.mp3",
     "kana": "かぎ",
-    "phonemes": "kaɡʲi",
-    "seconds": 0.619
+    "seconds": 0.875,
+    "sha256": "10dd6af2b843db38233eee1afe58a460bffa14ecbc567533557939e7a536e99b",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kaɡʲi"
   },
   {
     "file": "course-03-example.mp3",
     "kana": "えきは あそこです。",
-    "phonemes": "ekʲi βa asoko desɨ.",
-    "seconds": 1.387
+    "seconds": 1.92,
+    "sha256": "a29e9f573aca40b9cf9fd10587fa26d57664bdcef0dc030722d1839bc59171d7",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "えきは あそこです。"
   },
   {
     "file": "course-03-example-2.mp3",
     "kana": "ぎんこうは どこですか。",
-    "phonemes": "ɡʲiŋkoː βa doko desɨ ka.",
-    "seconds": 1.664
+    "seconds": 2.48,
+    "sha256": "ae094eef73b5bdd1eae792ca7c513338a6b0b5580a88912677beb9512b8ec1ab",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ぎんこうは どこですか。"
   },
   {
     "file": "course-03-example-3.mp3",
     "kana": "スーパーは あそこです。",
-    "phonemes": "sɨːpaː βa asoko desɨ.",
-    "seconds": 1.6
+    "seconds": 2.88,
+    "sha256": "ccf59b89131e21170588ed2456d5d59fe43fc8a984b599bf1d36839df3655f96",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "スーパーは あそこです。"
   },
   {
     "file": "course-03-v1.mp3",
     "kana": "えき",
-    "phonemes": "ekʲi",
-    "seconds": 0.704
+    "seconds": 0.96,
+    "sha256": "65d6748b0c8d322fd9c100fe242705a2e2ce68a534eed387e7e83ddc4b1aa3b0",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ekʲi"
   },
   {
     "file": "course-03-v2.mp3",
     "kana": "トイレ",
-    "phonemes": "toiɾe",
-    "seconds": 0.64
+    "seconds": 0.96,
+    "sha256": "eb4bdcd20bf57fc97a19a8dd737f7a8c5a582ab1dc2b596db5760f540161dae5",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "toiɾe"
   },
   {
     "file": "course-03-v3.mp3",
     "kana": "としょかん",
-    "phonemes": "toɕokaɴ",
-    "seconds": 0.725
+    "seconds": 1.28,
+    "sha256": "318aa00abe0f9aa4177d64737be7b5553477138eda5cff90212aaf81548a187b",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "toɕokaɴ"
   },
   {
     "file": "course-03-v4.mp3",
     "kana": "どこ",
-    "phonemes": "doko",
-    "seconds": 0.555
+    "seconds": 0.896,
+    "sha256": "92729f4f9a0c083ddb247b2e8f4ad8cb149697738eed514422921b6d8b1f6bbd",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "doko"
   },
   {
     "file": "course-03-v5.mp3",
     "kana": "ここ",
-    "phonemes": "koko",
-    "seconds": 0.491
+    "seconds": 0.96,
+    "sha256": "0374020ac9e42420f54c807542cb5aa7efe92f021a037d1a0b50c72c604e7eae",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "koko"
   },
   {
     "file": "course-03-v6.mp3",
     "kana": "そこ",
-    "phonemes": "soko",
-    "seconds": 0.576
+    "seconds": 0.917,
+    "sha256": "2b7cf049b616e3bc322b28651f079485fd2107ee876f4d4495f9e039089ceb84",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "soko"
   },
   {
     "file": "course-03-v7.mp3",
     "kana": "あそこ",
-    "phonemes": "asoko",
-    "seconds": 0.768
+    "seconds": 1.067,
+    "sha256": "2dd4c4d9f2efb16293d21b82125ee99bcaca449307394115e33b79406146586e",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "asoko"
   },
   {
     "file": "course-03-v8.mp3",
     "kana": "こちら",
-    "phonemes": "koʨiɾa",
-    "seconds": 0.683
+    "seconds": 0.981,
+    "sha256": "df36876c599faed6bc77453ad4db2ffeb667c17b3076b1276fe166f5533d1bc1",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "koʨiɾa"
   },
   {
     "file": "course-03-v9.mp3",
     "kana": "みぎ",
-    "phonemes": "mʲiɡʲi",
-    "seconds": 0.64
+    "seconds": 0.939,
+    "sha256": "22f9f45197cc592103d0f566df98634b64601f184081c473fb1bf211d8611f47",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mʲiɡʲi"
   },
   {
     "file": "course-03-v10.mp3",
     "kana": "ひだり",
-    "phonemes": "çidaɾʲi",
-    "seconds": 0.683
+    "seconds": 0.981,
+    "sha256": "a2bf758cc0833498bfc83b48a2deb4ed68ff1aa1db08f6a3357c3744c2893fc2",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "çidaɾʲi"
   },
   {
     "file": "course-03-v11.mp3",
     "kana": "まえ",
-    "phonemes": "mae",
-    "seconds": 0.469
+    "seconds": 0.811,
+    "sha256": "ffdb2827fd75a06459875f84a48a07fbec93381d42e49abb3db728b6d319e93e",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mae"
   },
   {
     "file": "course-03-v12.mp3",
     "kana": "うしろ",
-    "phonemes": "ɯɕiɾo",
-    "seconds": 0.747
+    "seconds": 0.96,
+    "sha256": "94ba1e1519422f4f00503ddb6c97e42a53d598e642d0b0a9ec1395c802aa6df1",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɯɕiɾo"
   },
   {
     "file": "course-03-v13.mp3",
     "kana": "となり",
-    "phonemes": "tonaɾʲi",
-    "seconds": 0.661
+    "seconds": 0.981,
+    "sha256": "ee1968d8f089121b849536bd6822d221e5a400fa663c0b0895fd99ccfad63d1c",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "tonaɾʲi"
   },
   {
     "file": "course-03-v14.mp3",
     "kana": "がっこう",
-    "phonemes": "ɡaʔkoː",
-    "seconds": 0.725
+    "seconds": 1.045,
+    "sha256": "605c8d33af7ffa4733793585b0e95872b012ea244d66c552dfa88221414250f0",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɡaʔkoː"
   },
   {
     "file": "course-03-v15.mp3",
     "kana": "びょういん",
-    "phonemes": "bʲoːiɴ",
-    "seconds": 0.683
+    "seconds": 0.96,
+    "sha256": "0dcb55de4a9021bd05ffc647e529f8f086cf5dca330fe7666c9f3db2a5f5282c",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "bʲoːiɴ"
   },
   {
     "file": "course-03-v16.mp3",
     "kana": "ぎんこう",
-    "phonemes": "ɡʲiŋkoː",
-    "seconds": 0.789
+    "seconds": 1.109,
+    "sha256": "db92a3ac1778f0c19510d33902c047e08d0d5faa3eb56c75c3107b302cfa0d67",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɡʲiŋkoː"
   },
   {
     "file": "course-03-v17.mp3",
     "kana": "スーパー",
-    "phonemes": "sɨːpaː",
-    "seconds": 0.683
+    "seconds": 1.152,
+    "sha256": "7e6bf37466f539e9f6510552e648b9b8c770243e813af6846a258135be61bed6",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "sɨːpaː"
   },
   {
     "file": "course-03-q1.mp3",
     "kana": "としょかんは ここです。",
-    "phonemes": "toɕokaɴ βa koko desɨ.",
-    "seconds": 1.536
+    "seconds": 1.6,
+    "sha256": "83e7fb81d874ae0e9ac3f609dc6eeb5f017e6ea0b2dcf23e55844e7c08484555",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "としょかんは ここです。"
   },
   {
     "file": "course-03-q2.mp3",
     "kana": "えきはどこですか。",
-    "phonemes": "ekʲi βa doko desɨ ka.",
-    "seconds": 1.451
+    "seconds": 1.44,
+    "sha256": "7d0f635b8a7aae4a9991a9e69754ebd7842d7ae4f187794e89c40040b7e1c762",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "えきはどこですか。"
   },
   {
     "file": "course-03-q3.mp3",
     "kana": "トイレは あそこです。",
-    "phonemes": "toiɾe βa asoko desɨ.",
-    "seconds": 1.451
+    "seconds": 1.28,
+    "sha256": "c9a376b88775b8ef7af7df1d2454241ada6fe536fbe8bc792a8dbf53bdd21a62",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "トイレは あそこです。"
   },
   {
     "file": "course-03-q4.mp3",
     "kana": "としょかん",
-    "phonemes": "toɕokaɴ",
-    "seconds": 0.725
+    "seconds": 1.28,
+    "sha256": "318aa00abe0f9aa4177d64737be7b5553477138eda5cff90212aaf81548a187b",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "toɕokaɴ"
   },
   {
     "file": "course-03-listen.mp3",
     "kana": "トイレは そこです。",
-    "phonemes": "toiɾe βa soko desɨ.",
-    "seconds": 1.408
+    "seconds": 1.12,
+    "sha256": "24bdd9681b6fc6146e61274dbcbc50f4d4bdfc9778ed26d1e29e3774161e170e",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "トイレは そこです。"
   },
   {
     "file": "course-03-q6.mp3",
     "kana": "ぎんこうは どこですか。",
-    "phonemes": "ɡʲiŋkoː βa doko desɨ ka.",
-    "seconds": 1.664
+    "seconds": 2.48,
+    "sha256": "ae094eef73b5bdd1eae792ca7c513338a6b0b5580a88912677beb9512b8ec1ab",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ぎんこうは どこですか。"
   },
   {
     "file": "course-03-q7.mp3",
     "kana": "スーパーは あそこです。",
-    "phonemes": "sɨːpaː βa asoko desɨ.",
-    "seconds": 1.6
+    "seconds": 2.88,
+    "sha256": "ccf59b89131e21170588ed2456d5d59fe43fc8a984b599bf1d36839df3655f96",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "スーパーは あそこです。"
   },
   {
     "file": "course-03-q8.mp3",
     "kana": "みぎ",
-    "phonemes": "mʲiɡʲi",
-    "seconds": 0.64
+    "seconds": 0.939,
+    "sha256": "22f9f45197cc592103d0f566df98634b64601f184081c473fb1bf211d8611f47",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mʲiɡʲi"
   },
   {
     "file": "course-04-example.mp3",
     "kana": "じゅぎょうは くじからです。",
-    "phonemes": "ʥɨɡʲoː βa kɯʥi kaɾa desɨ.",
-    "seconds": 1.621
+    "seconds": 2.155,
+    "sha256": "927a3f5c47cacd05b2852a1c88925fa6700c35e9128c7c2b3cdb230d3c082634",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥɨɡʲoː βa kɯʥi kaɾa desɨ."
   },
   {
     "file": "course-04-example-2.mp3",
     "kana": "いまは はちじはんです。",
-    "phonemes": "imaβa haʨi ʥi βa ɴ desɨ.",
-    "seconds": 1.557
+    "seconds": 1.52,
+    "sha256": "fb1b5229dd7909796a7cadfec74c3dde630948fcbe1c0f307a34e2899fa53795",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "今は 八時半です。"
   },
   {
     "file": "course-04-example-3.mp3",
     "kana": "じゅぎょうは よじまでです。",
-    "phonemes": "ʥɨɡʲoː βajo ʥi made desɨ.",
-    "seconds": 1.579
+    "seconds": 1.68,
+    "sha256": "a7de29de71e322375b7165c40a2126e81042a92166075a18478f4bb4b0d1863d",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "じゅぎょうは よじまでです。"
   },
   {
     "file": "course-04-v1.mp3",
     "kana": "いま",
-    "phonemes": "ima",
-    "seconds": 0.533
+    "seconds": 0.939,
+    "sha256": "67dcf631bb4f47ee41bce1489974170ef914a092b362c6c1810850468f59bf2b",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ima"
   },
   {
     "file": "course-04-v2.mp3",
     "kana": "なんじ",
-    "phonemes": "naɴ ʥi",
-    "seconds": 0.704
+    "seconds": 0.917,
+    "sha256": "831c01a20a19bb19ce65756f40bbd18dd667fb82b1dce3dc381c4a5083fbc96d",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "naɴ ʥi"
   },
   {
     "file": "course-04-v3.mp3",
     "kana": "くじ",
-    "phonemes": "kɯʥi",
-    "seconds": 0.597
+    "seconds": 0.853,
+    "sha256": "71522779828faf65b922248e8cf61f970e63eeb0cef69e83f4ad6e0ec5699bbc",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kɯʥi"
   },
   {
     "file": "course-04-v4.mp3",
     "kana": "じゅうじ",
-    "phonemes": "ʥɨː ʥi",
-    "seconds": 0.768
+    "seconds": 0.939,
+    "sha256": "7f8e5f838392cbd5bddce33c400d8e907293f4644d2bc7d3d25033bb2fabda73",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥɨː ʥi"
   },
   {
     "file": "course-04-v5.mp3",
     "kana": "じゅぎょう",
-    "phonemes": "ʥɨɡʲoː",
-    "seconds": 0.725
+    "seconds": 0.981,
+    "sha256": "59fbe6b188d57630af451a977c3a0b4058fd5540a7fc96ab8c19f6508e42e55f",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥɨɡʲoː"
   },
   {
     "file": "course-04-v6.mp3",
     "kana": "いちじ",
-    "phonemes": "iʨi ʥi",
-    "seconds": 0.853
+    "seconds": 0.768,
+    "sha256": "0fc16923ab614aaebdf1cef561cf586759584a63274b6321be98c32fdead5480",
+    "engine": "kokoro-82m",
+    "voice": "jf_alpha",
+    "phonemes": "iʨi ʥi"
   },
   {
     "file": "course-04-v7.mp3",
     "kana": "にじ",
-    "phonemes": "ɲiʥi",
-    "seconds": 0.597
+    "seconds": 0.96,
+    "sha256": "656a2dbafd9b9bee7c6097dd3d1ba360fed4fea36fe2be3ea56c2c2111726b98",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "二時"
   },
   {
     "file": "course-04-v8.mp3",
     "kana": "さんじ",
-    "phonemes": "saɲʥi",
-    "seconds": 0.811
+    "seconds": 0.832,
+    "sha256": "00a8a8f79ba2b1eef48ec69d2b38fec456d8c268b5ee6ad9ecf48abcc0d67a07",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "saɲʥi"
   },
   {
     "file": "course-04-v9.mp3",
     "kana": "よじ",
-    "phonemes": "joʥi",
-    "seconds": 0.725
+    "seconds": 0.939,
+    "sha256": "1091a2a696cb59cefce3b99d03a8837d3a7b84cc692b78d5b3bcbb2f403e1bc0",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "joʥi"
   },
   {
     "file": "course-04-v10.mp3",
     "kana": "ごじ",
-    "phonemes": "ɡo ʥi",
-    "seconds": 0.64
+    "seconds": 0.789,
+    "sha256": "5202fd6e3831c89a75f79349d6833fed34787f51bbfa10bba1274960d2128862",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɡo ʥi"
   },
   {
     "file": "course-04-v11.mp3",
     "kana": "ろくじ",
-    "phonemes": "ɾokɯ ʥi",
-    "seconds": 0.832
+    "seconds": 0.853,
+    "sha256": "87a7dce53ce098b84402e488cfd8970379ea1ada9288547a0b2e9c01acd10c10",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɾokɯ ʥi"
   },
   {
     "file": "course-04-v12.mp3",
     "kana": "しちじ",
-    "phonemes": "ɕiʨi ʥi",
-    "seconds": 0.832
+    "seconds": 0.768,
+    "sha256": "0d63a26a6ebe642afd335cc904b2f8aa25b78aef8da0e4879203c862e4c246a4",
+    "engine": "kokoro-82m",
+    "voice": "jf_alpha",
+    "phonemes": "ɕiʨi ʥi"
   },
   {
     "file": "course-04-v13.mp3",
     "kana": "はちじ",
-    "phonemes": "haʨi ʥi",
-    "seconds": 0.875
+    "seconds": 1.088,
+    "sha256": "37b6b477a7dc18ffa25b9f0591a49ba1a67e89bb3870a5965811705a97a7173c",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "haʨi ʥi"
   },
   {
     "file": "course-04-v14.mp3",
     "kana": "なんぷん",
-    "phonemes": "naɴ pɯɴ",
-    "seconds": 0.704
+    "seconds": 1.024,
+    "sha256": "5dc1e71b2dee305e9bc027487c4e7362ad1f5bedd89054f2104cd0b899eb26dc",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "naɴ pɯɴ"
   },
   {
     "file": "course-04-v15.mp3",
     "kana": "はん",
-    "phonemes": "haɴ",
-    "seconds": 0.512
+    "seconds": 0.469,
+    "sha256": "c33b757d01024337b5c2a7f5ada76369d9895912bfbf8802ee57b39af45042b4",
+    "engine": "kokoro-82m",
+    "voice": "jf_alpha",
+    "phonemes": "haɴ"
   },
   {
     "file": "course-04-v16.mp3",
     "kana": "あさ",
-    "phonemes": "asa",
-    "seconds": 0.576
+    "seconds": 0.533,
+    "sha256": "6098dfe8a95df8e811952064a5b2f31f9e6eadaa803dd5df9499d79e746d30d4",
+    "engine": "kokoro-82m",
+    "voice": "jf_alpha",
+    "phonemes": "asa"
   },
   {
     "file": "course-04-v17.mp3",
     "kana": "よる",
-    "phonemes": "joɾɯ",
-    "seconds": 0.576
+    "seconds": 0.896,
+    "sha256": "fdeef695c3e59946f067bf19d412cf381b133ca2e29dbd0a095ff31179420dc6",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "joɾɯ"
   },
   {
     "file": "course-04-q1.mp3",
     "kana": "いま じゅうじです。",
-    "phonemes": "ima ʥɨː ʥi desɨ.",
-    "seconds": 1.28
+    "seconds": 0.88,
+    "sha256": "55a738efee058180336af7de930047f30da8aa7e3975915785c28b820af8a2fe",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "いま じゅうじです。"
   },
   {
     "file": "course-04-q2.mp3",
     "kana": "じゅぎょうは くじからです。",
-    "phonemes": "ʥɨɡʲoː βa kɯʥi kaɾa desɨ.",
-    "seconds": 1.621
+    "seconds": 2.155,
+    "sha256": "927a3f5c47cacd05b2852a1c88925fa6700c35e9128c7c2b3cdb230d3c082634",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥɨɡʲoː βa kɯʥi kaɾa desɨ."
   },
   {
     "file": "course-04-q3.mp3",
     "kana": "じゅぎょうは じゅうじまでです。",
-    "phonemes": "ʥɨɡʲoː βa ʥɨː ʥi made desɨ.",
-    "seconds": 1.707
+    "seconds": 2.64,
+    "sha256": "c012b8f68928b645d13d67732d047f26ab62a4236f6d16546e38324d45b29d56",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "じゅぎょうは じゅうじまでです。"
   },
   {
     "file": "course-04-q4.mp3",
     "kana": "なんじ",
-    "phonemes": "naɴ ʥi",
-    "seconds": 0.704
+    "seconds": 0.917,
+    "sha256": "831c01a20a19bb19ce65756f40bbd18dd667fb82b1dce3dc381c4a5083fbc96d",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "naɴ ʥi"
   },
   {
     "file": "course-04-listen.mp3",
     "kana": "じゅぎょうは くじからです。",
-    "phonemes": "ʥɨɡʲoː βa kɯʥi kaɾa desɨ.",
-    "seconds": 1.621
+    "seconds": 2.155,
+    "sha256": "927a3f5c47cacd05b2852a1c88925fa6700c35e9128c7c2b3cdb230d3c082634",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥɨɡʲoː βa kɯʥi kaɾa desɨ."
   },
   {
     "file": "course-04-q6.mp3",
     "kana": "いまは はちじはんです。",
-    "phonemes": "imaβa haʨi ʥi βa ɴ desɨ.",
-    "seconds": 1.557
+    "seconds": 1.52,
+    "sha256": "fb1b5229dd7909796a7cadfec74c3dde630948fcbe1c0f307a34e2899fa53795",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "今は 八時半です。"
   },
   {
     "file": "course-04-q7.mp3",
     "kana": "じゅぎょうは よじまでです。",
-    "phonemes": "ʥɨɡʲoː βajo ʥi made desɨ.",
-    "seconds": 1.579
+    "seconds": 1.68,
+    "sha256": "a7de29de71e322375b7165c40a2126e81042a92166075a18478f4bb4b0d1863d",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "じゅぎょうは よじまでです。"
   },
   {
     "file": "course-04-q8.mp3",
     "kana": "よじ",
-    "phonemes": "joʥi",
-    "seconds": 0.725
+    "seconds": 0.939,
+    "sha256": "1091a2a696cb59cefce3b99d03a8837d3a7b84cc692b78d5b3bcbb2f403e1bc0",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "joʥi"
   },
   {
     "file": "course-05-example.mp3",
     "kana": "おちゃを のみます。",
-    "phonemes": "oʨa o nomʲimasɨ.",
-    "seconds": 1.28
+    "seconds": 1.44,
+    "sha256": "b34dc70be76ed6b10a1fc44f87c3d02cf076a57f3f6d84cdf440121c7212ccee",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "お茶を飲みます。"
   },
   {
     "file": "course-05-example-2.mp3",
     "kana": "あさは パンを たべます。",
-    "phonemes": "asa βa paɴ o tabemasɨ.",
-    "seconds": 1.557
+    "seconds": 2.4,
+    "sha256": "fec73c62679b1f3ca5d70a33967e0003b6d61b01a6f38bdf06c400d283fe3804",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あさは パンを たべます。"
   },
   {
     "file": "course-05-example-3.mp3",
     "kana": "しんぶんを よみません。",
-    "phonemes": "ɕimbɯɴ o jomʲi maseɴ.",
-    "seconds": 1.557
+    "seconds": 1.36,
+    "sha256": "840907996aba54c9962751d28350c814b33e336602c9a31d5c009c5be31c8b27",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "しんぶんを よみません。"
   },
   {
     "file": "course-05-v1.mp3",
     "kana": "おちゃ",
-    "phonemes": "oʨa",
-    "seconds": 0.64
+    "seconds": 0.896,
+    "sha256": "e0e282b64b3fe0756d8a8c84bb0ea7e2926618791c57258a90d15a057d33ba7d",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "oʨa"
   },
   {
     "file": "course-05-v2.mp3",
     "kana": "みず",
-    "phonemes": "mʲizɨ",
-    "seconds": 0.597
+    "seconds": 0.917,
+    "sha256": "e3b68d658d57004a24e504d0df6dd51f2b094636a7ea0b196c8bc9022d59b7b8",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mʲizɨ"
   },
   {
     "file": "course-05-v3.mp3",
     "kana": "ほん",
-    "phonemes": "hoɴ",
-    "seconds": 0.491
+    "seconds": 0.64,
+    "sha256": "7f606ace772ca0f4de4eef7ddfd235a589aee9042b6bb10afa353e78b1d43538",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "hoɴ"
   },
   {
     "file": "course-05-v4.mp3",
     "kana": "のみます",
-    "phonemes": "nomʲimasɨ",
-    "seconds": 0.853
+    "seconds": 1.173,
+    "sha256": "67aabdf5234517a7e7a65a0ca8a12366ad665e0f62714a473548ed22b7272b97",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "nomʲimasɨ"
   },
   {
     "file": "course-05-v5.mp3",
     "kana": "よみます",
-    "phonemes": "jomʲimasɨ",
-    "seconds": 0.939
+    "seconds": 0.96,
+    "sha256": "6a46182cd9e853eb567d24f055ef64e1d89a2e72fa19dca4faf88893ed345c61",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "jomʲimasɨ"
   },
   {
     "file": "course-05-v6.mp3",
     "kana": "たべます",
-    "phonemes": "tabemasɨ",
-    "seconds": 0.811
+    "seconds": 1.131,
+    "sha256": "c40e5509ea563d1d05d9b258de4ce0f188ea14e86166b7635de4e3ae29cf3821",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "tabemasɨ"
   },
   {
     "file": "course-05-v7.mp3",
     "kana": "かいます",
-    "phonemes": "kaimasɨ",
-    "seconds": 0.768
+    "seconds": 1.024,
+    "sha256": "2a374c63f3908ac0f84ebd2843b977982b24273ecdaf2e90a4df97e1889d092c",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kaimasɨ"
   },
   {
     "file": "course-05-v8.mp3",
     "kana": "みます",
-    "phonemes": "mʲimasɨ",
-    "seconds": 0.64
+    "seconds": 0.96,
+    "sha256": "b1f2f210ab7bd171af437d60aa5eb18d918af9465c523e2aa2d149a6c9528db8",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mʲimasɨ"
   },
   {
     "file": "course-05-v9.mp3",
     "kana": "ききます",
-    "phonemes": "kʲikʲimasɨ",
-    "seconds": 0.832
+    "seconds": 1.216,
+    "sha256": "cd7284c5da7f12be53adb0c74d98ef1517e9f8db65a5e6c14c3171e145e63cb2",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kʲikʲimasɨ"
   },
   {
     "file": "course-05-v10.mp3",
     "kana": "かきます",
-    "phonemes": "kakʲimasɨ",
-    "seconds": 0.96
+    "seconds": 1.195,
+    "sha256": "9b6f3954f89fd3254dd4681695b62682a9c1e3b586a22a19a1912bac93cce2da",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kakʲimasɨ"
   },
   {
     "file": "course-05-v11.mp3",
     "kana": "します",
-    "phonemes": "ɕi masɨ",
-    "seconds": 0.619
+    "seconds": 0.96,
+    "sha256": "5e48cb69820aaae26285b71330f3e95b204dc976a6a8e52c1192070d237c2e84",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɕi masɨ"
   },
   {
     "file": "course-05-v12.mp3",
     "kana": "コーヒー",
-    "phonemes": "koːçiː",
-    "seconds": 0.789
+    "seconds": 0.811,
+    "sha256": "07bbe53ca626de30a2d2c7b0cde8f263691080719da62538ad688b88739311e3",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "koːçiː"
   },
   {
     "file": "course-05-v13.mp3",
     "kana": "ごはん",
-    "phonemes": "ɡohaɴ",
-    "seconds": 0.597
+    "seconds": 0.789,
+    "sha256": "e3bf1e3f25cf9f9af59cdd5d3a5f41f4fbc015c0c4a52471801bc81291098e6b",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɡohaɴ"
   },
   {
     "file": "course-05-v14.mp3",
     "kana": "パン",
-    "phonemes": "paɴ",
-    "seconds": 0.533
+    "seconds": 0.789,
+    "sha256": "4e91c6ba8dd2eab3f0c141a77d4caf5aef3a40829a08f0e92215fc608d2e2735",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "paɴ"
   },
   {
     "file": "course-05-v15.mp3",
     "kana": "りんご",
-    "phonemes": "ɾʲiŋɡo",
-    "seconds": 0.661
+    "seconds": 1.024,
+    "sha256": "cc9f332ea2b92f86dfbe5929f736f4b4c261819f2e19f31e7be42e2707022ac6",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɾʲiŋɡo"
   },
   {
     "file": "course-05-v16.mp3",
     "kana": "しんぶん",
-    "phonemes": "ɕimbɯɴ",
-    "seconds": 0.725
+    "seconds": 0.96,
+    "sha256": "448edec1c82446cee34cbb1b52caae6188c479dab08ab23538a671c5a44e6a39",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɕimbɯɴ"
   },
   {
     "file": "course-05-v17.mp3",
     "kana": "てがみ",
-    "phonemes": "teɡamʲi",
-    "seconds": 0.747
+    "seconds": 1.003,
+    "sha256": "977457589d3d8dba131893a395010580dc9b57b4daaeb623dae32edc863ee8af",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "teɡamʲi"
   },
   {
     "file": "course-05-q1.mp3",
     "kana": "みずを のみません。",
-    "phonemes": "mʲizɨ o nomʲi maseɴ.",
-    "seconds": 1.408
+    "seconds": 1.44,
+    "sha256": "b477eb9ed8f7b74ca227b5d68d9fe7325953619b71c9c30e5bd3d13f43afc591",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "みずを のみません。"
   },
   {
     "file": "course-05-q2.mp3",
     "kana": "おちゃをのみます。",
-    "phonemes": "oʨa o nomʲimasɨ.",
-    "seconds": 1.28
+    "seconds": 1.28,
+    "sha256": "9f3f9bc2fb0b184e93905c8a7003d3c42fc47ff0cfad605f867ab94b28eaef17",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "おちゃをのみます。"
   },
   {
     "file": "course-05-q3.mp3",
     "kana": "わたしは おちゃを のみます。",
-    "phonemes": "βataɕi βa oʨa o nomʲimasɨ.",
-    "seconds": 1.771
+    "seconds": 2.56,
+    "sha256": "4a804eee71cc543bb18bcc7c36059a2e07cfc3b29429d8176d3f33ec69b6e4de",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "わたしは おちゃを のみます。"
   },
   {
     "file": "course-05-q4.mp3",
     "kana": "よみます",
-    "phonemes": "jomʲimasɨ",
-    "seconds": 0.939
+    "seconds": 0.96,
+    "sha256": "6a46182cd9e853eb567d24f055ef64e1d89a2e72fa19dca4faf88893ed345c61",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "jomʲimasɨ"
   },
   {
     "file": "course-05-listen.mp3",
     "kana": "ほんを よみます。",
-    "phonemes": "hoɴ o jomʲimasɨ.",
-    "seconds": 1.259
+    "seconds": 5.76,
+    "sha256": "5e368386cd94b422c33d150ebfa043945c637fe9e6fa1ea3f9077137daf59cac",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ほんを よみます。"
   },
   {
     "file": "course-05-q6.mp3",
     "kana": "あさは パンを たべます。",
-    "phonemes": "asa βa paɴ o tabemasɨ.",
-    "seconds": 1.557
+    "seconds": 2.4,
+    "sha256": "fec73c62679b1f3ca5d70a33967e0003b6d61b01a6f38bdf06c400d283fe3804",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あさは パンを たべます。"
   },
   {
     "file": "course-05-q7.mp3",
     "kana": "しんぶんを よみません。",
-    "phonemes": "ɕimbɯɴ o jomʲi maseɴ.",
-    "seconds": 1.557
+    "seconds": 1.36,
+    "sha256": "840907996aba54c9962751d28350c814b33e336602c9a31d5c009c5be31c8b27",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "しんぶんを よみません。"
   },
   {
     "file": "course-05-q8.mp3",
     "kana": "りんご",
-    "phonemes": "ɾʲiŋɡo",
-    "seconds": 0.661
+    "seconds": 1.024,
+    "sha256": "cc9f332ea2b92f86dfbe5929f736f4b4c261819f2e19f31e7be42e2707022ac6",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɾʲiŋɡo"
   },
   {
     "file": "course-06-example.mp3",
     "kana": "バスで えきへ いきます。",
-    "phonemes": "basɨ de ekʲi e ikʲimasɨ.",
-    "seconds": 1.579
+    "seconds": 1.36,
+    "sha256": "4bbb572cb2066fcf31ef02919cda5b39d0b9b38d255403782d2905210f91b900",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "バスで駅へ行きます。"
   },
   {
     "file": "course-06-example-2.mp3",
     "kana": "じてんしゃで がっこうへ いきます。",
-    "phonemes": "ʥiteɴɕa de ɡaʔkoː e ikʲimasɨ.",
-    "seconds": 1.984
+    "seconds": 2.56,
+    "sha256": "c322b2f72ed794592edebdcd8d58068e09cd972da2fa878b9297884ab1b3b5c2",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "じてんしゃで がっこうへ いきます。"
   },
   {
     "file": "course-06-example-3.mp3",
     "kana": "タクシーで うちへ かえります。",
-    "phonemes": "takɯɕiː de ɯʨi e kaeɾʲimasɨ.",
-    "seconds": 1.813
+    "seconds": 1.68,
+    "sha256": "26e26ba91deeb88267386a50e39c19c4c087fe9afb907c358f0613262931e58c",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "タクシーで うちへ かえります。"
   },
   {
     "file": "course-06-v1.mp3",
     "kana": "バス",
-    "phonemes": "basɨ",
-    "seconds": 0.491
+    "seconds": 0.832,
+    "sha256": "405db05f58f53343f22087d474a54049258983a4dca3d4cea66a8e03f4e1bf40",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "basɨ"
   },
   {
     "file": "course-06-v2.mp3",
     "kana": "でんしゃ",
-    "phonemes": "deɴɕa",
-    "seconds": 0.661
+    "seconds": 0.917,
+    "sha256": "539314812d908dd90cabe870ca55f99a6616252e5cdcffd664f19fb2533e42e4",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "deɴɕa"
   },
   {
     "file": "course-06-v3.mp3",
     "kana": "えき",
-    "phonemes": "ekʲi",
-    "seconds": 0.704
+    "seconds": 0.96,
+    "sha256": "65d6748b0c8d322fd9c100fe242705a2e2ce68a534eed387e7e83ddc4b1aa3b0",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ekʲi"
   },
   {
     "file": "course-06-v4.mp3",
     "kana": "こうえん",
-    "phonemes": "koːeɴ",
-    "seconds": 0.683
+    "seconds": 0.896,
+    "sha256": "af00ffc1023814588e08ea4b63d07c22b1a2686580447cf65b27486fa77125d4",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "koːeɴ"
   },
   {
     "file": "course-06-v5.mp3",
     "kana": "いきます",
-    "phonemes": "ikʲimasɨ",
-    "seconds": 0.896
+    "seconds": 1.237,
+    "sha256": "ea0cae962839d0cafe4711d61f7639433f49b238b1c8dbdf4a84cca3950abf50",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ikʲimasɨ"
   },
   {
     "file": "course-06-v6.mp3",
     "kana": "あるきます",
-    "phonemes": "aɾɯkʲimasɨ",
-    "seconds": 1.024
+    "seconds": 1.301,
+    "sha256": "560cc0c59f08e447564e2fdbcd8576ec7fca7960a207e38832a1b5cbd76fe8f8",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "aɾɯkʲimasɨ"
   },
   {
     "file": "course-06-v7.mp3",
     "kana": "じてんしゃ",
-    "phonemes": "ʥiteɴɕa",
-    "seconds": 0.789
+    "seconds": 1.195,
+    "sha256": "f0caaec12f785e8d3c96c4af5a2954565f905f6d8f91723509d93cdc149ab7bb",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥiteɴɕa"
   },
   {
     "file": "course-06-v8.mp3",
     "kana": "タクシー",
-    "phonemes": "takɯɕiː",
-    "seconds": 0.832
+    "seconds": 1.045,
+    "sha256": "7d7fca35a02899321432453e2fc686473cf439b49186e1f64c42f263f7b36ba7",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "takɯɕiː"
   },
   {
     "file": "course-06-v9.mp3",
     "kana": "くるま",
-    "phonemes": "kɯɾɯma",
-    "seconds": 0.619
+    "seconds": 0.96,
+    "sha256": "30a6f849e5107f6aaf47c88a073f79ca999c33d31139fef5e231d57a60f5ed99",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kɯɾɯma"
   },
   {
     "file": "course-06-v10.mp3",
     "kana": "ちかてつ",
-    "phonemes": "ʨikateʦɨ",
-    "seconds": 0.853
+    "seconds": 1.68,
+    "sha256": "2285e93d09f53a6f19083c56868145c9b15d51fe51b75b146b0a7c167adea96c",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "地下鉄"
   },
   {
     "file": "course-06-v11.mp3",
     "kana": "ひこうき",
-    "phonemes": "çikoːkʲi",
-    "seconds": 0.789
+    "seconds": 1.067,
+    "sha256": "28600798181cbc5fcd6588b3a15641b47971087dba5d3c8ce1fa9f3a1cfcceeb",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "çikoːkʲi"
   },
   {
     "file": "course-06-v12.mp3",
     "kana": "がっこう",
-    "phonemes": "ɡaʔkoː",
-    "seconds": 0.725
+    "seconds": 1.045,
+    "sha256": "605c8d33af7ffa4733793585b0e95872b012ea244d66c552dfa88221414250f0",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɡaʔkoː"
   },
   {
     "file": "course-06-v13.mp3",
     "kana": "うち",
-    "phonemes": "ɯʨi",
-    "seconds": 0.661
+    "seconds": 0.725,
+    "sha256": "5235863e30a04ec13bfc354a03fbd4bbd7e8a8809469cfff817a49c7267ad291",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɯʨi"
   },
   {
     "file": "course-06-v14.mp3",
     "kana": "みせ",
-    "phonemes": "mʲise",
-    "seconds": 0.555
+    "seconds": 0.555,
+    "sha256": "123a828a9e0057d44242a555d4cb5bd5b41ee4cf0d8b03da6e907fcd5ed2aaf5",
+    "engine": "kokoro-82m",
+    "voice": "jf_alpha",
+    "phonemes": "mʲise"
   },
   {
     "file": "course-06-v15.mp3",
     "kana": "かえります",
-    "phonemes": "kaeɾʲimasɨ",
-    "seconds": 1.045
+    "seconds": 1.28,
+    "sha256": "9eb036c4eda78690ef811ffc0a8e9d03534d06ccae6ee87e8162cfa1e397f477",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kaeɾʲimasɨ"
   },
   {
     "file": "course-06-v16.mp3",
     "kana": "きます",
-    "phonemes": "kʲimasɨ",
-    "seconds": 0.661
+    "seconds": 1.024,
+    "sha256": "a6cfe09ad567558171aaa613130bf7203911704dc55b8f956c462fef82735e0c",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kʲimasɨ"
   },
   {
     "file": "course-06-v17.mp3",
     "kana": "まっすぐ",
-    "phonemes": "maʔsɨɡɯ",
-    "seconds": 0.811
+    "seconds": 1.173,
+    "sha256": "053f25266b222aca3a4762cdb73513a962e1d70223696375d74ef1d171d90fa4",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "maʔsɨɡɯ"
   },
   {
     "file": "course-06-q1.mp3",
     "kana": "バスで えきへ いきます。",
-    "phonemes": "basɨ de ekʲi e ikʲimasɨ.",
-    "seconds": 1.579
+    "seconds": 1.36,
+    "sha256": "4bbb572cb2066fcf31ef02919cda5b39d0b9b38d255403782d2905210f91b900",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "バスで駅へ行きます。"
   },
   {
     "file": "course-06-q2.mp3",
     "kana": "でんしゃでこうえんへ いきます。",
-    "phonemes": "deɴɕa de koːeɴ e ikʲimasɨ.",
-    "seconds": 1.856
+    "seconds": 2.16,
+    "sha256": "d8e6f8c82adbaca6d7e3b9e6646a25d03bcc96e55304d3dd24e460a8ba895053",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "でんしゃでこうえんへ いきます。"
   },
   {
     "file": "course-06-q3.mp3",
     "kana": "バスで こうえんへ いきます。",
-    "phonemes": "basɨ de koːeɴ e ikʲimasɨ.",
-    "seconds": 1.685
+    "seconds": 2.32,
+    "sha256": "ebf7cd9aaa4f2e61913a412e398c42a6ad50dddb41e007e6c076615dc39b4a0a",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "バスで こうえんへ いきます。"
   },
   {
     "file": "course-06-q4.mp3",
     "kana": "でんしゃ",
-    "phonemes": "deɴɕa",
-    "seconds": 0.661
+    "seconds": 0.917,
+    "sha256": "539314812d908dd90cabe870ca55f99a6616252e5cdcffd664f19fb2533e42e4",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "deɴɕa"
   },
   {
     "file": "course-06-listen.mp3",
     "kana": "でんしゃで えきへ いきます。",
-    "phonemes": "deɴɕa de ekʲi e ikʲimasɨ.",
-    "seconds": 1.664
+    "seconds": 2.64,
+    "sha256": "6f6a364ff8a6f30b55c6f129910d77cefe5bd31ea27c45aecc13a6853c43b170",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "でんしゃで えきへ いきます。"
   },
   {
     "file": "course-06-q6.mp3",
     "kana": "じてんしゃで がっこうへ いきます。",
-    "phonemes": "ʥiteɴɕa de ɡaʔkoː e ikʲimasɨ.",
-    "seconds": 1.984
+    "seconds": 2.56,
+    "sha256": "c322b2f72ed794592edebdcd8d58068e09cd972da2fa878b9297884ab1b3b5c2",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "じてんしゃで がっこうへ いきます。"
   },
   {
     "file": "course-06-q7.mp3",
     "kana": "タクシーで うちへ かえります。",
-    "phonemes": "takɯɕiː de ɯʨi e kaeɾʲimasɨ.",
-    "seconds": 1.813
+    "seconds": 1.68,
+    "sha256": "26e26ba91deeb88267386a50e39c19c4c087fe9afb907c358f0613262931e58c",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "タクシーで うちへ かえります。"
   },
   {
     "file": "course-06-q8.mp3",
     "kana": "うち",
-    "phonemes": "ɯʨi",
-    "seconds": 0.661
+    "seconds": 0.725,
+    "sha256": "5235863e30a04ec13bfc354a03fbd4bbd7e8a8809469cfff817a49c7267ad291",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɯʨi"
   },
   {
     "file": "course-07-example.mp3",
     "kana": "へやに ねこが います。",
-    "phonemes": "heja ɲi neko ɡa imasɨ.",
-    "seconds": 1.493
+    "seconds": 1.68,
+    "sha256": "7222d19feb9ac47563890efcde49fe475d3691fb00975e1b28dad4e26fa5c2da",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "へやに ねこが います。"
   },
   {
     "file": "course-07-example-2.mp3",
     "kana": "にわに とりが います。",
-    "phonemes": "ɲiβa ɲi toɾʲi ɡa imasɨ.",
-    "seconds": 1.493
+    "seconds": 1.6,
+    "sha256": "a4eac9b6b6fa359fa62644ddfc86fdb7e6338802ba521378aa8bc1b53ec18b89",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "にわに とりが います。"
   },
   {
     "file": "course-07-example-3.mp3",
     "kana": "へやに テレビが あります。",
-    "phonemes": "heja ɲi teɾebʲi ɡa aɾʲimasɨ.",
-    "seconds": 1.643
+    "seconds": 2.16,
+    "sha256": "d1dc90cff61bf31fead59d52dc9e7070bb5d5b99565087501d79e2467d466a45",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "へやに テレビが あります。"
   },
   {
     "file": "course-07-v1.mp3",
     "kana": "ねこ",
-    "phonemes": "neko",
-    "seconds": 0.555
+    "seconds": 0.981,
+    "sha256": "dae6520ed95d71ef3ae4e19f748464a431040acfc283a531b3e0685d8dba4b46",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "neko"
   },
   {
     "file": "course-07-v2.mp3",
     "kana": "いぬ",
-    "phonemes": "inɯ",
-    "seconds": 0.661
+    "seconds": 0.853,
+    "sha256": "1dc6e298840a6e3d6a33b30062db3a31943ec20a5847b3bc216f8565c0e81a23",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "inɯ"
   },
   {
     "file": "course-07-v3.mp3",
     "kana": "へや",
-    "phonemes": "heja",
-    "seconds": 0.533
+    "seconds": 1.067,
+    "sha256": "838601a3b5a090434fcefc592e1ea46ecfedcde06978517d061b596ef524e3e6",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "heja"
   },
   {
     "file": "course-07-v4.mp3",
     "kana": "つくえ",
-    "phonemes": "ʦɨkɯe",
-    "seconds": 0.64
+    "seconds": 0.96,
+    "sha256": "ec51b16583ad934f158147e37d267e1b66c65df5f4d7eee128bddab8198efec5",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʦɨkɯe"
   },
   {
     "file": "course-07-v5.mp3",
     "kana": "いす",
-    "phonemes": "isɨ",
-    "seconds": 0.597
+    "seconds": 0.619,
+    "sha256": "90ac8b823f39accba52f2e5bf620b778a6160205dabd0048af15e0ea2372f170",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "isɨ"
   },
   {
     "file": "course-07-v6.mp3",
     "kana": "こども",
-    "phonemes": "kodomo",
-    "seconds": 0.725
+    "seconds": 0.96,
+    "sha256": "a74b340df342ce72c038a18e3a5f7c56e7cbc2d3f9a0f1be6d18f6a452ae7706",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kodomo"
   },
   {
     "file": "course-07-v7.mp3",
     "kana": "おとこ",
-    "phonemes": "otoko",
-    "seconds": 0.725
+    "seconds": 1.088,
+    "sha256": "a74c33d31b87dade181628134276d969728fb3f389ae4b59c5ee792fccfd6019",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "otoko"
   },
   {
     "file": "course-07-v8.mp3",
     "kana": "おんな",
-    "phonemes": "onna",
-    "seconds": 0.768
+    "seconds": 0.981,
+    "sha256": "ab8321aae23878a323cec85487500b36aab48004f45475cbb5790a336f9b24aa",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "onna"
   },
   {
     "file": "course-07-v9.mp3",
     "kana": "さかな",
-    "phonemes": "sakana",
-    "seconds": 0.683
+    "seconds": 1.152,
+    "sha256": "2dc5de24c3244fd7b61b067370236dcafe13b03a63027e303c0052498f8b47c2",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "sakana"
   },
   {
     "file": "course-07-v10.mp3",
     "kana": "とり",
-    "phonemes": "toɾʲi",
-    "seconds": 0.576
+    "seconds": 0.896,
+    "sha256": "d96e63f662b46c2e7e53635e55eab20479a8caf4b209cbe52da385844eb436c3",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "toɾʲi"
   },
   {
     "file": "course-07-v11.mp3",
     "kana": "ベッド",
-    "phonemes": "beʔdo",
-    "seconds": 0.683
+    "seconds": 1.003,
+    "sha256": "ff9dac63b40272178170f8256711858830f9d9e7559c368b57618e025ab0b84b",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "beʔdo"
   },
   {
     "file": "course-07-v12.mp3",
     "kana": "ドア",
-    "phonemes": "doa",
-    "seconds": 0.491
+    "seconds": 0.811,
+    "sha256": "770838f0d1a4b6526c789e61b1a556f56af9c3a9b2ae3aa31c667df59636c943",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "doa"
   },
   {
     "file": "course-07-v13.mp3",
     "kana": "まど",
-    "phonemes": "mado",
-    "seconds": 0.512
+    "seconds": 0.939,
+    "sha256": "4f9b4b962648b114f2fc4dd404bf28fd7e582609ac8ad005a6a1bfc227de90b9",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mado"
   },
   {
     "file": "course-07-v14.mp3",
     "kana": "でんわ",
-    "phonemes": "deɴβa",
-    "seconds": 0.555
+    "seconds": 0.533,
+    "sha256": "6b4575121ebed8b56941d0cec59fbc787516f75614e7c68993e0abf39f4a84eb",
+    "engine": "kokoro-82m",
+    "voice": "jf_alpha",
+    "phonemes": "deɴβa"
   },
   {
     "file": "course-07-v15.mp3",
     "kana": "テレビ",
-    "phonemes": "teɾebʲi",
-    "seconds": 0.661
+    "seconds": 0.981,
+    "sha256": "388e602a0864e42b6251d68373e2520cef6a99f3551c0a79da7ed046516acd6c",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "teɾebʲi"
   },
   {
     "file": "course-07-v16.mp3",
     "kana": "ほんだな",
-    "phonemes": "hoɴ da na",
-    "seconds": 0.981
+    "seconds": 1.216,
+    "sha256": "42ff53f6d1d00d213083c0e4cbc9d51553559a64ab5ea4b33d2841306c646883",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "hoɴ da na"
   },
   {
     "file": "course-07-v17.mp3",
     "kana": "にわ",
-    "phonemes": "ɲiβa",
-    "seconds": 0.491
+    "seconds": 0.939,
+    "sha256": "cc59e09eb952c9f77c938db019b5c2090590ebe9f10ef95066dcbaa0b3bd28ab",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɲiβa"
   },
   {
     "file": "course-07-q1.mp3",
     "kana": "へやに いぬが います。",
-    "phonemes": "heja ɲi inɯ ɡa imasɨ.",
-    "seconds": 1.429
+    "seconds": 1.68,
+    "sha256": "d26d12dfa91cc0bef5453825e856f75bb18aad64e2673488da57ca8f4afd99a8",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "へやに いぬが います。"
   },
   {
     "file": "course-07-q2.mp3",
     "kana": "へやにねこが います。",
-    "phonemes": "heja ɲi neko ɡa imasɨ.",
-    "seconds": 1.493
+    "seconds": 5.92,
+    "sha256": "1053a7a08033136ed54b89b2bf6befbe7ec3fa399934567be5f4a85c5239b534",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "へやにねこが います。"
   },
   {
     "file": "course-07-q3.mp3",
     "kana": "へやに つくえが あります。",
-    "phonemes": "heja ɲi ʦɨkɯe ɡa aɾʲimasɨ.",
-    "seconds": 1.643
+    "seconds": 2.24,
+    "sha256": "ce85e83b350fd7c9fe7b69c70e05b21588a2b1c1b9a256b1592acd8e24751c78",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "へやに つくえが あります。"
   },
   {
     "file": "course-07-q4.mp3",
     "kana": "つくえ",
-    "phonemes": "ʦɨkɯe",
-    "seconds": 0.64
+    "seconds": 0.96,
+    "sha256": "ec51b16583ad934f158147e37d267e1b66c65df5f4d7eee128bddab8198efec5",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʦɨkɯe"
   },
   {
     "file": "course-07-listen.mp3",
     "kana": "へやに いすが あります。",
-    "phonemes": "heja ɲi isɨɡa aɾʲimasɨ.",
-    "seconds": 1.536
+    "seconds": 2.4,
+    "sha256": "3fe493f01fc41e7316fb2cafc21750c06569862a2b0243decfcceea0053eca7b",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "へやに いすが あります。"
   },
   {
     "file": "course-07-q6.mp3",
     "kana": "にわに とりが います。",
-    "phonemes": "ɲiβa ɲi toɾʲi ɡa imasɨ.",
-    "seconds": 1.493
+    "seconds": 1.6,
+    "sha256": "a4eac9b6b6fa359fa62644ddfc86fdb7e6338802ba521378aa8bc1b53ec18b89",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "にわに とりが います。"
   },
   {
     "file": "course-07-q7.mp3",
     "kana": "へやに テレビが あります。",
-    "phonemes": "heja ɲi teɾebʲi ɡa aɾʲimasɨ.",
-    "seconds": 1.643
+    "seconds": 2.16,
+    "sha256": "d1dc90cff61bf31fead59d52dc9e7070bb5d5b99565087501d79e2467d466a45",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "へやに テレビが あります。"
   },
   {
     "file": "course-07-q8.mp3",
     "kana": "まど",
-    "phonemes": "mado",
-    "seconds": 0.512
+    "seconds": 0.939,
+    "sha256": "4f9b4b962648b114f2fc4dd404bf28fd7e582609ac8ad005a6a1bfc227de90b9",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mado"
   },
   {
     "file": "course-08-example.mp3",
     "kana": "この まちは しずかです。",
-    "phonemes": "kono maʨi βa ɕizɨka desɨ.",
-    "seconds": 1.621
+    "seconds": 1.52,
+    "sha256": "7166bb67e15d80f8bf038dd41492f0818a185a891ac0b48d5f394abf0abfad6f",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この まちは しずかです。"
   },
   {
     "file": "course-08-example-2.mp3",
     "kana": "この まちは にぎやかです。",
-    "phonemes": "kono maʨi βa ɲiɡʲijaka desɨ.",
-    "seconds": 1.771
+    "seconds": 2.64,
+    "sha256": "af04efe3f35bae8eb0172340e84aa710a6e63024d3722aef98b8c9ca9f57b52c",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この まちは にぎやかです。"
   },
   {
     "file": "course-08-example-3.mp3",
     "kana": "この ケーキは あまいです。",
-    "phonemes": "kono keːkʲi βa amai desɨ.",
-    "seconds": 1.643
+    "seconds": 2.08,
+    "sha256": "415294f805c1e99d99ca7b6db11d49a5d2f5de3d6f28639cb0a8442632585523",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この ケーキは あまいです。"
   },
   {
     "file": "course-08-v1.mp3",
     "kana": "おおきい",
-    "phonemes": "oːkʲiː",
-    "seconds": 0.832
+    "seconds": 0.853,
+    "sha256": "5b83a1c9acdf65b909491ada5d67b52a821586f9a47e157da11b04e15f120baf",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "oːkʲiː"
   },
   {
     "file": "course-08-v2.mp3",
     "kana": "ちいさい",
-    "phonemes": "ʨiːsai",
-    "seconds": 0.725
+    "seconds": 1.024,
+    "sha256": "02f8eb475586436e9d07ebc979950e1056b4e3ede04d2da87acb82bd66b49f9a",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʨiːsai"
   },
   {
     "file": "course-08-v3.mp3",
     "kana": "おいしい",
-    "phonemes": "oiɕiː",
-    "seconds": 0.853
+    "seconds": 0.832,
+    "sha256": "abeb6c951bfe7aac74630e7ac3076e74bfcf9040ef20e075ae034f571ffaf247",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "oiɕiː"
   },
   {
     "file": "course-08-v4.mp3",
     "kana": "しずか",
-    "phonemes": "ɕizɨka",
-    "seconds": 0.661
+    "seconds": 1.173,
+    "sha256": "17bad42d95460968c261f1ef2abad4614d469b87bf16f76a7689cee59187994d",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɕizɨka"
   },
   {
     "file": "course-08-v5.mp3",
     "kana": "まち",
-    "phonemes": "maʨi",
-    "seconds": 0.576
+    "seconds": 0.853,
+    "sha256": "f758079bbf6df38cd88b094f2ca1ee89a7f310d88c9457636aeedeceeb8bfa00",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "maʨi"
   },
   {
     "file": "course-08-v6.mp3",
     "kana": "ケーキ",
-    "phonemes": "keːkʲi",
-    "seconds": 0.64
+    "seconds": 0.64,
+    "sha256": "244b11a9ee210616a295a8ccada01841a9464062949344219cfcadddbb4d1af8",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ケーキ"
   },
   {
     "file": "course-08-v7.mp3",
     "kana": "あつい",
-    "phonemes": "aʦɨi",
-    "seconds": 0.768
+    "seconds": 0.768,
+    "sha256": "cf1da997a22e86da2e070fc54cde8ccb5c64cb6bee267f10ac7d7289cb7bdacf",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "aʦɨi"
   },
   {
     "file": "course-08-v8.mp3",
     "kana": "さむい",
-    "phonemes": "samɯi",
-    "seconds": 0.64
+    "seconds": 1.024,
+    "sha256": "ba330d9db7194a41462d378112c743b3b5d8cb1d8b6e1a20d2d691dd27ca5f47",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "samɯi"
   },
   {
     "file": "course-08-v9.mp3",
     "kana": "たかい",
-    "phonemes": "takai",
-    "seconds": 0.661
+    "seconds": 0.96,
+    "sha256": "18fd55938000365633b99593ad258d5e96e23211a038a9bbff09000198d3eb22",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "takai"
   },
   {
     "file": "course-08-v10.mp3",
     "kana": "ひくい",
-    "phonemes": "çikɯi",
-    "seconds": 0.619
+    "seconds": 0.939,
+    "sha256": "4832da6848e21bbfe23ea93051bb6225ca78144eaa75e77fa8dab3dd0e2e37d7",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "çikɯi"
   },
   {
     "file": "course-08-v11.mp3",
     "kana": "きれい",
-    "phonemes": "kʲiɾeː",
-    "seconds": 0.64
+    "seconds": 0.981,
+    "sha256": "d130b6040ae59aa33efe873215b8150cbb5eb152dbe4becddef165d19abfca46",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kʲiɾeː"
   },
   {
     "file": "course-08-v12.mp3",
     "kana": "にぎやか",
-    "phonemes": "ɲiɡʲijaka",
-    "seconds": 0.917
+    "seconds": 1.344,
+    "sha256": "09f000164de96e5b6356dd3378261a18ac21f472e13d0a3d4cb1c97e72ba80b3",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɲiɡʲijaka"
   },
   {
     "file": "course-08-v13.mp3",
     "kana": "べんり",
-    "phonemes": "benɾʲi",
-    "seconds": 0.619
+    "seconds": 0.917,
+    "sha256": "ce2ee79beb9af894ef0c1766ac0fcf65616962421ff42b4d576b89623a7d49a4",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "benɾʲi"
   },
   {
     "file": "course-08-v14.mp3",
     "kana": "むずかしい",
-    "phonemes": "mɯzɨkaɕiː",
-    "seconds": 1.024
+    "seconds": 1.024,
+    "sha256": "307e304255c63cd179fc1e1bf2d17b392ec4c3f806480a850dc409e9e89bb71d",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mɯzɨkaɕiː"
   },
   {
     "file": "course-08-v15.mp3",
     "kana": "やさしい",
-    "phonemes": "jasaɕiː",
-    "seconds": 0.917
+    "seconds": 1.259,
+    "sha256": "9f6b51633802b487030a3b3f084f609acba742a4e6b0e0c34da1d940fc24bdb8",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "jasaɕiː"
   },
   {
     "file": "course-08-v16.mp3",
     "kana": "たのしい",
-    "phonemes": "tanoɕiː",
-    "seconds": 0.853
+    "seconds": 0.96,
+    "sha256": "e403792f83a91dea2ba2b04f667e1b31486396b04084a0525f1c9366b76f1d8e",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "tanoɕiː"
   },
   {
     "file": "course-08-v17.mp3",
     "kana": "つまらない",
-    "phonemes": "ʦɨmaɾanai",
-    "seconds": 0.917
+    "seconds": 1.216,
+    "sha256": "3563b30941ea8861f6b5a24e02f89283afffe6ea0f116e3689241dd4c8e20557",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʦɨmaɾanai"
   },
   {
     "file": "course-08-v18.mp3",
     "kana": "あまい",
-    "phonemes": "amai",
-    "seconds": 0.725
+    "seconds": 0.981,
+    "sha256": "a70414164def020918c897c1a368fadc0d1c4232505f8a00b9c1ce08117020b2",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "amai"
   },
   {
     "file": "course-08-q1.mp3",
     "kana": "この へやは おおきいです。",
-    "phonemes": "kono heja βa oːkʲiː desɨ.",
-    "seconds": 1.664
+    "seconds": 2.24,
+    "sha256": "91cb323ce8ce5e6a69debcfa7f25a8e67e0cfff6697b2827c1c2aff7117e374f",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この へやは おおきいです。"
   },
   {
     "file": "course-08-q2.mp3",
     "kana": "この まちはしずかです。",
-    "phonemes": "kono maʨi βa ɕizɨka desɨ.",
-    "seconds": 1.621
+    "seconds": 1.68,
+    "sha256": "87bde5ba8f63d80c71451aad847beca7f1653dc8e228efd8f42e4fad5d964225",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この まちはしずかです。"
   },
   {
     "file": "course-08-q3.mp3",
     "kana": "この かばんは ちいさいです。",
-    "phonemes": "kono kabaɴ βa ʨiːsai desɨ.",
-    "seconds": 1.771
+    "seconds": 1.84,
+    "sha256": "cdacb6f15cf2b46f901c1b53308321d2de800c70f5161656512bed36258c2076",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この かばんは ちいさいです。"
   },
   {
     "file": "course-08-q4.mp3",
     "kana": "おいしい",
-    "phonemes": "oiɕiː",
-    "seconds": 0.853
+    "seconds": 0.832,
+    "sha256": "abeb6c951bfe7aac74630e7ac3076e74bfcf9040ef20e075ae034f571ffaf247",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "oiɕiː"
   },
   {
     "file": "course-08-listen.mp3",
     "kana": "この ケーキは おいしいです。",
-    "phonemes": "kono keːkʲi βa oiɕiː desɨ.",
-    "seconds": 1.749
+    "seconds": 3.12,
+    "sha256": "0bc8b808813646e1d4947d26f822fe09da933be727ad98f44b35d3eebe863c92",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この ケーキは おいしいです。"
   },
   {
     "file": "course-08-q6.mp3",
     "kana": "この まちは にぎやかです。",
-    "phonemes": "kono maʨi βa ɲiɡʲijaka desɨ.",
-    "seconds": 1.771
+    "seconds": 2.64,
+    "sha256": "af04efe3f35bae8eb0172340e84aa710a6e63024d3722aef98b8c9ca9f57b52c",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この まちは にぎやかです。"
   },
   {
     "file": "course-08-q7.mp3",
     "kana": "この ケーキは あまいです。",
-    "phonemes": "kono keːkʲi βa amai desɨ.",
-    "seconds": 1.643
+    "seconds": 2.08,
+    "sha256": "415294f805c1e99d99ca7b6db11d49a5d2f5de3d6f28639cb0a8442632585523",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この ケーキは あまいです。"
   },
   {
     "file": "course-08-q8.mp3",
     "kana": "あまい",
-    "phonemes": "amai",
-    "seconds": 0.725
+    "seconds": 0.981,
+    "sha256": "a70414164def020918c897c1a368fadc0d1c4232505f8a00b9c1ce08117020b2",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "amai"
   },
   {
     "file": "course-09-example.mp3",
     "kana": "きのうは えいがを みました。",
-    "phonemes": "kʲinoː βa eːɡa o mʲimaɕi ta.",
-    "seconds": 1.856
+    "seconds": 1.6,
+    "sha256": "6e013c18f52831a95844a6167b15a31578c875dc5ac57c3a4998583b40464bc3",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "きのうは えいがを みました。"
   },
   {
     "file": "course-09-example-2.mp3",
     "kana": "せんしゅうは えいがを みませんでした。",
-    "phonemes": "seɴɕɨː βa eːɡa o mʲi maseɴ deɕi ta.",
-    "seconds": 2.411
+    "seconds": 2.8,
+    "sha256": "49701ee3903e6b0e1c859381874bb1ab6668eec30bc5eca37f607500b97568e5",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "せんしゅうは えいがを みませんでした。"
   },
   {
     "file": "course-09-example-3.mp3",
     "kana": "きのうは パンを たべました。",
-    "phonemes": "kʲinoː βa paɴ o tabe maɕita.",
-    "seconds": 1.771
+    "seconds": 1.6,
+    "sha256": "23f7d4531d9dcbf5223aa79123fac48ee9fe535ecc14cfcbedde68a367253e96",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "きのうは パンを たべました。"
   },
   {
     "file": "course-09-v1.mp3",
     "kana": "きのう",
-    "phonemes": "kʲinoː",
-    "seconds": 0.64
+    "seconds": 1.024,
+    "sha256": "5a4ae91aae3388b48fd2e26a76342f2c1b30006bf47d6b7bb006b355760b7ec7",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kʲinoː"
   },
   {
     "file": "course-09-v2.mp3",
     "kana": "えいが",
-    "phonemes": "eːɡa",
-    "seconds": 0.704
+    "seconds": 0.96,
+    "sha256": "3c368e9cb998583a7d4dc5e20886ad6dfbe08e180c6fa0c8f0f26034ab4f1675",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "eːɡa"
   },
   {
     "file": "course-09-v3.mp3",
     "kana": "みました",
-    "phonemes": "mʲimaɕi ta",
-    "seconds": 0.981
+    "seconds": 1.131,
+    "sha256": "c013009cbae3b1dab63f022cfcb6b648defbfb0a3dac0c8e1581c8c4d4628285",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mʲimaɕi ta"
   },
   {
     "file": "course-09-v4.mp3",
     "kana": "よみました",
-    "phonemes": "jomʲi maɕita",
-    "seconds": 1.088
+    "seconds": 1.024,
+    "sha256": "3b72a457f8400970444affe85ad486639c999f53f14d9e9e128119c6453c8540",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "jomʲi maɕita"
   },
   {
     "file": "course-09-v5.mp3",
     "kana": "のみませんでした",
-    "phonemes": "nomʲi maseɴ deɕi ta",
-    "seconds": 1.472
+    "seconds": 1.771,
+    "sha256": "fe7a161e6ffe14958751e5ecd7b7929048537cc7afe75e0baa6b43fdd4c4ace5",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "nomʲi maseɴ deɕi ta"
   },
   {
     "file": "course-09-v6.mp3",
     "kana": "おととい",
-    "phonemes": "ototoi",
-    "seconds": 0.875
+    "seconds": 1.216,
+    "sha256": "04b36716f319c49c966a7b2b073901ed4127e980b96b3143797988d165976b03",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ototoi"
   },
   {
     "file": "course-09-v7.mp3",
     "kana": "せんしゅう",
-    "phonemes": "seɴɕɨː",
-    "seconds": 0.811
+    "seconds": 1.024,
+    "sha256": "438a400b6781cc90483b438067407acfd65949a8a448284499cc1d38908b46c9",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "seɴɕɨː"
   },
   {
     "file": "course-09-v8.mp3",
     "kana": "せんげつ",
-    "phonemes": "seŋɡeʦɨ",
-    "seconds": 0.853
+    "seconds": 1.152,
+    "sha256": "b5691061608253059e43b3391efc3c4f32f9cec53f338ae5e28af30d43873018",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "seŋɡeʦɨ"
   },
   {
     "file": "course-09-v9.mp3",
     "kana": "いきました",
-    "phonemes": "ikʲi maɕita",
-    "seconds": 1.067
+    "seconds": 1.344,
+    "sha256": "2c444c91225308f016f5924915282b6487a73717a1f84d597852a98e1ba5656f",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ikʲi maɕita"
   },
   {
     "file": "course-09-v10.mp3",
     "kana": "きました",
-    "phonemes": "kʲi maɕita",
-    "seconds": 0.896
+    "seconds": 1.195,
+    "sha256": "30a8654654454786baddb60d95db812b83034f75f2fd69fe8f515c897e8d0a9b",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kʲi maɕita"
   },
   {
     "file": "course-09-v11.mp3",
     "kana": "たべました",
-    "phonemes": "tabe maɕita",
-    "seconds": 1.131
+    "seconds": 1.301,
+    "sha256": "0473599bc9b35a4c4e736abfdfa963eb28e56cec0f6e95c68f64b66387dfc901",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "tabe maɕita"
   },
   {
     "file": "course-09-v12.mp3",
     "kana": "かいました",
-    "phonemes": "kai maɕita",
-    "seconds": 1.024
+    "seconds": 1.301,
+    "sha256": "79ac2fb0c467301eb30c11885a5b46baed40fdb13682beda600f0d437fd43df6",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kai maɕita"
   },
   {
     "file": "course-09-v13.mp3",
     "kana": "ききました",
-    "phonemes": "kʲikʲi maɕita",
-    "seconds": 1.067
+    "seconds": 1.344,
+    "sha256": "f701033236b57d69a46ab4f085ead1dee5bc25218b79f0cf8ee803b23033f596",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kʲikʲi maɕita"
   },
   {
     "file": "course-09-v14.mp3",
     "kana": "しました",
-    "phonemes": "ɕi maɕita",
-    "seconds": 0.875
+    "seconds": 1.28,
+    "sha256": "566b73babca79bd6d94dd3afd5e85ccdc3708f8b491e6f762a4651c5fb38c856",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɕi maɕita"
   },
   {
     "file": "course-09-v15.mp3",
     "kana": "みませんでした",
-    "phonemes": "mʲi maseɴ deɕi ta",
-    "seconds": 1.365
+    "seconds": 1.6,
+    "sha256": "1792220403f03ed7f5d86ade8155726ec1c2fb953f5bb8c3e47d1aa70acf64b8",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mʲi maseɴ deɕi ta"
   },
   {
     "file": "course-09-v16.mp3",
     "kana": "たべませんでした",
-    "phonemes": "tabe maseɴ deɕi ta",
-    "seconds": 1.429
+    "seconds": 1.771,
+    "sha256": "3b77b77189551e3fb731cbcd861f6c597e4c74235a8db83972cd635d7f9a43c1",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "tabe maseɴ deɕi ta"
   },
   {
     "file": "course-09-v17.mp3",
     "kana": "かえりました",
-    "phonemes": "kaeɾʲi maɕita",
-    "seconds": 1.152
+    "seconds": 1.387,
+    "sha256": "0e9f0033abed9483f626e0039e30f711cb2b2daa3c4248e3e7296a1d10ade40c",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kaeɾʲi maɕita"
   },
   {
     "file": "course-09-q1.mp3",
     "kana": "きのうは ほんを よみませんでした。",
-    "phonemes": "kʲinoː βa hoɴ o jomʲi maseɴ deɕi ta.",
-    "seconds": 2.219
+    "seconds": 3.6,
+    "sha256": "76bd70b0d2e7563e126bd9817a19aa0db360891dbf5a295e0f82bef36c0ecd0b",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "きのうは ほんを よみませんでした。"
   },
   {
     "file": "course-09-q2.mp3",
     "kana": "きのうは みずをのみませんでした。",
-    "phonemes": "kʲinoː βa mʲizɨ o nomʲi maseɴ deɕi ta.",
-    "seconds": 2.261
+    "seconds": 2.56,
+    "sha256": "218e51929f0eea3ee24330fa54afc19fda7e1cbb57f3d56d81085a41916527f5",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "きのうは みずをのみませんでした。"
   },
   {
     "file": "course-09-q3.mp3",
     "kana": "きのうは えいがを みました。",
-    "phonemes": "kʲinoː βa eːɡa o mʲimaɕi ta.",
-    "seconds": 1.856
+    "seconds": 1.6,
+    "sha256": "6e013c18f52831a95844a6167b15a31578c875dc5ac57c3a4998583b40464bc3",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "きのうは えいがを みました。"
   },
   {
     "file": "course-09-q4.mp3",
     "kana": "みました",
-    "phonemes": "mʲimaɕi ta",
-    "seconds": 0.981
+    "seconds": 1.131,
+    "sha256": "c013009cbae3b1dab63f022cfcb6b648defbfb0a3dac0c8e1581c8c4d4628285",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mʲimaɕi ta"
   },
   {
     "file": "course-09-listen.mp3",
     "kana": "きのうは おちゃを のみました。",
-    "phonemes": "kʲinoː βa oʨa o nomʲi maɕita.",
-    "seconds": 1.856
+    "seconds": 2.0,
+    "sha256": "8bcdf0c00b98311004a04ec3d6e9ff99f390e51504783a9ba72238d51ef9b3d6",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "きのうは おちゃを のみました。"
   },
   {
     "file": "course-09-q6.mp3",
     "kana": "せんしゅうは えいがを みませんでした。",
-    "phonemes": "seɴɕɨː βa eːɡa o mʲi maseɴ deɕi ta.",
-    "seconds": 2.411
+    "seconds": 2.8,
+    "sha256": "49701ee3903e6b0e1c859381874bb1ab6668eec30bc5eca37f607500b97568e5",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "せんしゅうは えいがを みませんでした。"
   },
   {
     "file": "course-09-q7.mp3",
     "kana": "きのうは パンを たべました。",
-    "phonemes": "kʲinoː βa paɴ o tabe maɕita.",
-    "seconds": 1.771
+    "seconds": 1.6,
+    "sha256": "23f7d4531d9dcbf5223aa79123fac48ee9fe535ecc14cfcbedde68a367253e96",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "きのうは パンを たべました。"
   },
   {
     "file": "course-09-q8.mp3",
     "kana": "おととい",
-    "phonemes": "ototoi",
-    "seconds": 0.875
+    "seconds": 1.216,
+    "sha256": "04b36716f319c49c966a7b2b073901ed4127e980b96b3143797988d165976b03",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ototoi"
   },
   {
     "file": "course-10-example.mp3",
     "kana": "あさごはんを たべて、えきへ いきます。",
-    "phonemes": "asaɡohaɴ o tabete, ekʲi e ikʲimasɨ.",
-    "seconds": 2.389
+    "seconds": 3.36,
+    "sha256": "4c5671683803237e7765025c011cc00d9b6716309f8b1aa80036136908245ad8",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あさごはんを たべて、えきへ いきます。"
   },
   {
     "file": "course-10-example-2.mp3",
     "kana": "あさ おきて、かおを あらいます。",
-    "phonemes": "asaokʲi te, kao o aɾaimasɨ.",
-    "seconds": 1.877
+    "seconds": 3.44,
+    "sha256": "b9fad02827ff47bd075a9eb53508f4c989f00b3e74c3cd4816b17089f9707d1f",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あさ おきて、かおを あらいます。"
   },
   {
     "file": "course-10-example-3.mp3",
     "kana": "パンを かって うちへ かえります。",
-    "phonemes": "paɴ o kaʔte ɯʨi e kaeɾʲimasɨ.",
-    "seconds": 1.877
+    "seconds": 1.92,
+    "sha256": "f9783baca24bd88aa722b4b3fd3957fe8c35947cb3202b9d4d933f8a0a5f9f46",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "パンを かって うちへ かえります。"
   },
   {
     "file": "course-10-v1.mp3",
     "kana": "あさごはん",
-    "phonemes": "asaɡohaɴ",
-    "seconds": 0.981
+    "seconds": 1.323,
+    "sha256": "67add438000d73a42ce4eda9c54f943bcea20f1f5a0cd30a59c06fb9f7295978",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "asaɡohaɴ"
   },
   {
     "file": "course-10-v2.mp3",
     "kana": "たべて",
-    "phonemes": "tabete",
-    "seconds": 0.683
+    "seconds": 0.597,
+    "sha256": "7a7b8c9da953bde7498385018d75b9c73e488094ece876036ed9aa2890cef608",
+    "engine": "kokoro-82m",
+    "voice": "jf_alpha",
+    "phonemes": "tabete"
   },
   {
     "file": "course-10-v3.mp3",
     "kana": "のんで",
-    "phonemes": "nonde",
-    "seconds": 0.619
+    "seconds": 0.96,
+    "sha256": "de29e3ab9bce0662b9a6326a6a5d65ad200fdcd503d15cce91c654244c729a59",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "nonde"
   },
   {
     "file": "course-10-v4.mp3",
     "kana": "よんで",
-    "phonemes": "jonde",
-    "seconds": 0.64
+    "seconds": 0.853,
+    "sha256": "c0ea09a7521b6372ca6e9cfff7bc6c6a1f217caf9e51b1f76164fc86bb8a9f11",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "jonde"
   },
   {
     "file": "course-10-v5.mp3",
     "kana": "いきます",
-    "phonemes": "ikʲimasɨ",
-    "seconds": 0.896
+    "seconds": 1.237,
+    "sha256": "ea0cae962839d0cafe4711d61f7639433f49b238b1c8dbdf4a84cca3950abf50",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ikʲimasɨ"
   },
   {
     "file": "course-10-v6.mp3",
     "kana": "おきて",
-    "phonemes": "okʲite",
-    "seconds": 0.811
+    "seconds": 1.109,
+    "sha256": "380bd6bc6172a3dc1d41f4d8db0bfa75a3293d6a37e041711df7cbd0da84cb4d",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "okʲite"
   },
   {
     "file": "course-10-v7.mp3",
     "kana": "あらって",
-    "phonemes": "aɾaʔte",
-    "seconds": 0.747
+    "seconds": 1.195,
+    "sha256": "d87bcdbd1cfa576c9cdb12c9fcf41f53782a326daf156fa0aea8eff34a4eeee2",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "aɾaʔte"
   },
   {
     "file": "course-10-v8.mp3",
     "kana": "かいて",
-    "phonemes": "kaite",
-    "seconds": 0.64
+    "seconds": 1.067,
+    "sha256": "e1cb714762fa1ed6d5ea7b98088a6460334e7b5904d49f84f234653b96c9471c",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kaite"
   },
   {
     "file": "course-10-v9.mp3",
     "kana": "きいて",
-    "phonemes": "kʲiːte",
-    "seconds": 0.683
+    "seconds": 0.64,
+    "sha256": "b985b7fca9acd0fbb472d18dd28f9ac2a20cf6ef10dc447ce960b592b4886825",
+    "engine": "kokoro-82m",
+    "voice": "jf_alpha",
+    "phonemes": "kʲiːte"
   },
   {
     "file": "course-10-v10.mp3",
     "kana": "かって",
-    "phonemes": "kaʔte",
-    "seconds": 0.64
+    "seconds": 1.088,
+    "sha256": "0e348b5eb4382f0bcf588c80a3a2bdc93f869ea437d2e437860bd658d15d48ca",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kaʔte"
   },
   {
     "file": "course-10-v11.mp3",
     "kana": "まって",
-    "phonemes": "maʔte",
-    "seconds": 0.661
+    "seconds": 1.003,
+    "sha256": "374fd34e1f708379e53da699e246bed0918074c41c5759314193972ea1a5979b",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "maʔte"
   },
   {
     "file": "course-10-v12.mp3",
     "kana": "はなして",
-    "phonemes": "hanaɕite",
-    "seconds": 0.811
+    "seconds": 1.216,
+    "sha256": "2d87406b77075424b287658aa25af315f20d48e2863f3ff7ba57410ccfb397ea",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "hanaɕite"
   },
   {
     "file": "course-10-v13.mp3",
     "kana": "して",
-    "phonemes": "ɕite",
-    "seconds": 0.533
+    "seconds": 1.003,
+    "sha256": "aca71e201b598220d96ea114f8c8aba7b9724728d435019172b9b1317952b6df",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɕite"
   },
   {
     "file": "course-10-v14.mp3",
     "kana": "きて",
-    "phonemes": "kʲite",
-    "seconds": 0.555
+    "seconds": 0.96,
+    "sha256": "6ceb826e823659be84c499de0b3edc669b5194d831520308c4133a5b6943f3e3",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kʲite"
   },
   {
     "file": "course-10-v15.mp3",
     "kana": "いって",
-    "phonemes": "iʔte",
-    "seconds": 0.683
+    "seconds": 1.088,
+    "sha256": "fdd23df8cff448e0f64618f7a618149f1fc9f6a04d0f416d4b6df2dc02e605a6",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "iʔte"
   },
   {
     "file": "course-10-v16.mp3",
     "kana": "でかけます",
-    "phonemes": "dekakemasɨ",
-    "seconds": 1.067
+    "seconds": 1.109,
+    "sha256": "76adc6295f1f7836cc8a9618307f49bb9b159f3d16921c03ce46e0e8c7db2c28",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "dekakemasɨ"
   },
   {
     "file": "course-10-v17.mp3",
     "kana": "しごと",
-    "phonemes": "ɕiɡoto",
-    "seconds": 0.683
+    "seconds": 1.152,
+    "sha256": "3a941d2cf8be9d5c9d06fa06d79c303cab63ac595cbbb35c00ff3cfa078c7822",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɕiɡoto"
   },
   {
     "file": "course-10-q1.mp3",
     "kana": "おちゃを のんで、ほんを よみます。",
-    "phonemes": "oʨa o nonde, hoɴ o jomʲimasɨ.",
-    "seconds": 1.941
+    "seconds": 3.04,
+    "sha256": "c09a1571bde5a702420b33fdf7832b4ec20a1ae9788fbe6bcd51d812b69010a8",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "おちゃを のんで、ほんを よみます。"
   },
   {
     "file": "course-10-q2.mp3",
     "kana": "ほんをよんで、えきへ いきます。",
-    "phonemes": "hoɴ o jonde, ekʲi e ikʲimasɨ.",
-    "seconds": 1.92
+    "seconds": 2.72,
+    "sha256": "c409e7c47661a0dee6dbeb5da043a009b7c16e1fdffebe1ae43e49c93a741624",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "本を読んで、駅へ行きます。"
   },
   {
     "file": "course-10-q3.mp3",
     "kana": "あさごはんを たべて おちゃを のみます。",
-    "phonemes": "asaɡohaɴ o tabete oʨa o nomʲimasɨ.",
-    "seconds": 2.304
+    "seconds": 2.88,
+    "sha256": "a02a8fd659e9e7a1a9701bcd3dd60f49b4010d03dd9c233d84027f954969f73e",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あさごはんを たべて おちゃを のみます。"
   },
   {
     "file": "course-10-q4.mp3",
     "kana": "のんで",
-    "phonemes": "nonde",
-    "seconds": 0.619
+    "seconds": 0.96,
+    "sha256": "de29e3ab9bce0662b9a6326a6a5d65ad200fdcd503d15cce91c654244c729a59",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "nonde"
   },
   {
     "file": "course-10-listen.mp3",
     "kana": "ほんを よんで、こうえんへ いきます。",
-    "phonemes": "hoɴ o jonde, koːeɴ e ikʲimasɨ.",
-    "seconds": 2.027
+    "seconds": 2.16,
+    "sha256": "1fbb5d4c49f30e00f49abd956767ef874f82ce8dd2918eeef63bd873ee8e2332",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "本を読んで、公園へ行きます。"
   },
   {
     "file": "course-10-q6.mp3",
     "kana": "あさ おきて、かおを あらいます。",
-    "phonemes": "asaokʲi te, kao o aɾaimasɨ.",
-    "seconds": 1.877
+    "seconds": 3.44,
+    "sha256": "b9fad02827ff47bd075a9eb53508f4c989f00b3e74c3cd4816b17089f9707d1f",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あさ おきて、かおを あらいます。"
   },
   {
     "file": "course-10-q7.mp3",
     "kana": "パンを かって うちへ かえります。",
-    "phonemes": "paɴ o kaʔte ɯʨi e kaeɾʲimasɨ.",
-    "seconds": 1.877
+    "seconds": 1.92,
+    "sha256": "f9783baca24bd88aa722b4b3fd3957fe8c35947cb3202b9d4d933f8a0a5f9f46",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "パンを かって うちへ かえります。"
   },
   {
     "file": "course-10-q8.mp3",
     "kana": "まって",
-    "phonemes": "maʔte",
-    "seconds": 0.661
+    "seconds": 1.003,
+    "sha256": "374fd34e1f708379e53da699e246bed0918074c41c5759314193972ea1a5979b",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "maʔte"
   },
   {
     "file": "course-11-example.mp3",
     "kana": "アニメを みたいです。",
-    "phonemes": "aɲime o mʲitai desɨ.",
-    "seconds": 1.429
+    "seconds": 1.84,
+    "sha256": "2cb2587b8573f1dba9af99a4518f9b21126663e0983e4332dbfee42b172db10b",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "アニメを みたいです。"
   },
   {
     "file": "course-11-example-2.mp3",
     "kana": "あたらしい くつが ほしいです。",
-    "phonemes": "ataɾaɕiː kɯʦɨ ɡa hoɕiː desɨ.",
-    "seconds": 1.835
+    "seconds": 2.56,
+    "sha256": "037fa81b0abe52645104619dc527e91e9e04a8c4312474f296622bf54ebd3266",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あたらしい くつが ほしいです。"
   },
   {
     "file": "course-11-example-3.mp3",
     "kana": "にほんへ いきたいです。",
-    "phonemes": "ɲihoɴ e ikʲi tai desɨ.",
-    "seconds": 1.557
+    "seconds": 1.2,
+    "sha256": "f2fe6fd87599a07d58d9b4c097f58a8cd7d0dc8f15e915e2aefb149662f23ac1",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "にほんへ いきたいです。"
   },
   {
     "file": "course-11-v1.mp3",
     "kana": "アニメ",
-    "phonemes": "aɲime",
-    "seconds": 0.832
+    "seconds": 1.045,
+    "sha256": "54b35fe937abf2a9c62189f4d25ce93d1928e2dc5370dee086fad30585e9917d",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "aɲime"
   },
   {
     "file": "course-11-v2.mp3",
     "kana": "みたい",
-    "phonemes": "mʲitai",
-    "seconds": 0.704
+    "seconds": 0.981,
+    "sha256": "cfa97f4b1129ce1cec43306a8499c6e05306c679ed35fb240644265845f0a5c6",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mʲitai"
   },
   {
     "file": "course-11-v3.mp3",
     "kana": "ほしい",
-    "phonemes": "hoɕiː",
-    "seconds": 0.683
+    "seconds": 0.789,
+    "sha256": "4151b2e2ce3298815628545ebe44806ff8fb011f6cb425356a93ef6b9865ae1a",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "hoɕiː"
   },
   {
     "file": "course-11-v4.mp3",
     "kana": "あたらしい",
-    "phonemes": "ataɾaɕiː",
-    "seconds": 1.045
+    "seconds": 1.365,
+    "sha256": "fa240fb2824fcfbaf1f8a4749974cfa473a4f4d82bc6d6245d9cb3247df4b157",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ataɾaɕiː"
   },
   {
     "file": "course-11-v5.mp3",
     "kana": "じてんしゃ",
-    "phonemes": "ʥiteɴɕa",
-    "seconds": 0.789
+    "seconds": 1.195,
+    "sha256": "f0caaec12f785e8d3c96c4af5a2954565f905f6d8f91723509d93cdc149ab7bb",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥiteɴɕa"
   },
   {
     "file": "course-11-v6.mp3",
     "kana": "たべたい",
-    "phonemes": "tabe tai",
-    "seconds": 0.853
+    "seconds": 1.003,
+    "sha256": "ff49c54724ba4f75193f12a87df2da1681fd344a0d2c23da00329ccb64f21948",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "tabe tai"
   },
   {
     "file": "course-11-v7.mp3",
     "kana": "のみたい",
-    "phonemes": "nomʲi tai",
-    "seconds": 0.896
+    "seconds": 1.131,
+    "sha256": "e56f49b5ad7948927296654791f5ecdab034ab2e69b5824cf34dd091dd1288ba",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "nomʲi tai"
   },
   {
     "file": "course-11-v8.mp3",
     "kana": "いきたい",
-    "phonemes": "ikʲi tai",
-    "seconds": 0.96
+    "seconds": 0.853,
+    "sha256": "e6443eef2eb9fae2ba8a3de93407431f4e348f92993730e8efdd992bc3bec2f3",
+    "engine": "kokoro-82m",
+    "voice": "jf_alpha",
+    "phonemes": "ikʲi tai"
   },
   {
     "file": "course-11-v9.mp3",
     "kana": "よみたい",
-    "phonemes": "jomʲi tai",
-    "seconds": 0.981
+    "seconds": 0.917,
+    "sha256": "cafc1041ae57c0f2e7ffcc7f6bddd8f692b48fdc34c5a6ddb98db329fa320f0a",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "jomʲi tai"
   },
   {
     "file": "course-11-v10.mp3",
     "kana": "あそびたい",
-    "phonemes": "asobʲi tai",
-    "seconds": 1.088
+    "seconds": 1.259,
+    "sha256": "22c1091bbce634b6cbe5bec4c2a9ba3f5f9c849c632aa8bc329315d1fc2eef20",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "asobʲi tai"
   },
   {
     "file": "course-11-v11.mp3",
     "kana": "ねたい",
-    "phonemes": "ne tai",
-    "seconds": 0.64
+    "seconds": 0.981,
+    "sha256": "baa0a3f6a78b3c7aa494023d5208fb16d417dce2342feff46dacf466e8b9eaed",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ne tai"
   },
   {
     "file": "course-11-v12.mp3",
     "kana": "りょこう",
-    "phonemes": "ɾʲokoː",
-    "seconds": 0.725
+    "seconds": 1.024,
+    "sha256": "ecb9ae2e922092247baf84613cafde6596ac90947f1f6dfaaf20dc0a2ea97faf",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɾʲokoː"
   },
   {
     "file": "course-11-v13.mp3",
     "kana": "くつ",
-    "phonemes": "kɯʦɨ",
-    "seconds": 0.64
+    "seconds": 0.789,
+    "sha256": "f8550de5d8c4730ba62dc80c5af7025475362dc7d7a311cc7e9fcd4e91a821f0",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kɯʦɨ"
   },
   {
     "file": "course-11-v14.mp3",
     "kana": "パソコン",
-    "phonemes": "pasokoɴ",
-    "seconds": 0.832
+    "seconds": 1.067,
+    "sha256": "b50d3fedbc72365dc61a43a210ba82b7305ee9d1ae3ea98be3954efa25cbeb0c",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "pasokoɴ"
   },
   {
     "file": "course-11-v15.mp3",
     "kana": "スマートフォン",
-    "phonemes": "sɨmaːto ɸoɴ",
-    "seconds": 1.109
+    "seconds": 1.387,
+    "sha256": "79aae2f205ee6323c597d6a113c38efccfe53c3381ffc544a639c8b01b2bd01e",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "sɨmaːto ɸoɴ"
   },
   {
     "file": "course-11-v16.mp3",
     "kana": "えいが",
-    "phonemes": "eːɡa",
-    "seconds": 0.704
+    "seconds": 0.96,
+    "sha256": "3c368e9cb998583a7d4dc5e20886ad6dfbe08e180c6fa0c8f0f26034ab4f1675",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "eːɡa"
   },
   {
     "file": "course-11-v17.mp3",
     "kana": "おかね",
-    "phonemes": "okane",
-    "seconds": 0.768
+    "seconds": 0.96,
+    "sha256": "ed7bcd2ac3965278e83dfa9b92314149f566edb681575a6c3c4bf5cd417bc640",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "okane"
   },
   {
     "file": "course-11-q1.mp3",
     "kana": "あたらしい かばんが ほしいです。",
-    "phonemes": "ataɾaɕiː kabaɴ ɡa hoɕiː desɨ.",
-    "seconds": 1.941
+    "seconds": 2.56,
+    "sha256": "2f528dbefedc6d3128ffae3dad62d47a98f2816a076d9a15cd4e82876f2afcc2",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あたらしい かばんが ほしいです。"
   },
   {
     "file": "course-11-q2.mp3",
     "kana": "アニメをみたいです。",
-    "phonemes": "aɲime o mʲitai desɨ.",
-    "seconds": 1.429
+    "seconds": 2.64,
+    "sha256": "17d0fc6cb728371eb8e80643cee42e7d21d04df4f667651e373f1bf4cfd6f949",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "アニメをみたいです。"
   },
   {
     "file": "course-11-q3.mp3",
     "kana": "あたらしい じてんしゃが ほしいです。",
-    "phonemes": "ataɾaɕiː ʥiteɴɕa ɡa hoɕiː desɨ.",
-    "seconds": 2.069
+    "seconds": 2.56,
+    "sha256": "01f66d05eeb3f8ac1690c1ac9be841ec559559ab5a9770ac3565c402be69cdf2",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あたらしい じてんしゃが ほしいです。"
   },
   {
     "file": "course-11-q4.mp3",
     "kana": "じてんしゃ",
-    "phonemes": "ʥiteɴɕa",
-    "seconds": 0.789
+    "seconds": 1.195,
+    "sha256": "f0caaec12f785e8d3c96c4af5a2954565f905f6d8f91723509d93cdc149ab7bb",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥiteɴɕa"
   },
   {
     "file": "course-11-listen.mp3",
     "kana": "おちゃを のみたいです。",
-    "phonemes": "oʨa o nomʲi tai desɨ.",
-    "seconds": 1.472
+    "seconds": 1.6,
+    "sha256": "e239da3283a47d14f5e57781dee53d65e6d760c710ed935de1f08520c89f0957",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "おちゃを のみたいです。"
   },
   {
     "file": "course-11-q6.mp3",
     "kana": "あたらしい くつが ほしいです。",
-    "phonemes": "ataɾaɕiː kɯʦɨ ɡa hoɕiː desɨ.",
-    "seconds": 1.835
+    "seconds": 2.56,
+    "sha256": "037fa81b0abe52645104619dc527e91e9e04a8c4312474f296622bf54ebd3266",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あたらしい くつが ほしいです。"
   },
   {
     "file": "course-11-q7.mp3",
     "kana": "にほんへ いきたいです。",
-    "phonemes": "ɲihoɴ e ikʲi tai desɨ.",
-    "seconds": 1.557
+    "seconds": 1.2,
+    "sha256": "f2fe6fd87599a07d58d9b4c097f58a8cd7d0dc8f15e915e2aefb149662f23ac1",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "にほんへ いきたいです。"
   },
   {
     "file": "course-11-q8.mp3",
     "kana": "ねたい",
-    "phonemes": "ne tai",
-    "seconds": 0.64
+    "seconds": 0.981,
+    "sha256": "baa0a3f6a78b3c7aa494023d5208fb16d417dce2342feff46dacf466e8b9eaed",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ne tai"
   },
   {
     "file": "course-12-example.mp3",
     "kana": "でんしゃは バスより はやいです。",
-    "phonemes": "deɴɕa βa basɨ joɾʲi hajai desɨ.",
-    "seconds": 1.963
+    "seconds": 2.4,
+    "sha256": "3a218613bb19ddaaec553e63113eda9a05dc37e8e05d18a516fdb4a9c71fccfa",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "でんしゃは バスより はやいです。"
   },
   {
     "file": "course-12-example-2.mp3",
     "kana": "この くつは あの くつより やすいです。",
-    "phonemes": "kono kɯʦɨ βa ano kɯʦɨ joɾʲi jasɨi desɨ.",
-    "seconds": 2.197
+    "seconds": 3.28,
+    "sha256": "bd5ba9d630eab26deb10c5883bc9d41b0fb5c38cc64f565766e0ddb550052bd6",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この くつは あの くつより やすいです。"
   },
   {
     "file": "course-12-example-3.mp3",
     "kana": "この みせのほうが ちかいです。",
-    "phonemes": "kono mʲise no hoː ɡa ʨikai desɨ.",
-    "seconds": 1.877
+    "seconds": 2.0,
+    "sha256": "c913c57367747fcb487d510425d33c2a9146b9fa8dbbe5d956fe5d6e990ec1d8",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この みせのほうが ちかいです。"
   },
   {
     "file": "course-12-v1.mp3",
     "kana": "はやい",
-    "phonemes": "hajai",
-    "seconds": 0.576
+    "seconds": 1.003,
+    "sha256": "faca4b66e39001a1a52b993973bf2959c70f5b372ca65ee66473256042b8320b",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "hajai"
   },
   {
     "file": "course-12-v2.mp3",
     "kana": "やすい",
-    "phonemes": "jasɨi",
-    "seconds": 0.64
+    "seconds": 0.939,
+    "sha256": "aa6c6873d4b7b84cbf5829982c192f6e7d578e9b682f584c4acd517a3a32b0a4",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "jasɨi"
   },
   {
     "file": "course-12-v3.mp3",
     "kana": "バス",
-    "phonemes": "basɨ",
-    "seconds": 0.491
+    "seconds": 0.832,
+    "sha256": "405db05f58f53343f22087d474a54049258983a4dca3d4cea66a8e03f4e1bf40",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "basɨ"
   },
   {
     "file": "course-12-v4.mp3",
     "kana": "でんしゃ",
-    "phonemes": "deɴɕa",
-    "seconds": 0.661
+    "seconds": 0.917,
+    "sha256": "539314812d908dd90cabe870ca55f99a6616252e5cdcffd664f19fb2533e42e4",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "deɴɕa"
   },
   {
     "file": "course-12-v5.mp3",
     "kana": "あの",
-    "phonemes": "ano",
-    "seconds": 0.597
+    "seconds": 0.939,
+    "sha256": "b99f83d23023656e60d8d036a622e9b6a3cee7a2cbb713cdc3afc7a3f3a8bb1e",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ano"
   },
   {
     "file": "course-12-v6.mp3",
     "kana": "たかい",
-    "phonemes": "takai",
-    "seconds": 0.661
+    "seconds": 0.96,
+    "sha256": "18fd55938000365633b99593ad258d5e96e23211a038a9bbff09000198d3eb22",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "takai"
   },
   {
     "file": "course-12-v7.mp3",
     "kana": "おそい",
-    "phonemes": "osoi",
-    "seconds": 0.768
+    "seconds": 0.917,
+    "sha256": "d0089bf28567e254dda5283f2281f1580b1721be8a6dd21d6a6a222b826986bf",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "osoi"
   },
   {
     "file": "course-12-v8.mp3",
     "kana": "ちかい",
-    "phonemes": "ʨikai",
-    "seconds": 0.619
+    "seconds": 0.96,
+    "sha256": "a30c50a3b1f4558d75d38d3e768e41cf87c11ccc6e1d55424b3ed58f32309d9c",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʨikai"
   },
   {
     "file": "course-12-v9.mp3",
     "kana": "とおい",
-    "phonemes": "toːi",
-    "seconds": 0.597
+    "seconds": 2.32,
+    "sha256": "b184678ac8c702213cbe6d1f5ff89345703a087424f1f8ca7d6dea45f6909dbb",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "遠い"
   },
   {
     "file": "course-12-v10.mp3",
     "kana": "おおい",
-    "phonemes": "oːi",
-    "seconds": 0.725
+    "seconds": 0.811,
+    "sha256": "e5aeca26af33b0ad9fa6a0396138a9c6bf7fdcb5986ba184a81e8561686e67a4",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "oːi"
   },
   {
     "file": "course-12-v11.mp3",
     "kana": "すくない",
-    "phonemes": "sɨkɯnai",
-    "seconds": 0.832
+    "seconds": 1.109,
+    "sha256": "baa721aff99ba5d5cef9df761a0595ab297a978ff8eb78a93d55600d18c92321",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "sɨkɯnai"
   },
   {
     "file": "course-12-v12.mp3",
     "kana": "ながい",
-    "phonemes": "naɡai",
-    "seconds": 0.555
+    "seconds": 0.939,
+    "sha256": "78435f4cd1032c487f1fbb68ed1ce725859cb1fbf591a60de136e778fd835666",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "naɡai"
   },
   {
     "file": "course-12-v13.mp3",
     "kana": "みじかい",
-    "phonemes": "mʲiʥikai",
-    "seconds": 0.939
+    "seconds": 1.088,
+    "sha256": "bb4e4d3b3d213c5ae3666e8c1c119053422e2c05a87addc71387c75b2320af57",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mʲiʥikai"
   },
   {
     "file": "course-12-v14.mp3",
     "kana": "おおきい",
-    "phonemes": "oːkʲiː",
-    "seconds": 0.832
+    "seconds": 0.853,
+    "sha256": "5b83a1c9acdf65b909491ada5d67b52a821586f9a47e157da11b04e15f120baf",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "oːkʲiː"
   },
   {
     "file": "course-12-v15.mp3",
     "kana": "ちいさい",
-    "phonemes": "ʨiːsai",
-    "seconds": 0.725
+    "seconds": 1.024,
+    "sha256": "02f8eb475586436e9d07ebc979950e1056b4e3ede04d2da87acb82bd66b49f9a",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʨiːsai"
   },
   {
     "file": "course-12-v16.mp3",
     "kana": "どちら",
-    "phonemes": "doʨiɾa",
-    "seconds": 0.661
+    "seconds": 0.896,
+    "sha256": "184a284cefaa2bfb7f41a1b3fbc2e83344189b989fbd638230ea012910ce83f6",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "doʨiɾa"
   },
   {
     "file": "course-12-v17.mp3",
     "kana": "ほう",
-    "phonemes": "hoː",
-    "seconds": 0.491
+    "seconds": 0.619,
+    "sha256": "173841e976bee69bc91a716578074c6662d132a83fb4c7c5b388c015cc580623",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "hoː"
   },
   {
     "file": "course-12-q1.mp3",
     "kana": "バスは でんしゃより やすいです。",
-    "phonemes": "basɨ βa deɴɕa joɾʲi jasɨi desɨ.",
-    "seconds": 1.856
+    "seconds": 2.32,
+    "sha256": "bd30fa43d6cf7605a7fcd8f78ed24da632da273efa7193e0223277cbfeba289d",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "バスは でんしゃより やすいです。"
   },
   {
     "file": "course-12-q2.mp3",
     "kana": "でんしゃは バスよりはやいです。",
-    "phonemes": "deɴɕa βa basɨ joɾʲi hajai desɨ.",
-    "seconds": 1.963
+    "seconds": 2.8,
+    "sha256": "9f735df19a3654481bfe40cb9c5569bda1eed924dacde72e1b60c1953ac00408",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "でんしゃは バスよりはやいです。"
   },
   {
     "file": "course-12-q3.mp3",
     "kana": "でんしゃのほうが バスより はやいです。",
-    "phonemes": "deɴɕa no hoː ɡa basɨ joɾʲi hajai desɨ.",
-    "seconds": 2.325
+    "seconds": 2.56,
+    "sha256": "5e8d66b5d68448dda846e838d706f2be17bb96d82f7d83e18db3fe3da46b79c2",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "でんしゃのほうが バスより はやいです。"
   },
   {
     "file": "course-12-q4.mp3",
     "kana": "はやい",
-    "phonemes": "hajai",
-    "seconds": 0.576
+    "seconds": 1.003,
+    "sha256": "faca4b66e39001a1a52b993973bf2959c70f5b372ca65ee66473256042b8320b",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "hajai"
   },
   {
     "file": "course-12-listen.mp3",
     "kana": "この かばんの ほうが あの かばんより やすいです。",
-    "phonemes": "kono kabaɴ no hoː ɡa ano kabaɴ joɾʲi jasɨi desɨ.",
-    "seconds": 2.859
+    "seconds": 3.28,
+    "sha256": "a60501319b90fe1bb69bc2a80821da006f6f6dfed323755705a235004656474e",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この かばんの ほうが あの かばんより やすいです。"
   },
   {
     "file": "course-12-q6.mp3",
     "kana": "この くつは あの くつより やすいです。",
-    "phonemes": "kono kɯʦɨ βa ano kɯʦɨ joɾʲi jasɨi desɨ.",
-    "seconds": 2.197
+    "seconds": 3.28,
+    "sha256": "bd5ba9d630eab26deb10c5883bc9d41b0fb5c38cc64f565766e0ddb550052bd6",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この くつは あの くつより やすいです。"
   },
   {
     "file": "course-12-q7.mp3",
     "kana": "この みせのほうが ちかいです。",
-    "phonemes": "kono mʲise no hoː ɡa ʨikai desɨ.",
-    "seconds": 1.877
+    "seconds": 2.0,
+    "sha256": "c913c57367747fcb487d510425d33c2a9146b9fa8dbbe5d956fe5d6e990ec1d8",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この みせのほうが ちかいです。"
   },
   {
     "file": "course-12-q8.mp3",
     "kana": "とおい",
-    "phonemes": "toːi",
-    "seconds": 0.597
+    "seconds": 0.939,
+    "sha256": "15ebe827480a852d76d8e83869f24fe1c3ebecb0a41d027b50d6deb158c026b4",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "toːi"
   },
   {
     "file": "course-13-example.mp3",
     "kana": "ここで しゃしんを とっても いいですか。",
-    "phonemes": "koko de ɕaɕiɴ o toʔte mo iː desɨ ka.",
-    "seconds": 2.389
+    "seconds": 2.64,
+    "sha256": "2721744c6ce63a8df091bfbc3e1f1d22846519f10dbdbedcce5bfbed08fbb115",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ここで しゃしんを とっても いいですか。"
   },
   {
     "file": "course-13-example-2.mp3",
     "kana": "ここで たべても いいですか。",
-    "phonemes": "koko de tabete mo iː desɨ ka.",
-    "seconds": 1.941
+    "seconds": 1.76,
+    "sha256": "54b034a227179c06622576af44f12503a42d79646e719124f57be88bb96805d4",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ここで たべても いいですか。"
   },
   {
     "file": "course-13-example-3.mp3",
     "kana": "この ドアを あけては いけません。",
-    "phonemes": "kono doa o akete βa ike maseɴ.",
-    "seconds": 1.984
+    "seconds": 2.32,
+    "sha256": "2095562f8f38c1099aee3668551dbd59390c77f5ce3890754b0e2c3b77ebbd86",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この ドアを あけては いけません。"
   },
   {
     "file": "course-13-v1.mp3",
     "kana": "しゃしん",
-    "phonemes": "ɕaɕiɴ",
-    "seconds": 0.619
+    "seconds": 0.96,
+    "sha256": "23466977b413496d235307908b29198fb0e6a05741fe924b094db8fca91150f6",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɕaɕiɴ"
   },
   {
     "file": "course-13-v2.mp3",
     "kana": "とって",
-    "phonemes": "toʔte",
-    "seconds": 0.661
+    "seconds": 1.024,
+    "sha256": "2611f3229872544da0dbc5d69f48768937af4191c327dfded93b8c8946331a0f",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "toʔte"
   },
   {
     "file": "course-13-v3.mp3",
     "kana": "ここ",
-    "phonemes": "koko",
-    "seconds": 0.491
+    "seconds": 0.96,
+    "sha256": "0374020ac9e42420f54c807542cb5aa7efe92f021a037d1a0b50c72c604e7eae",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "koko"
   },
   {
     "file": "course-13-v4.mp3",
     "kana": "のんで",
-    "phonemes": "nonde",
-    "seconds": 0.619
+    "seconds": 0.96,
+    "sha256": "de29e3ab9bce0662b9a6326a6a5d65ad200fdcd503d15cce91c654244c729a59",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "nonde"
   },
   {
     "file": "course-13-v5.mp3",
     "kana": "はいって",
-    "phonemes": "haiʔte",
-    "seconds": 0.683
+    "seconds": 1.173,
+    "sha256": "b9bd32503ae3c12bbdc53941d5c6ac883e283c8a1c39e1f963ca4998ba0c3788",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "haiʔte"
   },
   {
     "file": "course-13-v6.mp3",
     "kana": "すわって",
-    "phonemes": "sɨβaʔte",
-    "seconds": 0.768
+    "seconds": 1.195,
+    "sha256": "d466395e20834a25638442283aad04478cbcfc9a453d567c7ac8d0300dce66ac",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "sɨβaʔte"
   },
   {
     "file": "course-13-v7.mp3",
     "kana": "たって",
-    "phonemes": "taʔte",
-    "seconds": 0.661
+    "seconds": 1.067,
+    "sha256": "b3a1f5fe4e03ba8c65dfb14e7029488313b99bca9c7e1f5ba4e7e5bd5b8feba7",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "taʔte"
   },
   {
     "file": "course-13-v8.mp3",
     "kana": "つかって",
-    "phonemes": "ʦɨkaʔte",
-    "seconds": 0.725
+    "seconds": 1.131,
+    "sha256": "8b3f5df5c7dd35f178608ccaa91104d3fdb99a85ef9b70f6f0a8f3b98b9c6ab7",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʦɨkaʔte"
   },
   {
     "file": "course-13-v9.mp3",
     "kana": "あけて",
-    "phonemes": "akete",
-    "seconds": 0.811
+    "seconds": 1.152,
+    "sha256": "6eb49918478a1a30063847ece380bc8e14122feb03cf4b69389feb5080c1009d",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "akete"
   },
   {
     "file": "course-13-v10.mp3",
     "kana": "しめて",
-    "phonemes": "ɕimete",
-    "seconds": 0.683
+    "seconds": 0.661,
+    "sha256": "f63dc3619976e9ca657acadfe58a6947a91570558e62db658ca2cfc57b4e20a9",
+    "engine": "kokoro-82m",
+    "voice": "jf_alpha",
+    "phonemes": "ɕimete"
   },
   {
     "file": "course-13-v11.mp3",
     "kana": "おいて",
-    "phonemes": "oite",
-    "seconds": 0.789
+    "seconds": 0.939,
+    "sha256": "27da8eff218edb05711490de0aa1c6bfb4de6d6c77720300856c94807a7251dc",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "oite"
   },
   {
     "file": "course-13-v12.mp3",
     "kana": "たべて",
-    "phonemes": "tabete",
-    "seconds": 0.683
+    "seconds": 0.597,
+    "sha256": "7a7b8c9da953bde7498385018d75b9c73e488094ece876036ed9aa2890cef608",
+    "engine": "kokoro-82m",
+    "voice": "jf_alpha",
+    "phonemes": "tabete"
   },
   {
     "file": "course-13-v13.mp3",
     "kana": "さわって",
-    "phonemes": "saβaʔte",
-    "seconds": 0.811
+    "seconds": 1.28,
+    "sha256": "392305008f5d03cf40afc6f15e87f027863f5e82034de3741b59f9418cec35b9",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "saβaʔte"
   },
   {
     "file": "course-13-v14.mp3",
     "kana": "およいで",
-    "phonemes": "ojoide",
-    "seconds": 0.875
+    "seconds": 1.152,
+    "sha256": "e76835e03d5ce45138249315605f8777e6c7bbc1f36fd959aedf567f29273b3c",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ojoide"
   },
   {
     "file": "course-13-v15.mp3",
     "kana": "きんし",
-    "phonemes": "kʲiɴɕi",
-    "seconds": 0.661
+    "seconds": 0.96,
+    "sha256": "331b675a9793be5f9d6a20bf565cdfedb0d444fabf468228991c852642ae9b3f",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kʲiɴɕi"
   },
   {
     "file": "course-13-v16.mp3",
     "kana": "だいじょうぶ",
-    "phonemes": "daiʥoːbɯ",
-    "seconds": 0.939
+    "seconds": 1.259,
+    "sha256": "ebe22651a334ef69b759534daf5c46232719383478c6ed3b1f931f869a4d2177",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "daiʥoːbɯ"
   },
   {
     "file": "course-13-v17.mp3",
     "kana": "みせ",
-    "phonemes": "mʲise",
-    "seconds": 0.555
+    "seconds": 0.555,
+    "sha256": "123a828a9e0057d44242a555d4cb5bd5b41ee4cf0d8b03da6e907fcd5ed2aaf5",
+    "engine": "kokoro-82m",
+    "voice": "jf_alpha",
+    "phonemes": "mʲise"
   },
   {
     "file": "course-13-q1.mp3",
     "kana": "ここで みずを のんでは いけません。",
-    "phonemes": "koko demʲizɨ o nonde βa ike maseɴ.",
-    "seconds": 2.197
+    "seconds": 2.32,
+    "sha256": "2f445269312bf00bee407a9ebc58cd4153ca2f14ddec03fe61f1bfb4874f1a16",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ここで みずを のんでは いけません。"
   },
   {
     "file": "course-13-q2.mp3",
     "kana": "しゃしんを とってもいいですか。",
-    "phonemes": "ɕaɕiɴ o toʔte mo iː desɨ ka.",
-    "seconds": 2.048
+    "seconds": 1.6,
+    "sha256": "640823b69d620115b70329f2e824020260da67168af339e50c05cec2cb918877",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "しゃしんを とってもいいですか。"
   },
   {
     "file": "course-13-q3.mp3",
     "kana": "ここで しゃしんを とっては いけません。",
-    "phonemes": "koko de ɕaɕiɴ o toʔte βa ike maseɴ.",
-    "seconds": 2.325
+    "seconds": 2.64,
+    "sha256": "f4fb8b68f4f031c4e1ab842f2e6709c43d25cff5ffd8b722933be022f8b8e9d5",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ここで しゃしんを とっては いけません。"
   },
   {
     "file": "course-13-q4.mp3",
     "kana": "しゃしん",
-    "phonemes": "ɕaɕiɴ",
-    "seconds": 0.619
+    "seconds": 0.96,
+    "sha256": "23466977b413496d235307908b29198fb0e6a05741fe924b094db8fca91150f6",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ɕaɕiɴ"
   },
   {
     "file": "course-13-listen.mp3",
     "kana": "ここに はいっても いいです。",
-    "phonemes": "koko ɲi haiʔte mo iː desɨ.",
-    "seconds": 1.728
+    "seconds": 2.32,
+    "sha256": "42aee2d7a88601e8ae316cd1b582a78a1c84d6822e90e108178b29384331b8d2",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ここに はいっても いいです。"
   },
   {
     "file": "course-13-q6.mp3",
     "kana": "ここで たべても いいですか。",
-    "phonemes": "koko de tabete mo iː desɨ ka.",
-    "seconds": 1.941
+    "seconds": 1.76,
+    "sha256": "54b034a227179c06622576af44f12503a42d79646e719124f57be88bb96805d4",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ここで たべても いいですか。"
   },
   {
     "file": "course-13-q7.mp3",
     "kana": "この ドアを あけては いけません。",
-    "phonemes": "kono doa o akete βa ike maseɴ.",
-    "seconds": 1.984
+    "seconds": 2.32,
+    "sha256": "2095562f8f38c1099aee3668551dbd59390c77f5ce3890754b0e2c3b77ebbd86",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この ドアを あけては いけません。"
   },
   {
     "file": "course-13-q8.mp3",
     "kana": "きんし",
-    "phonemes": "kʲiɴɕi",
-    "seconds": 0.661
+    "seconds": 0.96,
+    "sha256": "331b675a9793be5f9d6a20bf565cdfedb0d444fabf468228991c852642ae9b3f",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kʲiɴɕi"
   },
   {
     "file": "course-14-example.mp3",
     "kana": "あした、いっしょに こうえんへ いきませんか。",
-    "phonemes": "aɕita, iʔɕoɲi koːeɴ e ikʲi maseɴ ka.",
-    "seconds": 2.517
+    "seconds": 4.0,
+    "sha256": "f03422daaacb22771fee8cbb2f32f3dea66d480d588de8adb87ee02601a46b8b",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あした、いっしょに こうえんへ いきませんか。"
   },
   {
     "file": "course-14-example-2.mp3",
     "kana": "しゅうまつ、いっしょに えいがを みませんか。",
-    "phonemes": "ɕɨː maʦɨ, iʔɕoɲi eːɡa o mʲi maseɴ ka.",
-    "seconds": 2.56
+    "seconds": 2.4,
+    "sha256": "c6039b141cb0eb9b8876282bd24c642a0f5bdcddcb18c69955fa761b3207692b",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "しゅうまつ、いっしょに えいがを みませんか。"
   },
   {
     "file": "course-14-example-3.mp3",
     "kana": "あさって こうえんで あいましょう。",
-    "phonemes": "asaʔte koːeɴ deai maɕoː.",
-    "seconds": 1.899
+    "seconds": 2.0,
+    "sha256": "8b5cf6d39666d20701338f7b4a4d5e908adf715e607b221e70e403f23ef98a14",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あさって こうえんで あいましょう。"
   },
   {
     "file": "course-14-v1.mp3",
     "kana": "あした",
-    "phonemes": "aɕita",
-    "seconds": 0.683
+    "seconds": 0.619,
+    "sha256": "21d62e8084d4c4448750578c3ef9ab6fcb0fb42864ffc8e9409de88cdfc07e77",
+    "engine": "kokoro-82m",
+    "voice": "jf_alpha",
+    "phonemes": "aɕita"
   },
   {
     "file": "course-14-v2.mp3",
     "kana": "いっしょに",
-    "phonemes": "iʔɕoɲi",
-    "seconds": 0.96
+    "seconds": 1.003,
+    "sha256": "310965f029ebe6e94f75179ae0b992f7c712508c2696e342cae499b977b6bebe",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "iʔɕoɲi"
   },
   {
     "file": "course-14-v3.mp3",
     "kana": "いきませんか",
-    "phonemes": "ikʲi maseɴ ka",
-    "seconds": 1.237
+    "seconds": 1.493,
+    "sha256": "43a03dbcc94412aaf4af2d2d9c49c8ccea6b0b290b0485df1fa13263d1a52b2a",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ikʲi maseɴ ka"
   },
   {
     "file": "course-14-v4.mp3",
     "kana": "いきましょう",
-    "phonemes": "ikʲi maɕoː",
-    "seconds": 1.024
+    "seconds": 1.365,
+    "sha256": "e20c6d04ab131eaa830fb8e8dc9e829850d11a3e31716459239eb225739073f3",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ikʲi maɕoː"
   },
   {
     "file": "course-14-v5.mp3",
     "kana": "たべましょう",
-    "phonemes": "tabe maɕoː",
-    "seconds": 1.088
+    "seconds": 1.216,
+    "sha256": "e1fc2c23f48a657dcf6084b4b8f370ed6af4a94df1b054a52bf29c554256df38",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "tabe maɕoː"
   },
   {
     "file": "course-14-v6.mp3",
     "kana": "きょう",
-    "phonemes": "kʲoː",
-    "seconds": 0.512
+    "seconds": 0.853,
+    "sha256": "e5d214fcc6bb357edb40b098a092e1d1070fcfb2e113cb3e22b762152362ecb3",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kʲoː"
   },
   {
     "file": "course-14-v7.mp3",
     "kana": "あさって",
-    "phonemes": "asaʔte",
-    "seconds": 0.853
+    "seconds": 1.216,
+    "sha256": "ba7534a366a96cbdaff69ec8c61a6d866c27f2d849a4b51f30f3664390d7aad6",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "asaʔte"
   },
   {
     "file": "course-14-v8.mp3",
     "kana": "こんしゅう",
-    "phonemes": "koɴ ɕɨː",
-    "seconds": 0.853
+    "seconds": 0.811,
+    "sha256": "60f16999ffd426d2634741cd9720b9ad2136f4e4802b1e3531b0a3d9ca82fa63",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "koɴ ɕɨː"
   },
   {
     "file": "course-14-v9.mp3",
     "kana": "しゅうまつ",
-    "phonemes": "ɕɨː maʦɨ",
-    "seconds": 0.811
+    "seconds": 0.747,
+    "sha256": "95f6221915a5d46bf03d4d43b1a3726b03ae939de18e80f4e8c447cbf967b9a5",
+    "engine": "kokoro-82m",
+    "voice": "jf_alpha",
+    "phonemes": "ɕɨː maʦɨ"
   },
   {
     "file": "course-14-v10.mp3",
     "kana": "こんど",
-    "phonemes": "kondo",
-    "seconds": 0.597
+    "seconds": 0.917,
+    "sha256": "f4aa2e4c5ab78d79f64b3ea313c8e464f681fe183576d60ad8df599367122e29",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kondo"
   },
   {
     "file": "course-14-v11.mp3",
     "kana": "あいましょう",
-    "phonemes": "ai maɕoː",
-    "seconds": 0.981
+    "seconds": 1.28,
+    "sha256": "f6c007dda701519aa45e3d12b65d68884ede5fc324821d51fa4da629709f3e3d",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ai maɕoː"
   },
   {
     "file": "course-14-v12.mp3",
     "kana": "のみましょう",
-    "phonemes": "nomʲi maɕoː",
-    "seconds": 1.088
+    "seconds": 1.429,
+    "sha256": "4402dc46747d0c87c881cf62493d64f9b704fa5d4c929b474c992112271b14fe",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "nomʲi maɕoː"
   },
   {
     "file": "course-14-v13.mp3",
     "kana": "みましょう",
-    "phonemes": "mʲi maɕoː",
-    "seconds": 0.896
+    "seconds": 1.109,
+    "sha256": "f1dab34f689bf7db4f514f770c19526c7e06ef47c288aee49c31c99c06ccebf8",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "mʲi maɕoː"
   },
   {
     "file": "course-14-v14.mp3",
     "kana": "あそびましょう",
-    "phonemes": "asobʲi maɕoː",
-    "seconds": 1.152
+    "seconds": 1.493,
+    "sha256": "77090fac170ddd016dfcc253751c7a0659ff443c940b745d26cfc0a0bf8f9bbe",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "asobʲi maɕoː"
   },
   {
     "file": "course-14-v15.mp3",
     "kana": "かえりましょう",
-    "phonemes": "kaeɾʲi maɕoː",
-    "seconds": 1.109
+    "seconds": 1.451,
+    "sha256": "acba37eb77e7a9f871d68ac4751cabf46591133a7b60f5166e6ce9df6196d7a2",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "kaeɾʲi maɕoː"
   },
   {
     "file": "course-14-v16.mp3",
     "kana": "ひま",
-    "phonemes": "çima",
-    "seconds": 0.512
+    "seconds": 0.465,
+    "sha256": "e4b89fd6e5d1e5c142a19e642837e2495240a833d0c12fd40a8c4d745007ac9f",
+    "engine": "kokoro-82m",
+    "voice": "jf_alpha",
+    "phonemes": "çima"
   },
   {
     "file": "course-14-v17.mp3",
     "kana": "やくそく",
-    "phonemes": "jakɯsokɯ",
-    "seconds": 0.768
+    "seconds": 1.237,
+    "sha256": "f00eb0663d8acc7451ba88b1b42a57ae068877da8159fe00cf9d28742f22bb86",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "jakɯsokɯ"
   },
   {
     "file": "course-14-q1.mp3",
     "kana": "いっしょに おちゃを のみませんか。",
-    "phonemes": "iʔɕoɲi oʨa o nomʲi maseɴ ka.",
-    "seconds": 1.963
+    "seconds": 2.64,
+    "sha256": "00568e682f12022279e7f8081f5d15c83f52315333efae96a0c69cee62382d27",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "いっしょに おちゃを のみませんか。"
   },
   {
     "file": "course-14-q2.mp3",
     "kana": "いっしょに こうえんへいきませんか。",
-    "phonemes": "iʔɕoɲi koːeɴ e ikʲi maseɴ ka.",
-    "seconds": 2.112
+    "seconds": 2.16,
+    "sha256": "72264a108760863252c2666c8c16ef2afca424086f173d546db3231d0d70d5e0",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "いっしょに こうえんへいきませんか。"
   },
   {
     "file": "course-14-q3.mp3",
     "kana": "あした いっしょに えきへ いきましょう。",
-    "phonemes": "aɕita iʔɕoɲi ekʲi e ikʲi maɕoː.",
-    "seconds": 2.048
+    "seconds": 2.48,
+    "sha256": "4b5d757591b3066e40638ab0986b30de47104205aac7c4a5ef7887ef215c0e0b",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あした いっしょに えきへ いきましょう。"
   },
   {
     "file": "course-14-q4.mp3",
     "kana": "いっしょに",
-    "phonemes": "iʔɕoɲi",
-    "seconds": 0.96
+    "seconds": 1.003,
+    "sha256": "310965f029ebe6e94f75179ae0b992f7c712508c2696e342cae499b977b6bebe",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "iʔɕoɲi"
   },
   {
     "file": "course-14-listen.mp3",
     "kana": "いっしょに ケーキを たべましょう。",
-    "phonemes": "iʔɕoɲi keːkʲi o tabe maɕoː.",
-    "seconds": 1.92
+    "seconds": 1.84,
+    "sha256": "d3758acffdb084e8a6809342a29c351545d6448d8bfce5b04d3bbdda3b4efa67",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "いっしょに ケーキを たべましょう。"
   },
   {
     "file": "course-14-q6.mp3",
     "kana": "しゅうまつ、いっしょに えいがを みませんか。",
-    "phonemes": "ɕɨː maʦɨ, iʔɕoɲi eːɡa o mʲi maseɴ ka.",
-    "seconds": 2.56
+    "seconds": 2.4,
+    "sha256": "c6039b141cb0eb9b8876282bd24c642a0f5bdcddcb18c69955fa761b3207692b",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "しゅうまつ、いっしょに えいがを みませんか。"
   },
   {
     "file": "course-14-q7.mp3",
     "kana": "あさって こうえんで あいましょう。",
-    "phonemes": "asaʔte koːeɴ deai maɕoː.",
-    "seconds": 1.899
+    "seconds": 2.0,
+    "sha256": "8b5cf6d39666d20701338f7b4a4d5e908adf715e607b221e70e403f23ef98a14",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あさって こうえんで あいましょう。"
   },
   {
     "file": "course-14-q8.mp3",
     "kana": "しゅうまつ",
-    "phonemes": "ɕɨː maʦɨ",
-    "seconds": 0.811
+    "seconds": 0.747,
+    "sha256": "95f6221915a5d46bf03d4d43b1a3726b03ae939de18e80f4e8c447cbf967b9a5",
+    "engine": "kokoro-82m",
+    "voice": "jf_alpha",
+    "phonemes": "ɕɨː maʦɨ"
   }
 ]

@@ -5,6 +5,7 @@
   const $ = id => document.getElementById(id);
   const labels = { hiragana: '平假名', katakana: '片假名', mixed: '混合', base: '清音', voiced: '浊音·半浊音', yoon: '拗音', special: '促音·长音', unseen: '未学', learning: '学习中', mastered: '自动学会', retired: '确认学会' };
   const storageKey = 'kana-studio-progress-v1';
+  const audioRevision = '20261008-2';
   let state = readStoredState();
   let view = 'course';
   let convertScript = state.mode === 'mixed' ? 'hiragana' : state.mode;
@@ -364,9 +365,9 @@
     if (activeAudio) { activeAudio.pause(); activeAudio.currentTime = 0; activeAudio = null; }
     if (item.audio) {
       if ('speechSynthesis' in window) window.speechSynthesis.cancel();
-      const clip = new Audio(item.audio);
+      const clip = new Audio(`${item.audio}?v=${audioRevision}`);
       activeAudio = clip;
-      const repetitions = item.kind === 'word' ? 1 : 2;
+      const repetitions = item.kind === 'single' || item.kind === 'yoon' ? 2 : 1;
       let remaining = repetitions;
       clip.playbackRate = state.audioSpeed === 'slow' ? 0.78 : 1;
       if ('preservesPitch' in clip) clip.preservesPitch = true;
@@ -397,7 +398,7 @@
     if (!japanese) { output.textContent = '未检测到日语语音；请在系统中安装日语语音后重试。'; return; }
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(item.kana);
-    utterance.lang = 'ja-JP'; utterance.voice = japanese; utterance.rate = state.audioSpeed === 'slow' ? 0.72 : 0.9;
+    utterance.lang = 'ja-JP'; utterance.voice = japanese; utterance.rate = state.audioSpeed === 'slow' ? 0.78 : 1;
     utterance.onerror = () => { output.textContent = '朗读失败，请检查浏览器的语音设置。'; };
     window.speechSynthesis.speak(utterance);
   }
@@ -424,6 +425,7 @@
   });
   document.querySelectorAll('[data-audio-speed]').forEach(button => button.addEventListener('click', () => {
     state.audioSpeed = state.audioSpeed === 'slow' ? 'normal' : 'slow';
+    state.audioSpeedChoice = true;
     persist(); renderControls();
   }));
   $('romajiToggle').addEventListener('click', () => {
