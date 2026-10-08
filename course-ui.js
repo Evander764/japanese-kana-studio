@@ -2,33 +2,51 @@
   'use strict';
   const course = root.CourseCore;
   const roadmap = root.CourseData.roadmap;
+  const foundationId = '00';
   const statusLabels = { unseen: '未开始', learning: '学习中', mastered: '自动学会', retired: '确认学会' };
   const typeLabels = { meaning: '看句选义', particle: '补全句子', order: '词块排序', read: '输入读音', listen: '听音选义' };
   const $ = id => document.getElementById(id);
   const html = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
 
-  function create({ getState, onStateChange, speak }) {
-    let selectedId = course.recommendedLesson(getState())?.id || course.lessons[0].id;
+  function create({ getState, onStateChange, onFoundationNavigate, speak }) {
+    const initialSelection = () => Object.keys(getState().courseRecords || {}).length
+      ? course.recommendedLesson(getState())?.id || course.lessons[0].id
+      : foundationId;
+    let selectedId = initialSelection();
     let session = null;
     let finished = null;
 
     function selected() { return course.byId.get(selectedId); }
+    function select(id) {
+      if (id !== foundationId && !course.byId.has(id)) return;
+      selectedId = id; session = null; finished = null; render();
+    }
     function update(nextState) { onStateChange(nextState); render(); }
     function render() {
       const state = getState();
       const counts = { unseen: 0, learning: 0, mastered: 0, retired: 0 };
       course.lessons.forEach(lesson => counts[course.getStatus(state, lesson.id)]++);
       const recommended = course.recommendedLesson(state);
-      $('courseOverview').innerHTML = `<div><strong>${course.lessons.length}</strong><span>可学课程</span></div><div><strong>${counts.mastered}</strong><span>自动学会</span></div><div><strong>${counts.retired}</strong><span>确认学会 · 退出复习</span></div><p>${recommended ? `<button type="button" class="course-recommend" data-course-recommend="${recommended.id}">推荐：第 ${recommended.id} 节 ${html(recommended.title)} →</button>` : '所有课程都已手动确认掌握。'}<span>每节五题，错题可自选复习。</span></p>`;
-      $('courseList').innerHTML = course.lessons.map(lesson => {
+      const hasCourseProgress = Object.keys(state.courseRecords || {}).length > 0;
+      $('courseOverview').innerHTML = `<div><strong>00–14</strong><span>学习路线</span></div><div><strong>${counts.mastered}</strong><span>句型课自动学会</span></div><div><strong>${counts.retired}</strong><span>句型课确认学会</span></div><p>${!hasCourseProgress ? `<button type="button" class="course-recommend" data-course-recommend="00">从第 00 课五十音开始 →</button>` : recommended ? `<button type="button" class="course-recommend" data-course-recommend="${recommended.id}">推荐：第 ${recommended.id} 课 ${html(recommended.title)} →</button>` : '所有句型课都已手动确认掌握。'}<span>第 00 课学假名；第 01–14 课每课五题。</span></p>`;
+      const foundationStarted = root.KanaCore.items.filter(item => item.group === 'base' && root.KanaCore.getStatus(state, item.id) !== 'unseen').length;
+      $('courseList').innerHTML = `<button type="button" class="course-list-item course-list-foundation ${selectedId === foundationId ? 'active' : ''}" data-course-select="00" aria-current="${selectedId === foundationId ? 'true' : 'false'}"><span class="course-list-number">00</span><span class="course-list-copy"><strong>五十音入门</strong><small>从平假名、片假名开始</small></span><span class="course-badge ${foundationStarted ? 'learning' : ''}">${foundationStarted ? '学习中' : '起点'}</span></button>` + course.lessons.map(lesson => {
         const status = course.getStatus(state, lesson.id);
         return `<button type="button" class="course-list-item ${lesson.id === selectedId ? 'active' : ''}" data-course-select="${lesson.id}" aria-current="${lesson.id === selectedId ? 'true' : 'false'}"><span class="course-list-number">${lesson.id}</span><span class="course-list-copy"><strong>${html(lesson.title)}</strong><small>${html(lesson.goal)}</small></span><span class="course-badge ${status}">${statusLabels[status]}</span></button>`;
       }).join('');
       $('courseRoadmap').innerHTML = roadmap.map(entry => `<div><span>${entry.number}</span><strong>${html(entry.title)}</strong><p>${html(entry.goal)}</p></div>`).join('');
       $('courseRoadmap').closest('section').hidden = roadmap.length === 0;
-      if (session) renderQuestion();
+      if (selectedId === foundationId) renderFoundation(foundationStarted);
+      else if (session) renderQuestion();
       else if (finished && finished.lessonId === selectedId) renderFinished();
       else renderIntro();
+    }
+
+    function renderFoundation(started) {
+      $('coursePanel').innerHTML = `<div class="course-panel-head"><p class="section-kicker">LESSON 00 / 日语的声音与文字</p><h3>五十音，从这里开始。</h3><p>先认识平假名与片假名的字形和读音，再用识读练习巩固。准备好了，就进入第 01 课学习完整句子。</p><span class="course-badge ${started ? 'learning' : ''}">${started ? `清音已开始 ${started} / 92 个字形` : '零基础起点'}</span></div>
+        <div class="foundation-sample"><strong lang="ja">あ <span>ア</span></strong><p>同一个读音，两种写法。点开字卡可听发音，也可以直接自测。</p></div>
+        <ol class="foundation-steps"><li><span>01</span><div><strong>先认识平假名</strong><p>从清音开始，按行看字形、听读音。</p></div><button type="button" class="outline-button" data-course-foundation="hiragana">开始学习 →</button></li><li><span>02</span><div><strong>再认识片假名</strong><p>对照另一套字形，继续看卡片、听发音。</p></div><button type="button" class="outline-button" data-course-foundation="katakana">开始学习 →</button></li><li><span>03</span><div><strong>用练习记牢读音</strong><p>看假名输入罗马字；之后可继续学浊音和拗音。</p></div><button type="button" class="outline-button" data-course-foundation="practice">开始练习 →</button></li></ol>
+        <div class="course-actions"><button type="button" class="text-button" data-course-next-lesson="01">已经会五十音？进入第 01 课 →</button></div>`;
     }
 
     function renderIntro() {
@@ -109,18 +127,19 @@
     $('courseView').addEventListener('click', event => {
       const button = event.target.closest('button'); if (!button) return;
       if (button.dataset.courseSelect) {
-        selectedId = button.dataset.courseSelect; session = null; finished = null; render(); return;
+        select(button.dataset.courseSelect); return;
       }
       if (button.dataset.courseRecommend) {
-        selectedId = button.dataset.courseRecommend; session = null; finished = null; render(); return;
+        select(button.dataset.courseRecommend); return;
       }
+      if (button.dataset.courseFoundation) { onFoundationNavigate(button.dataset.courseFoundation); return; }
       if (button.dataset.courseStart) { start(button.dataset.courseStart === 'review'); return; }
       if (button.dataset.courseMaster !== undefined) {
         const retired = course.getStatus(getState(), selectedId) === 'retired';
         update(course.setManualMastered(getState(), selectedId, !retired)); return;
       }
       if (button.dataset.courseIntro !== undefined || button.dataset.courseExit !== undefined) { session = null; finished = null; render(); return; }
-      if (button.dataset.courseNextLesson) { selectedId = button.dataset.courseNextLesson; session = null; finished = null; render(); return; }
+      if (button.dataset.courseNextLesson) { select(button.dataset.courseNextLesson); return; }
       if (button.dataset.courseAudio) {
         const lesson = selected();
         const kind = button.dataset.courseAudio;
@@ -170,8 +189,8 @@
       if (event.target.tagName === 'INPUT') return;
       if (event.target.tagName === 'BUTTON') return;
     });
-    function reset() { session = null; finished = null; selectedId = course.recommendedLesson(getState())?.id || course.lessons[0].id; render(); }
-    return { render, reset };
+    function reset() { session = null; finished = null; selectedId = initialSelection(); render(); }
+    return { render, reset, select };
   }
   root.CourseUI = { create };
 })(typeof globalThis !== 'undefined' ? globalThis : window);

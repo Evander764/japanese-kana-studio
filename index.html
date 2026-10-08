@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="离线可用的日语学习网站：五十音识读、短语发音与十四节基础交互课程；学习进度保存在本机。">
+  <meta name="description" content="日语起步：从第 00 课五十音开始，循序学习十四节基础日语课程。支持离线发音，学习进度保存在本机。">
   <meta name="theme-color" content="#f5f2eb">
-  <title>假名练习室 · 五十音识读</title>
+  <title>日语起步 · 从零开始学日语</title>
   <link rel="stylesheet" href="styles.css">
   <script src="kana-data.js" defer></script>
   <script src="course-data.js" defer></script>
@@ -17,8 +17,9 @@
 <body>
   <div class="app-shell">
     <header class="site-header">
-      <div class="brand"><span class="brand-mark" aria-hidden="true">あ</span><span><strong>假名练习室</strong><small>KANA STUDIO</small></span></div>
-      <div class="mode-switch" role="group" aria-label="学习专区">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">あ</span><span><strong>日语起步</strong><small>从零开始学日语</small></span></div>
+      <p class="header-path" id="headerPath">第 00—14 课 · 从五十音到基础句子</p>
+      <div class="mode-switch" id="modeSwitch" role="group" aria-label="学习专区" hidden>
         <button type="button" data-mode="hiragana">平假名</button>
         <button type="button" data-mode="katakana">片假名</button>
         <button type="button" data-mode="mixed">混合学习</button>
@@ -28,20 +29,20 @@
     <main>
       <section class="hero" aria-labelledby="page-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-line"></span> 从认出一个字开始</p>
-          <h1 id="page-title">看到假名，<br><em>立刻读出来。</em></h1>
-          <p class="hero-lead">先认出假名，再用它说完整的句子。可以直接自测、进入无限混合学习，或开始十四节基础交互课程。</p>
+          <p class="eyebrow"><span class="eyebrow-line"></span> 第 00 课 · 零基础起点</p>
+          <h1 id="page-title">从五十音开始，<br><em>一步步学日语。</em></h1>
+          <p class="hero-lead">先学平假名和片假名，再进入十四节基础课程。从认读、听音到说出完整句子，按自己的节奏往前走。</p>
           <div class="hero-actions">
-            <button type="button" class="primary-button" id="heroJourney">开始无限混合学习 <span aria-hidden="true">→</span></button>
-            <button type="button" class="outline-button" id="heroLearn">按行认识 <span aria-hidden="true">↗</span></button>
+            <button type="button" class="primary-button" id="heroCourse">从第 00 课开始 <span aria-hidden="true">→</span></button>
+            <button type="button" class="outline-button" id="heroLearn">看五十音表 <span aria-hidden="true">↗</span></button>
+            <button type="button" class="text-button" id="heroJourney">无限混合练习 <span aria-hidden="true">→</span></button>
             <button type="button" class="text-button" id="heroPractice">直接开始自测 <span aria-hidden="true">→</span></button>
-            <button type="button" class="text-button" id="heroCourse">开始基础课程 <span aria-hidden="true">→</span></button>
           </div>
         </div>
-        <div class="hero-art" aria-hidden="true"><span class="hero-kana hero-kana-main">あ</span><span class="hero-kana hero-kana-secondary">ア</span><span class="hero-art-caption">a · 一个读音，两种写法</span></div>
+        <div class="hero-art" aria-hidden="true"><span class="hero-kana hero-kana-main">あ</span><span class="hero-kana hero-kana-secondary">ア</span><span class="hero-art-caption">第 00 课 · 一个读音，两种写法</span></div>
       </section>
 
-      <section class="overview" aria-label="学习概况">
+      <section class="overview" aria-label="五十音学习概况" hidden>
         <div><span class="overview-value" id="countTotal">—</span><span class="overview-label">当前专区项目</span></div>
         <div><span class="overview-value" id="countStarted">—</span><span class="overview-label">已经开始</span></div>
         <div><span class="overview-value" id="countMastered">—</span><span class="overview-label">达到熟练</span></div>
@@ -50,14 +51,14 @@
       </section>
 
       <nav class="section-nav" aria-label="功能导航">
-        <button type="button" data-view="learn" class="active">01 <span>认识假名</span></button>
-        <button type="button" data-view="practice">02 <span>识读练习</span></button>
-        <button type="button" data-view="stats">03 <span>学习进度</span></button>
-        <button type="button" data-view="convert">04 <span>罗马字转换</span></button>
-        <button type="button" data-view="course">05 <span>互动课程</span></button>
+        <button type="button" data-view="course" class="active"><span>课程路线</span></button>
+        <button type="button" data-view="learn"><span>五十音表</span></button>
+        <button type="button" data-view="practice"><span>识读练习</span></button>
+        <button type="button" data-view="stats"><span>学习进度</span></button>
+        <button type="button" data-view="convert"><span>罗马字转换</span></button>
       </nav>
 
-      <section class="view" id="learnView" aria-labelledby="learnTitle">
+      <section class="view" id="learnView" aria-labelledby="learnTitle" hidden>
         <div class="section-heading"><div><p class="section-kicker">STUDY / 学习</p><h2 id="learnTitle">按行认识，每个字都能点开。</h2><p>点字形查看读音；点卡片下方可直接标记学过或未学。也能跳过学习直接自测。</p></div><button type="button" class="outline-button" id="startUnseen">学习下一个未学项目 →</button></div>
         <div class="toolbar">
           <div class="chip-group" id="groupTabs" role="group" aria-label="假名分类">
@@ -108,15 +109,15 @@
         <div class="section-heading"><div><p class="section-kicker">CONVERT / 转换</p><h2 id="convertTitle">输入罗马字，看看它会变成什么。</h2><p>切换书写形式，直接对照平假名和片假名。</p></div></div>
         <div class="converter-layout"><div class="converter-input"><div class="converter-head"><label for="convertInput">罗马字输入</label><div class="mini-switch" role="group" aria-label="转换目标"><button type="button" data-convert-script="hiragana">平假名</button><button type="button" data-convert-script="katakana">片假名</button></div></div><textarea id="convertInput" rows="6" autocapitalize="off" spellcheck="false" placeholder="试试输入：konnichiha / juusu"></textarea></div><div class="converter-output"><span>转换结果</span><div id="convertOutput" aria-live="polite">ここに表示</div><p id="convertCandidates"></p><small>长音和同音异形可能有不同写法；练习题以题目所示字形判定。</small></div></div>
       </section>
-      <section class="view" id="courseView" aria-labelledby="courseTitle" hidden>
-        <div class="section-heading"><div><p class="section-kicker">COURSE / 基础课程</p><h2 id="courseTitle">从认读假名，走向说完整的句子。</h2><p>十四节入门课程，每节五道不同形式的题。可以自由选课；错题可自愿再练一次，不强迫反复刷题。</p></div><div class="course-speed"><span>课程发音速度</span><button type="button" class="audio-speed-toggle" data-audio-speed aria-pressed="true">慢速 0.78×</button></div></div>
+      <section class="view" id="courseView" aria-labelledby="courseTitle">
+        <div class="section-heading"><div><p class="section-kicker">COURSE / 从零开始</p><h2 id="courseTitle">从第 00 课起，按顺序学日语。</h2><p>第 00 课认识五十音；第 01—14 课学习基础句型，每课五道不同形式的题。课程不锁关，可以按自己的进度选择。</p></div><div class="course-speed"><span>课程发音速度</span><button type="button" class="audio-speed-toggle" data-audio-speed aria-pressed="true">慢速 0.78×</button></div></div>
         <div class="course-overview" id="courseOverview"></div>
         <div class="course-layout"><nav id="courseList" class="course-list" aria-label="基础课程列表"></nav><div id="coursePanel" class="course-panel"></div></div>
         <section class="course-roadmap" aria-labelledby="roadmapTitle"><p class="section-kicker">NEXT / 后续路线</p><h3 id="roadmapTitle">学完这些，再继续向前</h3><div id="courseRoadmap"></div></section>
         <p class="course-source">课程练习与例句为本站原创；主题参考<a href="https://www.pep.com.cn/products/jc/dwhytsh/201711/t20171107_1920490.shtml" target="_blank" rel="noopener noreferrer">《新版中日交流标准日本语》初级的分单元学习方式</a>及<a href="https://www.irodori.jpf.go.jp/assets/data/Grammar_all.pdf" target="_blank" rel="noopener noreferrer">日本国际交流基金《いろどり》入门与初级语法</a>。</p>
       </section>
     </main>
-    <footer class="site-footer"><span>假名练习室 · 离线可用</span><span>字表依据 <a href="https://www.irodori.jpf.go.jp/assets/data/Kana_all.pdf" target="_blank" rel="noopener noreferrer">日本国际交流基金《いろどり》</a></span></footer>
+    <footer class="site-footer"><span>日语起步 · 离线可用</span><span>字表依据 <a href="https://www.irodori.jpf.go.jp/assets/data/Kana_all.pdf" target="_blank" rel="noopener noreferrer">日本国际交流基金《いろどり》</a></span></footer>
   </div>
 
   <dialog id="detailDialog" class="detail-dialog" aria-labelledby="detailTitle">

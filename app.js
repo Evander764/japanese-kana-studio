@@ -6,7 +6,7 @@
   const labels = { hiragana: '平假名', katakana: '片假名', mixed: '混合', base: '清音', voiced: '浊音·半浊音', yoon: '拗音', special: '促音·长音', unseen: '未学', learning: '学习中', mastered: '自动学会', retired: '确认学会' };
   const storageKey = 'kana-studio-progress-v1';
   let state = readStoredState();
-  let view = 'learn';
+  let view = 'course';
   let convertScript = state.mode === 'mixed' ? 'hiragana' : state.mode;
   let detailItem = null;
   let selfTestActive = false;
@@ -22,7 +22,7 @@
   let pausedAt = 0;
   let pausedDuration = 0;
   let practiceGroup = null;
-  const courseUI = window.CourseUI.create({ getState: () => state, onStateChange: next => { state = next; persist(); renderOverview(); renderLearn(); renderStats(); }, speak });
+  const courseUI = window.CourseUI.create({ getState: () => state, onStateChange: next => { state = next; persist(); renderOverview(); renderLearn(); renderStats(); }, onFoundationNavigate, speak });
 
   function readStoredState() {
     try { return core.sanitizeState(JSON.parse(localStorage.getItem(storageKey) || 'null')); }
@@ -35,6 +35,9 @@
   function modeItems() { return items.filter(item => state.mode === 'mixed' || item.script === state.mode); }
   function describe(item) { return `${item.group === 'special' ? item.row : labels[item.group]} · ${labels[item.script]}`; }
   function renderControls() {
+    $('headerPath').hidden = view !== 'course';
+    $('modeSwitch').hidden = view === 'course';
+    document.querySelector('.overview').hidden = view === 'course';
     document.querySelectorAll('[data-mode]').forEach(button => { button.classList.toggle('active', button.dataset.mode === state.mode); button.setAttribute('aria-pressed', String(button.dataset.mode === state.mode)); });
     document.querySelectorAll('[data-group]').forEach(button => { button.classList.toggle('active', button.dataset.group === state.group); button.setAttribute('aria-pressed', String(button.dataset.group === state.group)); });
     document.querySelectorAll('[data-view]').forEach(button => { button.classList.toggle('active', button.dataset.view === view); button.setAttribute('aria-current', button.dataset.view === view ? 'page' : 'false'); });
@@ -172,6 +175,19 @@
     if (next === 'stats') renderStats();
     if (next === 'course') courseUI.render();
     document.querySelector('.section-nav').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function onFoundationNavigate(destination) {
+    if (destination === 'practice') {
+      state.practicePool = 'all';
+      persist(); renderAll(); setView('practice');
+      return;
+    }
+    if (destination !== 'hiragana' && destination !== 'katakana') return;
+    state.mode = destination;
+    state.group = 'base';
+    state.filter = 'all';
+    persist(); renderAll(); setView('learn');
   }
 
   function openDetail(id) {
@@ -390,7 +406,7 @@
   $('practiceGroup').addEventListener('change', event => { practiceGroup = event.target.value === 'all' ? null : event.target.value; previousItem = null; setQuestion(); });
   $('heroLearn').addEventListener('click', () => setView('learn'));
   $('heroPractice').addEventListener('click', () => { state.practicePool = 'all'; persist(); setView('practice'); });
-  $('heroCourse').addEventListener('click', () => setView('course'));
+  $('heroCourse').addEventListener('click', () => { courseUI.select('00'); setView('course'); });
   $('heroJourney').addEventListener('click', () => {
     state.mode = 'mixed'; state.practicePool = 'journey'; practiceGroup = null; previousItem = null;
     persist(); renderAll(); setView('practice');

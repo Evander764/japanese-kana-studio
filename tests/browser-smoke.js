@@ -75,7 +75,9 @@ async function main() {
   await viewport(1365, 900, false);
   await send('Page.navigate', { url: pageUrl });
   await waitForApp();
-  assert.equal(await evaluate('document.title'), '假名练习室 · 五十音识读');
+  assert.equal(await evaluate('document.title'), '日语起步 · 从零开始学日语');
+  assert.equal(await evaluate('!document.getElementById("courseView").hidden && document.getElementById("learnView").hidden'), true);
+  assert.equal(await evaluate('document.querySelector("[data-course-select]").dataset.courseSelect'), '00');
   assert.equal(await evaluate('document.querySelectorAll(".kana-card").length'), 46);
   assert.equal(await evaluate('document.getElementById("countTotal").textContent'), '117');
   const desktopShot = path.join(os.tmpdir(), 'kana-desktop-cdp.png');
@@ -307,12 +309,32 @@ async function main() {
   await viewport(1365, 900, false);
   const courseIntro = await evaluate(`(() => {
     document.getElementById('heroCourse').click();
-    return { title: document.querySelector('.course-panel-head h3').textContent, lessons: document.querySelectorAll('.course-list-item').length, visible: !document.getElementById('courseView').hidden, width: document.documentElement.scrollWidth };
+    return { title: document.querySelector('.course-panel-head h3').textContent, lessons: document.querySelectorAll('.course-list-item').length, first: document.querySelector('.course-list-item').dataset.courseSelect, visible: !document.getElementById('courseView').hidden, headerPath: !document.getElementById('headerPath').hidden, modeHidden: document.getElementById('modeSwitch').hidden, width: document.documentElement.scrollWidth };
   })()`);
-  assert.equal(courseIntro.title, '介绍自己');
-  assert.equal(courseIntro.lessons, 14);
+  assert.equal(courseIntro.title, '五十音，从这里开始。');
+  assert.equal(courseIntro.lessons, 15);
+  assert.equal(courseIntro.first, '00');
   assert.equal(courseIntro.visible, true);
+  assert.equal(courseIntro.headerPath, true);
+  assert.equal(courseIntro.modeHidden, true);
   assert.ok(courseIntro.width <= 1365);
+  await evaluate(`document.getElementById('coursePanel').scrollIntoView({block:'start',behavior:'instant'})`);
+  const courseFoundationShot = path.join(os.tmpdir(), 'kana-course-foundation-cdp.png');
+  await screenshot(courseFoundationShot);
+  const foundationNavigation = await evaluate(`(() => {
+    document.querySelector('[data-course-foundation="hiragana"]').click();
+    const hiragana = !document.getElementById('learnView').hidden && document.querySelector('[data-mode="hiragana"]').classList.contains('active');
+    document.getElementById('heroCourse').click();
+    document.querySelector('[data-course-foundation="katakana"]').click();
+    const katakana = !document.getElementById('learnView').hidden && document.querySelector('[data-mode="katakana"]').classList.contains('active');
+    document.getElementById('heroCourse').click();
+    document.querySelector('[data-course-foundation="practice"]').click();
+    const practice = !document.getElementById('practiceView').hidden && document.getElementById('practicePool').value === 'all';
+    document.getElementById('heroCourse').click();
+    document.querySelector('[data-course-select="01"]').click();
+    return {hiragana, katakana, practice, nextTitle: document.querySelector('.course-panel-head h3').textContent};
+  })()`);
+  assert.deepEqual(foundationNavigation, {hiragana:true, katakana:true, practice:true, nextTitle:'介绍自己'});
   const speedControl = await evaluate(`(() => {
     const button = document.querySelector('#courseView [data-audio-speed]');
     button.click();
@@ -440,6 +462,21 @@ async function main() {
   await evaluate(`document.getElementById('heroCourse').click(); document.querySelector('[data-course-select="12"]').click(); document.getElementById('coursePanel').scrollIntoView({block:'start',behavior:'instant'})`);
   await screenshot(courseDesktopShot);
   await viewport(390, 844, true);
+  const mobileRoute = await evaluate(`(() => {
+    document.getElementById('heroCourse').click();
+    document.getElementById('courseView').scrollIntoView({block:'start',behavior:'instant'});
+    const list = document.getElementById('courseList');
+    return {first:list.querySelector('button').dataset.courseSelect, selected:list.querySelector('[aria-current="true"]').dataset.courseSelect, scrollable:list.scrollWidth > list.clientWidth, pageWidth:document.documentElement.scrollWidth, display:getComputedStyle(list).display, clientWidth:list.clientWidth, scrollWidth:list.scrollWidth, itemWidth:list.firstElementChild.getBoundingClientRect().width};
+  })()`);
+  assert.equal(mobileRoute.first, '00');
+  assert.equal(mobileRoute.selected, '00');
+  assert.equal(mobileRoute.scrollable, true, JSON.stringify(mobileRoute));
+  assert.equal(mobileRoute.pageWidth, 390);
+  const courseFoundationMobileListShot = path.join(os.tmpdir(), 'kana-course-foundation-mobile-list-cdp.png');
+  await screenshot(courseFoundationMobileListShot);
+  await evaluate(`document.getElementById('coursePanel').scrollIntoView({block:'start',behavior:'instant'})`);
+  const courseFoundationMobileShot = path.join(os.tmpdir(), 'kana-course-foundation-mobile-cdp.png');
+  await screenshot(courseFoundationMobileShot);
   await evaluate(`document.getElementById('heroCourse').click(); document.querySelector('[data-course-select="13"]').click(); document.getElementById('coursePanel').scrollIntoView({block:'start',behavior:'instant'})`);
   const courseMobile = await evaluate('({ width: innerWidth, scrollWidth: document.documentElement.scrollWidth, title: document.querySelector(".course-panel-head h3").textContent })');
   assert.deepEqual(courseMobile, { width: 390, scrollWidth: 390, title: '这里可以拍照吗' });
@@ -450,6 +487,7 @@ async function main() {
   assert.equal(await evaluate('document.documentElement.scrollWidth'), 320, 'new course fits narrow phones');
   const manualKana = await evaluate(`(() => {
     document.querySelector('[data-view="learn"]').click();
+    document.querySelector('[data-mode="hiragana"]').click();
     document.querySelector('[data-group="base"]').click();
     document.querySelector('.card-open').click();
     const id = 'hiragana:base:a';
@@ -460,7 +498,7 @@ async function main() {
     return { retired, restored };
   })()`);
   assert.deepEqual(manualKana, { retired: 'retired', restored: 'learning' });
-  console.log(JSON.stringify({ passed: true, desktopShot, journeyShot, mobileJourneyShot, mobileShot, mobileChartShot, mobilePracticeShot, mobileSelfTestShot, courseDesktopShot, courseMobileShot, mobile, mobileJourney, mobilePractice, mobileSelfTest, narrow, courseRun, courseBackup, courseMobile, manualKana }));
+  console.log(JSON.stringify({ passed: true, desktopShot, journeyShot, mobileJourneyShot, mobileShot, mobileChartShot, mobilePracticeShot, mobileSelfTestShot, courseFoundationShot, courseFoundationMobileListShot, courseFoundationMobileShot, courseDesktopShot, courseMobileShot, mobile, mobileJourney, mobilePractice, mobileSelfTest, narrow, courseRun, courseBackup, mobileRoute, courseMobile, manualKana }));
   ws.close();
 }
 
