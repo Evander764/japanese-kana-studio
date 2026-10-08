@@ -11,6 +11,7 @@ const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'kana-cdp-'));
 const pageUrl = process.env.PAGE_URL || pathToFileURL(path.resolve(__dirname, '..', 'index.html')).href;
 const browser = spawn(chrome, [
   '--headless=new', '--disable-gpu', '--no-proxy-server', '--no-first-run', '--no-default-browser-check',
+  ...(process.platform === 'linux' && process.getuid?.() === 0 ? ['--no-sandbox'] : []),
   '--remote-debugging-port=0', '--remote-allow-origins=*', `--user-data-dir=${profile}`, 'about:blank'
 ], { windowsHide: true, stdio: 'ignore' });
 
@@ -309,7 +310,7 @@ async function main() {
     return { title: document.querySelector('.course-panel-head h3').textContent, lessons: document.querySelectorAll('.course-list-item').length, visible: !document.getElementById('courseView').hidden, width: document.documentElement.scrollWidth };
   })()`);
   assert.equal(courseIntro.title, '介绍自己');
-  assert.equal(courseIntro.lessons, 8);
+  assert.equal(courseIntro.lessons, 14);
   assert.equal(courseIntro.visible, true);
   assert.ok(courseIntro.width <= 1365);
   const speedControl = await evaluate(`(() => {
@@ -386,12 +387,67 @@ async function main() {
     audio.load();
   })`);
   assert.ok(courseAudio > 0.5);
+  const addedCourses = await evaluate(`(async () => {
+    const completed = [];
+    for (const lesson of window.CourseData.lessons.slice(8)) {
+      document.querySelector('[data-course-select="' + lesson.id + '"]').click();
+      for (const item of [lesson.example, ...lesson.vocabulary, lesson.questions[4]]) {
+        await new Promise((resolve, reject) => {
+          const audio = new Audio(item.audio);
+          audio.onloadedmetadata = () => audio.duration > 0.2 ? resolve() : reject(new Error('Empty audio: ' + item.audio));
+          audio.onerror = () => reject(new Error('Missing audio: ' + item.audio));
+          audio.load();
+        });
+      }
+      document.querySelector('[data-course-start="full"]').click();
+      for (const question of lesson.questions) {
+        if (question.type === 'listen') {
+          if (document.getElementById('coursePanel').textContent.includes(question.kana)) throw new Error('Listening answer revealed before submission');
+        }
+        if (question.options) {
+          document.querySelector('[data-course-choice="' + question.options.indexOf(question.answer) + '"]').click();
+        } else if (question.type === 'order') {
+          let remaining = (question.acceptedAnswers?.[0] || question.answer).replace(/\\s/g, '');
+          const available = question.tiles.map((_, index) => index);
+          while (remaining) {
+            const index = available.find(candidate => remaining.startsWith(question.tiles[candidate]));
+            if (index === undefined) throw new Error('Cannot assemble ' + question.id);
+            document.getElementById('courseView').dispatchEvent(new KeyboardEvent('keydown', {key:String(index + 1), bubbles:true}));
+            remaining = remaining.slice(question.tiles[index].length);
+            available.splice(available.indexOf(index), 1);
+          }
+          document.querySelector('[data-course-order-submit]').click();
+        } else {
+          document.getElementById('courseReadInput').value = question.answers.at(-1);
+          document.getElementById('courseReadForm').requestSubmit();
+        }
+        if (!document.querySelector('.course-answer.correct')) throw new Error('Correct answer rejected: ' + question.id);
+        document.querySelector('[data-course-next]').click();
+      }
+      const state = JSON.parse(localStorage.getItem('kana-studio-progress-v1'));
+      completed.push({id:lesson.id, status:window.CourseCore.getStatus(state, lesson.id)});
+    }
+    const finalNext = !!document.querySelector('[data-course-next-lesson]');
+    const roadmapHidden = document.getElementById('courseRoadmap').closest('section').hidden;
+    return {completed, finalNext, roadmapHidden};
+  })()`);
+  assert.deepEqual(addedCourses.completed, ['09', '10', '11', '12', '13', '14'].map(id => ({id, status:'mastered'})));
+  assert.equal(addedCourses.finalNext, false);
+  assert.equal(addedCourses.roadmapHidden, true);
+  await send('Page.reload');
+  await waitForApp();
+  assert.equal(await evaluate(`window.CourseCore.getStatus(JSON.parse(localStorage.getItem('kana-studio-progress-v1')), '14')`), 'mastered');
+  await evaluate(`document.getElementById('heroCourse').click(); document.querySelector('[data-course-select="12"]').click(); document.getElementById('coursePanel').scrollIntoView({block:'start',behavior:'instant'})`);
+  await screenshot(courseDesktopShot);
   await viewport(390, 844, true);
-  await evaluate(`document.querySelector('[data-course-select="08"]').click(); document.getElementById('courseView').scrollIntoView({block:'start',behavior:'instant'})`);
+  await evaluate(`document.getElementById('heroCourse').click(); document.querySelector('[data-course-select="13"]').click(); document.getElementById('coursePanel').scrollIntoView({block:'start',behavior:'instant'})`);
   const courseMobile = await evaluate('({ width: innerWidth, scrollWidth: document.documentElement.scrollWidth, title: document.querySelector(".course-panel-head h3").textContent })');
-  assert.deepEqual(courseMobile, { width: 390, scrollWidth: 390, title: '安静的小城' });
+  assert.deepEqual(courseMobile, { width: 390, scrollWidth: 390, title: '这里可以拍照吗' });
   const courseMobileShot = path.join(os.tmpdir(), 'kana-course-mobile-cdp.png');
   await screenshot(courseMobileShot);
+  await viewport(320, 700, true);
+  await evaluate(`document.querySelector('[data-course-select="10"]').click(); document.querySelector('[data-course-start="full"]').click()`);
+  assert.equal(await evaluate('document.documentElement.scrollWidth'), 320, 'new course fits narrow phones');
   const manualKana = await evaluate(`(() => {
     document.querySelector('[data-view="learn"]').click();
     document.querySelector('[data-group="base"]').click();

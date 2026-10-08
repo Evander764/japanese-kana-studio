@@ -23,7 +23,8 @@
   }
   function isCorrect(question, response) {
     if (question.type === 'read') return question.answers.some(answer => normalizeRomaji(answer) === normalizeRomaji(response));
-    if (question.type === 'order') return normalizeJapanese(question.answer) === normalizeJapanese(response);
+    if (question.type === 'order') return [question.answer, ...(question.acceptedAnswers || [])]
+      .some(answer => normalizeJapanese(answer) === normalizeJapanese(response));
     return question.answer === response;
   }
   function makeRun(lesson, results, review, timestamp) {

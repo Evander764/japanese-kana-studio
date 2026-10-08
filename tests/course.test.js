@@ -6,9 +6,11 @@ const data = require('../course-data.js');
 const core = require('../course-core.js');
 const kanaCore = require('../core.js');
 
-test('all eight beginner lessons have five distinct tasks and offline audio', () => {
-  assert.equal(data.lessons.length, 8);
-  assert.equal(new Set(data.lessons.map(lesson => lesson.id)).size, 8);
+test('all fourteen beginner lessons have five distinct tasks and matching offline audio', () => {
+  assert.deepEqual(data.lessons.map(lesson => lesson.id), Array.from({ length: 14 }, (_, index) => String(index + 1).padStart(2, '0')));
+  const manifest = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'audio', 'course-manifest.json'), 'utf8'));
+  const recordings = new Map(manifest.map(entry => [entry.file, entry]));
+  const usedAudio = [];
   for (const lesson of data.lessons) {
     assert.deepEqual(lesson.questions.map(question => question.type), ['meaning', 'particle', 'order', 'read', 'listen']);
     assert.equal(new Set(lesson.questions.map(question => question.id)).size, 5);
@@ -26,12 +28,19 @@ test('all eight beginner lessons have five distinct tasks and offline audio', ()
         assert.deepEqual([...letters].sort(), [...pieces].sort(), question.id);
       }
     }
-    for (const file of [lesson.example.audio, ...lesson.vocabulary.map(word => word.audio), lesson.questions[4].audio]) {
+    for (const item of [lesson.example, ...lesson.vocabulary, lesson.questions[4]]) {
+      const file = item.audio;
       assert.ok(fs.statSync(path.join(__dirname, '..', file)).size > 1000, file);
+      const recording = recordings.get(path.basename(file));
+      assert.equal(recording?.kana, item.kana, file + ' must match its displayed text');
+      assert.ok(recording.seconds > 0.2 && recording.phonemes.length > 0, file);
+      usedAudio.push(path.basename(file));
     }
   }
-  const manifest = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'audio', 'course-manifest.json'), 'utf8'));
-  assert.equal(manifest.length, 56);
+  assert.equal(manifest.length, 98);
+  assert.equal(recordings.size, usedAudio.length);
+  assert.deepEqual([...recordings.keys()].sort(), usedAudio.sort());
+  assert.equal(data.roadmap.length, 0);
 });
 
 test('normalization accepts alternate romanization and ignores spacing in word order', () => {
@@ -40,6 +49,33 @@ test('normalization accepts alternate romanization and ignores spacing in word o
   assert.equal(core.isCorrect(lesson.questions[2], 'がくせい わたしは です'), false);
   assert.equal(core.isCorrect(data.lessons[7].questions[3], 'oisii'), true);
   assert.equal(core.isCorrect(data.lessons[7].questions[3], 'oishi'), false);
+  assert.equal(core.isCorrect(data.lessons[10].questions[3], 'ZITENSYA'), true);
+  assert.equal(core.isCorrect(data.lessons[12].questions[3], 'syasin'), true);
+  assert.equal(core.isCorrect(data.lessons[13].questions[3], 'issyoni'), true);
+  assert.equal(core.isCorrect(data.lessons[13].questions[3], 'ishoni'), false);
+  assert.equal(core.isCorrect(data.lessons[11].questions[2], 'バスより でんしゃのほうが はやいです。'), true);
+  assert.equal(core.isCorrect(data.lessons[11].questions[2], 'バスのほうが でんしゃより はやいです。'), false);
+  assert.equal(core.isCorrect(data.lessons[12].questions[2], 'しゃしんを ここで とっては いけません'), true);
+  assert.equal(core.isCorrect(data.lessons[13].questions[2], 'あした えきへ いっしょに いきましょう'), true);
+});
+
+test('existing progress continues to lesson 09 and new lesson results survive import and regression', () => {
+  let state = kanaCore.newState();
+  for (const lesson of data.lessons.slice(0, 8)) state = core.setManualMastered(state, lesson.id, true);
+  state = kanaCore.sanitizeState(JSON.parse(JSON.stringify(state)));
+  assert.equal(core.recommendedLesson(state).id, '09');
+  for (const lesson of data.lessons.slice(8)) {
+    state = core.recordRun(state, lesson.id, lesson.questions.map(question => ({ id: question.id, correct: true })));
+    state = kanaCore.sanitizeState(JSON.parse(JSON.stringify(state)));
+    assert.equal(core.getStatus(state, lesson.id), 'mastered', lesson.id);
+  }
+  assert.equal(core.getStatus(state, '01'), 'retired');
+  const last = data.lessons.at(-1);
+  state = core.recordRun(state, last.id, last.questions.map(question => ({ id: question.id, correct: question.type !== 'order' })));
+  state = kanaCore.sanitizeState(JSON.parse(JSON.stringify(state)));
+  assert.equal(core.getStatus(state, '14'), 'learning');
+  assert.equal(core.recommendedLesson(state).id, '14');
+  assert.deepEqual(core.weakQuestions(state, '14').map(question => question.type), ['order']);
 });
 
 test('automatic mastery requires four correct including both production tasks and can regress', () => {
