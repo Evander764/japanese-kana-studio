@@ -56,6 +56,13 @@ async function main() {
     if (response.exceptionDetails) throw new Error(JSON.stringify(response.exceptionDetails));
     return response.result.value;
   }
+  async function waitForApp() {
+    for (let attempt = 0; attempt < 50; attempt++) {
+      if (await evaluate('document.querySelectorAll(".kana-card").length === 46')) return;
+      await sleep(200);
+    }
+    throw new Error('App did not initialize: ' + await evaluate('JSON.stringify({url:location.href,ready:document.readyState,scripts:[...document.scripts].map(node=>node.src)})'));
+  }
   async function viewport(width, height, isMobile) {
     await send('Emulation.setDeviceMetricsOverride', { width, height, deviceScaleFactor: 1, mobile: isMobile });
   }
@@ -66,7 +73,7 @@ async function main() {
   await send('Page.enable'); await send('Runtime.enable');
   await viewport(1365, 900, false);
   await send('Page.navigate', { url: pageUrl });
-  await sleep(800);
+  await waitForApp();
   assert.equal(await evaluate('document.title'), '假名练习室 · 五十音识读');
   assert.equal(await evaluate('document.querySelectorAll(".kana-card").length'), 46);
   assert.equal(await evaluate('document.getElementById("countTotal").textContent'), '117');
@@ -257,7 +264,7 @@ async function main() {
   await evaluate(`localStorage.setItem('kana-studio-progress-v1', ${JSON.stringify(priorProgress)})`);
 
   await send('Page.navigate', { url: pageUrl });
-  await sleep(800);
+  await waitForApp();
   await evaluate(`(() => { document.querySelector('[data-mode="hiragana"]').click(); document.querySelector('[data-view="learn"]').click(); })()`);
   await evaluate('document.documentElement.style.scrollBehavior = "auto"; window.scrollTo(0, 0)');
   await sleep(300);
@@ -293,7 +300,7 @@ async function main() {
   await screenshot(mobileSelfTestShot);
   await viewport(320, 700, true);
   await send('Page.navigate', { url: pageUrl });
-  await sleep(500);
+  await waitForApp();
   const narrow = await evaluate('({ width: innerWidth, scrollWidth: document.documentElement.scrollWidth })');
   assert.ok(narrow.scrollWidth <= narrow.width, `narrow mobile overflow: ${narrow.scrollWidth} > ${narrow.width}`);
   await viewport(1365, 900, false);
