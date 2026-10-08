@@ -200,3 +200,25 @@
 .course-answer .outline-button{margin:8px 8px 0 0}
 @media(max-width:700px){.site-header{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px}.brand{min-width:0}.header-path,.mode-switch{grid-column:1/-1}.romaji-toggle{grid-column:2;grid-row:1}.card-reading{font-size:10px}.course-question-audio{justify-content:flex-start}}
 @media(max-width:350px){.romaji-toggle{font-size:11px;padding:6px 9px}.brand strong{font-size:15px}}
+
+/* The course starts with a playable sentence; keep its controls above the decorative kana. */
+.hero-art{padding:32px}
+.hero-art .hero-kana{pointer-events:none;user-select:none}
+.hero-art .hero-kana-main{position:absolute;top:-35px;right:-15px;transform:none;font-size:260px;opacity:.08}
+.hero-art .hero-kana-secondary{right:auto;left:4%;bottom:-25px;font-size:180px;opacity:.15}
+.hero-listen-card{position:relative;z-index:3;width:min(100%,440px);padding:27px 30px 20px;border:1px solid rgba(29,72,75,.17);border-radius:18px;background:rgba(255,254,250,.94);box-shadow:0 16px 48px rgba(20,45,49,.12)}
+.hero-listen-kicker{display:block;margin-bottom:16px;color:var(--accent-dark);font-size:11px;font-weight:900;letter-spacing:.14em}
+.hero-listen-card>strong{display:block;color:var(--ink);font-family:"Noto Sans JP","Yu Gothic","Meiryo",sans-serif;font-size:clamp(25px,2.45vw,36px);line-height:1.48;letter-spacing:-.035em;word-break:keep-all}
+.hero-listen-romaji{display:block;margin-top:4px;color:var(--teal);font-size:12px;font-weight:800}
+.hero-listen-card>p:not(.audio-message){margin:9px 0 0;color:var(--ink-soft);font-size:13px}
+.hero-listen-actions{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-top:20px}
+.hero-listen-actions .outline-button{min-height:40px;padding:7px 12px;font-size:12px}
+.hero-listen-card .hero-listen-hint{margin-top:14px;font-size:11px}
+.hero-listen-card .audio-message{margin:5px 0 0;min-height:0}
+.audio-speed-control{display:inline-flex;align-items:center;gap:2px;flex:none;padding:3px;border:1px solid #ccd9d1;border-radius:10px;background:#edf3ed}
+.audio-speed-control button{min-height:33px;padding:5px 9px;border:0;border-radius:7px;background:transparent;color:#586e68;font-size:11px;font-weight:800;white-space:nowrap}
+.audio-speed-control button:hover{background:#dcebe3}
+.audio-speed-control button[aria-pressed=true]{background:var(--ink);color:white;box-shadow:0 2px 6px rgba(20,45,49,.16)}
+.course-speed{flex-wrap:wrap;white-space:normal}
+@media(max-width:700px){.hero-art{min-height:330px;padding:18px;margin-bottom:18px}.hero-art .hero-kana-main{font-size:190px;top:-18px;right:-8px}.hero-art .hero-kana-secondary{font-size:135px;left:0;bottom:-18px}.hero-listen-card{padding:19px 19px 14px}.hero-listen-card>strong{font-size:23px}.hero-listen-actions{gap:7px}.hero-listen-actions .outline-button{min-height:37px}.audio-speed-control button{min-height:33px;padding:5px 8px;font-size:10px}.course-speed{align-items:flex-start}.course-speed>span{padding-top:8px}}
+@media(max-width:350px){.hero-art{padding:11px}.hero-listen-card{padding:16px 14px}.hero-listen-card>strong{font-size:23px}.hero-listen-actions{align-items:flex-start;flex-direction:column}}

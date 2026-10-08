@@ -84,10 +84,13 @@ async function main() {
   await screenshot(desktopShot);
   const readingToggle = await evaluate(`(() => {
     const button = document.getElementById('romajiToggle');
+    const heroReading = document.getElementById('heroSampleRomaji');
+    const heroInitiallyVisible = getComputedStyle(heroReading).display !== 'none';
     document.querySelector('[data-view="learn"]').click();
     const kanaReading = document.querySelector('.card-reading');
     const initiallyVisible = getComputedStyle(kanaReading).display !== 'none';
     button.click();
+    const heroHidden = getComputedStyle(heroReading).display === 'none';
     const kanaHidden = getComputedStyle(kanaReading).display === 'none';
     document.querySelector('[data-view="course"]').click();
     document.querySelector('[data-course-select="01"]').click();
@@ -97,15 +100,31 @@ async function main() {
     const savedHidden = JSON.parse(localStorage.getItem('kana-studio-progress-v1')).showRomaji === false;
     button.click();
     const restored = getComputedStyle(document.querySelector('.vocab-reading')).display !== 'none';
-    return {initiallyVisible,kanaHidden,exampleHidden,vocabHidden,savedHidden,restored,pressed:button.getAttribute('aria-pressed')};
+    return {heroInitiallyVisible,initiallyVisible,heroHidden,kanaHidden,exampleHidden,vocabHidden,savedHidden,restored,pressed:button.getAttribute('aria-pressed')};
   })()`);
-  assert.deepEqual(readingToggle, {initiallyVisible:true,kanaHidden:true,exampleHidden:true,vocabHidden:true,savedHidden:true,restored:true,pressed:'true'});
+  assert.deepEqual(readingToggle, {heroInitiallyVisible:true,initiallyVisible:true,heroHidden:true,kanaHidden:true,exampleHidden:true,vocabHidden:true,savedHidden:true,restored:true,pressed:'true'});
   const versionedAudio = await evaluate(`new Promise((resolve, reject) => {
     const clip = new Audio('audio/base-a.mp3?v=20261008-2');
     clip.onloadedmetadata = () => resolve(clip.duration > 0.2);
     clip.onerror = () => reject(new Error('versioned local audio did not load'));
   })`);
   assert.equal(versionedAudio, true);
+  const heroAudio = await evaluate(`(() => {
+    const originalPlay = HTMLMediaElement.prototype.play;
+    const clips = [];
+    let firstClip;
+    HTMLMediaElement.prototype.play = function () { if (!firstClip) firstClip = this; clips.push({correctSource:new URL(this.src).pathname.endsWith('/audio/course-01-example.mp3'),rate:this.playbackRate}); return Promise.resolve(); };
+    document.getElementById('heroAudio').click();
+    document.querySelector('.hero-listen-card [data-audio-speed="slow"]').click();
+    const changedWhilePlaying = firstClip.playbackRate;
+    document.getElementById('heroAudio').click();
+    const courseSlow = document.querySelector('#courseView [data-audio-speed="slow"]').getAttribute('aria-pressed');
+    document.querySelector('.hero-listen-card [data-audio-speed="normal"]').click();
+    const restored = document.querySelector('#courseView [data-audio-speed="normal"]').getAttribute('aria-pressed');
+    HTMLMediaElement.prototype.play = originalPlay;
+    return { clips, changedWhilePlaying, courseSlow, restored, saved:JSON.parse(localStorage.getItem('kana-studio-progress-v1')).audioSpeed, sample:document.getElementById('heroSampleKana').textContent === window.CourseData.lessons[0].example.kana };
+  })()`);
+  assert.deepEqual(heroAudio, { clips:[{correctSource:true,rate:1},{correctSource:true,rate:0.78}], changedWhilePlaying:0.78, courseSlow:'true', restored:'true', saved:'normal', sample:true });
 
   const direct = await evaluate(`(() => {
     document.getElementById('heroPractice').click();
@@ -362,11 +381,12 @@ async function main() {
   })()`);
   assert.deepEqual(foundationNavigation, {hiragana:true, katakana:true, practice:true, nextTitle:'介绍自己'});
   const speedControl = await evaluate(`(() => {
-    const button = document.querySelector('#courseView [data-audio-speed]');
+    const normalButton = document.querySelector('#courseView [data-audio-speed="normal"]');
+    const slowButton = document.querySelector('#courseView [data-audio-speed="slow"]');
     const initial = JSON.parse(localStorage.getItem('kana-studio-progress-v1')).audioSpeed;
-    button.click();
+    slowButton.click();
     const slow = JSON.parse(localStorage.getItem('kana-studio-progress-v1')).audioSpeed;
-    button.click();
+    normalButton.click();
     const normal = JSON.parse(localStorage.getItem('kana-studio-progress-v1')).audioSpeed;
     return {initial, slow, normal};
   })()`);

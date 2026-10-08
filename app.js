@@ -6,6 +6,7 @@
   const labels = { hiragana: '平假名', katakana: '片假名', mixed: '混合', base: '清音', voiced: '浊音·半浊音', yoon: '拗音', special: '促音·长音', unseen: '未学', learning: '学习中', mastered: '自动学会', retired: '确认学会' };
   const storageKey = 'kana-studio-progress-v1';
   const audioRevision = '20261008-2';
+  const heroExample = window.CourseData.lessons[0].example;
   let state = readStoredState();
   let view = 'course';
   let convertScript = state.mode === 'mixed' ? 'hiragana' : state.mode;
@@ -18,6 +19,7 @@
   let question = null;
   let previousItem = null;
   let activeAudio = null;
+  let activeAudioMessage = null;
   let questionAnswered = false;
   let questionStartedAt = 0;
   let pausedAt = 0;
@@ -53,11 +55,7 @@
     $('practiceGroup').value = practiceGroup || 'all';
     $('practiceGroup').disabled = state.practicePool === 'journey';
     document.querySelectorAll('[data-audio-speed]').forEach(button => {
-      const slow = state.audioSpeed === 'slow';
-      button.textContent = slow ? '慢速 0.78×' : '正常 1×';
-      button.setAttribute('aria-pressed', String(slow));
-      button.setAttribute('aria-label', slow ? '当前慢速，点击切换正常语速' : '当前正常语速，点击切换慢速');
-      button.title = slow ? '点击切换正常语速' : '点击切换慢速';
+      button.setAttribute('aria-pressed', String(button.dataset.audioSpeed === state.audioSpeed));
     });
     for (const name of ['learn', 'practice', 'stats', 'convert', 'course', 'vocab']) $(`${name}View`).hidden = view !== name;
   }
@@ -363,31 +361,36 @@
     const output = $(messageId);
     output.textContent = '';
     if (activeAudio) { activeAudio.pause(); activeAudio.currentTime = 0; activeAudio = null; }
+    if (activeAudioMessage && activeAudioMessage !== output) activeAudioMessage.textContent = '';
+    activeAudioMessage = null;
     if (item.audio) {
       if ('speechSynthesis' in window) window.speechSynthesis.cancel();
       const clip = new Audio(`${item.audio}?v=${audioRevision}`);
       activeAudio = clip;
+      activeAudioMessage = output;
       const repetitions = item.kind === 'single' || item.kind === 'yoon' ? 2 : 1;
       let remaining = repetitions;
       clip.playbackRate = state.audioSpeed === 'slow' ? 0.78 : 1;
       if ('preservesPitch' in clip) clip.preservesPitch = true;
       if ('webkitPreservesPitch' in clip) clip.webkitPreservesPitch = true;
       output.textContent = `${state.audioSpeed === 'slow' ? '慢速 0.78×' : '正常语速'}${repetitions === 2 ? ' · 假名单字播放两遍' : ''}`;
-      clip.onerror = () => { activeAudio = null; output.textContent = '发音音频无法打开，请检查 audio 文件夹。'; };
+      clip.onerror = () => { if (activeAudio !== clip) return; activeAudio = null; activeAudioMessage = null; output.textContent = '发音音频无法打开，请检查 audio 文件夹。'; };
       clip.addEventListener('ended', () => {
+        if (activeAudio !== clip) return;
         remaining -= 1;
         if (remaining > 0) {
           window.setTimeout(() => {
             if (activeAudio !== clip) return;
             clip.currentTime = 0;
-            clip.play().catch(() => { output.textContent = '浏览器阻止了播放，请再次点击朗读按钮。'; });
+            clip.play().catch(() => { if (activeAudio === clip) output.textContent = '浏览器阻止了播放，请再次点击朗读按钮。'; });
           }, 420);
         } else {
           activeAudio = null;
+          activeAudioMessage = null;
           output.textContent = '';
         }
       });
-      clip.play().catch(() => { activeAudio = null; output.textContent = '浏览器阻止了播放，请再次点击朗读按钮。'; });
+      clip.play().catch(() => { if (activeAudio !== clip) return; activeAudio = null; activeAudioMessage = null; output.textContent = '浏览器阻止了播放，请再次点击朗读按钮。'; });
       return;
     }
     if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) {
@@ -424,10 +427,18 @@
     previousItem = null; persist(); renderAll(); setQuestion();
   });
   document.querySelectorAll('[data-audio-speed]').forEach(button => button.addEventListener('click', () => {
-    state.audioSpeed = state.audioSpeed === 'slow' ? 'normal' : 'slow';
+    state.audioSpeed = button.dataset.audioSpeed;
     state.audioSpeedChoice = true;
+    if (activeAudio) {
+      activeAudio.playbackRate = state.audioSpeed === 'slow' ? 0.78 : 1;
+      if (activeAudioMessage) activeAudioMessage.textContent = `${state.audioSpeed === 'slow' ? '慢速 0.78×' : '正常语速'}${activeAudioMessage.textContent.includes('假名单字播放两遍') ? ' · 假名单字播放两遍' : ''}`;
+    }
     persist(); renderControls();
   }));
+  $('heroSampleKana').textContent = heroExample.kana;
+  $('heroSampleRomaji').textContent = heroExample.romaji;
+  $('heroSampleMeaning').textContent = heroExample.meaning;
+  $('heroAudio').addEventListener('click', () => speak(heroExample, 'heroAudioMessage'));
   $('romajiToggle').addEventListener('click', () => {
     state.showRomaji = !state.showRomaji;
     persist(); renderControls();
