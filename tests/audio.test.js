@@ -33,7 +33,7 @@ test('every rebuilt audio file matches its recorded content hash and engine', ()
   assert.equal(entries.length, 527);
   assert.equal(new Set(entries.map(entry => entry.file)).size, 527);
   for (const entry of entries) {
-    assert.ok(['kokoro-82m', 'qwen3-tts-voice-design', 'qwen3-tts-custom-voice'].includes(entry.engine), entry.file);
+    assert.ok(['kokoro-82m', 'qwen3-tts-voice-design', 'qwen3-tts-custom-voice', 'windows-sapi5'].includes(entry.engine), entry.file);
     assert.ok(entry.seconds > 0.2, entry.file);
     const file = fs.readFileSync(path.join(__dirname, '..', 'audio', entry.file));
     assert.equal(crypto.createHash('sha256').update(file).digest('hex'), entry.sha256, entry.file);

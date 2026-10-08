@@ -29,146 +29,146 @@
   {
     "file": "course-01-v1.mp3",
     "kana": "わたし",
-    "seconds": 1.109,
-    "sha256": "0fb09d8082cff7436a3371f87daeed82256d50e11396133d807980882c707f10",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "βataɕi"
+    "seconds": 1.459,
+    "sha256": "c1bd0520765cdd990f8ca5e385c3b29ef8b9bc1cca29cb21902b19d9b7e43cd5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "わたし"
   },
   {
     "file": "course-01-v2.mp3",
     "kana": "がくせい",
-    "seconds": 1.216,
-    "sha256": "2c8d417b210b326c61602ca50de0702694cf50741ac548c2b8678fc42e795b16",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɡakɯ seː"
+    "seconds": 1.499,
+    "sha256": "ba2ff12bbae27e1dd695ef39269dd2c10c3550d0370f5431a36cfa4329e85271",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "がくせい"
   },
   {
     "file": "course-01-v3.mp3",
     "kana": "せんせい",
-    "seconds": 1.088,
-    "sha256": "9beffc88fc400b398a333e83e184455834b978cd53208db9d214826f3834a948",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "seɴseː"
+    "seconds": 1.514,
+    "sha256": "0367598780c64b3764c9d9f2f080ef270fbfb4c3a6c23a886b96ce5ad412f70a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "せんせい"
   },
   {
     "file": "course-01-v4.mp3",
     "kana": "かいしゃいん",
-    "seconds": 1.259,
-    "sha256": "a73163b253bdb9d86cc3b6121962ffdb019ca5ba3f4d0bd79d708c52ba2d91f0",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kai ɕa iɴ"
+    "seconds": 1.599,
+    "sha256": "571c0c532637a0a817af0b5a46a0247731a1dcc1281a69db9fa40afa6fb51ad3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かいしゃいん"
   },
   {
     "file": "course-01-v5.mp3",
     "kana": "あなた",
-    "seconds": 1.109,
-    "sha256": "83072ad1b12a5caf9522465f308a4e2f8c389400b765276d944995591100e999",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "anata"
+    "seconds": 1.339,
+    "sha256": "0066f10493422161f5b1c71e6950536c0112565dfb6068198c63f290990e1966",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あなた"
   },
   {
     "file": "course-01-v6.mp3",
     "kana": "ともだち",
-    "seconds": 1.067,
-    "sha256": "57fa0d40f1f1b7dcccec5926d9d3fb3ad997518ba56bb9c8058026cafbb56631",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "tomodaʨi"
+    "seconds": 1.589,
+    "sha256": "3a08df8e83803784124479cba03322db63a27def6cea326aedaa09f579e3862b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ともだち"
   },
   {
     "file": "course-01-v7.mp3",
     "kana": "なまえ",
-    "seconds": 0.917,
-    "sha256": "9ed5a5428a0f388639a4eeddd55350c8fb6941445841bfb834f9f7e761ae4364",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "namae"
+    "seconds": 1.345,
+    "sha256": "6acc1613f9f613837bffccefbb44a839135369b72a95d0b62c77af9c042cb26b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "なまえ"
   },
   {
     "file": "course-01-v8.mp3",
     "kana": "にほん",
-    "seconds": 0.853,
-    "sha256": "54080fecd2aabec7f2b382d35376b059052c935166d48b77e8330ecd97b23883",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɲihoɴ"
+    "seconds": 1.314,
+    "sha256": "443ef10379f3ad6e9755c23e2e5cdd139e2ef9d15ef77429d8f1e2fc0a884fbe",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "にほん"
   },
   {
     "file": "course-01-v9.mp3",
     "kana": "ちゅうごく",
-    "seconds": 1.045,
-    "sha256": "a2f3733bdb1213fd88201829827186dadcba9fada6516a0516bda7a315ebba91",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ʨɨːɡokɯ"
+    "seconds": 1.504,
+    "sha256": "394cf65bee35a2e0a4a0d3ac375f43e3cade4fe4a7bedfcb4a29d68b8804bdd5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ちゅうごく"
   },
   {
     "file": "course-01-v10.mp3",
     "kana": "にほんじん",
-    "seconds": 0.896,
-    "sha256": "199b9b1f9c749f327b8f5ea719bf0d2aae67673c3a1f7feb4a7c8f1b2f03e343",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɲihoɲʥiɴ"
+    "seconds": 1.579,
+    "sha256": "2abb86aaf0906493dc5fca77402d1675eeb254c2f82258c80254bb7ffeb3c45d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "にほんじん"
   },
   {
     "file": "course-01-v11.mp3",
     "kana": "ちゅうごくじん",
-    "seconds": 1.195,
-    "sha256": "ad9d7e1e9c3ae9b391c87326dc1ca0491a455cc77cba5ce09191d2d9c072b5f2",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ʨɨːɡokɯʥiɴ"
+    "seconds": 1.705,
+    "sha256": "e297c1bb6b199ca482a854f8a6e4dbe5d551c6752f27d35f47b939fc36ecd997",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ちゅうごくじん"
   },
   {
     "file": "course-01-v12.mp3",
     "kana": "だいがくせい",
-    "seconds": 1.429,
-    "sha256": "698e9b0863b153bca9957cfb53478bedd2eba7323c36a036c78d887f523ef0a0",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "daiɡakɯseː"
+    "seconds": 1.739,
+    "sha256": "7acfddb88bab9efeb468f5462a96ab452325ab6a0701668277b6ddffeea4be05",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "だいがくせい"
   },
   {
     "file": "course-01-v13.mp3",
     "kana": "いしゃ",
-    "seconds": 0.981,
-    "sha256": "fcd1cac758ce1167e54e26720651991b3cbe75e7384475f91e681b110fd746af",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "iɕa"
+    "seconds": 1.279,
+    "sha256": "868f4b6bc0fc31110306b1d9628b522af5326a822f46aafad942fe7e10e7c4aa",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いしゃ"
   },
   {
     "file": "course-01-v14.mp3",
     "kana": "かんごし",
-    "seconds": 0.896,
-    "sha256": "589d3dd524a7cac935e68376731d194d6c67a9c3beb32094f6472eaa25736068",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kaŋɡo ɕi"
+    "seconds": 1.594,
+    "sha256": "724c5b574d8e917be7332f7fe8db0d2d93978f56d21d9a4cf4555cf1a16512e4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かんごし"
   },
   {
     "file": "course-01-v15.mp3",
     "kana": "エンジニア",
-    "seconds": 1.088,
-    "sha256": "de7091ac799036e17b81cae4d347029ff174f6359b2ce0269e23a163cfefa33c",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "eɲʥiɲia"
+    "seconds": 1.534,
+    "sha256": "959ab8c9f71b49e55b185ef1c589797c01dba1316bce5c9b751cc1e7f3c75f7f",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "エンジニア"
   },
   {
     "file": "course-01-v16.mp3",
     "kana": "ひと",
-    "seconds": 0.939,
-    "sha256": "f3c9374a463a7ab35e4d537c608f7c1391fdbe02eda12a26bf36c35bcc44a415",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "çito"
+    "seconds": 1.199,
+    "sha256": "934e5d123ba9702fc246b823964f30786a2493456fb19a56e556f16721adf48e",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ひと"
   },
   {
     "file": "course-01-q1.mp3",
@@ -200,11 +200,11 @@
   {
     "file": "course-01-q4.mp3",
     "kana": "がくせい",
-    "seconds": 1.216,
-    "sha256": "2c8d417b210b326c61602ca50de0702694cf50741ac548c2b8678fc42e795b16",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɡakɯ seː"
+    "seconds": 1.499,
+    "sha256": "ba2ff12bbae27e1dd695ef39269dd2c10c3550d0370f5431a36cfa4329e85271",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "がくせい"
   },
   {
     "file": "course-01-listen.mp3",
@@ -236,11 +236,11 @@
   {
     "file": "course-01-q8.mp3",
     "kana": "なまえ",
-    "seconds": 0.917,
-    "sha256": "9ed5a5428a0f388639a4eeddd55350c8fb6941445841bfb834f9f7e761ae4364",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "namae"
+    "seconds": 1.345,
+    "sha256": "6acc1613f9f613837bffccefbb44a839135369b72a95d0b62c77af9c042cb26b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "なまえ"
   },
   {
     "file": "course-02-example.mp3",
@@ -272,155 +272,155 @@
   {
     "file": "course-02-v1.mp3",
     "kana": "ほん",
-    "seconds": 0.64,
-    "sha256": "7f606ace772ca0f4de4eef7ddfd235a589aee9042b6bb10afa353e78b1d43538",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "hoɴ"
+    "seconds": 1.154,
+    "sha256": "094b15d940074036e83a8331468927857418a2b1abb1f7232897e40c00123eef",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ほん"
   },
   {
     "file": "course-02-v2.mp3",
     "kana": "かさ",
-    "seconds": 0.491,
-    "sha256": "e589247e413ebe21be8d5fc8f1e47b9818d6b20302b318203ec21e743b24394a",
-    "engine": "kokoro-82m",
-    "voice": "jf_alpha",
-    "phonemes": "kasa"
+    "seconds": 1.259,
+    "sha256": "752a93cb7c7c44b90ce6bc410b6be90cac43a62e587eb9c837ed667724e30c7d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かさ"
   },
   {
     "file": "course-02-v3.mp3",
     "kana": "かばん",
-    "seconds": 0.875,
-    "sha256": "548361892f41404cc6219ede12589dba063c64c8d7ad61c8de4ba28954794433",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kabaɴ"
+    "seconds": 1.309,
+    "sha256": "59167d4b6d875fa8d4a86dcd89e8485d09f24f9b92fa0f8dbd6463c911f5cdbc",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かばん"
   },
   {
     "file": "course-02-v4.mp3",
     "kana": "ノート",
-    "seconds": 1.067,
-    "sha256": "3fc225a1988f972d04d6f0533cdcb91cf0a0f73f2beea095cc04955873a10e9d",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "noːto"
+    "seconds": 1.249,
+    "sha256": "8fecf23a7e88d6fcb4ae7521145c1124634793ecd44915975254e704c4abe92a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ノート"
   },
   {
     "file": "course-02-v5.mp3",
     "kana": "これ",
-    "seconds": 0.832,
-    "sha256": "fc7b00ebea62d98ffe88660e2ed6e25ddc6b93f7096d665fa1b33065f614bd79",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "koɾe"
+    "seconds": 1.225,
+    "sha256": "cada8c4bcdad84981d73baa846d69ed32f5f672a97117c9441aadb3c3b86b8e1",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "これ"
   },
   {
     "file": "course-02-v6.mp3",
     "kana": "それ",
-    "seconds": 1.024,
-    "sha256": "1ab1674710c7199264b781d5bb3ae020ed6998b788596c4c1229ff9d7a419240",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "soɾe"
+    "seconds": 1.264,
+    "sha256": "11fe780259eff4b71c40e77829d23f3a72ba27d9ecefa2b8fb1a18a2d7af09b6",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "それ"
   },
   {
     "file": "course-02-v7.mp3",
     "kana": "あれ",
-    "seconds": 0.853,
-    "sha256": "e4824ca2bd76adaeeb1f7143bcaa5a8e6e9820f1777a387814cbef9f04fbaa4f",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "aɾe"
+    "seconds": 1.199,
+    "sha256": "b9b0deae7b0c2a893b08d2cfbfcbc120deed81b5767c10e061995b7a7cf7ce02",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あれ"
   },
   {
     "file": "course-02-v8.mp3",
     "kana": "この",
-    "seconds": 0.853,
-    "sha256": "41b6a1a6ff47146380b4d774ae24121566c954265a86ec9e751eeedf97b3df16",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kono"
+    "seconds": 1.199,
+    "sha256": "ad744547f76982b448a715b7cfdf1023b49b8d8e3c2a66589534d35585e85b03",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "この"
   },
   {
     "file": "course-02-v9.mp3",
     "kana": "その",
-    "seconds": 0.917,
-    "sha256": "ef14debfa6bfd374a85044db02b6ecd3a8cf1c56e6bf395414c2de9d47e28775",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "sono"
+    "seconds": 1.209,
+    "sha256": "09797cf2f7b70dea36fe85807f38fcecbad2c28b638c9f3feb593503c6a4a554",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "その"
   },
   {
     "file": "course-02-v10.mp3",
     "kana": "あの",
-    "seconds": 0.939,
-    "sha256": "b99f83d23023656e60d8d036a622e9b6a3cee7a2cbb713cdc3afc7a3f3a8bb1e",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ano"
+    "seconds": 1.174,
+    "sha256": "4c6ce07d8627095db4e4dcb003e9fb9ddd1fa2b6430310a42024934f5b9cb6b4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あの"
   },
   {
     "file": "course-02-v11.mp3",
     "kana": "だれ",
-    "seconds": 0.896,
-    "sha256": "1aaa8712a987185c120aa6b252689d0f4ca04471321d1ed201c09def8f8d2232",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "daɾe"
+    "seconds": 1.189,
+    "sha256": "ffede6382cb6acadf20e1b8b98af2f59fad5a2bc5ccfeb7390e63be63a5f7bb2",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "だれ"
   },
   {
     "file": "course-02-v12.mp3",
     "kana": "じしょ",
-    "seconds": 1.067,
-    "sha256": "1a8a00e554a6ba699de183db0c37d6df374ea71f7437d1aad9baa2558a811976",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ʥi ɕo"
+    "seconds": 1.324,
+    "sha256": "2003683b91625b78604f962bc8cebf144c69dbd1a1d3554bba6e4470ff27f84f",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "じしょ"
   },
   {
     "file": "course-02-v13.mp3",
     "kana": "えんぴつ",
-    "seconds": 1.024,
-    "sha256": "3215b6e9ef8f32c8a5f0cd112ea0da3abed52c34958ec4c03782b0fbf886340d",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "empʲiʦɨ"
+    "seconds": 1.529,
+    "sha256": "59f6d2624ae10f7b0114b924b19861dfcacca57bfd95e69316b572a00d7d4896",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "えんぴつ"
   },
   {
     "file": "course-02-v14.mp3",
     "kana": "ペン",
-    "seconds": 0.768,
-    "sha256": "77ee7521a3a343fec854859301008b12584ff8c794fa5630cc7363d33fbccba2",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "peɴ"
+    "seconds": 1.389,
+    "sha256": "1206da04b6fa1adf2c5f9f3390d5bc370d6d5370585cafcde34e1426c1cf2f36",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ペン"
   },
   {
     "file": "course-02-v15.mp3",
     "kana": "けしゴム",
-    "seconds": 1.067,
-    "sha256": "ce36ddf9b389e8088a73e2f5bc3edf40cb227f53ff6b34c308b96cc764e740cf",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "keɕiɡomɯ"
+    "seconds": 1.529,
+    "sha256": "53d6cfeee9a2cfbad7beecdaa0e7ef976e27e5d42d3288569c66b7ecaaa036b8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "けしゴム"
   },
   {
     "file": "course-02-v16.mp3",
     "kana": "くつ",
-    "seconds": 0.789,
-    "sha256": "f8550de5d8c4730ba62dc80c5af7025475362dc7d7a311cc7e9fcd4e91a821f0",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kɯʦɨ"
+    "seconds": 1.284,
+    "sha256": "269230a5c6047996a6c63fadd78713b792d072c5d250d19807b77602f26c8eae",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "くつ"
   },
   {
     "file": "course-02-v17.mp3",
     "kana": "かぎ",
-    "seconds": 0.875,
-    "sha256": "10dd6af2b843db38233eee1afe58a460bffa14ecbc567533557939e7a536e99b",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kaɡʲi"
+    "seconds": 1.274,
+    "sha256": "146ddcf9063645851f275b53b8685af2fc9638bf8094e24cdac3987e646d28f8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かぎ"
   },
   {
     "file": "course-02-q1.mp3",
@@ -452,11 +452,11 @@
   {
     "file": "course-02-q4.mp3",
     "kana": "かばん",
-    "seconds": 0.875,
-    "sha256": "548361892f41404cc6219ede12589dba063c64c8d7ad61c8de4ba28954794433",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kabaɴ"
+    "seconds": 1.309,
+    "sha256": "59167d4b6d875fa8d4a86dcd89e8485d09f24f9b92fa0f8dbd6463c911f5cdbc",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かばん"
   },
   {
     "file": "course-02-listen.mp3",
@@ -488,11 +488,11 @@
   {
     "file": "course-02-q8.mp3",
     "kana": "かぎ",
-    "seconds": 0.875,
-    "sha256": "10dd6af2b843db38233eee1afe58a460bffa14ecbc567533557939e7a536e99b",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kaɡʲi"
+    "seconds": 1.274,
+    "sha256": "146ddcf9063645851f275b53b8685af2fc9638bf8094e24cdac3987e646d28f8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かぎ"
   },
   {
     "file": "course-03-example.mp3",
@@ -524,155 +524,155 @@
   {
     "file": "course-03-v1.mp3",
     "kana": "えき",
-    "seconds": 0.96,
-    "sha256": "65d6748b0c8d322fd9c100fe242705a2e2ce68a534eed387e7e83ddc4b1aa3b0",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ekʲi"
+    "seconds": 1.229,
+    "sha256": "d10ec3fe89db10f368d45b87705cb6f0bf53b947234249cd3c205878fce39edd",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "えき"
   },
   {
     "file": "course-03-v2.mp3",
     "kana": "トイレ",
-    "seconds": 0.96,
-    "sha256": "eb4bdcd20bf57fc97a19a8dd737f7a8c5a582ab1dc2b596db5760f540161dae5",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "toiɾe"
+    "seconds": 1.339,
+    "sha256": "9db8c233f19eceab3b767d4ec2b7d16151b012b60d670988da93c4961ec3280c",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "トイレ"
   },
   {
     "file": "course-03-v3.mp3",
     "kana": "としょかん",
-    "seconds": 1.28,
-    "sha256": "318aa00abe0f9aa4177d64737be7b5553477138eda5cff90212aaf81548a187b",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "toɕokaɴ"
+    "seconds": 1.519,
+    "sha256": "b1430f8798ea5bf04b6757b032ad0330ca4ddafc230fe9dee111129c1a4931b5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "としょかん"
   },
   {
     "file": "course-03-v4.mp3",
     "kana": "どこ",
-    "seconds": 0.896,
-    "sha256": "92729f4f9a0c083ddb247b2e8f4ad8cb149697738eed514422921b6d8b1f6bbd",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "doko"
+    "seconds": 1.214,
+    "sha256": "6855cd21056646321b3f25210f0ecbb28a3620bdadac9e56ff356962a66e881c",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "どこ"
   },
   {
     "file": "course-03-v5.mp3",
     "kana": "ここ",
-    "seconds": 0.96,
-    "sha256": "0374020ac9e42420f54c807542cb5aa7efe92f021a037d1a0b50c72c604e7eae",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "koko"
+    "seconds": 1.254,
+    "sha256": "d4eb3a2a2d256700bcc9a4f1b67a646e40218e6f042133029668023545877f86",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ここ"
   },
   {
     "file": "course-03-v6.mp3",
     "kana": "そこ",
-    "seconds": 0.917,
-    "sha256": "2b7cf049b616e3bc322b28651f079485fd2107ee876f4d4495f9e039089ceb84",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "soko"
+    "seconds": 1.274,
+    "sha256": "4a2218047da46c1cedf79bc308c6ad3135d0d50b5ba9c124a0b8ab00e6fba4fc",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "そこ"
   },
   {
     "file": "course-03-v7.mp3",
     "kana": "あそこ",
-    "seconds": 1.067,
-    "sha256": "2dd4c4d9f2efb16293d21b82125ee99bcaca449307394115e33b79406146586e",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "asoko"
+    "seconds": 1.419,
+    "sha256": "23e39001163063efeac33cbabb4c0ff26e93a267ba98be4602c3af5577a767fe",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あそこ"
   },
   {
     "file": "course-03-v8.mp3",
     "kana": "こちら",
-    "seconds": 0.981,
-    "sha256": "df36876c599faed6bc77453ad4db2ffeb667c17b3076b1276fe166f5533d1bc1",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "koʨiɾa"
+    "seconds": 1.379,
+    "sha256": "7911245de119b7dabe9d38c09caeb8d8aa64a2a963bcc2d8ffbfa202b7beb879",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "こちら"
   },
   {
     "file": "course-03-v9.mp3",
     "kana": "みぎ",
-    "seconds": 0.939,
-    "sha256": "22f9f45197cc592103d0f566df98634b64601f184081c473fb1bf211d8611f47",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "mʲiɡʲi"
+    "seconds": 1.249,
+    "sha256": "1df7da50f627d575ab1b03578f88a612cd6b6604a8a8e5e81f3c3ce02f96b9c1",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みぎ"
   },
   {
     "file": "course-03-v10.mp3",
     "kana": "ひだり",
-    "seconds": 0.981,
-    "sha256": "a2bf758cc0833498bfc83b48a2deb4ed68ff1aa1db08f6a3357c3744c2893fc2",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "çidaɾʲi"
+    "seconds": 1.334,
+    "sha256": "3bcc59ab276991fa89ae8b3a399c3823f73d51218f08bc49b53e03f1b2243cdb",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ひだり"
   },
   {
     "file": "course-03-v11.mp3",
     "kana": "まえ",
-    "seconds": 0.811,
-    "sha256": "ffdb2827fd75a06459875f84a48a07fbec93381d42e49abb3db728b6d319e93e",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "mae"
+    "seconds": 1.204,
+    "sha256": "5593350c4ed2d5048c63f51d52c5aeb5ad34455965d48d50c3ec903ab6b59bb1",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "まえ"
   },
   {
     "file": "course-03-v12.mp3",
     "kana": "うしろ",
-    "seconds": 0.96,
-    "sha256": "94ba1e1519422f4f00503ddb6c97e42a53d598e642d0b0a9ec1395c802aa6df1",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɯɕiɾo"
+    "seconds": 1.334,
+    "sha256": "de4d3e9deff12b0f136847dc76373b29bd745d7cfeec65aeb4dbb89806e04a92",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "うしろ"
   },
   {
     "file": "course-03-v13.mp3",
     "kana": "となり",
-    "seconds": 0.981,
-    "sha256": "ee1968d8f089121b849536bd6822d221e5a400fa663c0b0895fd99ccfad63d1c",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "tonaɾʲi"
+    "seconds": 1.334,
+    "sha256": "22a34e437283a2efcc08a4b6244aee88558789904c0938bed775d501749aef22",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "となり"
   },
   {
     "file": "course-03-v14.mp3",
     "kana": "がっこう",
-    "seconds": 1.045,
-    "sha256": "605c8d33af7ffa4733793585b0e95872b012ea244d66c552dfa88221414250f0",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɡaʔkoː"
+    "seconds": 1.494,
+    "sha256": "37b062b0b79abb69076034da5c79c39105ee58456679f2af9f3ad3326973cfd3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "がっこう"
   },
   {
     "file": "course-03-v15.mp3",
     "kana": "びょういん",
-    "seconds": 0.96,
-    "sha256": "0dcb55de4a9021bd05ffc647e529f8f086cf5dca330fe7666c9f3db2a5f5282c",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "bʲoːiɴ"
+    "seconds": 1.404,
+    "sha256": "d063585747a408eed6e908dbc140fdc2177b4e09e55f610f87ebb0cd60038665",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "びょういん"
   },
   {
     "file": "course-03-v16.mp3",
     "kana": "ぎんこう",
-    "seconds": 1.109,
-    "sha256": "db92a3ac1778f0c19510d33902c047e08d0d5faa3eb56c75c3107b302cfa0d67",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɡʲiŋkoː"
+    "seconds": 1.479,
+    "sha256": "356eb4073357a50d60f46498004b683cae9ec62d8e01c36cfde815d8b1945e0b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ぎんこう"
   },
   {
     "file": "course-03-v17.mp3",
     "kana": "スーパー",
-    "seconds": 1.152,
-    "sha256": "7e6bf37466f539e9f6510552e648b9b8c770243e813af6846a258135be61bed6",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "sɨːpaː"
+    "seconds": 1.519,
+    "sha256": "b86f4dc65cd71e6d75681a1675df370d36a1c3269cd282f45b3bf6a46c0f1835",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "スーパー"
   },
   {
     "file": "course-03-q1.mp3",
@@ -704,11 +704,11 @@
   {
     "file": "course-03-q4.mp3",
     "kana": "としょかん",
-    "seconds": 1.28,
-    "sha256": "318aa00abe0f9aa4177d64737be7b5553477138eda5cff90212aaf81548a187b",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "toɕokaɴ"
+    "seconds": 1.519,
+    "sha256": "b1430f8798ea5bf04b6757b032ad0330ca4ddafc230fe9dee111129c1a4931b5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "としょかん"
   },
   {
     "file": "course-03-listen.mp3",
@@ -740,11 +740,11 @@
   {
     "file": "course-03-q8.mp3",
     "kana": "みぎ",
-    "seconds": 0.939,
-    "sha256": "22f9f45197cc592103d0f566df98634b64601f184081c473fb1bf211d8611f47",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "mʲiɡʲi"
+    "seconds": 1.249,
+    "sha256": "1df7da50f627d575ab1b03578f88a612cd6b6604a8a8e5e81f3c3ce02f96b9c1",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みぎ"
   },
   {
     "file": "course-04-example.mp3",
@@ -776,155 +776,155 @@
   {
     "file": "course-04-v1.mp3",
     "kana": "いま",
-    "seconds": 0.939,
-    "sha256": "67dcf631bb4f47ee41bce1489974170ef914a092b362c6c1810850468f59bf2b",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ima"
+    "seconds": 1.159,
+    "sha256": "84454a02dbef9c949b290c4b1aba59575eaa41cc83b6a9e1537abfc3e61950e4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いま"
   },
   {
     "file": "course-04-v2.mp3",
     "kana": "なんじ",
-    "seconds": 0.917,
-    "sha256": "831c01a20a19bb19ce65756f40bbd18dd667fb82b1dce3dc381c4a5083fbc96d",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "naɴ ʥi"
+    "seconds": 1.349,
+    "sha256": "2eecfcd526e6c2055b443fa7d2adaa10f21f13a61765e5b30726d4b35e3866e4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "なんじ"
   },
   {
     "file": "course-04-v3.mp3",
     "kana": "くじ",
-    "seconds": 0.853,
-    "sha256": "71522779828faf65b922248e8cf61f970e63eeb0cef69e83f4ad6e0ec5699bbc",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kɯʥi"
+    "seconds": 1.229,
+    "sha256": "6ecc458f6a6aa07bb685399143aa398a02a71de98cb863593afd9a59ab6a54b6",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "くじ"
   },
   {
     "file": "course-04-v4.mp3",
     "kana": "じゅうじ",
-    "seconds": 0.939,
-    "sha256": "7f8e5f838392cbd5bddce33c400d8e907293f4644d2bc7d3d25033bb2fabda73",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ʥɨː ʥi"
+    "seconds": 1.384,
+    "sha256": "1d66ecf128c8e2b15b1e419df2acd54b9f341eb9fa6d9cb9aaf5169c9a38fdb4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "じゅうじ"
   },
   {
     "file": "course-04-v5.mp3",
     "kana": "じゅぎょう",
-    "seconds": 0.981,
-    "sha256": "59fbe6b188d57630af451a977c3a0b4058fd5540a7fc96ab8c19f6508e42e55f",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ʥɨɡʲoː"
+    "seconds": 1.429,
+    "sha256": "7707b3ccc05a445e629819d4e9310b4f4f149efb567bd61f75f74fdfcc9b35b3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "じゅぎょう"
   },
   {
     "file": "course-04-v6.mp3",
     "kana": "いちじ",
-    "seconds": 0.768,
-    "sha256": "0fc16923ab614aaebdf1cef561cf586759584a63274b6321be98c32fdead5480",
-    "engine": "kokoro-82m",
-    "voice": "jf_alpha",
-    "phonemes": "iʨi ʥi"
+    "seconds": 1.374,
+    "sha256": "761f0214f537b6e6bf5cb589c0f8668759bc31315818ea58326c2c462eb8014c",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いちじ"
   },
   {
     "file": "course-04-v7.mp3",
     "kana": "にじ",
-    "seconds": 0.96,
-    "sha256": "656a2dbafd9b9bee7c6097dd3d1ba360fed4fea36fe2be3ea56c2c2111726b98",
-    "engine": "qwen3-tts-voice-design",
-    "voice": "Japanese tutor prompt v1",
-    "synthesisText": "二時"
+    "seconds": 1.204,
+    "sha256": "fa38515eb70ba55131301f18269c738789950cfc5171be84a83a744e40dca9fd",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "にじ"
   },
   {
     "file": "course-04-v8.mp3",
     "kana": "さんじ",
-    "seconds": 0.832,
-    "sha256": "00a8a8f79ba2b1eef48ec69d2b38fec456d8c268b5ee6ad9ecf48abcc0d67a07",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "saɲʥi"
+    "seconds": 1.419,
+    "sha256": "6cbe53f3883fc578b09350121080ef6a387e4270af315d456b16e06c64bb6418",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "さんじ"
   },
   {
     "file": "course-04-v9.mp3",
     "kana": "よじ",
-    "seconds": 0.939,
-    "sha256": "1091a2a696cb59cefce3b99d03a8837d3a7b84cc692b78d5b3bcbb2f403e1bc0",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "joʥi"
+    "seconds": 1.234,
+    "sha256": "897b7b70c04c3c3e2cde42726f5e07818b709573ead37d49329708e826e62dae",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "よじ"
   },
   {
     "file": "course-04-v10.mp3",
     "kana": "ごじ",
-    "seconds": 0.789,
-    "sha256": "5202fd6e3831c89a75f79349d6833fed34787f51bbfa10bba1274960d2128862",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɡo ʥi"
+    "seconds": 1.239,
+    "sha256": "ffb21b86a6cd5f5305a76e99337bc0a56d801b72aa477d30a126218ae450badf",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ごじ"
   },
   {
     "file": "course-04-v11.mp3",
     "kana": "ろくじ",
-    "seconds": 0.853,
-    "sha256": "87a7dce53ce098b84402e488cfd8970379ea1ada9288547a0b2e9c01acd10c10",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɾokɯ ʥi"
+    "seconds": 1.339,
+    "sha256": "13856ff4eaf6b0e4eb2d5f1ae6ede4e4b8439d6f36cc65dc47e211b3e7d38b8a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ろくじ"
   },
   {
     "file": "course-04-v12.mp3",
     "kana": "しちじ",
-    "seconds": 0.768,
-    "sha256": "0d63a26a6ebe642afd335cc904b2f8aa25b78aef8da0e4879203c862e4c246a4",
-    "engine": "kokoro-82m",
-    "voice": "jf_alpha",
-    "phonemes": "ɕiʨi ʥi"
+    "seconds": 1.449,
+    "sha256": "cba0ac14dc5af269b2914426fa4588bc51ae8a075f6cbdba04e644fa290fe00a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しちじ"
   },
   {
     "file": "course-04-v13.mp3",
     "kana": "はちじ",
-    "seconds": 1.088,
-    "sha256": "37b6b477a7dc18ffa25b9f0591a49ba1a67e89bb3870a5965811705a97a7173c",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "haʨi ʥi"
+    "seconds": 1.439,
+    "sha256": "c4ac5c0f5afc5ee69595de3933653b0ec65739c605bcc2beabc6f9f9539580d9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "はちじ"
   },
   {
     "file": "course-04-v14.mp3",
     "kana": "なんぷん",
-    "seconds": 1.024,
-    "sha256": "5dc1e71b2dee305e9bc027487c4e7362ad1f5bedd89054f2104cd0b899eb26dc",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "naɴ pɯɴ"
+    "seconds": 1.369,
+    "sha256": "e89ea41498a3a013c5d47d62ac01c20de449aefb2f3abdfefd558614be9fad9e",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "なんぷん"
   },
   {
     "file": "course-04-v15.mp3",
     "kana": "はん",
-    "seconds": 0.469,
-    "sha256": "c33b757d01024337b5c2a7f5ada76369d9895912bfbf8802ee57b39af45042b4",
-    "engine": "kokoro-82m",
-    "voice": "jf_alpha",
-    "phonemes": "haɴ"
+    "seconds": 1.169,
+    "sha256": "532c6850e6934cee12512a6c106244e164dafe0a496bb8dc2056712ed504cb5d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "はん"
   },
   {
     "file": "course-04-v16.mp3",
     "kana": "あさ",
-    "seconds": 0.533,
-    "sha256": "6098dfe8a95df8e811952064a5b2f31f9e6eadaa803dd5df9499d79e746d30d4",
-    "engine": "kokoro-82m",
-    "voice": "jf_alpha",
-    "phonemes": "asa"
+    "seconds": 1.234,
+    "sha256": "04bceeaee5d8a3acd8db9421e974eb11fead60aa32c740891fa53c5eb7b7ea34",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あさ"
   },
   {
     "file": "course-04-v17.mp3",
     "kana": "よる",
-    "seconds": 0.896,
-    "sha256": "fdeef695c3e59946f067bf19d412cf381b133ca2e29dbd0a095ff31179420dc6",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "joɾɯ"
+    "seconds": 1.204,
+    "sha256": "6a2e0d50a4b57d506f4efe4f0b8b4a6ed6204493f0778b024e976052f37ae1b9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "よる"
   },
   {
     "file": "course-04-q1.mp3",
@@ -956,11 +956,11 @@
   {
     "file": "course-04-q4.mp3",
     "kana": "なんじ",
-    "seconds": 0.917,
-    "sha256": "831c01a20a19bb19ce65756f40bbd18dd667fb82b1dce3dc381c4a5083fbc96d",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "naɴ ʥi"
+    "seconds": 1.349,
+    "sha256": "2eecfcd526e6c2055b443fa7d2adaa10f21f13a61765e5b30726d4b35e3866e4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "なんじ"
   },
   {
     "file": "course-04-listen.mp3",
@@ -992,11 +992,11 @@
   {
     "file": "course-04-q8.mp3",
     "kana": "よじ",
-    "seconds": 0.939,
-    "sha256": "1091a2a696cb59cefce3b99d03a8837d3a7b84cc692b78d5b3bcbb2f403e1bc0",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "joʥi"
+    "seconds": 1.234,
+    "sha256": "897b7b70c04c3c3e2cde42726f5e07818b709573ead37d49329708e826e62dae",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "よじ"
   },
   {
     "file": "course-05-example.mp3",
@@ -1028,155 +1028,155 @@
   {
     "file": "course-05-v1.mp3",
     "kana": "おちゃ",
-    "seconds": 0.896,
-    "sha256": "e0e282b64b3fe0756d8a8c84bb0ea7e2926618791c57258a90d15a057d33ba7d",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "oʨa"
+    "seconds": 1.239,
+    "sha256": "cbc1d1231b2df47002b4b62c9d09ef84d76662f484afb0d66c2e44850595661f",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おちゃ"
   },
   {
     "file": "course-05-v2.mp3",
     "kana": "みず",
-    "seconds": 0.917,
-    "sha256": "e3b68d658d57004a24e504d0df6dd51f2b094636a7ea0b196c8bc9022d59b7b8",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "mʲizɨ"
+    "seconds": 1.244,
+    "sha256": "377fccf376e6a6c597606010238c503fefd78e409d5e5de3e18b3fa533a569e9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みず"
   },
   {
     "file": "course-05-v3.mp3",
     "kana": "ほん",
-    "seconds": 0.64,
-    "sha256": "7f606ace772ca0f4de4eef7ddfd235a589aee9042b6bb10afa353e78b1d43538",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "hoɴ"
+    "seconds": 1.154,
+    "sha256": "094b15d940074036e83a8331468927857418a2b1abb1f7232897e40c00123eef",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ほん"
   },
   {
     "file": "course-05-v4.mp3",
     "kana": "のみます",
-    "seconds": 1.173,
-    "sha256": "67aabdf5234517a7e7a65a0ca8a12366ad665e0f62714a473548ed22b7272b97",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "nomʲimasɨ"
+    "seconds": 1.624,
+    "sha256": "b36d11a104f083e177682c66c6d6c78c8d042bf1d23267940cc625a65eea00d3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "のみます"
   },
   {
     "file": "course-05-v5.mp3",
     "kana": "よみます",
-    "seconds": 0.96,
-    "sha256": "6a46182cd9e853eb567d24f055ef64e1d89a2e72fa19dca4faf88893ed345c61",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "jomʲimasɨ"
+    "seconds": 1.624,
+    "sha256": "dd28eb345bea757393c8a695b8023babf74070f2dcae84db590f84425b9bc558",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "よみます"
   },
   {
     "file": "course-05-v6.mp3",
     "kana": "たべます",
-    "seconds": 1.131,
-    "sha256": "c40e5509ea563d1d05d9b258de4ce0f188ea14e86166b7635de4e3ae29cf3821",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "tabemasɨ"
+    "seconds": 1.574,
+    "sha256": "2cfcc0703948e7b462edeb4313abf0fa276822a2fafc1df9544066364f2f9464",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たべます"
   },
   {
     "file": "course-05-v7.mp3",
     "kana": "かいます",
-    "seconds": 1.024,
-    "sha256": "2a374c63f3908ac0f84ebd2843b977982b24273ecdaf2e90a4df97e1889d092c",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kaimasɨ"
+    "seconds": 1.599,
+    "sha256": "75445efbdcb198e34be89229db1a37f34d01a1c34fe3a2f8101d40693578f3a5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かいます"
   },
   {
     "file": "course-05-v8.mp3",
     "kana": "みます",
-    "seconds": 0.96,
-    "sha256": "b1f2f210ab7bd171af437d60aa5eb18d918af9465c523e2aa2d149a6c9528db8",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "mʲimasɨ"
+    "seconds": 1.444,
+    "sha256": "258e83e2ebb587aced451c0eebeff9780417c281d78555fd2382e9a9d2a9447d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みます"
   },
   {
     "file": "course-05-v9.mp3",
     "kana": "ききます",
-    "seconds": 1.216,
-    "sha256": "cd7284c5da7f12be53adb0c74d98ef1517e9f8db65a5e6c14c3171e145e63cb2",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kʲikʲimasɨ"
+    "seconds": 1.585,
+    "sha256": "d1013fccbca45e53631132719c2851751cad6ec07e33710985c2ad0002c1cdf8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ききます"
   },
   {
     "file": "course-05-v10.mp3",
     "kana": "かきます",
-    "seconds": 1.195,
-    "sha256": "9b6f3954f89fd3254dd4681695b62682a9c1e3b586a22a19a1912bac93cce2da",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kakʲimasɨ"
+    "seconds": 1.659,
+    "sha256": "0bcc5b8b5fd9b9bc16d104d6809587f9e04ff8bb93462616011854efc54c186d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かきます"
   },
   {
     "file": "course-05-v11.mp3",
     "kana": "します",
-    "seconds": 0.96,
-    "sha256": "5e48cb69820aaae26285b71330f3e95b204dc976a6a8e52c1192070d237c2e84",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɕi masɨ"
+    "seconds": 1.534,
+    "sha256": "ef1d92ccf76c502616636e55649b023e9123f658f09cbd4dbc64cb950485bab8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "します"
   },
   {
     "file": "course-05-v12.mp3",
     "kana": "コーヒー",
-    "seconds": 0.811,
-    "sha256": "07bbe53ca626de30a2d2c7b0cde8f263691080719da62538ad688b88739311e3",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "koːçiː"
+    "seconds": 1.479,
+    "sha256": "c4b629a3f6f0aa4230b4dd57ce5196c784e0f64afe1a05959b88ecc93c7e21d0",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "コーヒー"
   },
   {
     "file": "course-05-v13.mp3",
     "kana": "ごはん",
-    "seconds": 0.789,
-    "sha256": "e3bf1e3f25cf9f9af59cdd5d3a5f41f4fbc015c0c4a52471801bc81291098e6b",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɡohaɴ"
+    "seconds": 1.339,
+    "sha256": "cab8d4b6ac9afb6089e9bf2ea5f2447dc4f7ca8acd5bc5779e156e662e077fb5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ごはん"
   },
   {
     "file": "course-05-v14.mp3",
     "kana": "パン",
-    "seconds": 0.789,
-    "sha256": "4e91c6ba8dd2eab3f0c141a77d4caf5aef3a40829a08f0e92215fc608d2e2735",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "paɴ"
+    "seconds": 1.134,
+    "sha256": "b6e0e722bf14f766e5531bec07f4c467e00bd28f9cea41575a287d000dfa3236",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "パン"
   },
   {
     "file": "course-05-v15.mp3",
     "kana": "りんご",
-    "seconds": 1.024,
-    "sha256": "cc9f332ea2b92f86dfbe5929f736f4b4c261819f2e19f31e7be42e2707022ac6",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɾʲiŋɡo"
+    "seconds": 1.314,
+    "sha256": "a2885759b76fefe5ee2165144a7700dbbf8226fd44ecb5f4b97faaec9b752b20",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "りんご"
   },
   {
     "file": "course-05-v16.mp3",
     "kana": "しんぶん",
-    "seconds": 0.96,
-    "sha256": "448edec1c82446cee34cbb1b52caae6188c479dab08ab23538a671c5a44e6a39",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɕimbɯɴ"
+    "seconds": 1.459,
+    "sha256": "a7224b7ec37e0b970420813f25f74b7330bd742a96fd7b9ebe7132982238fb3a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しんぶん"
   },
   {
     "file": "course-05-v17.mp3",
     "kana": "てがみ",
-    "seconds": 1.003,
-    "sha256": "977457589d3d8dba131893a395010580dc9b57b4daaeb623dae32edc863ee8af",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "teɡamʲi"
+    "seconds": 1.354,
+    "sha256": "a480056c36bd2989522829ca490199817046cde85c593260d1a4a60fa7fc4089",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "てがみ"
   },
   {
     "file": "course-05-q1.mp3",
@@ -1208,11 +1208,11 @@
   {
     "file": "course-05-q4.mp3",
     "kana": "よみます",
-    "seconds": 0.96,
-    "sha256": "6a46182cd9e853eb567d24f055ef64e1d89a2e72fa19dca4faf88893ed345c61",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "jomʲimasɨ"
+    "seconds": 1.624,
+    "sha256": "dd28eb345bea757393c8a695b8023babf74070f2dcae84db590f84425b9bc558",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "よみます"
   },
   {
     "file": "course-05-listen.mp3",
@@ -1244,11 +1244,11 @@
   {
     "file": "course-05-q8.mp3",
     "kana": "りんご",
-    "seconds": 1.024,
-    "sha256": "cc9f332ea2b92f86dfbe5929f736f4b4c261819f2e19f31e7be42e2707022ac6",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɾʲiŋɡo"
+    "seconds": 1.314,
+    "sha256": "a2885759b76fefe5ee2165144a7700dbbf8226fd44ecb5f4b97faaec9b752b20",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "りんご"
   },
   {
     "file": "course-06-example.mp3",
@@ -1280,155 +1280,155 @@
   {
     "file": "course-06-v1.mp3",
     "kana": "バス",
-    "seconds": 0.832,
-    "sha256": "405db05f58f53343f22087d474a54049258983a4dca3d4cea66a8e03f4e1bf40",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "basɨ"
+    "seconds": 1.294,
+    "sha256": "33d11e499f55005cedcadf39938b092103db14fc4c02adb8fed88fd450d61515",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "バス"
   },
   {
     "file": "course-06-v2.mp3",
     "kana": "でんしゃ",
-    "seconds": 0.917,
-    "sha256": "539314812d908dd90cabe870ca55f99a6616252e5cdcffd664f19fb2533e42e4",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "deɴɕa"
+    "seconds": 1.404,
+    "sha256": "7f43ee27241f6d36eb95dfe2368b1940149e753d49fd99b6087e3f4b79067f27",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "でんしゃ"
   },
   {
     "file": "course-06-v3.mp3",
     "kana": "えき",
-    "seconds": 0.96,
-    "sha256": "65d6748b0c8d322fd9c100fe242705a2e2ce68a534eed387e7e83ddc4b1aa3b0",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ekʲi"
+    "seconds": 1.229,
+    "sha256": "d10ec3fe89db10f368d45b87705cb6f0bf53b947234249cd3c205878fce39edd",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "えき"
   },
   {
     "file": "course-06-v4.mp3",
     "kana": "こうえん",
-    "seconds": 0.896,
-    "sha256": "af00ffc1023814588e08ea4b63d07c22b1a2686580447cf65b27486fa77125d4",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "koːeɴ"
+    "seconds": 1.399,
+    "sha256": "bab71baabdd99a70d3a3df2c42e379ed6e81e6eb79994cd38a191037781f4b1f",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "こうえん"
   },
   {
     "file": "course-06-v5.mp3",
     "kana": "いきます",
-    "seconds": 1.237,
-    "sha256": "ea0cae962839d0cafe4711d61f7639433f49b238b1c8dbdf4a84cca3950abf50",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ikʲimasɨ"
+    "seconds": 1.589,
+    "sha256": "4f04fc67d42ad83318b108fa6eaf38f65fadb3b426cfd548da8ea3946bae8012",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いきます"
   },
   {
     "file": "course-06-v6.mp3",
     "kana": "あるきます",
-    "seconds": 1.301,
-    "sha256": "560cc0c59f08e447564e2fdbcd8576ec7fca7960a207e38832a1b5cbd76fe8f8",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "aɾɯkʲimasɨ"
+    "seconds": 1.724,
+    "sha256": "94984112e7faed68ce5a5320b5396e28f04fa97997ddcc30c732eda791215fd8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あるきます"
   },
   {
     "file": "course-06-v7.mp3",
     "kana": "じてんしゃ",
-    "seconds": 1.195,
-    "sha256": "f0caaec12f785e8d3c96c4af5a2954565f905f6d8f91723509d93cdc149ab7bb",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ʥiteɴɕa"
+    "seconds": 1.554,
+    "sha256": "756823537ef827209247fca0e49afd4d0d647aaae3147e365aaa11899811e2c0",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "じてんしゃ"
   },
   {
     "file": "course-06-v8.mp3",
     "kana": "タクシー",
-    "seconds": 1.045,
-    "sha256": "7d7fca35a02899321432453e2fc686473cf439b49186e1f64c42f263f7b36ba7",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "takɯɕiː"
+    "seconds": 1.519,
+    "sha256": "324b113cfe3482c1328d41cbefb7846cce73b44a17b359bc73064e6c9d9a3de0",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "タクシー"
   },
   {
     "file": "course-06-v9.mp3",
     "kana": "くるま",
-    "seconds": 0.96,
-    "sha256": "30a6f849e5107f6aaf47c88a073f79ca999c33d31139fef5e231d57a60f5ed99",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kɯɾɯma"
+    "seconds": 1.329,
+    "sha256": "91ca3d05b1d316902e1b260abdbcd158970e24770bd72682442e1d5e13abbe60",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "くるま"
   },
   {
     "file": "course-06-v10.mp3",
     "kana": "ちかてつ",
-    "seconds": 1.68,
-    "sha256": "2285e93d09f53a6f19083c56868145c9b15d51fe51b75b146b0a7c167adea96c",
-    "engine": "qwen3-tts-voice-design",
-    "voice": "Japanese tutor prompt v1",
-    "synthesisText": "地下鉄"
+    "seconds": 1.619,
+    "sha256": "76950207b248f81789b48da1094e793577121110019a2cacf0571308590c97ba",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ちかてつ"
   },
   {
     "file": "course-06-v11.mp3",
     "kana": "ひこうき",
-    "seconds": 1.067,
-    "sha256": "28600798181cbc5fcd6588b3a15641b47971087dba5d3c8ce1fa9f3a1cfcceeb",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "çikoːkʲi"
+    "seconds": 1.504,
+    "sha256": "2e9478b1e660eb1498889a1e1a93a0aa8efb7367b2003fdc9758ddc6d810548b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ひこうき"
   },
   {
     "file": "course-06-v12.mp3",
     "kana": "がっこう",
-    "seconds": 1.045,
-    "sha256": "605c8d33af7ffa4733793585b0e95872b012ea244d66c552dfa88221414250f0",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɡaʔkoː"
+    "seconds": 1.494,
+    "sha256": "37b062b0b79abb69076034da5c79c39105ee58456679f2af9f3ad3326973cfd3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "がっこう"
   },
   {
     "file": "course-06-v13.mp3",
     "kana": "うち",
-    "seconds": 0.725,
-    "sha256": "5235863e30a04ec13bfc354a03fbd4bbd7e8a8809469cfff817a49c7267ad291",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɯʨi"
+    "seconds": 1.254,
+    "sha256": "e18548ac5a1e38ba99b6b315e6943c695f1b4e771ae9e72645c0ecf38968c26d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "うち"
   },
   {
     "file": "course-06-v14.mp3",
     "kana": "みせ",
-    "seconds": 0.555,
-    "sha256": "123a828a9e0057d44242a555d4cb5bd5b41ee4cf0d8b03da6e907fcd5ed2aaf5",
-    "engine": "kokoro-82m",
-    "voice": "jf_alpha",
-    "phonemes": "mʲise"
+    "seconds": 1.249,
+    "sha256": "fd231ae835baff0f98c23f63440cf140f6a2c73a4e19f6cc0f0be4f341c56b51",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みせ"
   },
   {
     "file": "course-06-v15.mp3",
     "kana": "かえります",
-    "seconds": 1.28,
-    "sha256": "9eb036c4eda78690ef811ffc0a8e9d03534d06ccae6ee87e8162cfa1e397f477",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kaeɾʲimasɨ"
+    "seconds": 1.759,
+    "sha256": "09c8ec1b3eaf95e225a7feb13c1f9217279be7af0c6487463397d411b89d27d5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かえります"
   },
   {
     "file": "course-06-v16.mp3",
     "kana": "きます",
-    "seconds": 1.024,
-    "sha256": "a6cfe09ad567558171aaa613130bf7203911704dc55b8f956c462fef82735e0c",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kʲimasɨ"
+    "seconds": 1.474,
+    "sha256": "f8e8508d1f45bc29ac5d00b7b8c73aceb7a60059fbc6b54429197c927655e71c",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "きます"
   },
   {
     "file": "course-06-v17.mp3",
     "kana": "まっすぐ",
-    "seconds": 1.173,
-    "sha256": "053f25266b222aca3a4762cdb73513a962e1d70223696375d74ef1d171d90fa4",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "maʔsɨɡɯ"
+    "seconds": 1.474,
+    "sha256": "0821507014596e1f4969897edc08d67caf94c82a62e827821938779231f2c6b5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "まっすぐ"
   },
   {
     "file": "course-06-q1.mp3",
@@ -1460,11 +1460,11 @@
   {
     "file": "course-06-q4.mp3",
     "kana": "でんしゃ",
-    "seconds": 0.917,
-    "sha256": "539314812d908dd90cabe870ca55f99a6616252e5cdcffd664f19fb2533e42e4",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "deɴɕa"
+    "seconds": 1.404,
+    "sha256": "7f43ee27241f6d36eb95dfe2368b1940149e753d49fd99b6087e3f4b79067f27",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "でんしゃ"
   },
   {
     "file": "course-06-listen.mp3",
@@ -1496,11 +1496,11 @@
   {
     "file": "course-06-q8.mp3",
     "kana": "うち",
-    "seconds": 0.725,
-    "sha256": "5235863e30a04ec13bfc354a03fbd4bbd7e8a8809469cfff817a49c7267ad291",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɯʨi"
+    "seconds": 1.254,
+    "sha256": "e18548ac5a1e38ba99b6b315e6943c695f1b4e771ae9e72645c0ecf38968c26d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "うち"
   },
   {
     "file": "course-07-example.mp3",
@@ -1532,155 +1532,155 @@
   {
     "file": "course-07-v1.mp3",
     "kana": "ねこ",
-    "seconds": 0.981,
-    "sha256": "dae6520ed95d71ef3ae4e19f748464a431040acfc283a531b3e0685d8dba4b46",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "neko"
+    "seconds": 1.209,
+    "sha256": "8d23ee57581f99aa6b820e4171f44c87c105a8b905c073a7f9c11f0722e8c58d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ねこ"
   },
   {
     "file": "course-07-v2.mp3",
     "kana": "いぬ",
-    "seconds": 0.853,
-    "sha256": "1dc6e298840a6e3d6a33b30062db3a31943ec20a5847b3bc216f8565c0e81a23",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "inɯ"
+    "seconds": 1.189,
+    "sha256": "b6a1c6a697b9a29c37e1a7b4749c2ed7d0d03aa28dc28c43d64bb859737b5e00",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いぬ"
   },
   {
     "file": "course-07-v3.mp3",
     "kana": "へや",
-    "seconds": 1.067,
-    "sha256": "838601a3b5a090434fcefc592e1ea46ecfedcde06978517d061b596ef524e3e6",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "heja"
+    "seconds": 1.225,
+    "sha256": "8a822a17ab8ca0a511d2481834e09b739da14fe0e0c5a0189c97e8119ab66ce6",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "へや"
   },
   {
     "file": "course-07-v4.mp3",
     "kana": "つくえ",
-    "seconds": 0.96,
-    "sha256": "ec51b16583ad934f158147e37d267e1b66c65df5f4d7eee128bddab8198efec5",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ʦɨkɯe"
+    "seconds": 1.73,
+    "sha256": "6070b8bc8adb16832b7563840b68d4e0d40f9a50ab08125bca0d824f854f6b7c",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "つくえ"
   },
   {
     "file": "course-07-v5.mp3",
     "kana": "いす",
-    "seconds": 1.04,
-    "sha256": "56b2d1b1102392fbf9dba8fcb82228db72a83be7f330259515355bb83c9696a0",
-    "engine": "qwen3-tts-voice-design",
-    "voice": "Japanese tutor prompt v1",
-    "synthesisText": "いす。"
+    "seconds": 1.234,
+    "sha256": "2737a58090c19343d1531b2b97ae1e8aaf8cefe03abcc53d8d345a0eef1d326a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いす"
   },
   {
     "file": "course-07-v6.mp3",
     "kana": "こども",
-    "seconds": 0.96,
-    "sha256": "a74b340df342ce72c038a18e3a5f7c56e7cbc2d3f9a0f1be6d18f6a452ae7706",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kodomo"
+    "seconds": 1.349,
+    "sha256": "ffe29dc1ffc7217322b72a807c12cdbde5d296e1e158f6184b7411c737eab69a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "こども"
   },
   {
     "file": "course-07-v7.mp3",
     "kana": "おとこ",
-    "seconds": 1.088,
-    "sha256": "a74c33d31b87dade181628134276d969728fb3f389ae4b59c5ee792fccfd6019",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "otoko"
+    "seconds": 1.345,
+    "sha256": "6b50d98bc1a097dcffcf22fb1e7a7eb57cfd5f50afb1396f3c82587d54bdb223",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おとこ"
   },
   {
     "file": "course-07-v8.mp3",
     "kana": "おんな",
-    "seconds": 0.981,
-    "sha256": "ab8321aae23878a323cec85487500b36aab48004f45475cbb5790a336f9b24aa",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "onna"
+    "seconds": 1.229,
+    "sha256": "13400fa1a4461b963e08c72f928941559830dfccb336dd935a97c717512b9a1b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おんな"
   },
   {
     "file": "course-07-v9.mp3",
     "kana": "さかな",
-    "seconds": 1.152,
-    "sha256": "2dc5de24c3244fd7b61b067370236dcafe13b03a63027e303c0052498f8b47c2",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "sakana"
+    "seconds": 1.379,
+    "sha256": "98ae0b09653c5622bab5613d96aac4174774e4b240ab48d8a8cc097e8991cb56",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "さかな"
   },
   {
     "file": "course-07-v10.mp3",
     "kana": "とり",
-    "seconds": 0.896,
-    "sha256": "d96e63f662b46c2e7e53635e55eab20479a8caf4b209cbe52da385844eb436c3",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "toɾʲi"
+    "seconds": 1.189,
+    "sha256": "9ae22a52df37e9a8c28315187ca55b408c6ad0c36b7723320c80753148409d9f",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "とり"
   },
   {
     "file": "course-07-v11.mp3",
     "kana": "ベッド",
-    "seconds": 1.003,
-    "sha256": "ff9dac63b40272178170f8256711858830f9d9e7559c368b57618e025ab0b84b",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "beʔdo"
+    "seconds": 1.294,
+    "sha256": "37134380607c1bb6ad5b8f1fe346f3a36ce6750267acb5db283858d2006bbdc9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ベッド"
   },
   {
     "file": "course-07-v12.mp3",
     "kana": "ドア",
-    "seconds": 0.811,
-    "sha256": "770838f0d1a4b6526c789e61b1a556f56af9c3a9b2ae3aa31c667df59636c943",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "doa"
+    "seconds": 1.204,
+    "sha256": "d9aa25fd3c750646d82447983e7ec24d4c376a644f52c3f58b511c0dde4dd1d8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ドア"
   },
   {
     "file": "course-07-v13.mp3",
     "kana": "まど",
-    "seconds": 0.939,
-    "sha256": "4f9b4b962648b114f2fc4dd404bf28fd7e582609ac8ad005a6a1bfc227de90b9",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "mado"
+    "seconds": 1.184,
+    "sha256": "13c17f5392cabb4689522a826053e23d7c05d23997b2c838feb8de13e40411d4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "まど"
   },
   {
     "file": "course-07-v14.mp3",
     "kana": "でんわ",
-    "seconds": 0.533,
-    "sha256": "6b4575121ebed8b56941d0cec59fbc787516f75614e7c68993e0abf39f4a84eb",
-    "engine": "kokoro-82m",
-    "voice": "jf_alpha",
-    "phonemes": "deɴβa"
+    "seconds": 1.309,
+    "sha256": "bd1bd1f501029772bcb36e89286eee9295a68842b4515b5e5ab358744ccddad0",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "でんわ"
   },
   {
     "file": "course-07-v15.mp3",
     "kana": "テレビ",
-    "seconds": 0.981,
-    "sha256": "388e602a0864e42b6251d68373e2520cef6a99f3551c0a79da7ed046516acd6c",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "teɾebʲi"
+    "seconds": 1.359,
+    "sha256": "41cc2fd3c783cb8757be5e905f310f40735a7ea5783b5a695fc79ac53c276e08",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "テレビ"
   },
   {
     "file": "course-07-v16.mp3",
     "kana": "ほんだな",
-    "seconds": 1.216,
-    "sha256": "42ff53f6d1d00d213083c0e4cbc9d51553559a64ab5ea4b33d2841306c646883",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "hoɴ da na"
+    "seconds": 1.449,
+    "sha256": "1727b0ee9a829b5055ff0f394d73e9c3de9c1e1b74e911d0f324219bd61182a2",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ほんだな"
   },
   {
     "file": "course-07-v17.mp3",
     "kana": "にわ",
-    "seconds": 0.939,
-    "sha256": "cc59e09eb952c9f77c938db019b5c2090590ebe9f10ef95066dcbaa0b3bd28ab",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɲiβa"
+    "seconds": 1.169,
+    "sha256": "6cee04198a12d28b546c6c7f16b3f1287210b85487dcd1100761a991ec8335c7",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "にわ"
   },
   {
     "file": "course-07-q1.mp3",
@@ -1712,11 +1712,11 @@
   {
     "file": "course-07-q4.mp3",
     "kana": "つくえ",
-    "seconds": 0.96,
-    "sha256": "ec51b16583ad934f158147e37d267e1b66c65df5f4d7eee128bddab8198efec5",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ʦɨkɯe"
+    "seconds": 1.73,
+    "sha256": "6070b8bc8adb16832b7563840b68d4e0d40f9a50ab08125bca0d824f854f6b7c",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "つくえ"
   },
   {
     "file": "course-07-listen.mp3",
@@ -1748,11 +1748,11 @@
   {
     "file": "course-07-q8.mp3",
     "kana": "まど",
-    "seconds": 0.939,
-    "sha256": "4f9b4b962648b114f2fc4dd404bf28fd7e582609ac8ad005a6a1bfc227de90b9",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "mado"
+    "seconds": 1.184,
+    "sha256": "13c17f5392cabb4689522a826053e23d7c05d23997b2c838feb8de13e40411d4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "まど"
   },
   {
     "file": "course-08-example.mp3",
@@ -1784,164 +1784,164 @@
   {
     "file": "course-08-v1.mp3",
     "kana": "おおきい",
-    "seconds": 0.853,
-    "sha256": "5b83a1c9acdf65b909491ada5d67b52a821586f9a47e157da11b04e15f120baf",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "oːkʲiː"
+    "seconds": 1.479,
+    "sha256": "3fe9cbb34d773871d0aed6cea85d00b4a89b5e0263de2b6559742c55bf1aa3e6",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おおきい"
   },
   {
     "file": "course-08-v2.mp3",
     "kana": "ちいさい",
-    "seconds": 1.024,
-    "sha256": "02f8eb475586436e9d07ebc979950e1056b4e3ede04d2da87acb82bd66b49f9a",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ʨiːsai"
+    "seconds": 1.494,
+    "sha256": "105773cea5a82fdbc00814d913ca3c08ff1d3a56819d838f390a60843b07abad",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ちいさい"
   },
   {
     "file": "course-08-v3.mp3",
     "kana": "おいしい",
-    "seconds": 0.832,
-    "sha256": "abeb6c951bfe7aac74630e7ac3076e74bfcf9040ef20e075ae034f571ffaf247",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "oiɕiː"
+    "seconds": 1.479,
+    "sha256": "ca865c9358ba136bee63c4f5d3ceb2dcbd0239ae650beea32c3cd0b1a361b9b9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おいしい"
   },
   {
     "file": "course-08-v4.mp3",
     "kana": "しずか",
-    "seconds": 1.173,
-    "sha256": "17bad42d95460968c261f1ef2abad4614d469b87bf16f76a7689cee59187994d",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɕizɨka"
+    "seconds": 1.449,
+    "sha256": "e2bbea70ec2db4a2f54a586bbebdcc959a71e603c222fbcabc58b36877f19ff3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しずか"
   },
   {
     "file": "course-08-v5.mp3",
     "kana": "まち",
-    "seconds": 0.853,
-    "sha256": "f758079bbf6df38cd88b094f2ca1ee89a7f310d88c9457636aeedeceeb8bfa00",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "maʨi"
+    "seconds": 1.264,
+    "sha256": "bd0ceb85bb2369cc8de21279522321f1731c66641d323fad2f2694aa1df9c9e0",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "まち"
   },
   {
     "file": "course-08-v6.mp3",
     "kana": "ケーキ",
-    "seconds": 0.64,
-    "sha256": "244b11a9ee210616a295a8ccada01841a9464062949344219cfcadddbb4d1af8",
-    "engine": "qwen3-tts-voice-design",
-    "voice": "Japanese tutor prompt v1",
+    "seconds": 1.549,
+    "sha256": "3da34374131339334be3f21d05469605094b316ef508d9259eae7665034ae8f7",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Sayaka",
     "synthesisText": "ケーキ"
   },
   {
     "file": "course-08-v7.mp3",
     "kana": "あつい",
-    "seconds": 0.768,
-    "sha256": "cf1da997a22e86da2e070fc54cde8ccb5c64cb6bee267f10ac7d7289cb7bdacf",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "aʦɨi"
+    "seconds": 1.359,
+    "sha256": "ed0d4df20939d0f26e765cc181819206e895797d3d0c13909fe27e813573e62f",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あつい"
   },
   {
     "file": "course-08-v8.mp3",
     "kana": "さむい",
-    "seconds": 1.024,
-    "sha256": "ba330d9db7194a41462d378112c743b3b5d8cb1d8b6e1a20d2d691dd27ca5f47",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "samɯi"
+    "seconds": 1.369,
+    "sha256": "ec6d74d7e228aaf409509a308b8bf6bd83575195c8590cba6a70c5fed8f58753",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "さむい"
   },
   {
     "file": "course-08-v9.mp3",
     "kana": "たかい",
-    "seconds": 0.96,
-    "sha256": "18fd55938000365633b99593ad258d5e96e23211a038a9bbff09000198d3eb22",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "takai"
+    "seconds": 1.324,
+    "sha256": "5a1e8015cf6bff7893539f6dfa6f10f23df41b348408a04fb19848df01fd26ec",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たかい"
   },
   {
     "file": "course-08-v10.mp3",
     "kana": "ひくい",
-    "seconds": 0.939,
-    "sha256": "4832da6848e21bbfe23ea93051bb6225ca78144eaa75e77fa8dab3dd0e2e37d7",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "çikɯi"
+    "seconds": 1.304,
+    "sha256": "914f8c22bf072fd916c92aaec85e3ee1913ead75bbb17e6eae8a2a4a4fb77d16",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ひくい"
   },
   {
     "file": "course-08-v11.mp3",
     "kana": "きれい",
-    "seconds": 0.981,
-    "sha256": "d130b6040ae59aa33efe873215b8150cbb5eb152dbe4becddef165d19abfca46",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kʲiɾeː"
+    "seconds": 1.329,
+    "sha256": "cfa973496c830f78b42939a541683a756e0c18ada2c80f07463bfba3567f0736",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "きれい"
   },
   {
     "file": "course-08-v12.mp3",
     "kana": "にぎやか",
-    "seconds": 1.344,
-    "sha256": "09f000164de96e5b6356dd3378261a18ac21f472e13d0a3d4cb1c97e72ba80b3",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɲiɡʲijaka"
+    "seconds": 1.469,
+    "sha256": "5b96998a3dc6e0aebda0b9c1e8f410916701d701ccc3c2127da38233a750e768",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "にぎやか"
   },
   {
     "file": "course-08-v13.mp3",
     "kana": "べんり",
-    "seconds": 0.917,
-    "sha256": "ce2ee79beb9af894ef0c1766ac0fcf65616962421ff42b4d576b89623a7d49a4",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "benɾʲi"
+    "seconds": 1.299,
+    "sha256": "980c8769371383b01bb22eca0d1d1ea9f9b5e219ad4cac8f0be64abea873dfe2",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "べんり"
   },
   {
     "file": "course-08-v14.mp3",
     "kana": "むずかしい",
-    "seconds": 1.024,
-    "sha256": "307e304255c63cd179fc1e1bf2d17b392ec4c3f806480a850dc409e9e89bb71d",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "mɯzɨkaɕiː"
+    "seconds": 1.719,
+    "sha256": "b019145f7ea8dc6c336ece4717b95ca8907b307ad9e9ba7d994b316550a782f8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "むずかしい"
   },
   {
     "file": "course-08-v15.mp3",
     "kana": "やさしい",
-    "seconds": 1.259,
-    "sha256": "9f6b51633802b487030a3b3f084f609acba742a4e6b0e0c34da1d940fc24bdb8",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "jasaɕiː"
+    "seconds": 1.604,
+    "sha256": "73846bc437c80f652d5fcbccf17397a72d0594e97a48a7a3ad031029f8f32c70",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "やさしい"
   },
   {
     "file": "course-08-v16.mp3",
     "kana": "たのしい",
-    "seconds": 0.96,
-    "sha256": "e403792f83a91dea2ba2b04f667e1b31486396b04084a0525f1c9366b76f1d8e",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "tanoɕiː"
+    "seconds": 1.549,
+    "sha256": "fc958be96b9d46b29ea42164ac58a51ae32a397ad7a55244816d09c8f44a8c86",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たのしい"
   },
   {
     "file": "course-08-v17.mp3",
     "kana": "つまらない",
-    "seconds": 1.216,
-    "sha256": "3563b30941ea8861f6b5a24e02f89283afffe6ea0f116e3689241dd4c8e20557",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ʦɨmaɾanai"
+    "seconds": 1.674,
+    "sha256": "67eccd1023900419a2c46541b265a03f91e313998c35b115ef471d506b846d37",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "つまらない"
   },
   {
     "file": "course-08-v18.mp3",
     "kana": "あまい",
-    "seconds": 0.981,
-    "sha256": "a70414164def020918c897c1a368fadc0d1c4232505f8a00b9c1ce08117020b2",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "amai"
+    "seconds": 1.324,
+    "sha256": "f0d192aa60cb908ed23e47dd15577ae5daf6faf4e0bb4d600944167bd7ae1847",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あまい"
   },
   {
     "file": "course-08-q1.mp3",
@@ -1973,11 +1973,11 @@
   {
     "file": "course-08-q4.mp3",
     "kana": "おいしい",
-    "seconds": 0.832,
-    "sha256": "abeb6c951bfe7aac74630e7ac3076e74bfcf9040ef20e075ae034f571ffaf247",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "oiɕiː"
+    "seconds": 1.479,
+    "sha256": "ca865c9358ba136bee63c4f5d3ceb2dcbd0239ae650beea32c3cd0b1a361b9b9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おいしい"
   },
   {
     "file": "course-08-listen.mp3",
@@ -2009,11 +2009,11 @@
   {
     "file": "course-08-q8.mp3",
     "kana": "あまい",
-    "seconds": 0.981,
-    "sha256": "a70414164def020918c897c1a368fadc0d1c4232505f8a00b9c1ce08117020b2",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "amai"
+    "seconds": 1.324,
+    "sha256": "f0d192aa60cb908ed23e47dd15577ae5daf6faf4e0bb4d600944167bd7ae1847",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あまい"
   },
   {
     "file": "course-09-example.mp3",
@@ -2045,155 +2045,155 @@
   {
     "file": "course-09-v1.mp3",
     "kana": "きのう",
-    "seconds": 1.024,
-    "sha256": "5a4ae91aae3388b48fd2e26a76342f2c1b30006bf47d6b7bb006b355760b7ec7",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kʲinoː"
+    "seconds": 1.334,
+    "sha256": "d03596f7b55a29c9e8b3c56a5e0a279cac6a750d8f6edfb658c997a3ca471187",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "きのう"
   },
   {
     "file": "course-09-v2.mp3",
     "kana": "えいが",
-    "seconds": 0.96,
-    "sha256": "3c368e9cb998583a7d4dc5e20886ad6dfbe08e180c6fa0c8f0f26034ab4f1675",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "eːɡa"
+    "seconds": 1.279,
+    "sha256": "dc7418d7f366ddddf798654a3b9df508ed352e9677fdb61764ec9110fea04ed6",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "えいが"
   },
   {
     "file": "course-09-v3.mp3",
     "kana": "みました",
-    "seconds": 1.131,
-    "sha256": "c013009cbae3b1dab63f022cfcb6b648defbfb0a3dac0c8e1581c8c4d4628285",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "mʲimaɕi ta"
+    "seconds": 1.504,
+    "sha256": "542c75672fa66604271c4b7dfbe516a3ba0fbff51032f25cec5db22276f9df16",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みました"
   },
   {
     "file": "course-09-v4.mp3",
     "kana": "よみました",
-    "seconds": 1.024,
-    "sha256": "3b72a457f8400970444affe85ad486639c999f53f14d9e9e128119c6453c8540",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "jomʲi maɕita"
+    "seconds": 1.659,
+    "sha256": "3b9ea3abcc73e02833121006f67d7210900c305d4adeb3c1d1f548cd268608c7",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "よみました"
   },
   {
     "file": "course-09-v5.mp3",
     "kana": "のみませんでした",
-    "seconds": 1.771,
-    "sha256": "fe7a161e6ffe14958751e5ecd7b7929048537cc7afe75e0baa6b43fdd4c4ace5",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "nomʲi maseɴ deɕi ta"
+    "seconds": 2.044,
+    "sha256": "83b92bcde7e1cf10869d431ebab4fb65e65e309047317455db2086f9ffff5d62",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "のみませんでした"
   },
   {
     "file": "course-09-v6.mp3",
     "kana": "おととい",
-    "seconds": 1.216,
-    "sha256": "04b36716f319c49c966a7b2b073901ed4127e980b96b3143797988d165976b03",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ototoi"
+    "seconds": 1.439,
+    "sha256": "781ef22092aada848b491f8f7408bfb823751f7bb648acc011c7c7c89890a8d8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おととい"
   },
   {
     "file": "course-09-v7.mp3",
     "kana": "せんしゅう",
-    "seconds": 1.024,
-    "sha256": "438a400b6781cc90483b438067407acfd65949a8a448284499cc1d38908b46c9",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "seɴɕɨː"
+    "seconds": 1.569,
+    "sha256": "e7a7f36f0eea112204538bcfc6aae175176456db75af9407dede17dfabe7933f",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "せんしゅう"
   },
   {
     "file": "course-09-v8.mp3",
     "kana": "せんげつ",
-    "seconds": 1.152,
-    "sha256": "b5691061608253059e43b3391efc3c4f32f9cec53f338ae5e28af30d43873018",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "seŋɡeʦɨ"
+    "seconds": 1.629,
+    "sha256": "9ed205163fb256551b2236a2bd8dd1d7c253fdf0739811160d9aeefb0c735d6e",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "せんげつ"
   },
   {
     "file": "course-09-v9.mp3",
     "kana": "いきました",
-    "seconds": 1.344,
-    "sha256": "2c444c91225308f016f5924915282b6487a73717a1f84d597852a98e1ba5656f",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ikʲi maɕita"
+    "seconds": 1.619,
+    "sha256": "86b71913062866c71f5e0602484e9d5868622c6dd9390b2774ab9bc4bc7771ee",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いきました"
   },
   {
     "file": "course-09-v10.mp3",
     "kana": "きました",
-    "seconds": 1.195,
-    "sha256": "30a8654654454786baddb60d95db812b83034f75f2fd69fe8f515c897e8d0a9b",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kʲi maɕita"
+    "seconds": 1.499,
+    "sha256": "ae2218882ab67121c5305448964a8623d6c20c7c3275032030cbe523354cc81b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "きました"
   },
   {
     "file": "course-09-v11.mp3",
     "kana": "たべました",
-    "seconds": 1.301,
-    "sha256": "0473599bc9b35a4c4e736abfdfa963eb28e56cec0f6e95c68f64b66387dfc901",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "tabe maɕita"
+    "seconds": 1.644,
+    "sha256": "9bbbdadc1738313ee9e0084c0398f3cdc8218fd0cfc1d36b2d38830ce17e6d1a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たべました"
   },
   {
     "file": "course-09-v12.mp3",
     "kana": "かいました",
-    "seconds": 1.301,
-    "sha256": "79ac2fb0c467301eb30c11885a5b46baed40fdb13682beda600f0d437fd43df6",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kai maɕita"
+    "seconds": 1.679,
+    "sha256": "a481a9a294c2460299f6e685a790f4d7600e9ee46941f39a909e9bb0ee43bec2",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かいました"
   },
   {
     "file": "course-09-v13.mp3",
     "kana": "ききました",
-    "seconds": 1.344,
-    "sha256": "f701033236b57d69a46ab4f085ead1dee5bc25218b79f0cf8ee803b23033f596",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kʲikʲi maɕita"
+    "seconds": 1.614,
+    "sha256": "1ec3e8f5dcd1d8d1286af55cd54bd558e4c4477cbe3adfcef85b57a28f607ebb",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ききました"
   },
   {
     "file": "course-09-v14.mp3",
     "kana": "しました",
-    "seconds": 1.28,
-    "sha256": "566b73babca79bd6d94dd3afd5e85ccdc3708f8b491e6f762a4651c5fb38c856",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɕi maɕita"
+    "seconds": 1.564,
+    "sha256": "1d5492832f374e2c570b9c1432e8ab7456841440c415247fce96ce6256980019",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しました"
   },
   {
     "file": "course-09-v15.mp3",
     "kana": "みませんでした",
-    "seconds": 1.6,
-    "sha256": "1792220403f03ed7f5d86ade8155726ec1c2fb953f5bb8c3e47d1aa70acf64b8",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "mʲi maseɴ deɕi ta"
+    "seconds": 1.934,
+    "sha256": "0144eb4c149a947b7d49a5f0630ed154a4b0a82fb458affa058c70b33275b1a9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みませんでした"
   },
   {
     "file": "course-09-v16.mp3",
     "kana": "たべませんでした",
-    "seconds": 1.771,
-    "sha256": "3b77b77189551e3fb731cbcd861f6c597e4c74235a8db83972cd635d7f9a43c1",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "tabe maseɴ deɕi ta"
+    "seconds": 2.064,
+    "sha256": "06af292068d22f128c9e1f4f7ace75d070eed12ca75ed137420f9710f6350af1",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たべませんでした"
   },
   {
     "file": "course-09-v17.mp3",
     "kana": "かえりました",
-    "seconds": 1.387,
-    "sha256": "0e9f0033abed9483f626e0039e30f711cb2b2daa3c4248e3e7296a1d10ade40c",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kaeɾʲi maɕita"
+    "seconds": 1.789,
+    "sha256": "7ee1809a62441cfc8cb5bc848abe78c05bc1ff2700c5538d5268026d841496de",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かえりました"
   },
   {
     "file": "course-09-q1.mp3",
@@ -2225,11 +2225,11 @@
   {
     "file": "course-09-q4.mp3",
     "kana": "みました",
-    "seconds": 1.131,
-    "sha256": "c013009cbae3b1dab63f022cfcb6b648defbfb0a3dac0c8e1581c8c4d4628285",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "mʲimaɕi ta"
+    "seconds": 1.504,
+    "sha256": "542c75672fa66604271c4b7dfbe516a3ba0fbff51032f25cec5db22276f9df16",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みました"
   },
   {
     "file": "course-09-listen.mp3",
@@ -2261,11 +2261,11 @@
   {
     "file": "course-09-q8.mp3",
     "kana": "おととい",
-    "seconds": 1.216,
-    "sha256": "04b36716f319c49c966a7b2b073901ed4127e980b96b3143797988d165976b03",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ototoi"
+    "seconds": 1.439,
+    "sha256": "781ef22092aada848b491f8f7408bfb823751f7bb648acc011c7c7c89890a8d8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おととい"
   },
   {
     "file": "course-10-example.mp3",
@@ -2297,155 +2297,155 @@
   {
     "file": "course-10-v1.mp3",
     "kana": "あさごはん",
-    "seconds": 1.323,
-    "sha256": "67add438000d73a42ce4eda9c54f943bcea20f1f5a0cd30a59c06fb9f7295978",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "asaɡohaɴ"
+    "seconds": 1.674,
+    "sha256": "3b552d7a623f95e902ef7b9e5082a74584136e9386ec9cbf7fb9f633e374c697",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あさごはん"
   },
   {
     "file": "course-10-v2.mp3",
     "kana": "たべて",
-    "seconds": 0.597,
-    "sha256": "7a7b8c9da953bde7498385018d75b9c73e488094ece876036ed9aa2890cef608",
-    "engine": "kokoro-82m",
-    "voice": "jf_alpha",
-    "phonemes": "tabete"
+    "seconds": 1.379,
+    "sha256": "bec6be88d64ab8a1c484bf8fd24501b37a1913f1fd4528ae2459910a94fb7944",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たべて"
   },
   {
     "file": "course-10-v3.mp3",
     "kana": "のんで",
-    "seconds": 0.96,
-    "sha256": "de29e3ab9bce0662b9a6326a6a5d65ad200fdcd503d15cce91c654244c729a59",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "nonde"
+    "seconds": 1.304,
+    "sha256": "be124e74b3a6408d87ff2dfc6e5cf190a3206e917ebccfb9ec2128ff9fab0da9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "のんで"
   },
   {
     "file": "course-10-v4.mp3",
     "kana": "よんで",
-    "seconds": 0.853,
-    "sha256": "c0ea09a7521b6372ca6e9cfff7bc6c6a1f217caf9e51b1f76164fc86bb8a9f11",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "jonde"
+    "seconds": 1.314,
+    "sha256": "fb58910d2d4a0ef890ef198fcf8a1bf671e9375a7fb29352ba8024bb53edca40",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "よんで"
   },
   {
     "file": "course-10-v5.mp3",
     "kana": "いきます",
-    "seconds": 1.237,
-    "sha256": "ea0cae962839d0cafe4711d61f7639433f49b238b1c8dbdf4a84cca3950abf50",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ikʲimasɨ"
+    "seconds": 1.589,
+    "sha256": "4f04fc67d42ad83318b108fa6eaf38f65fadb3b426cfd548da8ea3946bae8012",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いきます"
   },
   {
     "file": "course-10-v6.mp3",
     "kana": "おきて",
-    "seconds": 1.109,
-    "sha256": "380bd6bc6172a3dc1d41f4d8db0bfa75a3293d6a37e041711df7cbd0da84cb4d",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "okʲite"
+    "seconds": 1.334,
+    "sha256": "e2ce5288bd7717d219582c9d266e024d59946d200653b56785f5c1c268768829",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おきて"
   },
   {
     "file": "course-10-v7.mp3",
     "kana": "あらって",
-    "seconds": 1.195,
-    "sha256": "d87bcdbd1cfa576c9cdb12c9fcf41f53782a326daf156fa0aea8eff34a4eeee2",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "aɾaʔte"
+    "seconds": 1.474,
+    "sha256": "3fb0e6d72616e861bc8ab583c1a8c46473cca4851fe8b6277afa81a209ac37eb",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あらって"
   },
   {
     "file": "course-10-v8.mp3",
     "kana": "かいて",
-    "seconds": 1.067,
-    "sha256": "e1cb714762fa1ed6d5ea7b98088a6460334e7b5904d49f84f234653b96c9471c",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kaite"
+    "seconds": 1.399,
+    "sha256": "8ad4f595ff5e460bd90a6f1fd9fbffe6bbbf7b8cebc251502b842f3644d8b2c4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かいて"
   },
   {
     "file": "course-10-v9.mp3",
     "kana": "きいて",
-    "seconds": 0.64,
-    "sha256": "b985b7fca9acd0fbb472d18dd28f9ac2a20cf6ef10dc447ce960b592b4886825",
-    "engine": "kokoro-82m",
-    "voice": "jf_alpha",
-    "phonemes": "kʲiːte"
+    "seconds": 1.339,
+    "sha256": "7d1493cd0951bb2b9be9bef5c81695615503c89a7a4e6586f840d189964d3399",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "きいて"
   },
   {
     "file": "course-10-v10.mp3",
     "kana": "かって",
-    "seconds": 1.088,
-    "sha256": "0e348b5eb4382f0bcf588c80a3a2bdc93f869ea437d2e437860bd658d15d48ca",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kaʔte"
+    "seconds": 1.379,
+    "sha256": "bec8f86ccdaaf36a6c805c8308aaf1f7b8e4a9752de0fd669ce4c31de10f4698",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かって"
   },
   {
     "file": "course-10-v11.mp3",
     "kana": "まって",
-    "seconds": 1.003,
-    "sha256": "374fd34e1f708379e53da699e246bed0918074c41c5759314193972ea1a5979b",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "maʔte"
+    "seconds": 1.319,
+    "sha256": "ffe3fc5e3739446bb0bc6bfd83c512eeab1e15b1e404bd6f25b4087d86c35e57",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "まって"
   },
   {
     "file": "course-10-v12.mp3",
     "kana": "はなして",
-    "seconds": 1.216,
-    "sha256": "2d87406b77075424b287658aa25af315f20d48e2863f3ff7ba57410ccfb397ea",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "hanaɕite"
+    "seconds": 1.514,
+    "sha256": "3161483ca02d3038f4b3cbcbe86fe1c59025fe1c86678b52e1cca7860e32db1b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "はなして"
   },
   {
     "file": "course-10-v13.mp3",
     "kana": "して",
-    "seconds": 1.003,
-    "sha256": "aca71e201b598220d96ea114f8c8aba7b9724728d435019172b9b1317952b6df",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɕite"
+    "seconds": 1.254,
+    "sha256": "9cc4db9c863c138918eba945b1e9b31d5bfea4cddc46183fadb8757f0a925fa3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "して"
   },
   {
     "file": "course-10-v14.mp3",
     "kana": "きて",
-    "seconds": 0.96,
-    "sha256": "6ceb826e823659be84c499de0b3edc669b5194d831520308c4133a5b6943f3e3",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kʲite"
+    "seconds": 1.189,
+    "sha256": "3da7dbbc1119f385b564194108014d612448e981db2f4253fc8d9dfd41855c9d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "きて"
   },
   {
     "file": "course-10-v15.mp3",
     "kana": "いって",
-    "seconds": 1.088,
-    "sha256": "fdd23df8cff448e0f64618f7a618149f1fc9f6a04d0f416d4b6df2dc02e605a6",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "iʔte"
+    "seconds": 1.299,
+    "sha256": "4cc0f3e0398c87008dab6e31d2e88d342e8fc10ba128bd9ffd116b6c1149182c",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いって"
   },
   {
     "file": "course-10-v16.mp3",
     "kana": "でかけます",
-    "seconds": 1.109,
-    "sha256": "76adc6295f1f7836cc8a9618307f49bb9b159f3d16921c03ce46e0e8c7db2c28",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "dekakemasɨ"
+    "seconds": 1.754,
+    "sha256": "f14f1eb43010942fab8de0b4cca92aa6b3fcab7ca4eefca23c13dc0c412dd013",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "でかけます"
   },
   {
     "file": "course-10-v17.mp3",
     "kana": "しごと",
-    "seconds": 1.152,
-    "sha256": "3a941d2cf8be9d5c9d06fa06d79c303cab63ac595cbbb35c00ff3cfa078c7822",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɕiɡoto"
+    "seconds": 1.414,
+    "sha256": "765beaaa3b4cfee48626955dca79485196ae7fe49f2b8a6ef695da9494f9cce6",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しごと"
   },
   {
     "file": "course-10-q1.mp3",
@@ -2477,11 +2477,11 @@
   {
     "file": "course-10-q4.mp3",
     "kana": "のんで",
-    "seconds": 0.96,
-    "sha256": "de29e3ab9bce0662b9a6326a6a5d65ad200fdcd503d15cce91c654244c729a59",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "nonde"
+    "seconds": 1.304,
+    "sha256": "be124e74b3a6408d87ff2dfc6e5cf190a3206e917ebccfb9ec2128ff9fab0da9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "のんで"
   },
   {
     "file": "course-10-listen.mp3",
@@ -2513,11 +2513,11 @@
   {
     "file": "course-10-q8.mp3",
     "kana": "まって",
-    "seconds": 1.003,
-    "sha256": "374fd34e1f708379e53da699e246bed0918074c41c5759314193972ea1a5979b",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "maʔte"
+    "seconds": 1.319,
+    "sha256": "ffe3fc5e3739446bb0bc6bfd83c512eeab1e15b1e404bd6f25b4087d86c35e57",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "まって"
   },
   {
     "file": "course-11-example.mp3",
@@ -2549,155 +2549,155 @@
   {
     "file": "course-11-v1.mp3",
     "kana": "アニメ",
-    "seconds": 1.045,
-    "sha256": "54b35fe937abf2a9c62189f4d25ce93d1928e2dc5370dee086fad30585e9917d",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "aɲime"
+    "seconds": 1.345,
+    "sha256": "840f06c0240f223b0d25599d2ea7c125d11173b405c37539f5ffe1aa69a6a89a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "アニメ"
   },
   {
     "file": "course-11-v2.mp3",
     "kana": "みたい",
-    "seconds": 0.981,
-    "sha256": "cfa97f4b1129ce1cec43306a8499c6e05306c679ed35fb240644265845f0a5c6",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "mʲitai"
+    "seconds": 1.329,
+    "sha256": "8cc67a88862a598fce590ee3e87a028b994e2084f09481ed56b9d1b028ccc033",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みたい"
   },
   {
     "file": "course-11-v3.mp3",
     "kana": "ほしい",
-    "seconds": 0.789,
-    "sha256": "4151b2e2ce3298815628545ebe44806ff8fb011f6cb425356a93ef6b9865ae1a",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "hoɕiː"
+    "seconds": 1.429,
+    "sha256": "2433a39dd8376a5a27180d928b85234a2b197ab905533c520f102235607d8833",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ほしい"
   },
   {
     "file": "course-11-v4.mp3",
     "kana": "あたらしい",
-    "seconds": 1.365,
-    "sha256": "fa240fb2824fcfbaf1f8a4749974cfa473a4f4d82bc6d6245d9cb3247df4b157",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ataɾaɕiː"
+    "seconds": 1.659,
+    "sha256": "6f29a0655b4f86f464a5acb9f2d84e136c33639685c9a609b8456efc126d144b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あたらしい"
   },
   {
     "file": "course-11-v5.mp3",
     "kana": "じてんしゃ",
-    "seconds": 1.195,
-    "sha256": "f0caaec12f785e8d3c96c4af5a2954565f905f6d8f91723509d93cdc149ab7bb",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ʥiteɴɕa"
+    "seconds": 1.554,
+    "sha256": "756823537ef827209247fca0e49afd4d0d647aaae3147e365aaa11899811e2c0",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "じてんしゃ"
   },
   {
     "file": "course-11-v6.mp3",
     "kana": "たべたい",
-    "seconds": 1.003,
-    "sha256": "ff49c54724ba4f75193f12a87df2da1681fd344a0d2c23da00329ccb64f21948",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "tabe tai"
+    "seconds": 1.474,
+    "sha256": "53e26bff94d1bdd092b2e7f29e3b95471979d3c1034306ba5b70c5f0aaaee3ae",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たべたい"
   },
   {
     "file": "course-11-v7.mp3",
     "kana": "のみたい",
-    "seconds": 1.131,
-    "sha256": "e56f49b5ad7948927296654791f5ecdab034ab2e69b5824cf34dd091dd1288ba",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "nomʲi tai"
+    "seconds": 1.469,
+    "sha256": "73da4b62e4f2da25b1cee1a093862d5a5f131233c356a6d7fc09ce43c02d2ae0",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "のみたい"
   },
   {
     "file": "course-11-v8.mp3",
     "kana": "いきたい",
-    "seconds": 0.853,
-    "sha256": "e6443eef2eb9fae2ba8a3de93407431f4e348f92993730e8efdd992bc3bec2f3",
-    "engine": "kokoro-82m",
-    "voice": "jf_alpha",
-    "phonemes": "ikʲi tai"
+    "seconds": 1.429,
+    "sha256": "5cc5fdceb21ae8ff4a02816dae8b8e11cd4a224c7830ab46926b96a6836e95be",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いきたい"
   },
   {
     "file": "course-11-v9.mp3",
     "kana": "よみたい",
-    "seconds": 0.917,
-    "sha256": "cafc1041ae57c0f2e7ffcc7f6bddd8f692b48fdc34c5a6ddb98db329fa320f0a",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "jomʲi tai"
+    "seconds": 1.459,
+    "sha256": "d5bb4ed86aa5a5ede210ddbc2e8dd4a5b85464a0783ffb6172b67a1a3bf924c3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "よみたい"
   },
   {
     "file": "course-11-v10.mp3",
     "kana": "あそびたい",
-    "seconds": 1.259,
-    "sha256": "22c1091bbce634b6cbe5bec4c2a9ba3f5f9c849c632aa8bc329315d1fc2eef20",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "asobʲi tai"
+    "seconds": 1.649,
+    "sha256": "accc61b6677220bbbb42dc4e42821cee471e129c7866c79ac9c321b6087d08ff",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あそびたい"
   },
   {
     "file": "course-11-v11.mp3",
     "kana": "ねたい",
-    "seconds": 0.981,
-    "sha256": "baa0a3f6a78b3c7aa494023d5208fb16d417dce2342feff46dacf466e8b9eaed",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ne tai"
+    "seconds": 1.334,
+    "sha256": "71e5a7314759cbe82d7e90314e8a532b873c4542d9aadf6295b0581a2d70b50f",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ねたい"
   },
   {
     "file": "course-11-v12.mp3",
     "kana": "りょこう",
-    "seconds": 1.024,
-    "sha256": "ecb9ae2e922092247baf84613cafde6596ac90947f1f6dfaaf20dc0a2ea97faf",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɾʲokoː"
+    "seconds": 1.116,
+    "sha256": "bcf3790103f9c55e85dc3c590d7bf32030201513b7613a0866570b487c3ae5ab",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "りょこう"
   },
   {
     "file": "course-11-v13.mp3",
     "kana": "くつ",
-    "seconds": 0.789,
-    "sha256": "f8550de5d8c4730ba62dc80c5af7025475362dc7d7a311cc7e9fcd4e91a821f0",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kɯʦɨ"
+    "seconds": 1.284,
+    "sha256": "269230a5c6047996a6c63fadd78713b792d072c5d250d19807b77602f26c8eae",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "くつ"
   },
   {
     "file": "course-11-v14.mp3",
     "kana": "パソコン",
-    "seconds": 1.067,
-    "sha256": "b50d3fedbc72365dc61a43a210ba82b7305ee9d1ae3ea98be3954efa25cbeb0c",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "pasokoɴ"
+    "seconds": 1.514,
+    "sha256": "d72976d295e574cdace92d417ffc3f6fb85b633e7a7d50a502311b5a585cebdc",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "パソコン"
   },
   {
     "file": "course-11-v15.mp3",
     "kana": "スマートフォン",
-    "seconds": 1.387,
-    "sha256": "79aae2f205ee6323c597d6a113c38efccfe53c3381ffc544a639c8b01b2bd01e",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "sɨmaːto ɸoɴ"
+    "seconds": 1.804,
+    "sha256": "567bf7385c4a3e2d0ee56a9c227cf894d3e5fef769e3c40ca583afa59f029a66",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "スマートフォン"
   },
   {
     "file": "course-11-v16.mp3",
     "kana": "えいが",
-    "seconds": 0.96,
-    "sha256": "3c368e9cb998583a7d4dc5e20886ad6dfbe08e180c6fa0c8f0f26034ab4f1675",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "eːɡa"
+    "seconds": 1.279,
+    "sha256": "dc7418d7f366ddddf798654a3b9df508ed352e9677fdb61764ec9110fea04ed6",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "えいが"
   },
   {
     "file": "course-11-v17.mp3",
     "kana": "おかね",
-    "seconds": 0.96,
-    "sha256": "ed7bcd2ac3965278e83dfa9b92314149f566edb681575a6c3c4bf5cd417bc640",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "okane"
+    "seconds": 1.314,
+    "sha256": "215a79e4b22aa8d4849fa179ad7458001989c1542428e50f0a59c3422ff96819",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おかね"
   },
   {
     "file": "course-11-q1.mp3",
@@ -2729,11 +2729,11 @@
   {
     "file": "course-11-q4.mp3",
     "kana": "じてんしゃ",
-    "seconds": 1.195,
-    "sha256": "f0caaec12f785e8d3c96c4af5a2954565f905f6d8f91723509d93cdc149ab7bb",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ʥiteɴɕa"
+    "seconds": 1.554,
+    "sha256": "756823537ef827209247fca0e49afd4d0d647aaae3147e365aaa11899811e2c0",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "じてんしゃ"
   },
   {
     "file": "course-11-listen.mp3",
@@ -2765,11 +2765,11 @@
   {
     "file": "course-11-q8.mp3",
     "kana": "ねたい",
-    "seconds": 0.981,
-    "sha256": "baa0a3f6a78b3c7aa494023d5208fb16d417dce2342feff46dacf466e8b9eaed",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ne tai"
+    "seconds": 1.334,
+    "sha256": "71e5a7314759cbe82d7e90314e8a532b873c4542d9aadf6295b0581a2d70b50f",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ねたい"
   },
   {
     "file": "course-12-example.mp3",
@@ -2801,155 +2801,155 @@
   {
     "file": "course-12-v1.mp3",
     "kana": "はやい",
-    "seconds": 1.003,
-    "sha256": "faca4b66e39001a1a52b993973bf2959c70f5b372ca65ee66473256042b8320b",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "hajai"
+    "seconds": 1.374,
+    "sha256": "8c91b11c5d8a077730204b4c5435271948deefc63138189bb17aed2a840ffe56",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "はやい"
   },
   {
     "file": "course-12-v2.mp3",
     "kana": "やすい",
-    "seconds": 0.939,
-    "sha256": "aa6c6873d4b7b84cbf5829982c192f6e7d578e9b682f584c4acd517a3a32b0a4",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "jasɨi"
+    "seconds": 1.379,
+    "sha256": "cb8982f5ee494450fac5538cce629f6c47c99094db9836ca030043c4855bc1c5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "やすい"
   },
   {
     "file": "course-12-v3.mp3",
     "kana": "バス",
-    "seconds": 0.832,
-    "sha256": "405db05f58f53343f22087d474a54049258983a4dca3d4cea66a8e03f4e1bf40",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "basɨ"
+    "seconds": 1.294,
+    "sha256": "33d11e499f55005cedcadf39938b092103db14fc4c02adb8fed88fd450d61515",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "バス"
   },
   {
     "file": "course-12-v4.mp3",
     "kana": "でんしゃ",
-    "seconds": 0.917,
-    "sha256": "539314812d908dd90cabe870ca55f99a6616252e5cdcffd664f19fb2533e42e4",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "deɴɕa"
+    "seconds": 1.404,
+    "sha256": "7f43ee27241f6d36eb95dfe2368b1940149e753d49fd99b6087e3f4b79067f27",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "でんしゃ"
   },
   {
     "file": "course-12-v5.mp3",
     "kana": "あの",
-    "seconds": 0.939,
-    "sha256": "b99f83d23023656e60d8d036a622e9b6a3cee7a2cbb713cdc3afc7a3f3a8bb1e",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ano"
+    "seconds": 1.174,
+    "sha256": "4c6ce07d8627095db4e4dcb003e9fb9ddd1fa2b6430310a42024934f5b9cb6b4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あの"
   },
   {
     "file": "course-12-v6.mp3",
     "kana": "たかい",
-    "seconds": 0.96,
-    "sha256": "18fd55938000365633b99593ad258d5e96e23211a038a9bbff09000198d3eb22",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "takai"
+    "seconds": 1.324,
+    "sha256": "5a1e8015cf6bff7893539f6dfa6f10f23df41b348408a04fb19848df01fd26ec",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たかい"
   },
   {
     "file": "course-12-v7.mp3",
     "kana": "おそい",
-    "seconds": 0.917,
-    "sha256": "d0089bf28567e254dda5283f2281f1580b1721be8a6dd21d6a6a222b826986bf",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "osoi"
+    "seconds": 1.324,
+    "sha256": "4b510d8acbc9d5121690c15d2d50a84b2c878ecbf32c4eb726071752b1f0fe65",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おそい"
   },
   {
     "file": "course-12-v8.mp3",
     "kana": "ちかい",
-    "seconds": 0.96,
-    "sha256": "a30c50a3b1f4558d75d38d3e768e41cf87c11ccc6e1d55424b3ed58f32309d9c",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ʨikai"
+    "seconds": 1.334,
+    "sha256": "a074ea5aa21b3e2f90d87ba6d377d98b7ab1badcf68e7803f2257bb823c54527",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ちかい"
   },
   {
     "file": "course-12-v9.mp3",
     "kana": "とおい",
-    "seconds": 2.32,
-    "sha256": "b184678ac8c702213cbe6d1f5ff89345703a087424f1f8ca7d6dea45f6909dbb",
-    "engine": "qwen3-tts-voice-design",
-    "voice": "Japanese tutor prompt v1",
-    "synthesisText": "遠い"
+    "seconds": 1.289,
+    "sha256": "6442e1d914f41afc1be311c61240390b8a8525fd262d4d80e5d9a11d85bbb345",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "とおい"
   },
   {
     "file": "course-12-v10.mp3",
     "kana": "おおい",
-    "seconds": 0.811,
-    "sha256": "e5aeca26af33b0ad9fa6a0396138a9c6bf7fdcb5986ba184a81e8561686e67a4",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "oːi"
+    "seconds": 1.259,
+    "sha256": "14b910f83fde7c477c9943fad15fe9c1587077572aec98cdf79cb22d307ba5a3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おおい"
   },
   {
     "file": "course-12-v11.mp3",
     "kana": "すくない",
-    "seconds": 1.109,
-    "sha256": "baa721aff99ba5d5cef9df761a0595ab297a978ff8eb78a93d55600d18c92321",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "sɨkɯnai"
+    "seconds": 1.484,
+    "sha256": "67ecfe8f6a4cfd12b2fbb71950d66920c531d45adb9cf174d0d68dcb0f7c7be4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "すくない"
   },
   {
     "file": "course-12-v12.mp3",
     "kana": "ながい",
-    "seconds": 0.939,
-    "sha256": "78435f4cd1032c487f1fbb68ed1ce725859cb1fbf591a60de136e778fd835666",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "naɡai"
+    "seconds": 1.334,
+    "sha256": "eaa96f571fd81ff65581614624bd6e1caeec60c3827664306538b33fef79a40b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ながい"
   },
   {
     "file": "course-12-v13.mp3",
     "kana": "みじかい",
-    "seconds": 1.088,
-    "sha256": "bb4e4d3b3d213c5ae3666e8c1c119053422e2c05a87addc71387c75b2320af57",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "mʲiʥikai"
+    "seconds": 1.479,
+    "sha256": "02dcb95191605653c29fb7ab7f64fea5bcd41510760750da25be257f2e9a23b3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みじかい"
   },
   {
     "file": "course-12-v14.mp3",
     "kana": "おおきい",
-    "seconds": 0.853,
-    "sha256": "5b83a1c9acdf65b909491ada5d67b52a821586f9a47e157da11b04e15f120baf",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "oːkʲiː"
+    "seconds": 1.479,
+    "sha256": "3fe9cbb34d773871d0aed6cea85d00b4a89b5e0263de2b6559742c55bf1aa3e6",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おおきい"
   },
   {
     "file": "course-12-v15.mp3",
     "kana": "ちいさい",
-    "seconds": 1.024,
-    "sha256": "02f8eb475586436e9d07ebc979950e1056b4e3ede04d2da87acb82bd66b49f9a",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ʨiːsai"
+    "seconds": 1.494,
+    "sha256": "105773cea5a82fdbc00814d913ca3c08ff1d3a56819d838f390a60843b07abad",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ちいさい"
   },
   {
     "file": "course-12-v16.mp3",
     "kana": "どちら",
-    "seconds": 0.896,
-    "sha256": "184a284cefaa2bfb7f41a1b3fbc2e83344189b989fbd638230ea012910ce83f6",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "doʨiɾa"
+    "seconds": 1.345,
+    "sha256": "5b92e06b77e8b30ecfea5839b584adc68140bea63165933feee9fecb2952bf25",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "どちら"
   },
   {
     "file": "course-12-v17.mp3",
     "kana": "ほう",
-    "seconds": 0.619,
-    "sha256": "173841e976bee69bc91a716578074c6662d132a83fb4c7c5b388c015cc580623",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "hoː"
+    "seconds": 1.334,
+    "sha256": "2c294a6863129d7e94b25461784bafdbdef450aa556c63c68d6e8d7e6506ce1c",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Sayaka",
+    "synthesisText": "ほう"
   },
   {
     "file": "course-12-q1.mp3",
@@ -2981,11 +2981,11 @@
   {
     "file": "course-12-q4.mp3",
     "kana": "はやい",
-    "seconds": 1.003,
-    "sha256": "faca4b66e39001a1a52b993973bf2959c70f5b372ca65ee66473256042b8320b",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "hajai"
+    "seconds": 1.374,
+    "sha256": "8c91b11c5d8a077730204b4c5435271948deefc63138189bb17aed2a840ffe56",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "はやい"
   },
   {
     "file": "course-12-listen.mp3",
@@ -3017,11 +3017,11 @@
   {
     "file": "course-12-q8.mp3",
     "kana": "とおい",
-    "seconds": 0.939,
-    "sha256": "15ebe827480a852d76d8e83869f24fe1c3ebecb0a41d027b50d6deb158c026b4",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "toːi"
+    "seconds": 1.289,
+    "sha256": "6442e1d914f41afc1be311c61240390b8a8525fd262d4d80e5d9a11d85bbb345",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "とおい"
   },
   {
     "file": "course-13-example.mp3",
@@ -3053,155 +3053,155 @@
   {
     "file": "course-13-v1.mp3",
     "kana": "しゃしん",
-    "seconds": 0.96,
-    "sha256": "23466977b413496d235307908b29198fb0e6a05741fe924b094db8fca91150f6",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɕaɕiɴ"
+    "seconds": 1.434,
+    "sha256": "c5b8edee74c5bb819697d09e052bfe7a715fefc6799c1e250dca9cd2afa06067",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しゃしん"
   },
   {
     "file": "course-13-v2.mp3",
     "kana": "とって",
-    "seconds": 1.024,
-    "sha256": "2611f3229872544da0dbc5d69f48768937af4191c327dfded93b8c8946331a0f",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "toʔte"
+    "seconds": 1.349,
+    "sha256": "8a0800d8bcec1e4169393f1e545bd2c4dbc53b72268fae6e6fda17f3ff73d23d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "とって"
   },
   {
     "file": "course-13-v3.mp3",
     "kana": "ここ",
-    "seconds": 0.96,
-    "sha256": "0374020ac9e42420f54c807542cb5aa7efe92f021a037d1a0b50c72c604e7eae",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "koko"
+    "seconds": 1.254,
+    "sha256": "d4eb3a2a2d256700bcc9a4f1b67a646e40218e6f042133029668023545877f86",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ここ"
   },
   {
     "file": "course-13-v4.mp3",
     "kana": "のんで",
-    "seconds": 0.96,
-    "sha256": "de29e3ab9bce0662b9a6326a6a5d65ad200fdcd503d15cce91c654244c729a59",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "nonde"
+    "seconds": 1.304,
+    "sha256": "be124e74b3a6408d87ff2dfc6e5cf190a3206e917ebccfb9ec2128ff9fab0da9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "のんで"
   },
   {
     "file": "course-13-v5.mp3",
     "kana": "はいって",
-    "seconds": 1.173,
-    "sha256": "b9bd32503ae3c12bbdc53941d5c6ac883e283c8a1c39e1f963ca4998ba0c3788",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "haiʔte"
+    "seconds": 1.474,
+    "sha256": "c560bc8f72918231b27dbcf4fdd807e1e8c6946b3f46d9e41cc052ea1455d876",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "はいって"
   },
   {
     "file": "course-13-v6.mp3",
     "kana": "すわって",
-    "seconds": 1.195,
-    "sha256": "d466395e20834a25638442283aad04478cbcfc9a453d567c7ac8d0300dce66ac",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "sɨβaʔte"
+    "seconds": 1.529,
+    "sha256": "4eacd72c0ffd423def7b3c909976bd3058c00f5889d6e0f58d21d0fe0dcc51a8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "すわって"
   },
   {
     "file": "course-13-v7.mp3",
     "kana": "たって",
-    "seconds": 1.067,
-    "sha256": "b3a1f5fe4e03ba8c65dfb14e7029488313b99bca9c7e1f5ba4e7e5bd5b8feba7",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "taʔte"
+    "seconds": 1.339,
+    "sha256": "464f152b39ecee90bea04e23787c8779ea80f9f48138354e5160485dfb072c09",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たって"
   },
   {
     "file": "course-13-v8.mp3",
     "kana": "つかって",
-    "seconds": 1.131,
-    "sha256": "8b3f5df5c7dd35f178608ccaa91104d3fdb99a85ef9b70f6f0a8f3b98b9c6ab7",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ʦɨkaʔte"
+    "seconds": 1.534,
+    "sha256": "1e20c9a17179e2c575738305010a01c2407707c614f5bcacf5616e9e48b33aa4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "つかって"
   },
   {
     "file": "course-13-v9.mp3",
     "kana": "あけて",
-    "seconds": 1.152,
-    "sha256": "6eb49918478a1a30063847ece380bc8e14122feb03cf4b69389feb5080c1009d",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "akete"
+    "seconds": 1.379,
+    "sha256": "aa46b058093a378f2d3cc66726970003341071513c9b00f2735b664768d2ced2",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あけて"
   },
   {
     "file": "course-13-v10.mp3",
     "kana": "しめて",
-    "seconds": 0.661,
-    "sha256": "f63dc3619976e9ca657acadfe58a6947a91570558e62db658ca2cfc57b4e20a9",
-    "engine": "kokoro-82m",
-    "voice": "jf_alpha",
-    "phonemes": "ɕimete"
+    "seconds": 1.439,
+    "sha256": "e5b0d3608658bb89071c95370eefc4cf96a3cf3aa611c0ec66d951a55f29758a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しめて"
   },
   {
     "file": "course-13-v11.mp3",
     "kana": "おいて",
-    "seconds": 0.939,
-    "sha256": "27da8eff218edb05711490de0aa1c6bfb4de6d6c77720300856c94807a7251dc",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "oite"
+    "seconds": 1.319,
+    "sha256": "f5ff00ded77ef6ab32b338290348d64dff070bcbb0a564c7e2c8d2e3c8e54b2a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おいて"
   },
   {
     "file": "course-13-v12.mp3",
     "kana": "たべて",
-    "seconds": 0.597,
-    "sha256": "7a7b8c9da953bde7498385018d75b9c73e488094ece876036ed9aa2890cef608",
-    "engine": "kokoro-82m",
-    "voice": "jf_alpha",
-    "phonemes": "tabete"
+    "seconds": 1.379,
+    "sha256": "bec6be88d64ab8a1c484bf8fd24501b37a1913f1fd4528ae2459910a94fb7944",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たべて"
   },
   {
     "file": "course-13-v13.mp3",
     "kana": "さわって",
-    "seconds": 1.28,
-    "sha256": "392305008f5d03cf40afc6f15e87f027863f5e82034de3741b59f9418cec35b9",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "saβaʔte"
+    "seconds": 1.539,
+    "sha256": "e96cda1dba4e85b0cf455beab4978e9e713b13ba03ac179c3e8f589a3e443433",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "さわって"
   },
   {
     "file": "course-13-v14.mp3",
     "kana": "およいで",
-    "seconds": 1.152,
-    "sha256": "e76835e03d5ce45138249315605f8777e6c7bbc1f36fd959aedf567f29273b3c",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ojoide"
+    "seconds": 1.404,
+    "sha256": "33f8446faeebc64a79b280e75d763807c48f3bacc5deba51631750b74ca860d5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "およいで"
   },
   {
     "file": "course-13-v15.mp3",
     "kana": "きんし",
-    "seconds": 1.17,
-    "sha256": "1f7487c29c3c25b06b649f22935ffc1e124c736d90ca935517a6c5ef823300c5",
-    "engine": "qwen3-tts-custom-voice",
-    "voice": "Ono_Anna",
-    "synthesisText": "禁止"
+    "seconds": 1.399,
+    "sha256": "c8be12dc76e96b5998583b3dfa99b7a1654d0a0b918713f670cff27784add97d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "きんし"
   },
   {
     "file": "course-13-v16.mp3",
     "kana": "だいじょうぶ",
-    "seconds": 1.259,
-    "sha256": "ebe22651a334ef69b759534daf5c46232719383478c6ed3b1f931f869a4d2177",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "daiʥoːbɯ"
+    "seconds": 1.629,
+    "sha256": "e00dfeb087ef9f7ecb1c6d5175092b4fd50f433188c85b5cba379255fce89167",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "だいじょうぶ"
   },
   {
     "file": "course-13-v17.mp3",
     "kana": "みせ",
-    "seconds": 0.555,
-    "sha256": "123a828a9e0057d44242a555d4cb5bd5b41ee4cf0d8b03da6e907fcd5ed2aaf5",
-    "engine": "kokoro-82m",
-    "voice": "jf_alpha",
-    "phonemes": "mʲise"
+    "seconds": 1.249,
+    "sha256": "fd231ae835baff0f98c23f63440cf140f6a2c73a4e19f6cc0f0be4f341c56b51",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みせ"
   },
   {
     "file": "course-13-q1.mp3",
@@ -3233,11 +3233,11 @@
   {
     "file": "course-13-q4.mp3",
     "kana": "しゃしん",
-    "seconds": 0.96,
-    "sha256": "23466977b413496d235307908b29198fb0e6a05741fe924b094db8fca91150f6",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ɕaɕiɴ"
+    "seconds": 1.434,
+    "sha256": "c5b8edee74c5bb819697d09e052bfe7a715fefc6799c1e250dca9cd2afa06067",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しゃしん"
   },
   {
     "file": "course-13-listen.mp3",
@@ -3269,11 +3269,11 @@
   {
     "file": "course-13-q8.mp3",
     "kana": "きんし",
-    "seconds": 1.17,
-    "sha256": "1f7487c29c3c25b06b649f22935ffc1e124c736d90ca935517a6c5ef823300c5",
-    "engine": "qwen3-tts-custom-voice",
-    "voice": "Ono_Anna",
-    "synthesisText": "禁止"
+    "seconds": 1.399,
+    "sha256": "c8be12dc76e96b5998583b3dfa99b7a1654d0a0b918713f670cff27784add97d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "きんし"
   },
   {
     "file": "course-14-example.mp3",
@@ -3305,155 +3305,155 @@
   {
     "file": "course-14-v1.mp3",
     "kana": "あした",
-    "seconds": 0.619,
-    "sha256": "21d62e8084d4c4448750578c3ef9ab6fcb0fb42864ffc8e9409de88cdfc07e77",
-    "engine": "kokoro-82m",
-    "voice": "jf_alpha",
-    "phonemes": "aɕita"
+    "seconds": 1.379,
+    "sha256": "c9bd5f8281c2a0ab4f0a9d21dd56cecb6c0aec8b03e13a67609a7be8c9f1fee4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あした"
   },
   {
     "file": "course-14-v2.mp3",
     "kana": "いっしょに",
-    "seconds": 1.003,
-    "sha256": "310965f029ebe6e94f75179ae0b992f7c712508c2696e342cae499b977b6bebe",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "iʔɕoɲi"
+    "seconds": 1.514,
+    "sha256": "8f798c132493c3603feab53625d6c66109ac3fd85fec5577821b699bfe222909",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いっしょに"
   },
   {
     "file": "course-14-v3.mp3",
     "kana": "いきませんか",
-    "seconds": 1.493,
-    "sha256": "43a03dbcc94412aaf4af2d2d9c49c8ccea6b0b290b0485df1fa13263d1a52b2a",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ikʲi maseɴ ka"
+    "seconds": 1.764,
+    "sha256": "3bfc1fe4fca3634d437afda19898c15b9986f2197cdae748ead6a5a0f3d8c9c3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いきませんか"
   },
   {
     "file": "course-14-v4.mp3",
     "kana": "いきましょう",
-    "seconds": 1.365,
-    "sha256": "e20c6d04ab131eaa830fb8e8dc9e829850d11a3e31716459239eb225739073f3",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ikʲi maɕoː"
+    "seconds": 1.709,
+    "sha256": "1cf18773a1f14a2a755de6734f8a9acac8daaf3217754157cc189fec9da910c5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いきましょう"
   },
   {
     "file": "course-14-v5.mp3",
     "kana": "たべましょう",
-    "seconds": 1.216,
-    "sha256": "e1fc2c23f48a657dcf6084b4b8f370ed6af4a94df1b054a52bf29c554256df38",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "tabe maɕoː"
+    "seconds": 1.739,
+    "sha256": "e4779e881ab0b4081b631ec2595b976aeb26cef709208bc010df7f29d6088e26",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たべましょう"
   },
   {
     "file": "course-14-v6.mp3",
     "kana": "きょう",
-    "seconds": 0.853,
-    "sha256": "e5d214fcc6bb357edb40b098a092e1d1070fcfb2e113cb3e22b762152362ecb3",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kʲoː"
+    "seconds": 1.214,
+    "sha256": "7a6d3171af94dcc68e9f605811c4a0e4a410f80bcbce6206c63a95fa8fabff22",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "きょう"
   },
   {
     "file": "course-14-v7.mp3",
     "kana": "あさって",
-    "seconds": 1.216,
-    "sha256": "ba7534a366a96cbdaff69ec8c61a6d866c27f2d849a4b51f30f3664390d7aad6",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "asaʔte"
+    "seconds": 1.544,
+    "sha256": "8479b2452c6cc78a6b653d8369e46f5a1ef081e55ac252a7e22c6e72a790048d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あさって"
   },
   {
     "file": "course-14-v8.mp3",
     "kana": "こんしゅう",
-    "seconds": 0.811,
-    "sha256": "60f16999ffd426d2634741cd9720b9ad2136f4e4802b1e3531b0a3d9ca82fa63",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "koɴ ɕɨː"
+    "seconds": 1.574,
+    "sha256": "64df11a960630a4d2374847cd66aa85090ffd70855cb6719615245bdc94bad41",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "こんしゅう"
   },
   {
     "file": "course-14-v9.mp3",
     "kana": "しゅうまつ",
-    "seconds": 0.747,
-    "sha256": "95f6221915a5d46bf03d4d43b1a3726b03ae939de18e80f4e8c447cbf967b9a5",
-    "engine": "kokoro-82m",
-    "voice": "jf_alpha",
-    "phonemes": "ɕɨː maʦɨ"
+    "seconds": 1.654,
+    "sha256": "b167c43dd2e92ef4107b5b85d594fe7c01129ad388c82d71240969da28280835",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しゅうまつ"
   },
   {
     "file": "course-14-v10.mp3",
     "kana": "こんど",
-    "seconds": 0.917,
-    "sha256": "f4aa2e4c5ab78d79f64b3ea313c8e464f681fe183576d60ad8df599367122e29",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kondo"
+    "seconds": 1.334,
+    "sha256": "8f4979f96c1ec838742da1a585add8da6bd455e8ac0eb195d3c23bb7605e44ce",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "こんど"
   },
   {
     "file": "course-14-v11.mp3",
     "kana": "あいましょう",
-    "seconds": 1.28,
-    "sha256": "f6c007dda701519aa45e3d12b65d68884ede5fc324821d51fa4da629709f3e3d",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "ai maɕoː"
+    "seconds": 1.714,
+    "sha256": "9c3e46d90938467022ebe9e6c17d9b991858800639c0e08542e7804f00b67d72",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あいましょう"
   },
   {
     "file": "course-14-v12.mp3",
     "kana": "のみましょう",
-    "seconds": 1.429,
-    "sha256": "4402dc46747d0c87c881cf62493d64f9b704fa5d4c929b474c992112271b14fe",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "nomʲi maɕoː"
+    "seconds": 1.729,
+    "sha256": "c932e7a70476433735221790d37047f4344394ef41ac3824efc2b43ff275dac4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "のみましょう"
   },
   {
     "file": "course-14-v13.mp3",
     "kana": "みましょう",
-    "seconds": 1.109,
-    "sha256": "f1dab34f689bf7db4f514f770c19526c7e06ef47c288aee49c31c99c06ccebf8",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "mʲi maɕoː"
+    "seconds": 1.589,
+    "sha256": "82bb2db83c1ac215cd9e89706bc018f49fd14fcbeca2455cc4ea3b4346778002",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みましょう"
   },
   {
     "file": "course-14-v14.mp3",
     "kana": "あそびましょう",
-    "seconds": 1.493,
-    "sha256": "77090fac170ddd016dfcc253751c7a0659ff443c940b745d26cfc0a0bf8f9bbe",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "asobʲi maɕoː"
+    "seconds": 1.919,
+    "sha256": "06d9ea0b20c5a9bb66a8c1ee3cea0863acbc877625f97792c53900ea378b5c05",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あそびましょう"
   },
   {
     "file": "course-14-v15.mp3",
     "kana": "かえりましょう",
-    "seconds": 1.451,
-    "sha256": "acba37eb77e7a9f871d68ac4751cabf46591133a7b60f5166e6ce9df6196d7a2",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kaeɾʲi maɕoː"
+    "seconds": 1.864,
+    "sha256": "e71d24ddd3d3bb20efbbc4bd4bb98d197d840917e5baa31588929570c300d9fe",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かえりましょう"
   },
   {
     "file": "course-14-v16.mp3",
     "kana": "ひま",
-    "seconds": 0.465,
-    "sha256": "e4b89fd6e5d1e5c142a19e642837e2495240a833d0c12fd40a8c4d745007ac9f",
-    "engine": "kokoro-82m",
-    "voice": "jf_alpha",
-    "phonemes": "çima"
+    "seconds": 1.204,
+    "sha256": "a24ad4c0c53ed74bc7abbcfac49fcbec59e23dcc312773d8e88a726117d34de2",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ひま"
   },
   {
     "file": "course-14-v17.mp3",
     "kana": "やくそく",
-    "seconds": 1.237,
-    "sha256": "f00eb0663d8acc7451ba88b1b42a57ae068877da8159fe00cf9d28742f22bb86",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "jakɯsokɯ"
+    "seconds": 1.559,
+    "sha256": "50399d8b6d596ef5f35c60e8ea01783baef2bd718d9933a4e0a28e36cee1d281",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "やくそく"
   },
   {
     "file": "course-14-q1.mp3",
@@ -3485,11 +3485,11 @@
   {
     "file": "course-14-q4.mp3",
     "kana": "いっしょに",
-    "seconds": 1.003,
-    "sha256": "310965f029ebe6e94f75179ae0b992f7c712508c2696e342cae499b977b6bebe",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "iʔɕoɲi"
+    "seconds": 1.514,
+    "sha256": "8f798c132493c3603feab53625d6c66109ac3fd85fec5577821b699bfe222909",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いっしょに"
   },
   {
     "file": "course-14-listen.mp3",
@@ -3521,10 +3521,10 @@
   {
     "file": "course-14-q8.mp3",
     "kana": "しゅうまつ",
-    "seconds": 0.747,
-    "sha256": "95f6221915a5d46bf03d4d43b1a3726b03ae939de18e80f4e8c447cbf967b9a5",
-    "engine": "kokoro-82m",
-    "voice": "jf_alpha",
-    "phonemes": "ɕɨː maʦɨ"
+    "seconds": 1.654,
+    "sha256": "b167c43dd2e92ef4107b5b85d594fe7c01129ad388c82d71240969da28280835",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しゅうまつ"
   }
 ]

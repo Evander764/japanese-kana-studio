@@ -103,11 +103,11 @@ async function main() {
     return {heroInitiallyVisible,initiallyVisible,heroHidden,kanaHidden,exampleHidden,vocabHidden,savedHidden,restored,pressed:button.getAttribute('aria-pressed')};
   })()`);
   assert.deepEqual(readingToggle, {heroInitiallyVisible:true,initiallyVisible:true,heroHidden:true,kanaHidden:true,exampleHidden:true,vocabHidden:true,savedHidden:true,restored:true,pressed:'true'});
-  const versionedAudio = await evaluate(`new Promise((resolve, reject) => {
-    const clip = new Audio('audio/base-a.mp3?v=20261008-3');
+  const versionedAudio = await evaluate(`Promise.all(['base-a.mp3', 'course-01-v1.mp3'].map(name => new Promise((resolve, reject) => {
+    const clip = new Audio('audio/' + name + '?v=20261008-4');
     clip.onloadedmetadata = () => resolve(clip.duration > 0.2);
-    clip.onerror = () => reject(new Error('versioned local audio did not load'));
-  })`);
+    clip.onerror = () => reject(new Error('versioned local audio did not load: ' + name));
+  }))).then(results => results.every(Boolean))`);
   assert.equal(versionedAudio, true);
   const heroAudio = await evaluate(`(() => {
     const originalPlay = HTMLMediaElement.prototype.play;

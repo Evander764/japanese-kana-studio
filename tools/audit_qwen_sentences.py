@@ -53,6 +53,8 @@ def main():
     audit = json.loads(audit_path.read_text(encoding="utf-8")) if audit_path.exists() else {}
     model = WhisperModel(str(args.model), device="cpu", compute_type="int8", cpu_threads=4)
     converter = kakasi()
+    recognized_by_hash = {entry["sha256"]: entry["recognized"] for entry in audit.values()
+                          if entry.get("sha256") and "recognized" in entry}
     for index, filename in enumerate(filenames, 1):
         entry = checkpoint[filename]
         stored = audit.get(filename)
@@ -61,9 +63,12 @@ def main():
             continue
         if args.rescore and stored and stored.get("sha256") == entry["sha256"]:
             recognized = stored["recognized"]
+        elif entry["sha256"] in recognized_by_hash:
+            recognized = recognized_by_hash[entry["sha256"]]
         else:
             segments, _ = model.transcribe(str(args.stage / filename), language="ja", beam_size=1, best_of=1, vad_filter=False)
             recognized = "".join(segment.text for segment in segments).strip()
+            recognized_by_hash[entry["sha256"]] = recognized
         expected_reading = reading(entry["kana"], converter)
         actual_reading = reading(recognized, converter)
         score = round(difflib.SequenceMatcher(None, expected_reading, actual_reading).ratio(), 3)

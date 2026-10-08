@@ -5,7 +5,7 @@
   const $ = id => document.getElementById(id);
   const labels = { hiragana: '平假名', katakana: '片假名', mixed: '混合', base: '清音', voiced: '浊音·半浊音', yoon: '拗音', special: '促音·长音', unseen: '未学', learning: '学习中', mastered: '自动学会', retired: '确认学会' };
   const storageKey = 'kana-studio-progress-v1';
-  const audioRevision = '20261008-3';
+  const audioRevision = '20261008-4';
   const heroExample = window.CourseData.lessons[0].example;
   let state = readStoredState();
   let view = 'course';

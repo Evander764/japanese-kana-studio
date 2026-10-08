@@ -43,9 +43,9 @@
 
 所有假名、28 个单语或混合短语都附有本地 MP3，直接打开网页也能离线朗读，不依赖系统日语语音。平假名和对应的片假名共用一段读音，共 126 段假名音频和 9 段组合短语音频；十四节课程另有 392 段例句、词卡和练习题发音。网页点击“听发音／听整句”时读取对应的本地 MP3；明确选择“正常 1×”即按文件原速播放，需要跟读时选择“慢速 0.78×”，浏览器会尽量保持音高。语速选择会保存在本机。假名单字和拗音会自动读两遍，词汇、短语和整句只读一遍。短语卡片另有中文释义、助词和动词结构、节拍提示；练习答错或查看答案后会显示这些提示，答对自动跳题时仍可回听上一题。
 
-音频由本地 [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) 和 [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) 重新合成：前者处理假名与大多数词卡，后者处理较长的短语和句子；少数短词使用识别结果更清楚的另一套音色。模型文件不在仓库内。`audio/manifest.json`、`audio/phrase-manifest.json` 和 `audio/course-manifest.json` 记录每段音频的文本、模型、时长和 SHA-256；Kokoro 片段还记录音素。合成读音供认读和跟读使用，不能代替母语者对音调与自然语流的示范。若音频文件丢失，网页会明确报错。
+目前的 285 段词汇相关音频改由本机 Windows 日语语音重新录制，以 Microsoft Ayumi 为主；「コップ」「ケーキ」「きっぷ」等五段难辨的短词采用 Microsoft Sayaka。词汇页和课程中的词卡、词汇题同步使用新版音频。原有假名、短语和句子音频仍由本地 [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) 与 [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) 合成。网页直接播放打包的 MP3，离线使用不要求系统安装这些声音或模型。`audio/manifest.json`、`audio/phrase-manifest.json` 和 `audio/course-manifest.json` 记录每段音频的文本、引擎、音色、时长和 SHA-256。合成读音供认读和跟读使用，不能代替母语者对音调与自然语流的示范。若音频文件丢失，网页会明确报错。
 
-这次单独补录了「いす」和「きんし」的词卡音频（「きんし」的听力题也同步替换）。本地日语识别复核分别得到「イス」「禁止」，并同步更新音频清单和网页缓存版本。短词自动识别仍可能误判，音调图可用于对照；其他词音频不宣称已经逐个达到母语者发音质量。
+新版词汇音频逐段保存哈希与时长，并由独立的本地日语识别模型筛查。对「つくえ」「ペン」「りょこう」单独调整了语速；对仍易混淆的短词比较了另一套女声。自动识别遇到数字、同音汉字和极短词会误报，因此筛查结果不是母语者语音评审；学习音调时请同时参考词卡上的高低音图。
 
 ## 开发验证
 
@@ -59,4 +59,4 @@ node tests/browser-smoke.js
 第二条命令使用本机 Chrome 的无界面模式，检查桌面与手机断点、首次自测、练习和转换流程。若 Chrome 不在默认路径，可用 `CHROME_PATH` 环境变量指定其可执行文件。
 发布后可设置 `PAGE_URL=https://evander764.github.io/japanese-starter/`，用同一条命令对公开站点做回归检查。
 
-普通学习和播放音频无需安装模型。批量重做时，`tools/generate_kokoro_refresh.py` 与 `tools/generate_qwen_audio.py` 先写入仓库外的暂存目录并逐段保存检查点；`tools/audit_qwen_sentences.py` 用独立的本地日语识别模型筛出可疑片段；审核后由 `tools/publish_audio_rebuild.py` 校验 527 个文件和哈希，再复制到 `audio/` 并更新清单。Kokoro 工具需要日语 ONNX 模型、音色文件和 `ffmpeg`；Qwen 工具需要本地 VoiceDesign 模型及 `qwen-tts`，单独补录的短词还使用本地 CustomVoice 模型。旧版 `tools/generate_audio.py` 与 `tools/generate_course_audio.py` 保留作单独补录工具。
+普通学习和播放音频无需安装模型。重新生成词汇音频时，`tools/generate_sapi_words.ps1` 使用本机已安装的日语 SAPI 声音和 `ffmpeg`，在仓库外暂存 285 段 MP3 及检查点；`tools/audit_qwen_sentences.py --words` 用独立的本地日语识别模型筛查；`tools/assemble_word_voice.py` 可把逐段核对过的备用音色并入；`tools/publish_word_voice.py` 逐段校验文本、时长、哈希后发布并更新两个清单。重新合成全部音频的旧流程由 `tools/generate_kokoro_refresh.py`、`tools/generate_qwen_audio.py` 和 `tools/publish_audio_rebuild.py` 保留；`tools/generate_voicevox_words.py` 保留作支持逐拍音调设定的本地备选方案，模型与词典都放在仓库外。
