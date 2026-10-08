@@ -351,7 +351,8 @@ async function main() {
     document.querySelector('[data-course-start="full"]').click();
     const lesson = window.CourseData.lessons[0];
     for (const question of lesson.questions) {
-      if (question.type === 'meaning') document.getElementById('courseView').dispatchEvent(new KeyboardEvent('keydown', {key:'2', bubbles:true}));
+      if (question.id === '01-q1') document.getElementById('courseView').dispatchEvent(new KeyboardEvent('keydown', {key:'2', bubbles:true}));
+      else if (question.type === 'meaning') document.querySelector('[data-course-choice="' + question.options.indexOf(question.answer) + '"]').click();
       else if (question.type === 'particle' || question.type === 'listen') {
         const index = question.options.indexOf(question.answer);
         document.querySelector('[data-course-choice="' + index + '"]').click();
@@ -413,7 +414,7 @@ async function main() {
     const completed = [];
     for (const lesson of window.CourseData.lessons.slice(8)) {
       document.querySelector('[data-course-select="' + lesson.id + '"]').click();
-      for (const item of [lesson.example, ...lesson.vocabulary, lesson.questions[4]]) {
+      for (const item of [...lesson.examples, ...lesson.vocabulary, lesson.questions[4]]) {
         await new Promise((resolve, reject) => {
           const audio = new Audio(item.audio);
           audio.onloadedmetadata = () => audio.duration > 0.2 ? resolve() : reject(new Error('Empty audio: ' + item.audio));
@@ -493,13 +494,13 @@ async function main() {
     HTMLMediaElement.prototype.play = originalPlay;
     return {visible:!document.getElementById('vocabView').hidden, chapter:document.getElementById('vocabChapter').value, chapters:document.getElementById('vocabChapter').options.length, cards:document.querySelectorAll('.vocab-card').length, audio:audio.endsWith('/audio/course-02-v1.mp3')};
   })()`);
-  assert.deepEqual(vocabIntro, {visible:true, chapter:'02', chapters:14, cards:5, audio:true});
+  assert.deepEqual(vocabIntro, {visible:true, chapter:'02', chapters:14, cards:17, audio:true});
   await evaluate(`document.getElementById('vocabView').scrollIntoView({block:'start',behavior:'instant'})`);
   const vocabDesktopShot = path.join(os.tmpdir(), 'kana-vocab-desktop-cdp.png');
   await screenshot(vocabDesktopShot);
   await viewport(390, 844, true);
   const vocabMobile = await evaluate(`({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,cards:document.querySelectorAll('.vocab-card').length})`);
-  assert.deepEqual(vocabMobile, {width:390,scrollWidth:390,cards:5});
+  assert.deepEqual(vocabMobile, {width:390,scrollWidth:390,cards:17});
   const vocabMobileShot = path.join(os.tmpdir(), 'kana-vocab-mobile-cdp.png');
   await screenshot(vocabMobileShot);
   await evaluate(`document.getElementById('vocabGrid').scrollIntoView({block:'start',behavior:'instant'})`);
@@ -512,7 +513,7 @@ async function main() {
     const shared = document.querySelector('[data-vocab-master="ほん"]').getAttribute('aria-pressed') === 'true';
     document.getElementById('vocabStart').click();
     let answered = 0;
-    while (!document.querySelector('.vocab-practice-done') && answered < 20) {
+    while (!document.querySelector('.vocab-practice-done') && answered < 40) {
       const panel = document.getElementById('vocabPractice');
       const kana = panel.querySelector('.vocab-practice-question strong').textContent;
       if (kana === 'ほん') throw new Error('Mastered word was repeated');
@@ -530,7 +531,7 @@ async function main() {
     const saved = JSON.parse(localStorage.getItem('kana-studio-progress-v1'));
     return {shared,answered,done:!!document.querySelector('.vocab-practice-done'),mastered:saved.vocabRecords['ほん'].manualMastered,uniqueRecords:Object.keys(saved.vocabRecords).length,courseSaved:window.CourseCore.getStatus(saved,'14')};
   })()`);
-  assert.deepEqual(vocabRun, {shared:true,answered:8,done:true,mastered:true,uniqueRecords:5,courseSaved:'mastered'});
+  assert.deepEqual(vocabRun, {shared:true,answered:32,done:true,mastered:true,uniqueRecords:17,courseSaved:'mastered'});
   await evaluate(`document.querySelector('[data-vocab-restart]').click(); document.getElementById('vocabPractice').scrollIntoView({block:'start',behavior:'instant'})`);
   const vocabMobilePracticeShot = path.join(os.tmpdir(), 'kana-vocab-mobile-practice-cdp.png');
   await screenshot(vocabMobilePracticeShot);

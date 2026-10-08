@@ -83,6 +83,10 @@
 .course-example small,.course-example span{display:block;color:#516c64;font-size:11px}
 .course-example strong{display:block;font-family:"Noto Sans JP","Yu Gothic","Meiryo",sans-serif;font-size:clamp(21px,2.6vw,31px);font-weight:700;line-height:1.5}
 .course-example .outline-button{flex:none}
+.course-example-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:25px 0 5px}
+.course-example-list .course-example{min-width:0;margin:0}
+.course-example-list .course-example:not(:first-child){align-items:flex-start;flex-direction:column;justify-content:space-between;background:#f1f5ef}
+.course-example-list .course-example:first-child{grid-column:1/-1}
 .course-grammar,.course-vocab{border-top:1px solid var(--line);padding-top:20px;margin-top:17px}
 .course-grammar h4,.course-vocab h4{font-size:12px;letter-spacing:.1em;color:var(--teal);margin:0 0 13px}
 .course-grammar>div{display:grid;grid-template-columns:minmax(145px,.5fr) 1fr;gap:17px;margin-top:9px}
@@ -184,3 +188,4 @@
 .vocab-practice-done p{color:var(--ink-soft);font-size:13px}
 @media(max-width:700px){.vocab-toolbar{align-items:flex-start;flex-direction:column;gap:8px}.vocab-toolbar label{align-items:flex-start;flex-direction:column;gap:5px;width:100%}.vocab-toolbar select{width:100%}.vocab-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.vocab-card{min-height:225px;padding:12px}.vocab-card>strong{font-size:23px}.vocab-card-actions button{font-size:10px;padding:5px 7px}.vocab-practice{padding:18px}.vocab-practice-question{align-items:flex-start;flex-direction:column;gap:8px}.vocab-practice-question strong{font-size:32px}}
 @media(max-width:350px){.vocab-grid{grid-template-columns:1fr}}
+@media(max-width:700px){.course-example-list{grid-template-columns:1fr}.course-example-list .course-example:first-child{grid-column:auto}}

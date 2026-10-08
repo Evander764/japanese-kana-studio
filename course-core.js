@@ -27,7 +27,7 @@
       .some(answer => normalizeJapanese(answer) === normalizeJapanese(response));
     return question.answer === response;
   }
-  function makeRun(lesson, results, review, timestamp) {
+  function makeRun(lesson, results, review, timestamp, allowLegacy = false) {
     if (!Array.isArray(results)) throw new Error('Course results must be an array');
     const known = new Set(lesson.questions.map(question => question.id));
     const seen = new Set();
@@ -38,8 +38,9 @@
       seen.add(result.id);
       return { id: result.id, correct: result.correct };
     });
-    if (!clean.length || (!review && clean.length !== lesson.questions.length)) throw new Error('Incomplete course result');
-    const production = lesson.questions.filter(question => question.type === 'order' || question.type === 'read');
+    const legacyFullRun = allowLegacy && clean.length === 5 && lesson.questions.slice(0, 5).every(question => seen.has(question.id));
+    if (!clean.length || (!review && clean.length !== lesson.questions.length && !legacyFullRun)) throw new Error('Incomplete course result');
+    const production = lesson.questions.filter(question => seen.has(question.id) && (question.type === 'order' || question.type === 'read'));
     const productionCorrect = production.every(question => clean.some(result => result.id === question.id && result.correct));
     return {
       at: Number.isSafeInteger(timestamp) && timestamp >= 0 ? timestamp : 0,
@@ -105,7 +106,7 @@
       if (Array.isArray(value.runs)) {
         for (const candidate of value.runs.slice(-8)) {
           try {
-            runs.push(makeRun(lesson, candidate.results, candidate.review === true, candidate.at));
+            runs.push(makeRun(lesson, candidate.results, candidate.review === true, candidate.at, true));
           } catch (_) { /* Ignore malformed imported attempts. */ }
         }
       }

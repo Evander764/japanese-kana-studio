@@ -6,6 +6,18 @@
     "seconds": 1.621
   },
   {
+    "file": "course-01-example-2.mp3",
+    "kana": "わたしは だいがくせいです。",
+    "phonemes": "βataɕi βa daiɡakɯseː desɨ.",
+    "seconds": 1.771
+  },
+  {
+    "file": "course-01-example-3.mp3",
+    "kana": "ともだちは エンジニアです。",
+    "phonemes": "tomodaʨi βa eɲʥiɲia desɨ.",
+    "seconds": 1.792
+  },
+  {
     "file": "course-01-v1.mp3",
     "kana": "わたし",
     "phonemes": "βataɕi",
@@ -30,6 +42,78 @@
     "seconds": 0.96
   },
   {
+    "file": "course-01-v5.mp3",
+    "kana": "あなた",
+    "phonemes": "anata",
+    "seconds": 0.725
+  },
+  {
+    "file": "course-01-v6.mp3",
+    "kana": "ともだち",
+    "phonemes": "tomodaʨi",
+    "seconds": 0.981
+  },
+  {
+    "file": "course-01-v7.mp3",
+    "kana": "なまえ",
+    "phonemes": "namae",
+    "seconds": 0.576
+  },
+  {
+    "file": "course-01-v8.mp3",
+    "kana": "にほん",
+    "phonemes": "ɲihoɴ",
+    "seconds": 0.704
+  },
+  {
+    "file": "course-01-v9.mp3",
+    "kana": "ちゅうごく",
+    "phonemes": "ʨɨːɡokɯ",
+    "seconds": 0.768
+  },
+  {
+    "file": "course-01-v10.mp3",
+    "kana": "にほんじん",
+    "phonemes": "ɲihoɲʥiɴ",
+    "seconds": 0.917
+  },
+  {
+    "file": "course-01-v11.mp3",
+    "kana": "ちゅうごくじん",
+    "phonemes": "ʨɨːɡokɯʥiɴ",
+    "seconds": 1.131
+  },
+  {
+    "file": "course-01-v12.mp3",
+    "kana": "だいがくせい",
+    "phonemes": "daiɡakɯseː",
+    "seconds": 1.131
+  },
+  {
+    "file": "course-01-v13.mp3",
+    "kana": "いしゃ",
+    "phonemes": "iɕa",
+    "seconds": 0.555
+  },
+  {
+    "file": "course-01-v14.mp3",
+    "kana": "かんごし",
+    "phonemes": "kaŋɡo ɕi",
+    "seconds": 0.832
+  },
+  {
+    "file": "course-01-v15.mp3",
+    "kana": "エンジニア",
+    "phonemes": "eɲʥiɲia",
+    "seconds": 1.024
+  },
+  {
+    "file": "course-01-v16.mp3",
+    "kana": "ひと",
+    "phonemes": "çito",
+    "seconds": 0.555
+  },
+  {
     "file": "course-01-listen.mp3",
     "kana": "わたしは かいしゃいんです。",
     "phonemes": "βataɕi βakai ɕa iɴ desɨ.",
@@ -40,6 +124,18 @@
     "kana": "これは わたしの ほんです。",
     "phonemes": "koɾe βa βataɕi no hoɴ desɨ.",
     "seconds": 1.664
+  },
+  {
+    "file": "course-02-example-2.mp3",
+    "kana": "それは だれの かぎですか。",
+    "phonemes": "soɾe βa daɾe no kaɡʲi desɨ ka.",
+    "seconds": 1.92
+  },
+  {
+    "file": "course-02-example-3.mp3",
+    "kana": "この ペンは わたしのです。",
+    "phonemes": "kono peɴ βa βataɕi no desɨ.",
+    "seconds": 1.728
   },
   {
     "file": "course-02-v1.mp3",
@@ -72,6 +168,78 @@
     "seconds": 0.512
   },
   {
+    "file": "course-02-v6.mp3",
+    "kana": "それ",
+    "phonemes": "soɾe",
+    "seconds": 0.533
+  },
+  {
+    "file": "course-02-v7.mp3",
+    "kana": "あれ",
+    "phonemes": "aɾe",
+    "seconds": 0.597
+  },
+  {
+    "file": "course-02-v8.mp3",
+    "kana": "この",
+    "phonemes": "kono",
+    "seconds": 0.533
+  },
+  {
+    "file": "course-02-v9.mp3",
+    "kana": "その",
+    "phonemes": "sono",
+    "seconds": 0.555
+  },
+  {
+    "file": "course-02-v10.mp3",
+    "kana": "あの",
+    "phonemes": "ano",
+    "seconds": 0.597
+  },
+  {
+    "file": "course-02-v11.mp3",
+    "kana": "だれ",
+    "phonemes": "daɾe",
+    "seconds": 0.512
+  },
+  {
+    "file": "course-02-v12.mp3",
+    "kana": "じしょ",
+    "phonemes": "ʥi ɕo",
+    "seconds": 0.555
+  },
+  {
+    "file": "course-02-v13.mp3",
+    "kana": "えんぴつ",
+    "phonemes": "empʲiʦɨ",
+    "seconds": 0.853
+  },
+  {
+    "file": "course-02-v14.mp3",
+    "kana": "ペン",
+    "phonemes": "peɴ",
+    "seconds": 0.533
+  },
+  {
+    "file": "course-02-v15.mp3",
+    "kana": "けしゴム",
+    "phonemes": "keɕiɡomɯ",
+    "seconds": 1.024
+  },
+  {
+    "file": "course-02-v16.mp3",
+    "kana": "くつ",
+    "phonemes": "kɯʦɨ",
+    "seconds": 0.64
+  },
+  {
+    "file": "course-02-v17.mp3",
+    "kana": "かぎ",
+    "phonemes": "kaɡʲi",
+    "seconds": 0.619
+  },
+  {
     "file": "course-02-listen.mp3",
     "kana": "これは ノートです。",
     "phonemes": "koɾe βa noːto desɨ.",
@@ -82,6 +250,18 @@
     "kana": "えきは あそこです。",
     "phonemes": "ekʲi βa asoko desɨ.",
     "seconds": 1.387
+  },
+  {
+    "file": "course-03-example-2.mp3",
+    "kana": "ぎんこうは どこですか。",
+    "phonemes": "ɡʲiŋkoː βa doko desɨ ka.",
+    "seconds": 1.664
+  },
+  {
+    "file": "course-03-example-3.mp3",
+    "kana": "スーパーは あそこです。",
+    "phonemes": "sɨːpaː βa asoko desɨ.",
+    "seconds": 1.6
   },
   {
     "file": "course-03-v1.mp3",
@@ -114,6 +294,78 @@
     "seconds": 0.491
   },
   {
+    "file": "course-03-v6.mp3",
+    "kana": "そこ",
+    "phonemes": "soko",
+    "seconds": 0.576
+  },
+  {
+    "file": "course-03-v7.mp3",
+    "kana": "あそこ",
+    "phonemes": "asoko",
+    "seconds": 0.768
+  },
+  {
+    "file": "course-03-v8.mp3",
+    "kana": "こちら",
+    "phonemes": "koʨiɾa",
+    "seconds": 0.683
+  },
+  {
+    "file": "course-03-v9.mp3",
+    "kana": "みぎ",
+    "phonemes": "mʲiɡʲi",
+    "seconds": 0.64
+  },
+  {
+    "file": "course-03-v10.mp3",
+    "kana": "ひだり",
+    "phonemes": "çidaɾʲi",
+    "seconds": 0.683
+  },
+  {
+    "file": "course-03-v11.mp3",
+    "kana": "まえ",
+    "phonemes": "mae",
+    "seconds": 0.469
+  },
+  {
+    "file": "course-03-v12.mp3",
+    "kana": "うしろ",
+    "phonemes": "ɯɕiɾo",
+    "seconds": 0.747
+  },
+  {
+    "file": "course-03-v13.mp3",
+    "kana": "となり",
+    "phonemes": "tonaɾʲi",
+    "seconds": 0.661
+  },
+  {
+    "file": "course-03-v14.mp3",
+    "kana": "がっこう",
+    "phonemes": "ɡaʔkoː",
+    "seconds": 0.725
+  },
+  {
+    "file": "course-03-v15.mp3",
+    "kana": "びょういん",
+    "phonemes": "bʲoːiɴ",
+    "seconds": 0.683
+  },
+  {
+    "file": "course-03-v16.mp3",
+    "kana": "ぎんこう",
+    "phonemes": "ɡʲiŋkoː",
+    "seconds": 0.789
+  },
+  {
+    "file": "course-03-v17.mp3",
+    "kana": "スーパー",
+    "phonemes": "sɨːpaː",
+    "seconds": 0.683
+  },
+  {
     "file": "course-03-listen.mp3",
     "kana": "トイレは そこです。",
     "phonemes": "toiɾe βa soko desɨ.",
@@ -124,6 +376,18 @@
     "kana": "じゅぎょうは くじからです。",
     "phonemes": "ʥɨɡʲoː βa kɯʥi kaɾa desɨ.",
     "seconds": 1.621
+  },
+  {
+    "file": "course-04-example-2.mp3",
+    "kana": "いまは はちじはんです。",
+    "phonemes": "imaβa haʨi ʥi βa ɴ desɨ.",
+    "seconds": 1.557
+  },
+  {
+    "file": "course-04-example-3.mp3",
+    "kana": "じゅぎょうは よじまでです。",
+    "phonemes": "ʥɨɡʲoː βajo ʥi made desɨ.",
+    "seconds": 1.579
   },
   {
     "file": "course-04-v1.mp3",
@@ -156,6 +420,78 @@
     "seconds": 0.725
   },
   {
+    "file": "course-04-v6.mp3",
+    "kana": "いちじ",
+    "phonemes": "iʨi ʥi",
+    "seconds": 0.853
+  },
+  {
+    "file": "course-04-v7.mp3",
+    "kana": "にじ",
+    "phonemes": "ɲiʥi",
+    "seconds": 0.597
+  },
+  {
+    "file": "course-04-v8.mp3",
+    "kana": "さんじ",
+    "phonemes": "saɲʥi",
+    "seconds": 0.811
+  },
+  {
+    "file": "course-04-v9.mp3",
+    "kana": "よじ",
+    "phonemes": "joʥi",
+    "seconds": 0.725
+  },
+  {
+    "file": "course-04-v10.mp3",
+    "kana": "ごじ",
+    "phonemes": "ɡo ʥi",
+    "seconds": 0.64
+  },
+  {
+    "file": "course-04-v11.mp3",
+    "kana": "ろくじ",
+    "phonemes": "ɾokɯ ʥi",
+    "seconds": 0.832
+  },
+  {
+    "file": "course-04-v12.mp3",
+    "kana": "しちじ",
+    "phonemes": "ɕiʨi ʥi",
+    "seconds": 0.832
+  },
+  {
+    "file": "course-04-v13.mp3",
+    "kana": "はちじ",
+    "phonemes": "haʨi ʥi",
+    "seconds": 0.875
+  },
+  {
+    "file": "course-04-v14.mp3",
+    "kana": "なんぷん",
+    "phonemes": "naɴ pɯɴ",
+    "seconds": 0.704
+  },
+  {
+    "file": "course-04-v15.mp3",
+    "kana": "はん",
+    "phonemes": "haɴ",
+    "seconds": 0.512
+  },
+  {
+    "file": "course-04-v16.mp3",
+    "kana": "あさ",
+    "phonemes": "asa",
+    "seconds": 0.576
+  },
+  {
+    "file": "course-04-v17.mp3",
+    "kana": "よる",
+    "phonemes": "joɾɯ",
+    "seconds": 0.576
+  },
+  {
     "file": "course-04-listen.mp3",
     "kana": "じゅぎょうは くじからです。",
     "phonemes": "ʥɨɡʲoː βa kɯʥi kaɾa desɨ.",
@@ -166,6 +502,18 @@
     "kana": "おちゃを のみます。",
     "phonemes": "oʨa o nomʲimasɨ.",
     "seconds": 1.28
+  },
+  {
+    "file": "course-05-example-2.mp3",
+    "kana": "あさは パンを たべます。",
+    "phonemes": "asa βa paɴ o tabemasɨ.",
+    "seconds": 1.557
+  },
+  {
+    "file": "course-05-example-3.mp3",
+    "kana": "しんぶんを よみません。",
+    "phonemes": "ɕimbɯɴ o jomʲi maseɴ.",
+    "seconds": 1.557
   },
   {
     "file": "course-05-v1.mp3",
@@ -198,6 +546,78 @@
     "seconds": 0.939
   },
   {
+    "file": "course-05-v6.mp3",
+    "kana": "たべます",
+    "phonemes": "tabemasɨ",
+    "seconds": 0.811
+  },
+  {
+    "file": "course-05-v7.mp3",
+    "kana": "かいます",
+    "phonemes": "kaimasɨ",
+    "seconds": 0.768
+  },
+  {
+    "file": "course-05-v8.mp3",
+    "kana": "みます",
+    "phonemes": "mʲimasɨ",
+    "seconds": 0.64
+  },
+  {
+    "file": "course-05-v9.mp3",
+    "kana": "ききます",
+    "phonemes": "kʲikʲimasɨ",
+    "seconds": 0.832
+  },
+  {
+    "file": "course-05-v10.mp3",
+    "kana": "かきます",
+    "phonemes": "kakʲimasɨ",
+    "seconds": 0.96
+  },
+  {
+    "file": "course-05-v11.mp3",
+    "kana": "します",
+    "phonemes": "ɕi masɨ",
+    "seconds": 0.619
+  },
+  {
+    "file": "course-05-v12.mp3",
+    "kana": "コーヒー",
+    "phonemes": "koːçiː",
+    "seconds": 0.789
+  },
+  {
+    "file": "course-05-v13.mp3",
+    "kana": "ごはん",
+    "phonemes": "ɡohaɴ",
+    "seconds": 0.597
+  },
+  {
+    "file": "course-05-v14.mp3",
+    "kana": "パン",
+    "phonemes": "paɴ",
+    "seconds": 0.533
+  },
+  {
+    "file": "course-05-v15.mp3",
+    "kana": "りんご",
+    "phonemes": "ɾʲiŋɡo",
+    "seconds": 0.661
+  },
+  {
+    "file": "course-05-v16.mp3",
+    "kana": "しんぶん",
+    "phonemes": "ɕimbɯɴ",
+    "seconds": 0.725
+  },
+  {
+    "file": "course-05-v17.mp3",
+    "kana": "てがみ",
+    "phonemes": "teɡamʲi",
+    "seconds": 0.747
+  },
+  {
     "file": "course-05-listen.mp3",
     "kana": "ほんを よみます。",
     "phonemes": "hoɴ o jomʲimasɨ.",
@@ -208,6 +628,18 @@
     "kana": "バスで えきへ いきます。",
     "phonemes": "basɨ de ekʲi e ikʲimasɨ.",
     "seconds": 1.579
+  },
+  {
+    "file": "course-06-example-2.mp3",
+    "kana": "じてんしゃで がっこうへ いきます。",
+    "phonemes": "ʥiteɴɕa de ɡaʔkoː e ikʲimasɨ.",
+    "seconds": 1.984
+  },
+  {
+    "file": "course-06-example-3.mp3",
+    "kana": "タクシーで うちへ かえります。",
+    "phonemes": "takɯɕiː de ɯʨi e kaeɾʲimasɨ.",
+    "seconds": 1.813
   },
   {
     "file": "course-06-v1.mp3",
@@ -240,6 +672,78 @@
     "seconds": 0.896
   },
   {
+    "file": "course-06-v6.mp3",
+    "kana": "あるきます",
+    "phonemes": "aɾɯkʲimasɨ",
+    "seconds": 1.024
+  },
+  {
+    "file": "course-06-v7.mp3",
+    "kana": "じてんしゃ",
+    "phonemes": "ʥiteɴɕa",
+    "seconds": 0.789
+  },
+  {
+    "file": "course-06-v8.mp3",
+    "kana": "タクシー",
+    "phonemes": "takɯɕiː",
+    "seconds": 0.832
+  },
+  {
+    "file": "course-06-v9.mp3",
+    "kana": "くるま",
+    "phonemes": "kɯɾɯma",
+    "seconds": 0.619
+  },
+  {
+    "file": "course-06-v10.mp3",
+    "kana": "ちかてつ",
+    "phonemes": "ʨikateʦɨ",
+    "seconds": 0.853
+  },
+  {
+    "file": "course-06-v11.mp3",
+    "kana": "ひこうき",
+    "phonemes": "çikoːkʲi",
+    "seconds": 0.789
+  },
+  {
+    "file": "course-06-v12.mp3",
+    "kana": "がっこう",
+    "phonemes": "ɡaʔkoː",
+    "seconds": 0.725
+  },
+  {
+    "file": "course-06-v13.mp3",
+    "kana": "うち",
+    "phonemes": "ɯʨi",
+    "seconds": 0.661
+  },
+  {
+    "file": "course-06-v14.mp3",
+    "kana": "みせ",
+    "phonemes": "mʲise",
+    "seconds": 0.555
+  },
+  {
+    "file": "course-06-v15.mp3",
+    "kana": "かえります",
+    "phonemes": "kaeɾʲimasɨ",
+    "seconds": 1.045
+  },
+  {
+    "file": "course-06-v16.mp3",
+    "kana": "きます",
+    "phonemes": "kʲimasɨ",
+    "seconds": 0.661
+  },
+  {
+    "file": "course-06-v17.mp3",
+    "kana": "まっすぐ",
+    "phonemes": "maʔsɨɡɯ",
+    "seconds": 0.811
+  },
+  {
     "file": "course-06-listen.mp3",
     "kana": "でんしゃで えきへ いきます。",
     "phonemes": "deɴɕa de ekʲi e ikʲimasɨ.",
@@ -250,6 +754,18 @@
     "kana": "へやに ねこが います。",
     "phonemes": "heja ɲi neko ɡa imasɨ.",
     "seconds": 1.493
+  },
+  {
+    "file": "course-07-example-2.mp3",
+    "kana": "にわに とりが います。",
+    "phonemes": "ɲiβa ɲi toɾʲi ɡa imasɨ.",
+    "seconds": 1.493
+  },
+  {
+    "file": "course-07-example-3.mp3",
+    "kana": "へやに テレビが あります。",
+    "phonemes": "heja ɲi teɾebʲi ɡa aɾʲimasɨ.",
+    "seconds": 1.643
   },
   {
     "file": "course-07-v1.mp3",
@@ -282,6 +798,78 @@
     "seconds": 0.597
   },
   {
+    "file": "course-07-v6.mp3",
+    "kana": "こども",
+    "phonemes": "kodomo",
+    "seconds": 0.725
+  },
+  {
+    "file": "course-07-v7.mp3",
+    "kana": "おとこ",
+    "phonemes": "otoko",
+    "seconds": 0.725
+  },
+  {
+    "file": "course-07-v8.mp3",
+    "kana": "おんな",
+    "phonemes": "onna",
+    "seconds": 0.768
+  },
+  {
+    "file": "course-07-v9.mp3",
+    "kana": "さかな",
+    "phonemes": "sakana",
+    "seconds": 0.683
+  },
+  {
+    "file": "course-07-v10.mp3",
+    "kana": "とり",
+    "phonemes": "toɾʲi",
+    "seconds": 0.576
+  },
+  {
+    "file": "course-07-v11.mp3",
+    "kana": "ベッド",
+    "phonemes": "beʔdo",
+    "seconds": 0.683
+  },
+  {
+    "file": "course-07-v12.mp3",
+    "kana": "ドア",
+    "phonemes": "doa",
+    "seconds": 0.491
+  },
+  {
+    "file": "course-07-v13.mp3",
+    "kana": "まど",
+    "phonemes": "mado",
+    "seconds": 0.512
+  },
+  {
+    "file": "course-07-v14.mp3",
+    "kana": "でんわ",
+    "phonemes": "deɴβa",
+    "seconds": 0.555
+  },
+  {
+    "file": "course-07-v15.mp3",
+    "kana": "テレビ",
+    "phonemes": "teɾebʲi",
+    "seconds": 0.661
+  },
+  {
+    "file": "course-07-v16.mp3",
+    "kana": "ほんだな",
+    "phonemes": "hoɴ da na",
+    "seconds": 0.981
+  },
+  {
+    "file": "course-07-v17.mp3",
+    "kana": "にわ",
+    "phonemes": "ɲiβa",
+    "seconds": 0.491
+  },
+  {
     "file": "course-07-listen.mp3",
     "kana": "へやに いすが あります。",
     "phonemes": "heja ɲi isɨɡa aɾʲimasɨ.",
@@ -292,6 +880,18 @@
     "kana": "この まちは しずかです。",
     "phonemes": "kono maʨi βa ɕizɨka desɨ.",
     "seconds": 1.621
+  },
+  {
+    "file": "course-08-example-2.mp3",
+    "kana": "この まちは にぎやかです。",
+    "phonemes": "kono maʨi βa ɲiɡʲijaka desɨ.",
+    "seconds": 1.771
+  },
+  {
+    "file": "course-08-example-3.mp3",
+    "kana": "この ケーキは あまいです。",
+    "phonemes": "kono keːkʲi βa amai desɨ.",
+    "seconds": 1.643
   },
   {
     "file": "course-08-v1.mp3",
@@ -330,6 +930,78 @@
     "seconds": 0.64
   },
   {
+    "file": "course-08-v7.mp3",
+    "kana": "あつい",
+    "phonemes": "aʦɨi",
+    "seconds": 0.768
+  },
+  {
+    "file": "course-08-v8.mp3",
+    "kana": "さむい",
+    "phonemes": "samɯi",
+    "seconds": 0.64
+  },
+  {
+    "file": "course-08-v9.mp3",
+    "kana": "たかい",
+    "phonemes": "takai",
+    "seconds": 0.661
+  },
+  {
+    "file": "course-08-v10.mp3",
+    "kana": "ひくい",
+    "phonemes": "çikɯi",
+    "seconds": 0.619
+  },
+  {
+    "file": "course-08-v11.mp3",
+    "kana": "きれい",
+    "phonemes": "kʲiɾeː",
+    "seconds": 0.64
+  },
+  {
+    "file": "course-08-v12.mp3",
+    "kana": "にぎやか",
+    "phonemes": "ɲiɡʲijaka",
+    "seconds": 0.917
+  },
+  {
+    "file": "course-08-v13.mp3",
+    "kana": "べんり",
+    "phonemes": "benɾʲi",
+    "seconds": 0.619
+  },
+  {
+    "file": "course-08-v14.mp3",
+    "kana": "むずかしい",
+    "phonemes": "mɯzɨkaɕiː",
+    "seconds": 1.024
+  },
+  {
+    "file": "course-08-v15.mp3",
+    "kana": "やさしい",
+    "phonemes": "jasaɕiː",
+    "seconds": 0.917
+  },
+  {
+    "file": "course-08-v16.mp3",
+    "kana": "たのしい",
+    "phonemes": "tanoɕiː",
+    "seconds": 0.853
+  },
+  {
+    "file": "course-08-v17.mp3",
+    "kana": "つまらない",
+    "phonemes": "ʦɨmaɾanai",
+    "seconds": 0.917
+  },
+  {
+    "file": "course-08-v18.mp3",
+    "kana": "あまい",
+    "phonemes": "amai",
+    "seconds": 0.725
+  },
+  {
     "file": "course-08-listen.mp3",
     "kana": "この ケーキは おいしいです。",
     "phonemes": "kono keːkʲi βa oiɕiː desɨ.",
@@ -340,6 +1012,18 @@
     "kana": "きのうは えいがを みました。",
     "phonemes": "kʲinoː βa eːɡa o mʲimaɕi ta.",
     "seconds": 1.856
+  },
+  {
+    "file": "course-09-example-2.mp3",
+    "kana": "せんしゅうは えいがを みませんでした。",
+    "phonemes": "seɴɕɨː βa eːɡa o mʲi maseɴ deɕi ta.",
+    "seconds": 2.411
+  },
+  {
+    "file": "course-09-example-3.mp3",
+    "kana": "きのうは パンを たべました。",
+    "phonemes": "kʲinoː βa paɴ o tabe maɕita.",
+    "seconds": 1.771
   },
   {
     "file": "course-09-v1.mp3",
@@ -372,6 +1056,78 @@
     "seconds": 1.472
   },
   {
+    "file": "course-09-v6.mp3",
+    "kana": "おととい",
+    "phonemes": "ototoi",
+    "seconds": 0.875
+  },
+  {
+    "file": "course-09-v7.mp3",
+    "kana": "せんしゅう",
+    "phonemes": "seɴɕɨː",
+    "seconds": 0.811
+  },
+  {
+    "file": "course-09-v8.mp3",
+    "kana": "せんげつ",
+    "phonemes": "seŋɡeʦɨ",
+    "seconds": 0.853
+  },
+  {
+    "file": "course-09-v9.mp3",
+    "kana": "いきました",
+    "phonemes": "ikʲi maɕita",
+    "seconds": 1.067
+  },
+  {
+    "file": "course-09-v10.mp3",
+    "kana": "きました",
+    "phonemes": "kʲi maɕita",
+    "seconds": 0.896
+  },
+  {
+    "file": "course-09-v11.mp3",
+    "kana": "たべました",
+    "phonemes": "tabe maɕita",
+    "seconds": 1.131
+  },
+  {
+    "file": "course-09-v12.mp3",
+    "kana": "かいました",
+    "phonemes": "kai maɕita",
+    "seconds": 1.024
+  },
+  {
+    "file": "course-09-v13.mp3",
+    "kana": "ききました",
+    "phonemes": "kʲikʲi maɕita",
+    "seconds": 1.067
+  },
+  {
+    "file": "course-09-v14.mp3",
+    "kana": "しました",
+    "phonemes": "ɕi maɕita",
+    "seconds": 0.875
+  },
+  {
+    "file": "course-09-v15.mp3",
+    "kana": "みませんでした",
+    "phonemes": "mʲi maseɴ deɕi ta",
+    "seconds": 1.365
+  },
+  {
+    "file": "course-09-v16.mp3",
+    "kana": "たべませんでした",
+    "phonemes": "tabe maseɴ deɕi ta",
+    "seconds": 1.429
+  },
+  {
+    "file": "course-09-v17.mp3",
+    "kana": "かえりました",
+    "phonemes": "kaeɾʲi maɕita",
+    "seconds": 1.152
+  },
+  {
     "file": "course-09-listen.mp3",
     "kana": "きのうは おちゃを のみました。",
     "phonemes": "kʲinoː βa oʨa o nomʲi maɕita.",
@@ -382,6 +1138,18 @@
     "kana": "あさごはんを たべて、えきへ いきます。",
     "phonemes": "asaɡohaɴ o tabete, ekʲi e ikʲimasɨ.",
     "seconds": 2.389
+  },
+  {
+    "file": "course-10-example-2.mp3",
+    "kana": "あさ おきて、かおを あらいます。",
+    "phonemes": "asaokʲi te, kao o aɾaimasɨ.",
+    "seconds": 1.877
+  },
+  {
+    "file": "course-10-example-3.mp3",
+    "kana": "パンを かって うちへ かえります。",
+    "phonemes": "paɴ o kaʔte ɯʨi e kaeɾʲimasɨ.",
+    "seconds": 1.877
   },
   {
     "file": "course-10-v1.mp3",
@@ -414,6 +1182,78 @@
     "seconds": 0.896
   },
   {
+    "file": "course-10-v6.mp3",
+    "kana": "おきて",
+    "phonemes": "okʲite",
+    "seconds": 0.811
+  },
+  {
+    "file": "course-10-v7.mp3",
+    "kana": "あらって",
+    "phonemes": "aɾaʔte",
+    "seconds": 0.747
+  },
+  {
+    "file": "course-10-v8.mp3",
+    "kana": "かいて",
+    "phonemes": "kaite",
+    "seconds": 0.64
+  },
+  {
+    "file": "course-10-v9.mp3",
+    "kana": "きいて",
+    "phonemes": "kʲiːte",
+    "seconds": 0.683
+  },
+  {
+    "file": "course-10-v10.mp3",
+    "kana": "かって",
+    "phonemes": "kaʔte",
+    "seconds": 0.64
+  },
+  {
+    "file": "course-10-v11.mp3",
+    "kana": "まって",
+    "phonemes": "maʔte",
+    "seconds": 0.661
+  },
+  {
+    "file": "course-10-v12.mp3",
+    "kana": "はなして",
+    "phonemes": "hanaɕite",
+    "seconds": 0.811
+  },
+  {
+    "file": "course-10-v13.mp3",
+    "kana": "して",
+    "phonemes": "ɕite",
+    "seconds": 0.533
+  },
+  {
+    "file": "course-10-v14.mp3",
+    "kana": "きて",
+    "phonemes": "kʲite",
+    "seconds": 0.555
+  },
+  {
+    "file": "course-10-v15.mp3",
+    "kana": "いって",
+    "phonemes": "iʔte",
+    "seconds": 0.683
+  },
+  {
+    "file": "course-10-v16.mp3",
+    "kana": "でかけます",
+    "phonemes": "dekakemasɨ",
+    "seconds": 1.067
+  },
+  {
+    "file": "course-10-v17.mp3",
+    "kana": "しごと",
+    "phonemes": "ɕiɡoto",
+    "seconds": 0.683
+  },
+  {
     "file": "course-10-listen.mp3",
     "kana": "ほんを よんで、こうえんへ いきます。",
     "phonemes": "hoɴ o jonde, koːeɴ e ikʲimasɨ.",
@@ -424,6 +1264,18 @@
     "kana": "アニメを みたいです。",
     "phonemes": "aɲime o mʲitai desɨ.",
     "seconds": 1.429
+  },
+  {
+    "file": "course-11-example-2.mp3",
+    "kana": "あたらしい くつが ほしいです。",
+    "phonemes": "ataɾaɕiː kɯʦɨ ɡa hoɕiː desɨ.",
+    "seconds": 1.835
+  },
+  {
+    "file": "course-11-example-3.mp3",
+    "kana": "にほんへ いきたいです。",
+    "phonemes": "ɲihoɴ e ikʲi tai desɨ.",
+    "seconds": 1.557
   },
   {
     "file": "course-11-v1.mp3",
@@ -456,6 +1308,78 @@
     "seconds": 0.789
   },
   {
+    "file": "course-11-v6.mp3",
+    "kana": "たべたい",
+    "phonemes": "tabe tai",
+    "seconds": 0.853
+  },
+  {
+    "file": "course-11-v7.mp3",
+    "kana": "のみたい",
+    "phonemes": "nomʲi tai",
+    "seconds": 0.896
+  },
+  {
+    "file": "course-11-v8.mp3",
+    "kana": "いきたい",
+    "phonemes": "ikʲi tai",
+    "seconds": 0.96
+  },
+  {
+    "file": "course-11-v9.mp3",
+    "kana": "よみたい",
+    "phonemes": "jomʲi tai",
+    "seconds": 0.981
+  },
+  {
+    "file": "course-11-v10.mp3",
+    "kana": "あそびたい",
+    "phonemes": "asobʲi tai",
+    "seconds": 1.088
+  },
+  {
+    "file": "course-11-v11.mp3",
+    "kana": "ねたい",
+    "phonemes": "ne tai",
+    "seconds": 0.64
+  },
+  {
+    "file": "course-11-v12.mp3",
+    "kana": "りょこう",
+    "phonemes": "ɾʲokoː",
+    "seconds": 0.725
+  },
+  {
+    "file": "course-11-v13.mp3",
+    "kana": "くつ",
+    "phonemes": "kɯʦɨ",
+    "seconds": 0.64
+  },
+  {
+    "file": "course-11-v14.mp3",
+    "kana": "パソコン",
+    "phonemes": "pasokoɴ",
+    "seconds": 0.832
+  },
+  {
+    "file": "course-11-v15.mp3",
+    "kana": "スマートフォン",
+    "phonemes": "sɨmaːto ɸoɴ",
+    "seconds": 1.109
+  },
+  {
+    "file": "course-11-v16.mp3",
+    "kana": "えいが",
+    "phonemes": "eːɡa",
+    "seconds": 0.704
+  },
+  {
+    "file": "course-11-v17.mp3",
+    "kana": "おかね",
+    "phonemes": "okane",
+    "seconds": 0.768
+  },
+  {
     "file": "course-11-listen.mp3",
     "kana": "おちゃを のみたいです。",
     "phonemes": "oʨa o nomʲi tai desɨ.",
@@ -466,6 +1390,18 @@
     "kana": "でんしゃは バスより はやいです。",
     "phonemes": "deɴɕa βa basɨ joɾʲi hajai desɨ.",
     "seconds": 1.963
+  },
+  {
+    "file": "course-12-example-2.mp3",
+    "kana": "この くつは あの くつより やすいです。",
+    "phonemes": "kono kɯʦɨ βa ano kɯʦɨ joɾʲi jasɨi desɨ.",
+    "seconds": 2.197
+  },
+  {
+    "file": "course-12-example-3.mp3",
+    "kana": "この みせのほうが ちかいです。",
+    "phonemes": "kono mʲise no hoː ɡa ʨikai desɨ.",
+    "seconds": 1.877
   },
   {
     "file": "course-12-v1.mp3",
@@ -498,6 +1434,78 @@
     "seconds": 0.597
   },
   {
+    "file": "course-12-v6.mp3",
+    "kana": "たかい",
+    "phonemes": "takai",
+    "seconds": 0.661
+  },
+  {
+    "file": "course-12-v7.mp3",
+    "kana": "おそい",
+    "phonemes": "osoi",
+    "seconds": 0.768
+  },
+  {
+    "file": "course-12-v8.mp3",
+    "kana": "ちかい",
+    "phonemes": "ʨikai",
+    "seconds": 0.619
+  },
+  {
+    "file": "course-12-v9.mp3",
+    "kana": "とおい",
+    "phonemes": "toːi",
+    "seconds": 0.597
+  },
+  {
+    "file": "course-12-v10.mp3",
+    "kana": "おおい",
+    "phonemes": "oːi",
+    "seconds": 0.725
+  },
+  {
+    "file": "course-12-v11.mp3",
+    "kana": "すくない",
+    "phonemes": "sɨkɯnai",
+    "seconds": 0.832
+  },
+  {
+    "file": "course-12-v12.mp3",
+    "kana": "ながい",
+    "phonemes": "naɡai",
+    "seconds": 0.555
+  },
+  {
+    "file": "course-12-v13.mp3",
+    "kana": "みじかい",
+    "phonemes": "mʲiʥikai",
+    "seconds": 0.939
+  },
+  {
+    "file": "course-12-v14.mp3",
+    "kana": "おおきい",
+    "phonemes": "oːkʲiː",
+    "seconds": 0.832
+  },
+  {
+    "file": "course-12-v15.mp3",
+    "kana": "ちいさい",
+    "phonemes": "ʨiːsai",
+    "seconds": 0.725
+  },
+  {
+    "file": "course-12-v16.mp3",
+    "kana": "どちら",
+    "phonemes": "doʨiɾa",
+    "seconds": 0.661
+  },
+  {
+    "file": "course-12-v17.mp3",
+    "kana": "ほう",
+    "phonemes": "hoː",
+    "seconds": 0.491
+  },
+  {
     "file": "course-12-listen.mp3",
     "kana": "この かばんの ほうが あの かばんより やすいです。",
     "phonemes": "kono kabaɴ no hoː ɡa ano kabaɴ joɾʲi jasɨi desɨ.",
@@ -508,6 +1516,18 @@
     "kana": "ここで しゃしんを とっても いいですか。",
     "phonemes": "koko de ɕaɕiɴ o toʔte mo iː desɨ ka.",
     "seconds": 2.389
+  },
+  {
+    "file": "course-13-example-2.mp3",
+    "kana": "ここで たべても いいですか。",
+    "phonemes": "koko de tabete mo iː desɨ ka.",
+    "seconds": 1.941
+  },
+  {
+    "file": "course-13-example-3.mp3",
+    "kana": "この ドアを あけては いけません。",
+    "phonemes": "kono doa o akete βa ike maseɴ.",
+    "seconds": 1.984
   },
   {
     "file": "course-13-v1.mp3",
@@ -540,6 +1560,78 @@
     "seconds": 0.683
   },
   {
+    "file": "course-13-v6.mp3",
+    "kana": "すわって",
+    "phonemes": "sɨβaʔte",
+    "seconds": 0.768
+  },
+  {
+    "file": "course-13-v7.mp3",
+    "kana": "たって",
+    "phonemes": "taʔte",
+    "seconds": 0.661
+  },
+  {
+    "file": "course-13-v8.mp3",
+    "kana": "つかって",
+    "phonemes": "ʦɨkaʔte",
+    "seconds": 0.725
+  },
+  {
+    "file": "course-13-v9.mp3",
+    "kana": "あけて",
+    "phonemes": "akete",
+    "seconds": 0.811
+  },
+  {
+    "file": "course-13-v10.mp3",
+    "kana": "しめて",
+    "phonemes": "ɕimete",
+    "seconds": 0.683
+  },
+  {
+    "file": "course-13-v11.mp3",
+    "kana": "おいて",
+    "phonemes": "oite",
+    "seconds": 0.789
+  },
+  {
+    "file": "course-13-v12.mp3",
+    "kana": "たべて",
+    "phonemes": "tabete",
+    "seconds": 0.683
+  },
+  {
+    "file": "course-13-v13.mp3",
+    "kana": "さわって",
+    "phonemes": "saβaʔte",
+    "seconds": 0.811
+  },
+  {
+    "file": "course-13-v14.mp3",
+    "kana": "およいで",
+    "phonemes": "ojoide",
+    "seconds": 0.875
+  },
+  {
+    "file": "course-13-v15.mp3",
+    "kana": "きんし",
+    "phonemes": "kʲiɴɕi",
+    "seconds": 0.661
+  },
+  {
+    "file": "course-13-v16.mp3",
+    "kana": "だいじょうぶ",
+    "phonemes": "daiʥoːbɯ",
+    "seconds": 0.939
+  },
+  {
+    "file": "course-13-v17.mp3",
+    "kana": "みせ",
+    "phonemes": "mʲise",
+    "seconds": 0.555
+  },
+  {
     "file": "course-13-listen.mp3",
     "kana": "ここに はいっても いいです。",
     "phonemes": "koko ɲi haiʔte mo iː desɨ.",
@@ -550,6 +1642,18 @@
     "kana": "あした、いっしょに こうえんへ いきませんか。",
     "phonemes": "aɕita, iʔɕoɲi koːeɴ e ikʲi maseɴ ka.",
     "seconds": 2.517
+  },
+  {
+    "file": "course-14-example-2.mp3",
+    "kana": "しゅうまつ、いっしょに えいがを みませんか。",
+    "phonemes": "ɕɨː maʦɨ, iʔɕoɲi eːɡa o mʲi maseɴ ka.",
+    "seconds": 2.56
+  },
+  {
+    "file": "course-14-example-3.mp3",
+    "kana": "あさって こうえんで あいましょう。",
+    "phonemes": "asaʔte koːeɴ deai maɕoː.",
+    "seconds": 1.899
   },
   {
     "file": "course-14-v1.mp3",
@@ -580,6 +1684,78 @@
     "kana": "たべましょう",
     "phonemes": "tabe maɕoː",
     "seconds": 1.088
+  },
+  {
+    "file": "course-14-v6.mp3",
+    "kana": "きょう",
+    "phonemes": "kʲoː",
+    "seconds": 0.512
+  },
+  {
+    "file": "course-14-v7.mp3",
+    "kana": "あさって",
+    "phonemes": "asaʔte",
+    "seconds": 0.853
+  },
+  {
+    "file": "course-14-v8.mp3",
+    "kana": "こんしゅう",
+    "phonemes": "koɴ ɕɨː",
+    "seconds": 0.853
+  },
+  {
+    "file": "course-14-v9.mp3",
+    "kana": "しゅうまつ",
+    "phonemes": "ɕɨː maʦɨ",
+    "seconds": 0.811
+  },
+  {
+    "file": "course-14-v10.mp3",
+    "kana": "こんど",
+    "phonemes": "kondo",
+    "seconds": 0.597
+  },
+  {
+    "file": "course-14-v11.mp3",
+    "kana": "あいましょう",
+    "phonemes": "ai maɕoː",
+    "seconds": 0.981
+  },
+  {
+    "file": "course-14-v12.mp3",
+    "kana": "のみましょう",
+    "phonemes": "nomʲi maɕoː",
+    "seconds": 1.088
+  },
+  {
+    "file": "course-14-v13.mp3",
+    "kana": "みましょう",
+    "phonemes": "mʲi maɕoː",
+    "seconds": 0.896
+  },
+  {
+    "file": "course-14-v14.mp3",
+    "kana": "あそびましょう",
+    "phonemes": "asobʲi maɕoː",
+    "seconds": 1.152
+  },
+  {
+    "file": "course-14-v15.mp3",
+    "kana": "かえりましょう",
+    "phonemes": "kaeɾʲi maɕoː",
+    "seconds": 1.109
+  },
+  {
+    "file": "course-14-v16.mp3",
+    "kana": "ひま",
+    "phonemes": "çima",
+    "seconds": 0.512
+  },
+  {
+    "file": "course-14-v17.mp3",
+    "kana": "やくそく",
+    "phonemes": "jakɯsokɯ",
+    "seconds": 0.768
   },
   {
     "file": "course-14-listen.mp3",
