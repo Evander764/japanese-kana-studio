@@ -305,6 +305,15 @@ async function main() {
   assert.equal(courseIntro.lessons, 8);
   assert.equal(courseIntro.visible, true);
   assert.ok(courseIntro.width <= 1365);
+  const speedControl = await evaluate(`(() => {
+    const button = document.querySelector('#courseView [data-audio-speed]');
+    button.click();
+    const normal = JSON.parse(localStorage.getItem('kana-studio-progress-v1')).audioSpeed;
+    button.click();
+    const slow = JSON.parse(localStorage.getItem('kana-studio-progress-v1')).audioSpeed;
+    return {normal, slow};
+  })()`);
+  assert.deepEqual(speedControl, {normal: 'normal', slow: 'slow'});
   await evaluate('document.getElementById("courseView").scrollIntoView({block:"start",behavior:"instant"})');
   const courseDesktopShot = path.join(os.tmpdir(), 'kana-course-desktop-cdp.png');
   await screenshot(courseDesktopShot);

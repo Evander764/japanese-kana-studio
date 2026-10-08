@@ -41,6 +41,7 @@
 .stats-action{border:1px solid #bdcbc5;background:transparent;border-radius:8px;color:var(--ink);padding:6px 9px;font-size:11px;font-weight:800;white-space:nowrap}
 .stats-action:hover{background:var(--teal-pale)}
 .course-overview{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) 2fr;align-items:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:27px}
+.course-speed{display:flex;align-items:center;gap:9px;white-space:nowrap;font-size:11px;font-weight:800;color:var(--ink-soft)}
 .course-overview>div{padding:14px 18px;border-right:1px solid var(--line)}
 .course-overview>div:first-child{padding-left:0}
 .course-overview strong{display:block;font-size:29px;line-height:1.15;letter-spacing:-.04em}
