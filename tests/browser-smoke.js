@@ -104,7 +104,7 @@ async function main() {
   })()`);
   assert.deepEqual(readingToggle, {heroInitiallyVisible:true,initiallyVisible:true,heroHidden:true,kanaHidden:true,exampleHidden:true,vocabHidden:true,savedHidden:true,restored:true,pressed:'true'});
   const versionedAudio = await evaluate(`new Promise((resolve, reject) => {
-    const clip = new Audio('audio/base-a.mp3?v=20261008-2');
+    const clip = new Audio('audio/base-a.mp3?v=20261008-3');
     clip.onloadedmetadata = () => resolve(clip.duration > 0.2);
     clip.onerror = () => reject(new Error('versioned local audio did not load'));
   })`);
@@ -564,9 +564,10 @@ async function main() {
     HTMLMediaElement.prototype.play = function () { audio = this.src; return Promise.resolve(); };
     document.querySelector('[data-vocab-audio="ほん"]').click();
     HTMLMediaElement.prototype.play = originalPlay;
-    return {visible:!document.getElementById('vocabView').hidden, chapter:document.getElementById('vocabChapter').value, chapters:document.getElementById('vocabChapter').options.length, cards:document.querySelectorAll('.vocab-card').length, audio:new URL(audio).pathname.endsWith('/audio/course-02-v1.mp3')};
+    const bookCard = document.querySelector('[data-vocab-audio="ほん"]').closest('.vocab-card');
+    return {visible:!document.getElementById('vocabView').hidden, chapter:document.getElementById('vocabChapter').value, chapters:document.getElementById('vocabChapter').options.length, cards:document.querySelectorAll('.vocab-card').length, audio:new URL(audio).pathname.endsWith('/audio/course-02-v1.mp3'), pitch:bookCard.querySelector('.pitch-type').textContent, levels:[...bookCard.querySelectorAll('.pitch-mora')].map(node=>node.classList.contains('high')?'high':'low'), fall:bookCard.querySelectorAll('.pitch-fall').length};
   })()`);
-  assert.deepEqual(vocabIntro, {visible:true, chapter:'02', chapters:14, cards:17, audio:true});
+  assert.deepEqual(vocabIntro, {visible:true, chapter:'02', chapters:14, cards:17, audio:true, pitch:'1 型 · 第 1 拍后下降', levels:['high','low'], fall:1});
   await evaluate(`document.getElementById('vocabView').scrollIntoView({block:'start',behavior:'instant'})`);
   const vocabDesktopShot = path.join(os.tmpdir(), 'kana-vocab-desktop-cdp.png');
   await screenshot(vocabDesktopShot);

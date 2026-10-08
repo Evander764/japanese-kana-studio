@@ -1568,11 +1568,11 @@
   {
     "file": "course-07-v5.mp3",
     "kana": "いす",
-    "seconds": 0.619,
-    "sha256": "90ac8b823f39accba52f2e5bf620b778a6160205dabd0048af15e0ea2372f170",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "isɨ"
+    "seconds": 1.04,
+    "sha256": "56b2d1b1102392fbf9dba8fcb82228db72a83be7f330259515355bb83c9696a0",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "いす。"
   },
   {
     "file": "course-07-v6.mp3",
@@ -3179,11 +3179,11 @@
   {
     "file": "course-13-v15.mp3",
     "kana": "きんし",
-    "seconds": 0.96,
-    "sha256": "331b675a9793be5f9d6a20bf565cdfedb0d444fabf468228991c852642ae9b3f",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kʲiɴɕi"
+    "seconds": 1.17,
+    "sha256": "1f7487c29c3c25b06b649f22935ffc1e124c736d90ca935517a6c5ef823300c5",
+    "engine": "qwen3-tts-custom-voice",
+    "voice": "Ono_Anna",
+    "synthesisText": "禁止"
   },
   {
     "file": "course-13-v16.mp3",
@@ -3269,11 +3269,11 @@
   {
     "file": "course-13-q8.mp3",
     "kana": "きんし",
-    "seconds": 0.96,
-    "sha256": "331b675a9793be5f9d6a20bf565cdfedb0d444fabf468228991c852642ae9b3f",
-    "engine": "kokoro-82m",
-    "voice": "jf_gongitsune",
-    "phonemes": "kʲiɴɕi"
+    "seconds": 1.17,
+    "sha256": "1f7487c29c3c25b06b649f22935ffc1e124c736d90ca935517a6c5ef823300c5",
+    "engine": "qwen3-tts-custom-voice",
+    "voice": "Ono_Anna",
+    "synthesisText": "禁止"
   },
   {
     "file": "course-14-example.mp3",

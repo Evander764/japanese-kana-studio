@@ -6,16 +6,19 @@
   <meta name="description" content="日语起步：从第 00 课五十音开始，逐课学习单词、例句与练习。日语发音可直接播放，也可切换慢速跟读；学习进度保存在本机。">
   <meta name="theme-color" content="#f5f2eb">
   <title>日语起步 · 从零开始学日语</title>
-  <link rel="stylesheet" href="styles.css?v=20261008-ui1">
+  <link rel="stylesheet" href="styles.css?v=20261008-pitch1">
   <script src="kana-data.js" defer></script>
   <script src="course-enrichment.js" defer></script>
   <script src="course-data.js" defer></script>
+  <script src="pitch-data.js" defer></script>
+  <script src="pitch-core.js" defer></script>
+  <script src="pitch-ui.js" defer></script>
   <script src="vocab-core.js" defer></script>
   <script src="core.js" defer></script>
   <script src="course-core.js" defer></script>
   <script src="course-ui.js" defer></script>
   <script src="vocab-ui.js" defer></script>
-  <script src="app.js?v=20261008-ui1" defer></script>
+  <script src="app.js?v=20261008-pitch1" defer></script>
 </head>
 <body>
   <div class="app-shell">
@@ -126,7 +129,7 @@
         <div class="converter-layout"><div class="converter-input"><div class="converter-head"><label for="convertInput">罗马字输入</label><div class="mini-switch" role="group" aria-label="转换目标"><button type="button" data-convert-script="hiragana">平假名</button><button type="button" data-convert-script="katakana">片假名</button></div></div><textarea id="convertInput" rows="6" autocapitalize="off" spellcheck="false" placeholder="试试输入：konnichiha / juusu"></textarea></div><div class="converter-output"><span>转换结果</span><div id="convertOutput" aria-live="polite">ここに表示</div><p id="convertCandidates"></p><small>长音和同音异形可能有不同写法；练习题以题目所示字形判定。</small></div></div>
       </section>
       <section class="view" id="vocabView" aria-labelledby="vocabTitle" hidden>
-        <div class="section-heading"><div><p class="section-kicker">VOCABULARY / 每课单词</p><h2 id="vocabTitle">一章一页，把新词练熟。</h2><p>第 01—14 课的词卡都可直接听读音。先用正常语速辨音，需要跟读时切到慢速；熟悉的词可标记“已经学会”，以后练习会跳过它。</p></div><div class="course-speed"><span>单词发音速度</span><div class="audio-speed-control" role="group" aria-label="单词发音速度"><button type="button" data-audio-speed="normal" aria-pressed="true">正常 1×</button><button type="button" data-audio-speed="slow" aria-pressed="false">慢速 0.78×</button></div></div></div>
+        <div class="section-heading"><div><p class="section-kicker">VOCABULARY / 每课单词</p><h2 id="vocabTitle">一章一页，把新词练熟。</h2><p>每张词卡都标出东京式音调：低 / 高表示每一拍的高低，↘ 表示该拍后降调；0 型表示词内不降调。小「ゃ / ゅ / ょ」与前一个字算一拍，促音「っ」、长音「ー」各算一拍。先看音调再听读音，熟悉的词可标记“已经学会”。</p></div><div class="course-speed"><span>单词发音速度</span><div class="audio-speed-control" role="group" aria-label="单词发音速度"><button type="button" data-audio-speed="normal" aria-pressed="true">正常 1×</button><button type="button" data-audio-speed="slow" aria-pressed="false">慢速 0.78×</button></div></div></div>
         <div class="vocab-toolbar"><label for="vocabChapter">选择章节 <select id="vocabChapter"></select></label><p id="vocabSummary"></p></div>
         <div id="vocabGrid" class="vocab-grid"></div>
         <p id="vocabAudioMessage" class="audio-message" role="status"></p>
