@@ -3,7 +3,7 @@
   const core = window.KanaCore;
   const items = core.items;
   const $ = id => document.getElementById(id);
-  const labels = { hiragana: '平假名', katakana: '片假名', mixed: '混合', base: '清音', voiced: '浊音·半浊音', yoon: '拗音', special: '促音·长音', unseen: '未学', learning: '学习中', mastered: '熟练' };
+  const labels = { hiragana: '平假名', katakana: '片假名', mixed: '混合', base: '清音', voiced: '浊音·半浊音', yoon: '拗音', special: '促音·长音', unseen: '未学', learning: '学习中', mastered: '自动学会', retired: '确认学会' };
   const storageKey = 'kana-studio-progress-v1';
   let state = readStoredState();
   let view = 'learn';
@@ -22,6 +22,7 @@
   let pausedAt = 0;
   let pausedDuration = 0;
   let practiceGroup = null;
+  const courseUI = window.CourseUI.create({ getState: () => state, onStateChange: next => { state = next; persist(); renderOverview(); renderLearn(); renderStats(); }, speak });
 
   function readStoredState() {
     try { return core.sanitizeState(JSON.parse(localStorage.getItem(storageKey) || 'null')); }
@@ -49,15 +50,17 @@
       button.setAttribute('aria-label', slow ? '当前慢速，点击切换正常语速' : '当前正常语速，点击切换慢速');
       button.title = slow ? '点击切换正常语速' : '点击切换慢速';
     });
-    for (const name of ['learn', 'practice', 'stats', 'convert']) $(`${name}View`).hidden = view !== name;
+    for (const name of ['learn', 'practice', 'stats', 'convert', 'course']) $(`${name}View`).hidden = view !== name;
   }
   function renderOverview() {
     const list = modeItems();
     const started = list.filter(item => core.getStatus(state, item.id) !== 'unseen').length;
     const mastered = list.filter(item => core.getStatus(state, item.id) === 'mastered').length;
+    const retired = list.filter(item => core.getStatus(state, item.id) === 'retired').length;
     $('countTotal').textContent = String(list.length);
     $('countStarted').textContent = String(started);
     $('countMastered').textContent = String(mastered);
+    $('countRetired').textContent = String(retired);
     $('overviewMessage').textContent = started ? `已经开始 ${started} 项。打开进度页，可查看哪些音需要多练。` : '可直接开始自测，也可点字形学习或标记已学。';
   }
   function renderLearn() {
@@ -96,7 +99,7 @@
         mark.dataset.markId = item.id;
         mark.setAttribute('aria-pressed', String(status !== 'unseen'));
         mark.setAttribute('aria-label', `${item.kana}：${status === 'unseen' ? '标记为学过' : '标记为未学'}`);
-        mark.textContent = status === 'unseen' ? '＋ 标已学' : '↺ 标未学';
+        mark.textContent = status === 'unseen' ? '＋ 标已学' : status === 'retired' ? '✓ 已确认' : '↺ 标未学';
         card.append(open, mark); cards.append(card);
       }
       row.append(heading, cards); container.append(row);
@@ -107,7 +110,8 @@
     const learned = list.filter(item => core.getStatus(state, item.id) !== 'unseen');
     const mastered = learned.filter(item => core.getStatus(state, item.id) === 'mastered');
     const summary = $('statsSummary'); summary.replaceChildren();
-    for (const [value, label] of [[list.length, '当前专区总项目'], [learned.length, '已经开始'], [mastered.length, '达到熟练']]) {
+    const retired = learned.filter(item => core.getStatus(state, item.id) === 'retired');
+    for (const [value, label] of [[list.length, '当前专区总项目'], [learned.length, '已经开始'], [mastered.length, '自动学会'], [retired.length, '确认学会 · 不再自动复习']]) {
       const box = document.createElement('div'); box.className = 'stat-box';
       const strong = document.createElement('strong'); strong.textContent = String(value);
       const span = document.createElement('span'); span.textContent = label;
@@ -115,7 +119,7 @@
     }
     const ranked = [...list].sort((a, b) => {
       const aStatus = core.getStatus(state, a.id), bStatus = core.getStatus(state, b.id);
-      const rank = { learning: 0, mastered: 1, unseen: 2 };
+      const rank = { learning: 0, mastered: 1, unseen: 2, retired: 3 };
       return rank[aStatus] - rank[bStatus] || core.getMetrics(state, b.id).difficulty - core.getMetrics(state, a.id).difficulty || a.id.localeCompare(b.id);
     });
     const body = $('statsBody'); body.replaceChildren();
@@ -123,13 +127,18 @@
       const status = core.getStatus(state, item.id);
       const metrics = core.getMetrics(state, item.id);
       const tr = document.createElement('tr');
-      const cells = [item.kana, `${item.romaji} / ${item.group === 'special' ? item.row : labels[item.group]}`, labels[status], status === 'unseen' ? '—' : `${metrics.correct}/${metrics.count} · ${Math.round(metrics.correct / metrics.count * 100)}%`, metrics.responseMs === null ? '—' : `${(metrics.responseMs / 1000).toFixed(1)} 秒`, status === 'unseen' ? '—' : `${metrics.weight.toFixed(2)}×`];
+      const cells = [item.kana, `${item.romaji} / ${item.group === 'special' ? item.row : labels[item.group]}`, labels[status], metrics.count ? `${metrics.correct}/${metrics.count} · ${Math.round(metrics.correct / metrics.count * 100)}%` : '—', metrics.responseMs === null ? '—' : `${(metrics.responseMs / 1000).toFixed(1)} 秒`, status === 'unseen' ? '—' : `${metrics.weight.toFixed(2)}×`];
       cells.forEach((value, index) => {
         const td = document.createElement('td');
         if (index === 2) { const tag = document.createElement('span'); tag.className = `status-tag ${status}`; tag.textContent = value; td.append(tag); }
         else td.textContent = value;
         tr.append(td);
-      }); body.append(tr);
+      });
+      const actionCell = document.createElement('td');
+      const action = document.createElement('button'); action.type = 'button'; action.className = 'stats-action'; action.dataset.masterId = item.id;
+      action.textContent = status === 'retired' ? '恢复复习' : '确认学会';
+      action.setAttribute('aria-label', `${item.kana}：${action.textContent}`);
+      actionCell.append(action); tr.append(actionCell); body.append(tr);
     }
   }
   function renderConvert() {
@@ -155,12 +164,13 @@
     bar.setAttribute('aria-valuemax', String(items.length));
     bar.setAttribute('aria-valuenow', String(started));
   }
-  function renderAll() { renderControls(); renderOverview(); renderJourneyProgress(); renderLearn(); renderStats(); renderConvert(); }
+  function renderAll() { renderControls(); renderOverview(); renderJourneyProgress(); renderLearn(); renderStats(); renderConvert(); courseUI.render(); }
   function setView(next) {
     view = next;
     renderControls();
     if (next === 'practice') setQuestion();
     if (next === 'stats') renderStats();
+    if (next === 'course') courseUI.render();
     document.querySelector('.section-nav').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
@@ -188,6 +198,8 @@
     $('detailAnswer').hidden = selfTestActive && !selfTestAnswered;
     $('detailTest').hidden = !selfTestActive;
     $('detailStart').textContent = selfTestActive ? '再次自测' : '开始自测';
+    const retired = core.getStatus(state, detailItem.id) === 'retired';
+    $('detailMaster').textContent = retired ? '恢复自动复习' : '确认学会 · 停止复习';
     $('detailNext').hidden = !modeItems().some(item => item.id !== detailItem.id && core.getStatus(state, item.id) === 'unseen');
   }
   function startSelfTest() {
@@ -240,7 +252,13 @@
     questionAnswered = false;
     $('practiceEmpty').hidden = Boolean(question);
     $('practiceContent').hidden = !question;
-    if (!question) return;
+    if (!question) {
+      const available = modeItems().filter(item => !practiceGroup || item.group === practiceGroup);
+      const allRetired = available.length && available.every(item => core.getStatus(state, item.id) === 'retired');
+      $('practiceEmptyTitle').textContent = allRetired ? '这个范围已全部确认学会' : '这个范围还没有已学项目';
+      $('practiceEmptyText').textContent = allRetired ? '可以在学习进度中恢复自动复习。' : '切换到“全部项目”即可直接自测，或先在假名表中标记已学。';
+      return;
+    }
     questionStartedAt = performance.now(); pausedAt = document.hidden ? performance.now() : 0; pausedDuration = 0;
     $('questionKind').textContent = journey
       ? `${core.getStatus(state, question.id) === 'unseen' ? (question.kind === 'word' ? '新词组' : '新假名') : (question.kind === 'word' ? '复习词组' : '复习假名')} · ${describe(question)}`
@@ -372,6 +390,7 @@
   $('practiceGroup').addEventListener('change', event => { practiceGroup = event.target.value === 'all' ? null : event.target.value; previousItem = null; setQuestion(); });
   $('heroLearn').addEventListener('click', () => setView('learn'));
   $('heroPractice').addEventListener('click', () => { state.practicePool = 'all'; persist(); setView('practice'); });
+  $('heroCourse').addEventListener('click', () => setView('course'));
   $('heroJourney').addEventListener('click', () => {
     state.mode = 'mixed'; state.practicePool = 'journey'; practiceGroup = null; previousItem = null;
     persist(); renderAll(); setView('practice');
@@ -395,6 +414,12 @@
   $('closeDetail').addEventListener('click', () => $('detailDialog').close());
   $('detailDialog').addEventListener('click', event => { if (event.target === $('detailDialog')) $('detailDialog').close(); });
   $('detailStart').addEventListener('click', startSelfTest);
+  $('detailMaster').addEventListener('click', () => {
+    if (!detailItem) return;
+    const retired = core.getStatus(state, detailItem.id) === 'retired';
+    state = core.setManualMastered(state, detailItem.id, !retired);
+    persist(); renderDetail(); renderOverview(); renderLearn(); renderStats(); renderJourneyProgress();
+  });
   $('detailNext').addEventListener('click', () => nextUnseen(true));
   $('detailForm').addEventListener('submit', submitSelfTest);
   $('detailInput').addEventListener('input', () => { $('detailPreview').textContent = core.convertRomaji($('detailInput').value, detailItem.script, detailItem).text || '—'; });
@@ -421,6 +446,13 @@
   });
   $('nextQuestion').addEventListener('click', setQuestion);
   $('convertInput').addEventListener('input', renderConvert);
+  $('statsBody').addEventListener('click', event => {
+    const button = event.target.closest('[data-master-id]'); if (!button) return;
+    const retired = core.getStatus(state, button.dataset.masterId) === 'retired';
+    state = core.setManualMastered(state, button.dataset.masterId, !retired);
+    persist(); renderOverview(); renderLearn(); renderStats(); renderJourneyProgress();
+    if (view === 'practice') setQuestion();
+  });
   document.addEventListener('visibilitychange', () => {
     if (question && !questionAnswered) {
       if (document.hidden && !pausedAt) pausedAt = performance.now();
@@ -444,7 +476,7 @@
       const raw = JSON.parse(await file.text());
       if (raw.version !== core.VERSION || !raw.records || typeof raw.records !== 'object') throw new Error('格式或版本不匹配');
       if (!confirm('导入会覆盖这个浏览器当前的学习进度。确定导入吗？')) return;
-      state = core.sanitizeState(raw); previousItem = null; persist(); renderAll(); if (view === 'practice') setQuestion();
+      state = core.sanitizeState(raw); previousItem = null; courseUI.reset(); persist(); renderAll(); if (view === 'practice') setQuestion();
       $('storageMessage').textContent = '进度已导入。';
     } catch (error) { $('storageMessage').textContent = `导入失败：${error.message}`; }
     finally { event.target.value = ''; }
@@ -455,7 +487,7 @@
     const selectedPool = state.practicePool;
     state = core.newState(); state.mode = selectedMode;
     if (selectedMode === 'mixed' && selectedPool === 'journey') state.practicePool = 'journey';
-    previousItem = null;
+    previousItem = null; courseUI.reset();
     persist(); renderAll(); if (view === 'practice') setQuestion();
     $('storageMessage').textContent = '学习记录已重置。';
   });

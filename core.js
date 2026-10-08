@@ -20,7 +20,7 @@
   const VERSION = 1;
   const MODES = ['hiragana', 'katakana', 'mixed'];
   const GROUPS = ['base', 'voiced', 'yoon', 'special'];
-  const FILTERS = ['all', 'unseen', 'learning', 'mastered'];
+  const FILTERS = ['all', 'unseen', 'learning', 'mastered', 'retired'];
 
   function newState() {
     return {
@@ -31,6 +31,7 @@
       group: 'base',
       filter: 'all',
       records: {},
+      courseRecords: {},
       questionCount: 0,
       journeyTurns: 0,
       journeyStreak: 0,
@@ -54,6 +55,7 @@
   function recordFor(state, id) { return state.records[id] || emptyRecord(); }
   function getStatus(state, id) {
     const record = recordFor(state, id);
+    if (record.manualMastered === true) return 'retired';
     if (record.manualLearned === false || (!record.attemptCount && record.manualLearned !== true)) return 'unseen';
     const lastEight = record.attempts.slice(-8);
     const good = lastEight.length === 8 && lastEight.filter(a => a.correct).length >= 7;
@@ -72,7 +74,7 @@
     const responseMs = active ? median(record.correctTimes) : null;
     const slow = responseMs === null ? 1 : clamp(responseMs / targetMs(item) - 1, 0, 1);
     const difficulty = 0.7 * (1 - accuracy) + 0.3 * slow;
-    return { count, correct, accuracy, responseMs, targetMs: targetMs(item), slow, difficulty, weight: 1 + 5 * difficulty };
+    return { count, correct, accuracy, responseMs, targetMs: targetMs(item), slow, difficulty, weight: getStatus(state, id) === 'retired' ? 0 : 1 + 5 * difficulty };
   }
 
   function recordAnswer(state, id, correct, elapsedMs) {
@@ -85,7 +87,8 @@
       attempts: [...old.attempts, { correct: Boolean(correct), ms: duration }].slice(-10),
       correctTimes: correct ? [...old.correctTimes, duration].slice(-5) : [...old.correctTimes],
       lastQuestionIndex: questionCount,
-      manualLearned: true
+      manualLearned: true,
+      manualMastered: old.manualMastered === true
     };
     return {
       ...state,
@@ -100,7 +103,16 @@
     const old = recordFor(state, id);
     return {
       ...state,
-      records: { ...state.records, [id]: { ...old, manualLearned: Boolean(learned), lastQuestionIndex: learned ? old.lastQuestionIndex : -1 } }
+      records: { ...state.records, [id]: { ...old, manualLearned: Boolean(learned), manualMastered: learned && old.manualMastered === true, lastQuestionIndex: learned ? old.lastQuestionIndex : -1 } }
+    };
+  }
+
+  function setManualMastered(state, id, mastered) {
+    if (!byId.has(id)) throw new Error(`Unknown item: ${id}`);
+    const old = recordFor(state, id);
+    return {
+      ...state,
+      records: { ...state.records, [id]: { ...old, manualLearned: true, manualMastered: Boolean(mastered) } }
     };
   }
 
@@ -108,6 +120,7 @@
     return items.filter(item =>
       (mode === 'mixed' || item.script === mode) &&
       (!group || item.group === group) &&
+      getStatus(state, item.id) !== 'retired' &&
       (includeUnseen || getStatus(state, item.id) !== 'unseen')
     );
   }
@@ -240,15 +253,18 @@
           attempts,
           correctTimes,
           lastQuestionIndex: Number.isSafeInteger(value.lastQuestionIndex) ? clamp(value.lastQuestionIndex, -1, clean.questionCount) : -1,
-          ...(typeof value.manualLearned === 'boolean' ? { manualLearned: value.manualLearned } : {})
+          ...(typeof value.manualLearned === 'boolean' ? { manualLearned: value.manualLearned } : {}),
+          ...(typeof value.manualMastered === 'boolean' ? { manualMastered: value.manualMastered } : {})
         };
       }
     }
     clean.recentQuestionIds = Array.isArray(raw.recentQuestionIds) ? raw.recentQuestionIds.filter(id => byId.has(id)).slice(-2) : [];
+    const courseCore = root.CourseCore || (typeof require === 'function' ? require('./course-core.js') : null);
+    clean.courseRecords = courseCore ? courseCore.sanitizeRecords(raw.courseRecords) : {};
     return clean;
   }
 
-  const api = { VERSION, items, byId, newState, sanitizeState, recordFor, getStatus, getMetrics, recordAnswer, setLearned, eligibleItems, chooseNext, chooseJourneyNext, normalizeRomaji, isCorrect, convertRomaji, targetMs };
+  const api = { VERSION, items, byId, newState, sanitizeState, recordFor, getStatus, getMetrics, recordAnswer, setLearned, setManualMastered, eligibleItems, chooseNext, chooseJourneyNext, normalizeRomaji, isCorrect, convertRomaji, targetMs };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   root.KanaCore = api;
 })(typeof globalThis !== 'undefined' ? globalThis : window);

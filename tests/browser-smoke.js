@@ -53,7 +53,7 @@ async function main() {
   }
   async function evaluate(expression) {
     const response = await send('Runtime.evaluate', { expression, returnByValue: true, awaitPromise: true });
-    if (response.exceptionDetails) throw new Error(response.exceptionDetails.text);
+    if (response.exceptionDetails) throw new Error(JSON.stringify(response.exceptionDetails));
     return response.result.value;
   }
   async function viewport(width, height, isMobile) {
@@ -296,7 +296,99 @@ async function main() {
   await sleep(500);
   const narrow = await evaluate('({ width: innerWidth, scrollWidth: document.documentElement.scrollWidth })');
   assert.ok(narrow.scrollWidth <= narrow.width, `narrow mobile overflow: ${narrow.scrollWidth} > ${narrow.width}`);
-  console.log(JSON.stringify({ passed: true, desktopShot, journeyShot, mobileJourneyShot, mobileShot, mobileChartShot, mobilePracticeShot, mobileSelfTestShot, mobile, mobileJourney, mobilePractice, mobileSelfTest, narrow }));
+  await viewport(1365, 900, false);
+  const courseIntro = await evaluate(`(() => {
+    document.getElementById('heroCourse').click();
+    return { title: document.querySelector('.course-panel-head h3').textContent, lessons: document.querySelectorAll('.course-list-item').length, visible: !document.getElementById('courseView').hidden, width: document.documentElement.scrollWidth };
+  })()`);
+  assert.equal(courseIntro.title, '介绍自己');
+  assert.equal(courseIntro.lessons, 8);
+  assert.equal(courseIntro.visible, true);
+  assert.ok(courseIntro.width <= 1365);
+  await evaluate('document.getElementById("courseView").scrollIntoView({block:"start",behavior:"instant"})');
+  const courseDesktopShot = path.join(os.tmpdir(), 'kana-course-desktop-cdp.png');
+  await screenshot(courseDesktopShot);
+  const courseRun = await evaluate(`(() => {
+    document.querySelector('[data-course-start="full"]').click();
+    const lesson = window.CourseData.lessons[0];
+    for (const question of lesson.questions) {
+      if (question.type === 'meaning') document.getElementById('courseView').dispatchEvent(new KeyboardEvent('keydown', {key:'2', bubbles:true}));
+      else if (question.type === 'particle' || question.type === 'listen') {
+        const index = question.options.indexOf(question.answer);
+        document.querySelector('[data-course-choice="' + index + '"]').click();
+      } else if (question.type === 'order') {
+        let remaining = question.answer.replace(/\\s/g, '');
+        const available = question.tiles.map((_, index) => index);
+        while (remaining) {
+          const index = available.find(candidate => remaining.startsWith(question.tiles[candidate]));
+          if (index === undefined) throw new Error('Order fixture cannot be assembled');
+          document.querySelector('[data-course-tile="' + index + '"]').click();
+          remaining = remaining.slice(question.tiles[index].length);
+          available.splice(available.indexOf(index), 1);
+        }
+        document.querySelector('[data-course-order-submit]').click();
+      } else if (question.type === 'read') {
+        document.getElementById('courseReadInput').value = question.answers[0];
+        document.getElementById('courseReadForm').requestSubmit();
+      }
+      document.querySelector('[data-course-next]').click();
+    }
+    const state = JSON.parse(localStorage.getItem('kana-studio-progress-v1'));
+    const mastered = window.CourseCore.getStatus(state, '01');
+    const reviewCount = document.querySelector('[data-course-start="review"]')?.textContent;
+    document.querySelector('[data-course-master]').click();
+    const retired = window.CourseCore.getStatus(JSON.parse(localStorage.getItem('kana-studio-progress-v1')), '01');
+    document.querySelector('[data-course-master]').click();
+    const restored = window.CourseCore.getStatus(JSON.parse(localStorage.getItem('kana-studio-progress-v1')), '01');
+    return { mastered, reviewCount, retired, restored, runCount: state.courseRecords['01'].runs.length };
+  })()`);
+  assert.equal(courseRun.mastered, 'mastered');
+  assert.match(courseRun.reviewCount, /1 道错题/);
+  assert.deepEqual({ retired: courseRun.retired, restored: courseRun.restored, runCount: courseRun.runCount }, { retired: 'retired', restored: 'mastered', runCount: 1 });
+  const courseBackup = await evaluate(`(async () => {
+    URL.createObjectURL = blob => { window.__exportedBlob = blob; return 'blob:course-smoke'; };
+    HTMLAnchorElement.prototype.click = function () {};
+    window.confirm = () => true;
+    document.getElementById('exportProgress').click();
+    const snapshot = JSON.parse(await window.__exportedBlob.text());
+    const before = window.CourseCore.getStatus(snapshot, '01');
+    document.getElementById('resetProgress').click();
+    const reset = window.CourseCore.getStatus(JSON.parse(localStorage.getItem('kana-studio-progress-v1')), '01');
+    const file = new File([JSON.stringify(snapshot)], 'course-progress.json', {type:'application/json'});
+    const transfer = new DataTransfer(); transfer.items.add(file);
+    const input = document.getElementById('importProgress'); input.files = transfer.files;
+    input.dispatchEvent(new Event('change', {bubbles:true}));
+    await new Promise(resolve => setTimeout(resolve, 100));
+    const restored = window.CourseCore.getStatus(JSON.parse(localStorage.getItem('kana-studio-progress-v1')), '01');
+    return { before, reset, restored };
+  })()`);
+  assert.deepEqual(courseBackup, { before: 'mastered', reset: 'unseen', restored: 'mastered' });
+  const courseAudio = await evaluate(`new Promise((resolve, reject) => {
+    const audio = new Audio('audio/course-01-listen.mp3');
+    audio.onloadedmetadata = () => resolve(audio.duration);
+    audio.onerror = () => reject(new Error('course MP3 could not load'));
+    audio.load();
+  })`);
+  assert.ok(courseAudio > 0.5);
+  await viewport(390, 844, true);
+  await evaluate(`document.querySelector('[data-course-select="08"]').click(); document.getElementById('courseView').scrollIntoView({block:'start',behavior:'instant'})`);
+  const courseMobile = await evaluate('({ width: innerWidth, scrollWidth: document.documentElement.scrollWidth, title: document.querySelector(".course-panel-head h3").textContent })');
+  assert.deepEqual(courseMobile, { width: 390, scrollWidth: 390, title: '安静的小城' });
+  const courseMobileShot = path.join(os.tmpdir(), 'kana-course-mobile-cdp.png');
+  await screenshot(courseMobileShot);
+  const manualKana = await evaluate(`(() => {
+    document.querySelector('[data-view="learn"]').click();
+    document.querySelector('[data-group="base"]').click();
+    document.querySelector('.card-open').click();
+    const id = 'hiragana:base:a';
+    document.getElementById('detailMaster').click();
+    const retired = window.KanaCore.getStatus(JSON.parse(localStorage.getItem('kana-studio-progress-v1')), id);
+    document.getElementById('detailMaster').click();
+    const restored = window.KanaCore.getStatus(JSON.parse(localStorage.getItem('kana-studio-progress-v1')), id);
+    return { retired, restored };
+  })()`);
+  assert.deepEqual(manualKana, { retired: 'retired', restored: 'learning' });
+  console.log(JSON.stringify({ passed: true, desktopShot, journeyShot, mobileJourneyShot, mobileShot, mobileChartShot, mobilePracticeShot, mobileSelfTestShot, courseDesktopShot, courseMobileShot, mobile, mobileJourney, mobilePractice, mobileSelfTest, narrow, courseRun, courseBackup, courseMobile, manualKana }));
   ws.close();
 }
 

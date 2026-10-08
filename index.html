@@ -3,12 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="离线可用的日语五十音学习网站：认识平假名和片假名，输入罗马字自测，听发音并复习促音与长音词例。">
+  <meta name="description" content="离线可用的日语学习网站：五十音识读、短语发音与八节基础交互课程；学习进度保存在本机。">
   <meta name="theme-color" content="#f5f2eb">
   <title>假名练习室 · 五十音识读</title>
   <link rel="stylesheet" href="styles.css">
   <script src="kana-data.js" defer></script>
+  <script src="course-data.js" defer></script>
   <script src="core.js" defer></script>
+  <script src="course-core.js" defer></script>
+  <script src="course-ui.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -27,11 +30,12 @@
         <div class="hero-copy">
           <p class="eyebrow"><span class="eyebrow-line"></span> 从认出一个字开始</p>
           <h1 id="page-title">看到假名，<br><em>立刻读出来。</em></h1>
-          <p class="hero-lead">可以按行认识、直接自测，或进入无限混合学习。新假名和生活短语逐步出现，旧题穿插复习。</p>
+          <p class="hero-lead">先认出假名，再用它说完整的句子。可以直接自测、进入无限混合学习，或开始八节基础交互课程。</p>
           <div class="hero-actions">
             <button type="button" class="primary-button" id="heroJourney">开始无限混合学习 <span aria-hidden="true">→</span></button>
             <button type="button" class="outline-button" id="heroLearn">按行认识 <span aria-hidden="true">↗</span></button>
             <button type="button" class="text-button" id="heroPractice">直接开始自测 <span aria-hidden="true">→</span></button>
+            <button type="button" class="text-button" id="heroCourse">开始基础课程 <span aria-hidden="true">→</span></button>
           </div>
         </div>
         <div class="hero-art" aria-hidden="true"><span class="hero-kana hero-kana-main">あ</span><span class="hero-kana hero-kana-secondary">ア</span><span class="hero-art-caption">a · 一个读音，两种写法</span></div>
@@ -41,6 +45,7 @@
         <div><span class="overview-value" id="countTotal">—</span><span class="overview-label">当前专区项目</span></div>
         <div><span class="overview-value" id="countStarted">—</span><span class="overview-label">已经开始</span></div>
         <div><span class="overview-value" id="countMastered">—</span><span class="overview-label">达到熟练</span></div>
+        <div><span class="overview-value" id="countRetired">—</span><span class="overview-label">确认学会</span></div>
         <p id="overviewMessage">打开任意假名，听一听，再做首次自测。</p>
       </section>
 
@@ -49,6 +54,7 @@
         <button type="button" data-view="practice">02 <span>识读练习</span></button>
         <button type="button" data-view="stats">03 <span>学习进度</span></button>
         <button type="button" data-view="convert">04 <span>罗马字转换</span></button>
+        <button type="button" data-view="course">05 <span>互动课程</span></button>
       </nav>
 
       <section class="view" id="learnView" aria-labelledby="learnTitle">
@@ -57,7 +63,7 @@
           <div class="chip-group" id="groupTabs" role="group" aria-label="假名分类">
             <button type="button" data-group="base">清音</button><button type="button" data-group="voiced">浊音·半浊音</button><button type="button" data-group="yoon">拗音</button><button type="button" data-group="special">词例与混合短语</button>
           </div>
-          <label class="filter-label">显示 <select id="learnFilter"><option value="all">全部</option><option value="unseen">未学</option><option value="learning">学习中</option><option value="mastered">熟练</option></select></label>
+          <label class="filter-label">显示 <select id="learnFilter"><option value="all">全部</option><option value="unseen">未学</option><option value="learning">学习中</option><option value="mastered">自动学会</option><option value="retired">确认学会</option></select></label>
         </div>
         <p id="learnActionMessage" class="learn-action-message" role="status" aria-live="polite"></p>
         <div id="learnGrid" class="learn-grid"></div>
@@ -70,7 +76,7 @@
           <div class="journey-progress-top"><div><span class="journey-kicker">∞ 无限混合学习</span><strong id="journeyHeadline">正在认识新假名和短语</strong><span id="journeyDescription">新假名和混合短语依次加入，中间穿插复习。</span></div><div class="journey-numbers"><span id="journeyStarted">0 / 242 已开始</span><span id="journeyStreak">连续答对 0 题</span></div></div>
           <div class="journey-bar" role="progressbar" aria-label="已经开始的学习项目" aria-valuemin="0" aria-valuemax="242" aria-valuenow="0"><span id="journeyBarFill"></span></div>
         </div>
-        <div id="practiceEmpty" class="practice-empty" hidden><span class="empty-glyph">あ</span><h3>这个范围还没有已学项目</h3><p>切换到“全部项目”即可直接自测，或先在假名表中标记已学。</p><button type="button" class="primary-button" id="practiceToLearn">去认识假名 →</button></div>
+        <div id="practiceEmpty" class="practice-empty" hidden><span class="empty-glyph">あ</span><h3 id="practiceEmptyTitle">这个范围还没有已学项目</h3><p id="practiceEmptyText">切换到“全部项目”即可直接自测，或先在假名表中标记已学。</p><button type="button" class="primary-button" id="practiceToLearn">去认识假名 →</button></div>
         <div class="practice-layout" id="practiceContent">
           <div class="question-panel">
             <div class="question-top"><span class="question-label" id="questionKind">清音 · 平假名</span><span class="question-counter" id="questionCounter">第 1 题</span></div>
@@ -91,9 +97,9 @@
       </section>
 
       <section class="view" id="statsView" aria-labelledby="statsTitle" hidden>
-        <div class="section-heading"><div><p class="section-kicker">PROGRESS / 进度</p><h2 id="statsTitle">哪里熟悉，哪里还需要练。</h2><p>平假名与片假名分别统计；优先复习慢或经常答错的项目。</p></div></div>
+        <div class="section-heading"><div><p class="section-kicker">PROGRESS / 进度</p><h2 id="statsTitle">哪里熟悉，哪里还需要练。</h2><p>系统会按正确率与作答速度标为“自动学会”。若你确认完全掌握，可点“确认学会”，此项退出自动复习；也能随时恢复。</p></div></div>
         <div class="stats-summary" id="statsSummary"></div>
-        <div class="stats-table-wrap"><table class="stats-table"><thead><tr><th>假名</th><th>读音 / 分类</th><th>状态</th><th>最近正确率</th><th>答对用时</th><th>抽题权重</th></tr></thead><tbody id="statsBody"></tbody></table></div>
+        <div class="stats-table-wrap"><table class="stats-table"><thead><tr><th>假名</th><th>读音 / 分类</th><th>状态</th><th>最近正确率</th><th>答对用时</th><th>抽题权重</th><th>复习</th></tr></thead><tbody id="statsBody"></tbody></table></div>
         <div class="data-tools"><div><h3>把进度留在自己手里</h3><p>进度默认只保存在这个浏览器。可导出文件，换浏览器后再导入。</p></div><div class="data-actions"><button type="button" class="outline-button" id="exportProgress">导出进度</button><label class="outline-button import-button">导入进度<input type="file" id="importProgress" accept="application/json,.json" hidden></label><button type="button" class="danger-button" id="resetProgress">重置进度</button></div></div>
         <p id="storageMessage" class="utility-message" role="status"></p>
       </section>
@@ -101,6 +107,13 @@
       <section class="view" id="convertView" aria-labelledby="convertTitle" hidden>
         <div class="section-heading"><div><p class="section-kicker">CONVERT / 转换</p><h2 id="convertTitle">输入罗马字，看看它会变成什么。</h2><p>切换书写形式，直接对照平假名和片假名。</p></div></div>
         <div class="converter-layout"><div class="converter-input"><div class="converter-head"><label for="convertInput">罗马字输入</label><div class="mini-switch" role="group" aria-label="转换目标"><button type="button" data-convert-script="hiragana">平假名</button><button type="button" data-convert-script="katakana">片假名</button></div></div><textarea id="convertInput" rows="6" autocapitalize="off" spellcheck="false" placeholder="试试输入：konnichiha / juusu"></textarea></div><div class="converter-output"><span>转换结果</span><div id="convertOutput" aria-live="polite">ここに表示</div><p id="convertCandidates"></p><small>长音和同音异形可能有不同写法；练习题以题目所示字形判定。</small></div></div>
+      </section>
+      <section class="view" id="courseView" aria-labelledby="courseTitle" hidden>
+        <div class="section-heading"><div><p class="section-kicker">COURSE / 基础课程</p><h2 id="courseTitle">从认读假名，走向说完整的句子。</h2><p>八节入门课程，每节五道不同形式的题。可以自由选课；错题可自愿再练一次，不强迫反复刷题。</p></div></div>
+        <div class="course-overview" id="courseOverview"></div>
+        <div class="course-layout"><nav id="courseList" class="course-list" aria-label="基础课程列表"></nav><div id="coursePanel" class="course-panel"></div></div>
+        <section class="course-roadmap" aria-labelledby="roadmapTitle"><p class="section-kicker">NEXT / 后续路线</p><h3 id="roadmapTitle">学完这些，再继续向前</h3><div id="courseRoadmap"></div></section>
+        <p class="course-source">课程练习与例句为本站原创；主题参考<a href="https://www.pep.com.cn/products/jc/dwhytsh/201711/t20171107_1920490.shtml" target="_blank" rel="noopener noreferrer">《新版中日交流标准日本语》初级的分单元学习方式</a>及<a href="https://www.irodori.jpf.go.jp/assets/data/starter/pdf/X_contents_en.pdf" target="_blank" rel="noopener noreferrer">日本国际交流基金 A1 学习目标</a>。</p>
       </section>
     </main>
     <footer class="site-footer"><span>假名练习室 · 离线可用</span><span>字表依据 <a href="https://www.irodori.jpf.go.jp/assets/data/Kana_all.pdf" target="_blank" rel="noopener noreferrer">日本国际交流基金《いろどり》</a></span></footer>
@@ -126,7 +139,7 @@
         <form id="detailForm" class="answer-form" autocomplete="off"><label for="detailInput">输入罗马字</label><div class="input-row"><input id="detailInput" inputmode="latin" autocapitalize="off" autocomplete="off" spellcheck="false" required><button type="submit" class="primary-button">确认</button></div><p class="live-preview">即时转换 <strong id="detailPreview">—</strong></p></form>
         <p id="detailFeedback" class="feedback" role="status" aria-live="polite" hidden></p>
       </div>
-      <div class="dialog-actions"><button type="button" class="primary-button" id="detailStart">开始自测</button><button type="button" class="text-button" id="detailNext">下一个未学项目 →</button></div>
+      <div class="dialog-actions"><button type="button" class="primary-button" id="detailStart">开始自测</button><button type="button" class="outline-button" id="detailMaster">确认学会 · 停止复习</button><button type="button" class="text-button" id="detailNext">下一个未学项目 →</button></div>
     </div>
   </dialog>
 </body>
