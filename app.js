@@ -22,7 +22,8 @@
   let pausedAt = 0;
   let pausedDuration = 0;
   let practiceGroup = null;
-  const courseUI = window.CourseUI.create({ getState: () => state, onStateChange: next => { state = next; persist(); renderOverview(); renderLearn(); renderStats(); }, onFoundationNavigate, speak });
+  const courseUI = window.CourseUI.create({ getState: () => state, onStateChange: next => { state = next; persist(); renderOverview(); renderLearn(); renderStats(); }, onFoundationNavigate, onVocabNavigate, speak });
+  const vocabUI = window.VocabUI.create({ getState: () => state, onStateChange: next => { state = next; persist(); }, speak });
 
   function readStoredState() {
     try { return core.sanitizeState(JSON.parse(localStorage.getItem(storageKey) || 'null')); }
@@ -35,9 +36,10 @@
   function modeItems() { return items.filter(item => state.mode === 'mixed' || item.script === state.mode); }
   function describe(item) { return `${item.group === 'special' ? item.row : labels[item.group]} · ${labels[item.script]}`; }
   function renderControls() {
-    $('headerPath').hidden = view !== 'course';
-    $('modeSwitch').hidden = view === 'course';
-    document.querySelector('.overview').hidden = view === 'course';
+    const courseArea = view === 'course' || view === 'vocab';
+    $('headerPath').hidden = !courseArea;
+    $('modeSwitch').hidden = courseArea;
+    document.querySelector('.overview').hidden = courseArea;
     document.querySelectorAll('[data-mode]').forEach(button => { button.classList.toggle('active', button.dataset.mode === state.mode); button.setAttribute('aria-pressed', String(button.dataset.mode === state.mode)); });
     document.querySelectorAll('[data-group]').forEach(button => { button.classList.toggle('active', button.dataset.group === state.group); button.setAttribute('aria-pressed', String(button.dataset.group === state.group)); });
     document.querySelectorAll('[data-view]').forEach(button => { button.classList.toggle('active', button.dataset.view === view); button.setAttribute('aria-current', button.dataset.view === view ? 'page' : 'false'); });
@@ -53,7 +55,7 @@
       button.setAttribute('aria-label', slow ? '当前慢速，点击切换正常语速' : '当前正常语速，点击切换慢速');
       button.title = slow ? '点击切换正常语速' : '点击切换慢速';
     });
-    for (const name of ['learn', 'practice', 'stats', 'convert', 'course']) $(`${name}View`).hidden = view !== name;
+    for (const name of ['learn', 'practice', 'stats', 'convert', 'course', 'vocab']) $(`${name}View`).hidden = view !== name;
   }
   function renderOverview() {
     const list = modeItems();
@@ -167,13 +169,14 @@
     bar.setAttribute('aria-valuemax', String(items.length));
     bar.setAttribute('aria-valuenow', String(started));
   }
-  function renderAll() { renderControls(); renderOverview(); renderJourneyProgress(); renderLearn(); renderStats(); renderConvert(); courseUI.render(); }
+  function renderAll() { renderControls(); renderOverview(); renderJourneyProgress(); renderLearn(); renderStats(); renderConvert(); courseUI.render(); vocabUI.render(); }
   function setView(next) {
     view = next;
     renderControls();
     if (next === 'practice') setQuestion();
     if (next === 'stats') renderStats();
     if (next === 'course') courseUI.render();
+    if (next === 'vocab') vocabUI.render();
     document.querySelector('.section-nav').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
@@ -188,6 +191,11 @@
     state.group = 'base';
     state.filter = 'all';
     persist(); renderAll(); setView('learn');
+  }
+
+  function onVocabNavigate(lessonId) {
+    vocabUI.select(lessonId);
+    setView('vocab');
   }
 
   function openDetail(id) {
@@ -492,7 +500,7 @@
       const raw = JSON.parse(await file.text());
       if (raw.version !== core.VERSION || !raw.records || typeof raw.records !== 'object') throw new Error('格式或版本不匹配');
       if (!confirm('导入会覆盖这个浏览器当前的学习进度。确定导入吗？')) return;
-      state = core.sanitizeState(raw); previousItem = null; courseUI.reset(); persist(); renderAll(); if (view === 'practice') setQuestion();
+      state = core.sanitizeState(raw); previousItem = null; courseUI.reset(); vocabUI.reset(); persist(); renderAll(); if (view === 'practice') setQuestion();
       $('storageMessage').textContent = '进度已导入。';
     } catch (error) { $('storageMessage').textContent = `导入失败：${error.message}`; }
     finally { event.target.value = ''; }
@@ -503,7 +511,7 @@
     const selectedPool = state.practicePool;
     state = core.newState(); state.mode = selectedMode;
     if (selectedMode === 'mixed' && selectedPool === 'journey') state.practicePool = 'journey';
-    previousItem = null; courseUI.reset();
+    previousItem = null; courseUI.reset(); vocabUI.reset();
     persist(); renderAll(); if (view === 'practice') setQuestion();
     $('storageMessage').textContent = '学习记录已重置。';
   });

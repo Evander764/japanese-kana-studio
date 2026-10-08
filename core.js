@@ -32,6 +32,7 @@
       filter: 'all',
       records: {},
       courseRecords: {},
+      vocabRecords: {},
       questionCount: 0,
       journeyTurns: 0,
       journeyStreak: 0,
@@ -261,6 +262,8 @@
     clean.recentQuestionIds = Array.isArray(raw.recentQuestionIds) ? raw.recentQuestionIds.filter(id => byId.has(id)).slice(-2) : [];
     const courseCore = root.CourseCore || (typeof require === 'function' ? require('./course-core.js') : null);
     clean.courseRecords = courseCore ? courseCore.sanitizeRecords(raw.courseRecords) : {};
+    const vocabCore = root.VocabCore || (typeof require === 'function' ? require('./vocab-core.js') : null);
+    clean.vocabRecords = vocabCore ? vocabCore.sanitizeRecords(raw.vocabRecords) : {};
     return clean;
   }
 

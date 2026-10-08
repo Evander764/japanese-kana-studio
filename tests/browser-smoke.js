@@ -482,7 +482,86 @@ async function main() {
   assert.deepEqual(courseMobile, { width: 390, scrollWidth: 390, title: '这里可以拍照吗' });
   const courseMobileShot = path.join(os.tmpdir(), 'kana-course-mobile-cdp.png');
   await screenshot(courseMobileShot);
+  await viewport(1365, 900, false);
+  const vocabIntro = await evaluate(`(() => {
+    document.querySelector('[data-course-select="02"]').click();
+    document.querySelector('[data-course-vocab]').click();
+    const originalPlay = HTMLMediaElement.prototype.play;
+    let audio = '';
+    HTMLMediaElement.prototype.play = function () { audio = this.src; return Promise.resolve(); };
+    document.querySelector('[data-vocab-audio="ほん"]').click();
+    HTMLMediaElement.prototype.play = originalPlay;
+    return {visible:!document.getElementById('vocabView').hidden, chapter:document.getElementById('vocabChapter').value, chapters:document.getElementById('vocabChapter').options.length, cards:document.querySelectorAll('.vocab-card').length, audio:audio.endsWith('/audio/course-02-v1.mp3')};
+  })()`);
+  assert.deepEqual(vocabIntro, {visible:true, chapter:'02', chapters:14, cards:5, audio:true});
+  await evaluate(`document.getElementById('vocabView').scrollIntoView({block:'start',behavior:'instant'})`);
+  const vocabDesktopShot = path.join(os.tmpdir(), 'kana-vocab-desktop-cdp.png');
+  await screenshot(vocabDesktopShot);
+  await viewport(390, 844, true);
+  const vocabMobile = await evaluate(`({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,cards:document.querySelectorAll('.vocab-card').length})`);
+  assert.deepEqual(vocabMobile, {width:390,scrollWidth:390,cards:5});
+  const vocabMobileShot = path.join(os.tmpdir(), 'kana-vocab-mobile-cdp.png');
+  await screenshot(vocabMobileShot);
+  await evaluate(`document.getElementById('vocabGrid').scrollIntoView({block:'start',behavior:'instant'})`);
+  const vocabMobileCardsShot = path.join(os.tmpdir(), 'kana-vocab-mobile-cards-cdp.png');
+  await screenshot(vocabMobileCardsShot);
+  const vocabRun = await evaluate(`(() => {
+    document.querySelector('[data-vocab-master="ほん"]').click();
+    const picker = document.getElementById('vocabChapter');
+    picker.value = '05'; picker.dispatchEvent(new Event('change', {bubbles:true}));
+    const shared = document.querySelector('[data-vocab-master="ほん"]').getAttribute('aria-pressed') === 'true';
+    document.getElementById('vocabStart').click();
+    let answered = 0;
+    while (!document.querySelector('.vocab-practice-done') && answered < 20) {
+      const panel = document.getElementById('vocabPractice');
+      const kana = panel.querySelector('.vocab-practice-question strong').textContent;
+      if (kana === 'ほん') throw new Error('Mastered word was repeated');
+      const word = window.VocabCore.byChapter.get('05').words.find(entry => entry.kana === kana);
+      if (panel.querySelector('#vocabAnswer')) {
+        panel.querySelector('#vocabAnswer').value = word.romaji;
+        panel.querySelector('#vocabAnswerForm').requestSubmit();
+      } else {
+        [...panel.querySelectorAll('[data-vocab-choice]')].find(button => button.textContent.includes(word.meaning)).click();
+      }
+      if (!panel.querySelector('.vocab-feedback.correct')) throw new Error('Vocabulary answer rejected: ' + kana);
+      answered++;
+      panel.querySelector('[data-vocab-next]').click();
+    }
+    const saved = JSON.parse(localStorage.getItem('kana-studio-progress-v1'));
+    return {shared,answered,done:!!document.querySelector('.vocab-practice-done'),mastered:saved.vocabRecords['ほん'].manualMastered,uniqueRecords:Object.keys(saved.vocabRecords).length,courseSaved:window.CourseCore.getStatus(saved,'14')};
+  })()`);
+  assert.deepEqual(vocabRun, {shared:true,answered:8,done:true,mastered:true,uniqueRecords:5,courseSaved:'mastered'});
+  await evaluate(`document.querySelector('[data-vocab-restart]').click(); document.getElementById('vocabPractice').scrollIntoView({block:'start',behavior:'instant'})`);
+  const vocabMobilePracticeShot = path.join(os.tmpdir(), 'kana-vocab-mobile-practice-cdp.png');
+  await screenshot(vocabMobilePracticeShot);
+  await evaluate(`document.querySelector('[data-vocab-close]').click()`);
+  const vocabBackup = await evaluate(`(async () => {
+    URL.createObjectURL = blob => { window.__vocabBlob = blob; return 'blob:vocab-smoke'; };
+    HTMLAnchorElement.prototype.click = function () {};
+    document.getElementById('exportProgress').click();
+    const snapshot = JSON.parse(await window.__vocabBlob.text());
+    window.confirm = () => true;
+    document.getElementById('resetProgress').click();
+    const cleared = Object.keys(JSON.parse(localStorage.getItem('kana-studio-progress-v1')).vocabRecords).length;
+    const file = new File([JSON.stringify(snapshot)], 'vocab-progress.json', {type:'application/json'});
+    const transfer = new DataTransfer(); transfer.items.add(file);
+    const input = document.getElementById('importProgress'); input.files = transfer.files;
+    input.dispatchEvent(new Event('change', {bubbles:true}));
+    await new Promise(resolve => setTimeout(resolve, 100));
+    const restored = JSON.parse(localStorage.getItem('kana-studio-progress-v1'));
+    return {cleared,mastered:restored.vocabRecords['ほん'].manualMastered,course:window.CourseCore.getStatus(restored,'14')};
+  })()`);
+  assert.deepEqual(vocabBackup, {cleared:0,mastered:true,course:'mastered'});
+  const courseVocabCount = await evaluate(`(() => {
+    document.querySelector('[data-view="course"]').click();
+    document.querySelector('[data-course-select="05"]').click();
+    return document.querySelector('.course-vocab h4').textContent;
+  })()`);
+  assert.match(courseVocabCount, /已学会 1 个/);
   await viewport(320, 700, true);
+  const narrowVocab = await evaluate(`(() => { document.querySelector('[data-view="vocab"]').click(); return document.documentElement.scrollWidth; })()`);
+  assert.equal(narrowVocab, 320, 'vocabulary cards fit narrow phones');
+  await evaluate(`document.querySelector('[data-view="course"]').click()`);
   await evaluate(`document.querySelector('[data-course-select="10"]').click(); document.querySelector('[data-course-start="full"]').click()`);
   assert.equal(await evaluate('document.documentElement.scrollWidth'), 320, 'new course fits narrow phones');
   const manualKana = await evaluate(`(() => {
@@ -498,7 +577,7 @@ async function main() {
     return { retired, restored };
   })()`);
   assert.deepEqual(manualKana, { retired: 'retired', restored: 'learning' });
-  console.log(JSON.stringify({ passed: true, desktopShot, journeyShot, mobileJourneyShot, mobileShot, mobileChartShot, mobilePracticeShot, mobileSelfTestShot, courseFoundationShot, courseFoundationMobileListShot, courseFoundationMobileShot, courseDesktopShot, courseMobileShot, mobile, mobileJourney, mobilePractice, mobileSelfTest, narrow, courseRun, courseBackup, mobileRoute, courseMobile, manualKana }));
+  console.log(JSON.stringify({ passed: true, desktopShot, journeyShot, mobileJourneyShot, mobileShot, mobileChartShot, mobilePracticeShot, mobileSelfTestShot, courseFoundationShot, courseFoundationMobileListShot, courseFoundationMobileShot, courseDesktopShot, courseMobileShot, vocabDesktopShot, vocabMobileShot, vocabMobileCardsShot, vocabMobilePracticeShot, mobile, mobileJourney, mobilePractice, mobileSelfTest, narrow, courseRun, courseBackup, mobileRoute, courseMobile, vocabRun, vocabBackup, manualKana }));
   ws.close();
 }
 

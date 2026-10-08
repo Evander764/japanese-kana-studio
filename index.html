@@ -9,9 +9,11 @@
   <link rel="stylesheet" href="styles.css">
   <script src="kana-data.js" defer></script>
   <script src="course-data.js" defer></script>
+  <script src="vocab-core.js" defer></script>
   <script src="core.js" defer></script>
   <script src="course-core.js" defer></script>
   <script src="course-ui.js" defer></script>
+  <script src="vocab-ui.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -52,6 +54,7 @@
 
       <nav class="section-nav" aria-label="功能导航">
         <button type="button" data-view="course" class="active"><span>课程路线</span></button>
+        <button type="button" data-view="vocab"><span>单词本</span></button>
         <button type="button" data-view="learn"><span>五十音表</span></button>
         <button type="button" data-view="practice"><span>识读练习</span></button>
         <button type="button" data-view="stats"><span>学习进度</span></button>
@@ -108,6 +111,14 @@
       <section class="view" id="convertView" aria-labelledby="convertTitle" hidden>
         <div class="section-heading"><div><p class="section-kicker">CONVERT / 转换</p><h2 id="convertTitle">输入罗马字，看看它会变成什么。</h2><p>切换书写形式，直接对照平假名和片假名。</p></div></div>
         <div class="converter-layout"><div class="converter-input"><div class="converter-head"><label for="convertInput">罗马字输入</label><div class="mini-switch" role="group" aria-label="转换目标"><button type="button" data-convert-script="hiragana">平假名</button><button type="button" data-convert-script="katakana">片假名</button></div></div><textarea id="convertInput" rows="6" autocapitalize="off" spellcheck="false" placeholder="试试输入：konnichiha / juusu"></textarea></div><div class="converter-output"><span>转换结果</span><div id="convertOutput" aria-live="polite">ここに表示</div><p id="convertCandidates"></p><small>长音和同音异形可能有不同写法；练习题以题目所示字形判定。</small></div></div>
+      </section>
+      <section class="view" id="vocabView" aria-labelledby="vocabTitle" hidden>
+        <div class="section-heading"><div><p class="section-kicker">VOCABULARY / 每课单词</p><h2 id="vocabTitle">一章一页，把新词练熟。</h2><p>第 01—14 课的词卡都在这里。看字词、听发音、练读音与词义；熟悉的词可标记“已经学会”，以后练习会跳过它。</p></div></div>
+        <div class="vocab-toolbar"><label for="vocabChapter">选择章节 <select id="vocabChapter"></select></label><p id="vocabSummary"></p></div>
+        <div id="vocabGrid" class="vocab-grid"></div>
+        <p id="vocabAudioMessage" class="audio-message" role="status"></p>
+        <div class="vocab-launch"><button type="button" class="primary-button" id="vocabStart">练习本课未学会的单词 →</button><span>每词练一次读音、一次词义；学会标记跨章节生效。</span></div>
+        <div id="vocabPractice" class="vocab-practice" hidden></div>
       </section>
       <section class="view" id="courseView" aria-labelledby="courseTitle">
         <div class="section-heading"><div><p class="section-kicker">COURSE / 从零开始</p><h2 id="courseTitle">从第 00 课起，按顺序学日语。</h2><p>第 00 课认识五十音；第 01—14 课学习基础句型，每课五道不同形式的题。课程不锁关，可以按自己的进度选择。</p></div><div class="course-speed"><span>课程发音速度</span><button type="button" class="audio-speed-toggle" data-audio-speed aria-pressed="true">慢速 0.78×</button></div></div>

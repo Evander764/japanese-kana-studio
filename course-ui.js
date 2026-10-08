@@ -8,7 +8,7 @@
   const $ = id => document.getElementById(id);
   const html = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
 
-  function create({ getState, onStateChange, onFoundationNavigate, speak }) {
+  function create({ getState, onStateChange, onFoundationNavigate, onVocabNavigate, speak }) {
     const initialSelection = () => Object.keys(getState().courseRecords || {}).length
       ? course.recommendedLesson(getState())?.id || course.lessons[0].id
       : foundationId;
@@ -54,12 +54,13 @@
       const state = getState();
       const status = course.getStatus(state, lesson.id);
       const weak = course.weakQuestions(state, lesson.id);
+      const vocabMastered = lesson.vocabulary.filter(word => root.VocabCore.getStatus(state, word.kana) === 'retired').length;
       $('coursePanel').innerHTML = `<div class="course-panel-head"><p class="section-kicker">LESSON ${lesson.id} / ${html(lesson.chapter)}</p><h3>${html(lesson.title)}</h3><p>${html(lesson.goal)}</p><span class="course-badge ${status}">${statusLabels[status]}</span></div>
         <div class="course-example"><div><small>先读一遍，再听发音</small><strong lang="ja">${html(lesson.example.kana)}</strong><span>${html(lesson.example.romaji)} · ${html(lesson.example.meaning)}</span></div><button type="button" class="outline-button" data-course-audio="example">▶ 听整句</button></div>
         <p id="courseAudioMessage" class="audio-message" role="status"></p>
         <div class="course-grammar"><h4>这节要会什么</h4>${lesson.grammar.map(entry => `<div><strong lang="ja">${html(entry.pattern)}</strong><p>${html(entry.detail)}</p></div>`).join('')}</div>
-        <div class="course-vocab"><h4>先认识这些词 · 点击可听</h4><div>${lesson.vocabulary.map((entry, index) => `<button type="button" data-course-audio="v${index}" aria-label="播放 ${html(entry.kana)} 的发音"><strong lang="ja">${html(entry.kana)}</strong><span>${html(entry.meaning)}</span><small>${html(entry.romaji)}</small></button>`).join('')}</div></div>
-        <div class="course-actions"><button type="button" class="primary-button" data-course-start="full">${status === 'unseen' ? '开始五题挑战' : '重新练习五题'} →</button>${weak.length && status !== 'retired' ? `<button type="button" class="outline-button" data-course-start="review">只练 ${weak.length} 道错题</button>` : ''}<button type="button" class="text-button" data-course-master>${status === 'retired' ? '恢复自动复习' : '我已完全掌握 · 退出自动复习'}</button></div>`;
+        <div class="course-vocab"><h4>本课单词 ${lesson.vocabulary.length} 个 · 已学会 ${vocabMastered} 个</h4><div>${lesson.vocabulary.map((entry, index) => `<button type="button" data-course-audio="v${index}" aria-label="播放 ${html(entry.kana)} 的发音"><strong lang="ja">${html(entry.kana)}</strong><span>${html(entry.meaning)}</span><small>${html(entry.romaji)}</small></button>`).join('')}</div></div>
+        <div class="course-actions"><button type="button" class="primary-button" data-course-start="full">${status === 'unseen' ? '开始五题挑战' : '重新练习五题'} →</button><button type="button" class="outline-button" data-course-vocab>打开本课单词本</button>${weak.length && status !== 'retired' ? `<button type="button" class="outline-button" data-course-start="review">只练 ${weak.length} 道错题</button>` : ''}<button type="button" class="text-button" data-course-master>${status === 'retired' ? '恢复自动复习' : '我已完全掌握 · 退出自动复习'}</button></div>`;
     }
 
     function start(review) {
@@ -133,6 +134,7 @@
         select(button.dataset.courseRecommend); return;
       }
       if (button.dataset.courseFoundation) { onFoundationNavigate(button.dataset.courseFoundation); return; }
+      if (button.dataset.courseVocab !== undefined) { onVocabNavigate(selectedId); return; }
       if (button.dataset.courseStart) { start(button.dataset.courseStart === 'review'); return; }
       if (button.dataset.courseMaster !== undefined) {
         const retired = course.getStatus(getState(), selectedId) === 'retired';
