@@ -242,6 +242,17 @@
     );
   }
 
+  // Every quiz item has a replayable Japanese utterance. Fill-in and ordering
+  // answers become audible only after submission so the clip cannot solve them.
+  for (const entry of lessons) {
+    for (const question of entry.questions) {
+      question.spoken = question.type === 'listen' ? question.kana
+        : question.type === 'particle' ? question.display.replace(/\s*＿\s*/, question.answer)
+          : question.type === 'order' ? `${question.answer}。` : question.display;
+      if (!question.audio) question.audio = `audio/course-${entry.id}-${question.id.slice(3)}.mp3`;
+    }
+  }
+
   const roadmap = [];
 
   const api = Object.freeze({ lessons: Object.freeze(lessons), roadmap: Object.freeze(roadmap) });

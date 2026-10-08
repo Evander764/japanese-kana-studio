@@ -163,6 +163,9 @@ test('saved progress is sanitized without losing valid independent records', () 
   const restored = core.sanitizeState(JSON.parse(JSON.stringify(state)));
   assert.equal(restored.records[hira.id].attemptCount, 1);
   assert.equal(restored.records[kata.id].attempts[0].correct, false);
+  assert.equal(restored.showRomaji, true);
+  assert.equal(core.sanitizeState({ version: core.VERSION, records: {}, showRomaji: false }).showRomaji, false);
+  assert.equal(core.sanitizeState({ version: core.VERSION, records: {}, showRomaji: 'false' }).showRomaji, true);
   assert.equal(core.sanitizeState({ version: 999 }).questionCount, 0);
   state = core.setLearned(state, hira.id, false);
   state.practicePool = 'learned';

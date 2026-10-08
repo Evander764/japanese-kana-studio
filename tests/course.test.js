@@ -29,16 +29,16 @@ test('all fourteen beginner lessons have expanded content and matching offline a
         assert.deepEqual([...letters].sort(), [...pieces].sort(), question.id);
       }
     }
-    for (const item of [...lesson.examples, ...lesson.vocabulary, lesson.questions[4]]) {
+    for (const item of [...lesson.examples, ...lesson.vocabulary, ...lesson.questions]) {
       const file = item.audio;
       assert.ok(fs.statSync(path.join(__dirname, '..', file)).size > 1000, file);
       const recording = recordings.get(path.basename(file));
-      assert.equal(recording?.kana, item.kana, file + ' must match its displayed text');
+      assert.equal(recording?.kana, item.spoken || item.kana, file + ' must match its spoken text');
       assert.ok(recording.seconds > 0.2 && recording.phonemes.length > 0, file);
       usedAudio.push(path.basename(file));
     }
   }
-  assert.equal(manifest.length, 294);
+  assert.equal(manifest.length, 392);
   assert.equal(recordings.size, usedAudio.length);
   assert.deepEqual([...recordings.keys()].sort(), usedAudio.sort());
   assert.equal(data.roadmap.length, 0);

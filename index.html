@@ -22,6 +22,7 @@
     <header class="site-header">
       <div class="brand"><span class="brand-mark" aria-hidden="true">あ</span><span><strong>日语起步</strong><small>从零开始学日语</small></span></div>
       <p class="header-path" id="headerPath">第 00—14 课 · 从五十音到基础句子</p>
+      <button type="button" class="romaji-toggle" id="romajiToggle" aria-pressed="true">隐藏罗马音</button>
       <div class="mode-switch" id="modeSwitch" role="group" aria-label="学习专区" hidden>
         <button type="button" data-mode="hiragana">平假名</button>
         <button type="button" data-mode="katakana">片假名</button>
@@ -139,9 +140,9 @@
       <div class="detail-glyph" id="detailGlyph">あ</div>
       <h2 id="detailTitle">あ</h2>
       <div id="detailAnswer" class="detail-answer">
-        <p class="reading-label">读作</p><p id="detailRomaji" class="detail-romaji">a</p>
+        <p class="reading-label" data-romaji>读作</p><p id="detailRomaji" class="detail-romaji" data-romaji>a</p>
         <p id="detailMeaning" class="detail-meaning" hidden></p><p id="detailRhythm" class="detail-rhythm" hidden></p>
-        <p id="detailAliases" class="detail-aliases"></p><p id="detailNote" class="detail-note"></p>
+        <p id="detailAliases" class="detail-aliases" data-romaji></p><p id="detailNote" class="detail-note"></p>
         <div class="detail-learn-audio"><button type="button" class="outline-button" id="detailAudio">▶ 听发音</button><button type="button" class="audio-speed-toggle" data-audio-speed aria-pressed="true">慢速 0.78×</button></div>
         <p id="detailAudioMessage" class="audio-message" role="status"></p>
       </div>

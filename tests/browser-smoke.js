@@ -82,6 +82,24 @@ async function main() {
   assert.equal(await evaluate('document.getElementById("countTotal").textContent'), '117');
   const desktopShot = path.join(os.tmpdir(), 'kana-desktop-cdp.png');
   await screenshot(desktopShot);
+  const readingToggle = await evaluate(`(() => {
+    const button = document.getElementById('romajiToggle');
+    document.querySelector('[data-view="learn"]').click();
+    const kanaReading = document.querySelector('.card-reading');
+    const initiallyVisible = getComputedStyle(kanaReading).display !== 'none';
+    button.click();
+    const kanaHidden = getComputedStyle(kanaReading).display === 'none';
+    document.querySelector('[data-view="course"]').click();
+    document.querySelector('[data-course-select="01"]').click();
+    const exampleHidden = getComputedStyle(document.querySelector('.course-example [data-romaji]')).display === 'none';
+    document.querySelector('[data-view="vocab"]').click();
+    const vocabHidden = getComputedStyle(document.querySelector('.vocab-reading')).display === 'none';
+    const savedHidden = JSON.parse(localStorage.getItem('kana-studio-progress-v1')).showRomaji === false;
+    button.click();
+    const restored = getComputedStyle(document.querySelector('.vocab-reading')).display !== 'none';
+    return {initiallyVisible,kanaHidden,exampleHidden,vocabHidden,savedHidden,restored,pressed:button.getAttribute('aria-pressed')};
+  })()`);
+  assert.deepEqual(readingToggle, {initiallyVisible:true,kanaHidden:true,exampleHidden:true,vocabHidden:true,savedHidden:true,restored:true,pressed:'true'});
 
   const direct = await evaluate(`(() => {
     document.getElementById('heroPractice').click();
@@ -275,6 +293,8 @@ async function main() {
   assert.equal(mobile.width, 390);
   assert.equal(mobile.cardCount, 46);
   assert.ok(mobile.scrollWidth <= mobile.width, `horizontal overflow: ${mobile.scrollWidth} > ${mobile.width}`);
+  const mobileToggle = await evaluate(`(() => { const el = document.getElementById('romajiToggle'); const box = el.getBoundingClientRect(); const brand = document.querySelector('.brand').getBoundingClientRect(); return {x:box.x,y:box.y,width:box.width,height:box.height,display:getComputedStyle(el).display,brandRight:brand.right,topElement:document.elementFromPoint(box.x+box.width/2,box.y+box.height/2)?.id}; })()`);
+  assert.ok(mobileToggle.x >= 0 && mobileToggle.x + mobileToggle.width <= 390 && mobileToggle.y >= 0 && mobileToggle.y < 100 && mobileToggle.topElement === 'romajiToggle' && mobileToggle.x >= mobileToggle.brandRight, 'romaji toggle visible in mobile header: ' + JSON.stringify(mobileToggle));
   const mobileShot = path.join(os.tmpdir(), 'kana-mobile-cdp.png');
   await screenshot(mobileShot);
   await evaluate('document.getElementById("learnView").scrollIntoView({block:"start",behavior:"instant"})');
@@ -350,7 +370,16 @@ async function main() {
   const courseRun = await evaluate(`(() => {
     document.querySelector('[data-course-start="full"]').click();
     const lesson = window.CourseData.lessons[0];
+    const originalPlay = HTMLMediaElement.prototype.play;
+    let played = '';
+    HTMLMediaElement.prototype.play = function () { played = this.src; return Promise.resolve(); };
     for (const question of lesson.questions) {
+      const promptAudio = document.querySelector('[data-course-audio="question"], [data-course-audio="listen"]');
+      if (['meaning', 'read', 'listen'].includes(question.type)) {
+        if (!promptAudio) throw new Error('Missing question audio button: ' + question.id);
+        promptAudio.click();
+        if (!played.endsWith('/' + question.audio)) throw new Error('Wrong prompt audio: ' + question.id);
+      } else if (promptAudio) throw new Error('Answer revealed by audio before submission: ' + question.id);
       if (question.id === '01-q1') document.getElementById('courseView').dispatchEvent(new KeyboardEvent('keydown', {key:'2', bubbles:true}));
       else if (question.type === 'meaning') document.querySelector('[data-course-choice="' + question.options.indexOf(question.answer) + '"]').click();
       else if (question.type === 'particle' || question.type === 'listen') {
@@ -371,8 +400,13 @@ async function main() {
         document.getElementById('courseReadInput').value = question.answers[0];
         document.getElementById('courseReadForm').requestSubmit();
       }
+      if (['particle', 'order'].includes(question.type)) {
+        document.querySelector('.course-answer [data-course-audio="question"]').click();
+        if (!played.endsWith('/' + question.audio)) throw new Error('Wrong answer audio: ' + question.id);
+      }
       document.querySelector('[data-course-next]').click();
     }
+    HTMLMediaElement.prototype.play = originalPlay;
     const state = JSON.parse(localStorage.getItem('kana-studio-progress-v1'));
     const mastered = window.CourseCore.getStatus(state, '01');
     const reviewCount = document.querySelector('[data-course-start="review"]')?.textContent;
@@ -414,7 +448,7 @@ async function main() {
     const completed = [];
     for (const lesson of window.CourseData.lessons.slice(8)) {
       document.querySelector('[data-course-select="' + lesson.id + '"]').click();
-      for (const item of [...lesson.examples, ...lesson.vocabulary, lesson.questions[4]]) {
+      for (const item of [...lesson.examples, ...lesson.vocabulary, ...lesson.questions]) {
         await new Promise((resolve, reject) => {
           const audio = new Audio(item.audio);
           audio.onloadedmetadata = () => audio.duration > 0.2 ? resolve() : reject(new Error('Empty audio: ' + item.audio));

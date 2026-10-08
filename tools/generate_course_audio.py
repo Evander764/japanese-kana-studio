@@ -32,8 +32,8 @@ def entries(lesson_ids=None):
             yield f'course-{lesson["id"]}-example-{number}.mp3', example["kana"]
         for word in lesson["vocabulary"]:
             yield Path(word["audio"]).name, word["kana"]
-        listening = next(question for question in lesson["questions"] if question["type"] == "listen")
-        yield Path(listening["audio"]).name, listening["kana"]
+        for question in lesson["questions"]:
+            yield Path(question["audio"]).name, question["spoken"]
 
 
 def main():

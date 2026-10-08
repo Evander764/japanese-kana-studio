@@ -189,3 +189,14 @@
 @media(max-width:700px){.vocab-toolbar{align-items:flex-start;flex-direction:column;gap:8px}.vocab-toolbar label{align-items:flex-start;flex-direction:column;gap:5px;width:100%}.vocab-toolbar select{width:100%}.vocab-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.vocab-card{min-height:225px;padding:12px}.vocab-card>strong{font-size:23px}.vocab-card-actions button{font-size:10px;padding:5px 7px}.vocab-practice{padding:18px}.vocab-practice-question{align-items:flex-start;flex-direction:column;gap:8px}.vocab-practice-question strong{font-size:32px}}
 @media(max-width:350px){.vocab-grid{grid-template-columns:1fr}}
 @media(max-width:700px){.course-example-list{grid-template-columns:1fr}.course-example-list .course-example:first-child{grid-column:auto}}
+
+.romaji-toggle{flex:none;min-height:38px;padding:7px 13px;border:1px solid #b9d0c5;border-radius:999px;background:var(--white);color:var(--teal);font-size:12px;font-weight:800;white-space:nowrap}
+.romaji-toggle:hover{background:#e8f1eb}
+.romaji-toggle[aria-pressed=false]{background:#e8f1eb}
+.hide-romaji [data-romaji]{display:none!important}
+.card-reading{display:block;color:var(--teal);font-size:12px;font-weight:800;line-height:1.2;overflow-wrap:anywhere}
+.course-question-audio{display:flex;justify-content:flex-end;margin:-9px 0 17px}
+.course-question-audio .outline-button,.course-answer .outline-button{min-height:37px;padding:6px 11px;font-size:11px}
+.course-answer .outline-button{margin:8px 8px 0 0}
+@media(max-width:700px){.site-header{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px}.brand{min-width:0}.header-path,.mode-switch{grid-column:1/-1}.romaji-toggle{grid-column:2;grid-row:1}.card-reading{font-size:10px}.course-question-audio{justify-content:flex-start}}
+@media(max-width:350px){.romaji-toggle{font-size:11px;padding:6px 9px}.brand strong{font-size:15px}}

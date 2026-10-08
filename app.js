@@ -37,6 +37,9 @@
   function describe(item) { return `${item.group === 'special' ? item.row : labels[item.group]} · ${labels[item.script]}`; }
   function renderControls() {
     const courseArea = view === 'course' || view === 'vocab';
+    document.body.classList.toggle('hide-romaji', !state.showRomaji);
+    $('romajiToggle').textContent = state.showRomaji ? '隐藏罗马音' : '显示罗马音';
+    $('romajiToggle').setAttribute('aria-pressed', String(state.showRomaji));
     $('headerPath').hidden = !courseArea;
     $('modeSwitch').hidden = courseArea;
     document.querySelector('.overview').hidden = courseArea;
@@ -96,10 +99,11 @@
         const open = document.createElement('button'); open.type = 'button'; open.className = 'card-open';
         open.dataset.openId = item.id; open.setAttribute('aria-label', `${item.kana}，${labels[status]}，打开学习卡片`);
         const glyph = document.createElement('span'); glyph.className = 'card-kana'; glyph.textContent = item.kana;
+        const reading = document.createElement('span'); reading.className = 'card-reading'; reading.dataset.romaji = ''; reading.textContent = item.romaji;
         const meta = document.createElement('span'); meta.className = 'card-meta';
         const statusText = document.createElement('span'); statusText.textContent = labels[status];
         const dot = document.createElement('span'); dot.className = `status-dot ${status}`; dot.setAttribute('aria-hidden', 'true');
-        meta.append(statusText, dot); open.append(glyph, meta);
+        meta.append(statusText, dot); open.append(glyph, reading, meta);
         const mark = document.createElement('button'); mark.type = 'button'; mark.className = 'card-mark';
         mark.dataset.markId = item.id;
         mark.setAttribute('aria-pressed', String(status !== 'unseen'));
@@ -136,6 +140,10 @@
       cells.forEach((value, index) => {
         const td = document.createElement('td');
         if (index === 2) { const tag = document.createElement('span'); tag.className = `status-tag ${status}`; tag.textContent = value; td.append(tag); }
+        else if (index === 1) {
+          const reading = document.createElement('span'); reading.dataset.romaji = ''; reading.textContent = `${item.romaji} / `;
+          td.append(reading, document.createTextNode(item.group === 'special' ? item.row : labels[item.group]));
+        }
         else td.textContent = value;
         tr.append(td);
       });
@@ -226,6 +234,12 @@
     $('detailMaster').textContent = retired ? '恢复自动复习' : '确认学会 · 停止复习';
     $('detailNext').hidden = !modeItems().some(item => item.id !== detailItem.id && core.getStatus(state, item.id) === 'unseen');
   }
+  function setReadingFeedback(element, message, item, suffix = '') {
+    const reading = document.createElement('span');
+    reading.dataset.romaji = '';
+    reading.textContent = ` ${item.kana} 读作 ${item.romaji}。`;
+    element.replaceChildren(document.createTextNode(message), reading, document.createTextNode(suffix));
+  }
   function startSelfTest() {
     if (!detailItem) return;
     selfTestActive = true; selfTestAnswered = false;
@@ -251,7 +265,7 @@
     persist(); selfTestAnswered = true;
     $('detailInput').disabled = true;
     const feedback = $('detailFeedback'); feedback.hidden = false; feedback.classList.toggle('wrong', !correct);
-    feedback.textContent = correct ? `答对了。${detailItem.kana} 读作 ${detailItem.romaji}。` : `这次没答对。${detailItem.kana} 读作 ${detailItem.romaji}；已加入练习题库。`;
+    setReadingFeedback(feedback, correct ? '答对了。' : '这次没答对。', detailItem, correct ? '' : '已加入练习题库。');
     renderDetail(); renderOverview(); renderLearn(); renderStats();
     if (correct && nextUnseen(true, true)) return;
     $('detailStart').focus({ preventScroll: true });
@@ -309,7 +323,8 @@
     $('previousAnswer').hidden = !previousItem;
     $('previousAudioMessage').textContent = '';
     if (!previousItem) return;
-    $('previousReading').textContent = `${previousItem.kana} · ${previousItem.romaji}`;
+    const reading = document.createElement('span'); reading.dataset.romaji = ''; reading.textContent = ` · ${previousItem.romaji}`;
+    $('previousReading').replaceChildren(document.createTextNode(previousItem.kana), reading);
     $('previousMeaning').textContent = previousItem.meaning
       ? `${previousItem.meaning}｜${previousItem.rhythm}` : describe(previousItem);
   }
@@ -327,7 +342,7 @@
     persist(); questionAnswered = true;
     $('practiceInput').disabled = true;
     const feedback = $('practiceFeedback'); feedback.hidden = false; feedback.classList.toggle('wrong', !correct);
-    feedback.textContent = correct ? `答对了！${question.kana} 读作 ${question.romaji}。` : revealed ? `已记作一次未答对。${question.kana} 读作 ${question.romaji}。` : `再记住它：${question.kana} 读作 ${question.romaji}。`;
+    setReadingFeedback(feedback, correct ? '答对了！' : revealed ? '已记作一次未答对。' : '再记住它：', question);
     $('questionExplanation').hidden = !question.meaning;
     $('questionExplanation').textContent = question.meaning ? `意思：${question.meaning}｜节拍：${question.rhythm}` : '';
     $('showAnswer').hidden = true; $('nextQuestion').hidden = false;
@@ -411,6 +426,10 @@
     state.audioSpeed = state.audioSpeed === 'slow' ? 'normal' : 'slow';
     persist(); renderControls();
   }));
+  $('romajiToggle').addEventListener('click', () => {
+    state.showRomaji = !state.showRomaji;
+    persist(); renderControls();
+  });
   $('practiceGroup').addEventListener('change', event => { practiceGroup = event.target.value === 'all' ? null : event.target.value; previousItem = null; setQuestion(); });
   $('heroLearn').addEventListener('click', () => setView('learn'));
   $('heroPractice').addEventListener('click', () => { state.practicePool = 'all'; persist(); setView('practice'); });
