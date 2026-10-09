@@ -24,7 +24,12 @@
   }
 
   function lookup(reading) { return data[reading] || null; }
-  function label(accent) { return accent === 0 ? '0 型 · 词内不降调' : `${accent} 型 · 第 ${accent} 拍后下降`; }
+  function label(accent, reading = '') {
+    if (accent === 0) return '0 型 · 词内不降调';
+    return accent === splitMoras(reading).length
+      ? `${accent} 型 · 末拍后下降（单独读词听不出降调）`
+      : `${accent} 型 · 第 ${accent} 拍后下降`;
+  }
   const api = { data, lookup, splitMoras, pattern, label };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   root.PitchCore = api;

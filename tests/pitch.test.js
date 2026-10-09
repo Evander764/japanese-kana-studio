@@ -22,4 +22,5 @@ test('mora splitting and Tokyo pitch contours mark the actual drop', () => {
   assert.deepEqual(pitch.pattern('がくせい', 0).map(item => item.level), ['low', 'high', 'high', 'high']);
   assert.deepEqual(pitch.pattern('にほん', 2).map(item => [item.level, item.dropAfter]), [['low', false], ['high', true], ['low', false]]);
   assert.deepEqual(pitch.pattern('くつ', 2).map(item => [item.level, item.dropAfter]), [['low', false], ['high', true]]);
+  assert.equal(pitch.label(2, 'くつ'), '2 型 · 末拍后下降（单独读词听不出降调）');
 });
