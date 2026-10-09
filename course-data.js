@@ -253,6 +253,14 @@
     }
   }
 
+  const guides = root.CourseGuide || (typeof require === 'function' ? require('./course-guide.js') : {});
+  for (const entry of lessons) {
+    if (!guides[entry.id] || guides[entry.id].length !== entry.grammar.length) {
+      throw new Error(`Incomplete teaching guide for lesson ${entry.id}`);
+    }
+    entry.guide = guides[entry.id];
+  }
+
   const roadmap = [];
 
   const api = Object.freeze({ lessons: Object.freeze(lessons), roadmap: Object.freeze(roadmap) });

@@ -53,6 +53,25 @@
         <div class="course-actions"><button type="button" class="primary-button" data-course-foundation-complete="true">${complete ? '继续第 01 课' : '学完了，继续第 01 课'} →</button>${getState().foundationCompleted && started < 92 ? '<button type="button" class="text-button" data-course-foundation-complete="false">重新标记为学习中</button>' : ''}</div>`;
     }
 
+    function guideSample(lesson, reference) {
+      const match = /^([eqv])(\d+)$/.exec(reference);
+      if (!match) return null;
+      const index = Number(match[2]);
+      if (match[1] === 'e') return lesson.examples[index] || null;
+      if (match[1] === 'v') return lesson.vocabulary[index] || null;
+      const question = lesson.questions[index];
+      return question ? { kana: question.spoken, audio: question.audio, kind: 'word' } : null;
+    }
+
+    function renderGuide(lesson) {
+      return `<section class="course-guide" aria-label="本课知识讲解"><div class="course-guide-intro"><h4>这节课要会什么</h4><p>按顺序看规则，再播放每个例子。先听一遍，跟读一遍，最后遮住中文试着自己说。</p></div>${lesson.guide.map((guide, guideIndex) => `<article class="course-guide-item"><header><span>知识点 ${String(guideIndex + 1).padStart(2, '0')}</span><h5 lang="ja">${html(lesson.grammar[guideIndex].pattern)}</h5></header><p class="course-guide-explain">${html(guide.explain)}</p><div class="course-guide-steps"><strong>怎么说</strong><ol>${guide.steps.map(step => `<li>${html(step)}</li>`).join('')}</ol></div><div class="course-guide-samples"><strong>听例子 · 跟着说</strong><div>${guide.samples.map(([reference, meaning, note, romanization], sampleIndex) => {
+        const sample = guideSample(lesson, reference);
+        if (!sample) throw new Error(`Missing guide sample ${lesson.id}: ${reference}`);
+        const reading = romanization || sample.romaji;
+        return `<div class="course-guide-sample"><p lang="ja">${html(sample.kana)}</p>${reading ? `<small data-romaji>${html(reading)}</small>` : ''}<span>${html(meaning)}</span><small>${html(note)}</small><button type="button" class="outline-button" data-course-audio="guide${guideIndex}-${sampleIndex}" aria-label="播放 ${html(sample.kana)}">▶ 听读音</button><p id="courseGuideAudioMessage-${guideIndex}-${sampleIndex}" class="audio-message" role="status"></p></div>`;
+      }).join('')}</div></div><p class="course-guide-caution"><strong>容易弄错</strong>${html(guide.caution)}</p></article>`).join('')}</section>`;
+    }
+
     function renderIntro() {
       const lesson = selected();
       const state = getState();
@@ -60,9 +79,10 @@
       const weak = course.weakQuestions(state, lesson.id);
       const vocabMastered = lesson.vocabulary.filter(word => root.VocabCore.getStatus(state, word.kana) === 'retired').length;
       $('coursePanel').innerHTML = `<div class="course-panel-head"><p class="section-kicker">LESSON ${lesson.id} / ${html(lesson.chapter)}</p><h3>${html(lesson.title)}</h3><p>${html(lesson.goal)}</p><span class="course-badge ${status}">${statusLabels[status]}</span></div>
+        ${renderGuide(lesson)}
+        <div class="course-example-intro"><h4>学完句型，再连起来听三句</h4><p>试着不看中文先听，听完再用本课规则复述。</p></div>
         <div class="course-example-list">${lesson.examples.map((entry, index) => `<div class="course-example"><div><small>例句 ${index + 1} · 先读一遍，再听发音</small><strong lang="ja">${html(entry.kana)}</strong><span data-romaji>${html(entry.romaji)}</span><span>${html(entry.meaning)}</span></div><button type="button" class="outline-button" data-course-audio="example${index}">▶ 听整句</button></div>`).join('')}</div>
         <p id="courseAudioMessage" class="audio-message" role="status"></p>
-        <div class="course-grammar"><h4>这节要会什么</h4>${lesson.grammar.map(entry => `<div><strong lang="ja">${html(entry.pattern)}</strong><p>${html(entry.detail)}</p></div>`).join('')}</div>
         <div class="course-vocab"><h4>本课单词 ${lesson.vocabulary.length} 个 · 已学会 ${vocabMastered} 个</h4><div>${lesson.vocabulary.map((entry, index) => `<button type="button" data-course-audio="v${index}" aria-label="播放 ${html(entry.kana)} 的合成读音"><strong lang="ja">${html(entry.kana)}</strong><span>${html(entry.meaning)}</span><small data-romaji>${html(entry.romaji)}</small></button>`).join('')}</div></div>
         <div class="course-actions"><button type="button" class="primary-button" data-course-start="full">${status === 'unseen' ? '开始八题挑战' : '重新练习八题'} →</button><button type="button" class="outline-button" data-course-vocab>打开本课单词本</button>${weak.length && status !== 'retired' ? `<button type="button" class="outline-button" data-course-start="review">只练 ${weak.length} 道错题</button>` : ''}<button type="button" class="text-button" data-course-master>${status === 'retired' ? '恢复自动复习' : '我已完全掌握 · 退出自动复习'}</button></div>`;
     }
@@ -159,8 +179,10 @@
         const kind = button.dataset.courseAudio;
         const question = session?.questions[session.index];
         if (kind === 'question' && !session.answered && ['particle', 'order'].includes(question.type)) return;
-        const item = kind.startsWith('example') ? lesson.examples[Number(kind.slice(7))] : kind === 'listen' || kind === 'question' ? { kind: 'word', kana: question.spoken, audio: question.audio } : lesson.vocabulary[Number(kind.slice(1))];
-        if (item) speak(item, 'courseAudioMessage'); return;
+        const guideMatch = /^guide(\d+)-(\d+)$/.exec(kind);
+        const sample = guideMatch && lesson.guide[Number(guideMatch[1])]?.samples[Number(guideMatch[2])];
+        const item = guideMatch ? sample && guideSample(lesson, sample[0]) : kind.startsWith('example') ? lesson.examples[Number(kind.slice(7))] : kind === 'listen' || kind === 'question' ? { kind: 'word', kana: question.spoken, audio: question.audio } : lesson.vocabulary[Number(kind.slice(1))];
+        if (item) speak(item, guideMatch ? `courseGuideAudioMessage-${guideMatch[1]}-${guideMatch[2]}` : 'courseAudioMessage'); return;
       }
       if (!session || session.answered) {
         if (button.dataset.courseNext !== undefined) advance();

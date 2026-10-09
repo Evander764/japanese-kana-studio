@@ -80,6 +80,34 @@ test('existing progress continues to lesson 09 and new lesson results survive im
   assert.deepEqual(core.weakQuestions(state, '14').map(question => question.type), ['order', 'order']);
 });
 
+test('every teaching point has substantial guidance and two playable, matching examples', () => {
+  const manifest = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'audio', 'course-manifest.json'), 'utf8'));
+  const recordings = new Map(manifest.map(entry => [entry.file, entry]));
+  let points = 0;
+  for (const lesson of data.lessons) {
+    assert.equal(lesson.guide.length, lesson.grammar.length, lesson.id);
+    for (const guide of lesson.guide) {
+      points++;
+      assert.ok(guide.explain.length >= 35, `${lesson.id}: explain`);
+      assert.ok(guide.steps.length >= 2 && guide.steps.every(step => step.length >= 10), `${lesson.id}: steps`);
+      assert.ok(guide.caution.length >= 20, `${lesson.id}: caution`);
+      assert.ok(guide.samples.length >= 2, `${lesson.id}: samples`);
+      assert.ok(guide.explain.length + guide.steps.join('').length + guide.caution.length + guide.samples.flat().join('').length >= 150, `${lesson.id}: lesson depth`);
+      for (const [reference, meaning, note, romanization] of guide.samples) {
+        const [, source, indexText] = /^([eqv])(\d+)$/.exec(reference) || [];
+        assert.ok(source, `${lesson.id}: ${reference}`);
+        const item = source === 'e' ? lesson.examples[Number(indexText)]
+          : source === 'v' ? lesson.vocabulary[Number(indexText)] : lesson.questions[Number(indexText)];
+        assert.ok(item && meaning.length >= 2 && note.length >= 10, `${lesson.id}: ${reference}`);
+        assert.ok((romanization || item.romaji)?.length >= 3, `${lesson.id}: ${reference} needs optional romaji`);
+        const recording = recordings.get(path.basename(item.audio));
+        assert.equal(recording?.kana, item.spoken || item.kana, `${lesson.id}: ${reference}`);
+      }
+    }
+  }
+  assert.equal(points, 30);
+});
+
 test('automatic mastery requires seven correct including production tasks and can regress', () => {
   let state = kanaCore.newState();
   const ids = data.lessons[0].questions.map(question => question.id);

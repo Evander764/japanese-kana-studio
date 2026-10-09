@@ -6,17 +6,18 @@
   <meta name="description" content="日语起步：沿课程路线学习日语，五十音是第 00 课。支持离线发音，学习进度保存在本机。">
   <meta name="theme-color" content="#f5f2eb">
   <title>日语起步 · 从零开始学日语</title>
-  <link rel="stylesheet" href="styles.css?v=20261009-pitchclarity1">
+  <link rel="stylesheet" href="styles.css?v=20261009-guide1">
   <script src="kana-data.js" defer></script>
   <script src="course-enrichment.js" defer></script>
-  <script src="course-data.js" defer></script>
+  <script src="course-guide.js?v=20261009-guide1" defer></script>
+  <script src="course-data.js?v=20261009-guide1" defer></script>
   <script src="pitch-data.js" defer></script>
   <script src="pitch-core.js?v=20261009-pitchclarity1" defer></script>
   <script src="pitch-ui.js?v=20261009-pitchclarity1" defer></script>
   <script src="vocab-core.js" defer></script>
   <script src="core.js" defer></script>
   <script src="course-core.js" defer></script>
-  <script src="course-ui.js?v=20261009-pitchclarity1" defer></script>
+  <script src="course-ui.js?v=20261009-guide1" defer></script>
   <script src="vocab-ui.js?v=20261009-pitchclarity1" defer></script>
   <script src="app.js?v=20261009-interface1" defer></script>
 </head>
@@ -132,7 +133,7 @@
       </section>
       <section class="view route-catalog" id="courseView" aria-labelledby="courseTitle" hidden>
         <div class="lesson-breadcrumb"><button type="button" class="text-button" id="lessonBack">← 返回课程目录</button><span id="lessonBreadcrumb"></span></div>
-        <div class="section-heading"><div><p class="section-kicker">COURSE / 学习路线</p><h2 id="courseTitle">按自己的节奏，接着往下学。</h2><p>第 00 课是五十音；之后按课程编号继续。随时可以回看旧课，也可以直接选择想学的一课。</p></div><div class="course-speed"><span>课程发音速度</span><div class="audio-speed-control" role="group" aria-label="课程发音速度"><button type="button" data-audio-speed="normal" aria-pressed="true">正常 1×</button><button type="button" data-audio-speed="slow" aria-pressed="false">慢速 0.78×</button></div></div></div>
+        <div class="section-heading"><div><p class="section-kicker">COURSE / 学习路线</p><h2 id="courseTitle">按自己的节奏，接着往下学。</h2><p>第 00 课是五十音；第 01—14 课逐点讲解句型，配有可跟读示例和练习。随时可以回看旧课。</p></div><div class="course-speed"><span>课程发音速度</span><div class="audio-speed-control" role="group" aria-label="课程发音速度"><button type="button" data-audio-speed="normal" aria-pressed="true">正常 1×</button><button type="button" data-audio-speed="slow" aria-pressed="false">慢速 0.78×</button></div></div></div>
         <div class="course-overview" id="courseOverview"></div>
         <div class="course-layout"><nav id="courseList" class="course-list" aria-label="基础课程列表"></nav><div id="coursePanel" class="course-panel"></div></div>
         <section class="course-roadmap" aria-labelledby="roadmapTitle"><p class="section-kicker">NEXT / 后续路线</p><h3 id="roadmapTitle">学完这些，再继续向前</h3><div id="courseRoadmap"></div></section>
