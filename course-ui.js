@@ -64,7 +64,7 @@
     }
 
     function renderGuide(lesson) {
-      return `<section class="course-guide" aria-label="本课知识讲解"><div class="course-guide-intro"><h4>这节课要会什么</h4><p>按顺序看规则，再播放每个例子。先听一遍，跟读一遍，最后遮住中文试着自己说。</p></div>${lesson.guide.map((guide, guideIndex) => `<article class="course-guide-item"><header><span>知识点 ${String(guideIndex + 1).padStart(2, '0')}</span><h5 lang="ja">${html(lesson.grammar[guideIndex].pattern)}</h5></header><p class="course-guide-explain">${html(guide.explain)}</p><div class="course-guide-steps"><strong>怎么说</strong><ol>${guide.steps.map(step => `<li>${html(step)}</li>`).join('')}</ol></div><div class="course-guide-samples"><strong>听例子 · 跟着说</strong><div>${guide.samples.map(([reference, meaning, note, romanization], sampleIndex) => {
+      return `<section class="course-guide" aria-label="本课知识讲解"><div class="course-guide-intro"><h4>这节课要会什么</h4><p>按顺序看规则，再播放每个例子。先听一遍，跟读一遍，最后试着不看中文自己说。</p></div>${lesson.guide.map((guide, guideIndex) => `<article class="course-guide-item"><header><span>知识点 ${String(guideIndex + 1).padStart(2, '0')}</span><h5 lang="ja">${html(lesson.grammar[guideIndex].pattern)}</h5></header><p class="course-guide-explain">${html(guide.explain)}</p><div class="course-guide-steps"><strong>怎么说</strong><ol>${guide.steps.map(step => `<li>${html(step)}</li>`).join('')}</ol></div><div class="course-guide-samples"><strong>听例子 · 跟着说</strong><div>${guide.samples.map(([reference, meaning, note, romanization], sampleIndex) => {
         const sample = guideSample(lesson, reference);
         if (!sample) throw new Error(`Missing guide sample ${lesson.id}: ${reference}`);
         const reading = romanization || sample.romaji;

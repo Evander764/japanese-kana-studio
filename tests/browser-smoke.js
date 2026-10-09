@@ -378,6 +378,12 @@ async function main() {
   await waitForApp();
   const narrow = await evaluate('({ width: innerWidth, scrollWidth: document.documentElement.scrollWidth })');
   assert.ok(narrow.scrollWidth <= narrow.width, `narrow mobile overflow: ${narrow.scrollWidth} > ${narrow.width}`);
+  await send('Page.navigate', { url: pageUrl + '#lesson/13' });
+  await waitForApp();
+  const narrowGuide = await evaluate(`({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,points:document.querySelectorAll('.course-guide-item').length})`);
+  assert.deepEqual(narrowGuide, {width:320,scrollWidth:320,points:3});
+  await send('Page.navigate', { url: pageUrl });
+  await waitForApp();
   await viewport(1365, 900, false);
   const courseIntro = await evaluate(`(() => {
     document.getElementById('heroCourse').click();
@@ -429,6 +435,34 @@ async function main() {
     return count;
   })()`);
   assert.equal(sentencePlayCount, 1, 'course sentences play once at the selected speed');
+  const guideUI = await evaluate(`(() => {
+    const originalPlay = HTMLMediaElement.prototype.play;
+    let source = '';
+    HTMLMediaElement.prototype.play = function () { source = new URL(this.src).pathname; return Promise.resolve(); };
+    document.querySelector('[data-course-audio="guide1-0"]').click();
+    const message = document.getElementById('courseGuideAudioMessage-1-0').textContent;
+    HTMLMediaElement.prototype.play = originalPlay;
+    const reading = document.querySelector('.course-guide-sample [data-romaji]');
+    document.getElementById('romajiToggle').click();
+    const hidden = getComputedStyle(reading).display === 'none';
+    document.getElementById('romajiToggle').click();
+    const restored = getComputedStyle(reading).display !== 'none';
+    let points = 0; let samples = 0;
+    for (const lesson of window.CourseData.lessons) {
+      document.querySelector('[data-course-select="' + lesson.id + '"]').click();
+      points += document.querySelectorAll('.course-guide-item').length;
+      samples += document.querySelectorAll('.course-guide-sample [data-course-audio]').length;
+      if (document.documentElement.scrollWidth > innerWidth) throw new Error('Guide overflows: ' + lesson.id);
+    }
+    document.querySelector('[data-course-select="01"]').click();
+    return {source, message, hidden, restored, points, samples};
+  })()`);
+  assert.ok(guideUI.source.endsWith('/audio/course-01-q1.mp3'));
+  assert.match(guideUI.message, /正常语速/);
+  assert.deepEqual({hidden:guideUI.hidden,restored:guideUI.restored,points:guideUI.points,samples:guideUI.samples}, {hidden:true,restored:true,points:30,samples:60});
+  await evaluate(`document.querySelector('.course-guide').scrollIntoView({block:'start',behavior:'instant'})`);
+  const guideDesktopShot = path.join(os.tmpdir(), 'kana-course-guide-desktop-cdp.png');
+  await screenshot(guideDesktopShot);
   await evaluate('document.getElementById("courseView").scrollIntoView({block:"start",behavior:"instant"})');
   const courseDesktopShot = path.join(os.tmpdir(), 'kana-course-desktop-cdp.png');
   await screenshot(courseDesktopShot);
@@ -585,6 +619,9 @@ async function main() {
   assert.deepEqual(courseMobile, { width: 390, scrollWidth: 390, title: '这里可以拍照吗' });
   const courseMobileShot = path.join(os.tmpdir(), 'kana-course-mobile-cdp.png');
   await screenshot(courseMobileShot);
+  await evaluate(`document.querySelector('.course-guide').scrollIntoView({block:'start',behavior:'instant'})`);
+  const guideMobileShot = path.join(os.tmpdir(), 'kana-course-guide-mobile-cdp.png');
+  await screenshot(guideMobileShot);
   await viewport(1365, 900, false);
   const vocabIntro = await evaluate(`(() => {
     document.querySelector('[data-course-select="02"]').click();
@@ -686,7 +723,7 @@ async function main() {
     return { retired, restored };
   })()`);
   assert.deepEqual(manualKana, { retired: 'retired', restored: 'learning' });
-  console.log(JSON.stringify({ passed: true, desktopShot, mobileHomeShot, mobileToolsShot, catalogShot, continuedShot, journeyShot, mobileJourneyShot, mobileShot, mobileChartShot, mobilePracticeShot, mobileSelfTestShot, courseFoundationShot, courseFoundationMobileListShot, courseFoundationMobileShot, courseDesktopShot, courseMobileShot, vocabDesktopShot, vocabMobileShot, vocabMobileCardsShot, vocabMobilePracticeShot, mobile, mobileJourney, mobilePractice, mobileSelfTest, narrow, courseRun, courseBackup, mobileRoute, courseMobile, vocabRun, vocabBackup, manualKana }));
+  console.log(JSON.stringify({ passed: true, desktopShot, mobileHomeShot, mobileToolsShot, catalogShot, continuedShot, journeyShot, mobileJourneyShot, mobileShot, mobileChartShot, mobilePracticeShot, mobileSelfTestShot, courseFoundationShot, courseFoundationMobileListShot, courseFoundationMobileShot, courseDesktopShot, courseMobileShot, guideDesktopShot, guideMobileShot, vocabDesktopShot, vocabMobileShot, vocabMobileCardsShot, vocabMobilePracticeShot, mobile, mobileJourney, mobilePractice, mobileSelfTest, narrow, courseRun, courseBackup, mobileRoute, courseMobile, vocabRun, vocabBackup, manualKana }));
   ws.close();
 }
 
