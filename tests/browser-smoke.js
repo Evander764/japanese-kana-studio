@@ -635,11 +635,11 @@ async function main() {
     const reference = bookCard.querySelector('.pitch-reference');
     const collapsed = !reference.open;
     reference.open = true;
-    const result = {visible:!document.getElementById('vocabView').hidden, chapter:document.getElementById('vocabChapter').value, chapters:document.getElementById('vocabChapter').options.length, cards:document.querySelectorAll('.vocab-card').length, audio:new URL(audio).pathname.endsWith('/audio/course-02-v1.mp3'), audioLabel:bookCard.querySelector('[data-vocab-audio]').textContent.trim(), collapsed, summary:reference.querySelector('summary').textContent, sourceNote:reference.querySelector('.pitch-note').textContent.includes('未按此图逐词校准'), pitch:bookCard.querySelector('.pitch-type').textContent, levels:[...bookCard.querySelectorAll('.pitch-mora')].map(node=>node.classList.contains('high')?'high':'low'), fall:bookCard.querySelectorAll('.pitch-fall').length};
+    const result = {visible:!document.getElementById('vocabView').hidden, chapter:document.getElementById('vocabChapter').value, chapters:document.getElementById('vocabChapter').options.length, cards:document.querySelectorAll('.vocab-card').length, audio:new URL(audio).pathname.endsWith('/audio/course-02-v1.mp3'), audioLabel:bookCard.querySelector('[data-vocab-audio]').textContent.trim(), collapsed, summary:reference.querySelector('summary').textContent, sourceNote:reference.querySelector('.pitch-note').textContent.includes('播放音频按第一种音调逐拍设定'), pitch:bookCard.querySelector('.pitch-type').textContent, levels:[...bookCard.querySelectorAll('.pitch-mora')].map(node=>node.classList.contains('high')?'high':'low'), fall:bookCard.querySelectorAll('.pitch-fall').length};
     reference.open = false;
     return result;
   })()`);
-  assert.deepEqual(vocabIntro, {visible:true, chapter:'02', chapters:14, cards:17, audio:true, audioLabel:'▶ 听合成读音', collapsed:true, summary:'查看辞典音调', sourceNote:true, pitch:'1 型 · 第 1 拍后下降', levels:['high','low'], fall:1});
+  assert.deepEqual(vocabIntro, {visible:true, chapter:'02', chapters:14, cards:17, audio:true, audioLabel:'▶ 听合成读音', collapsed:true, summary:'音频音调：1 型 · 查看高低图', sourceNote:true, pitch:'音频采用 · 1 型 · 第 1 拍后下降', levels:['high','low'], fall:1});
   await evaluate(`document.getElementById('vocabView').scrollIntoView({block:'start',behavior:'instant'})`);
   const vocabDesktopShot = path.join(os.tmpdir(), 'kana-vocab-desktop-cdp.png');
   await screenshot(vocabDesktopShot);

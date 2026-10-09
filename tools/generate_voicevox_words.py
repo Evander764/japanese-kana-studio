@@ -9,6 +9,7 @@ import hashlib
 import json
 import re
 import shutil
+import statistics
 import subprocess
 import sys
 import tempfile
@@ -53,6 +54,26 @@ def to_katakana(reading):
     return ''.join(chr(ord(char) + 96) if 'ぁ' <= char <= 'ゖ' else char for char in reading)
 
 
+def set_pitch_contour(phrase, accent):
+    """Keep VOICEVOX timing/devoicing, but make the displayed high/low contour audible."""
+    unvoiced = {'A', 'E', 'I', 'O', 'U', 'cl'}
+    voiced = [mora.pitch for mora in phrase.moras if mora.pitch > 0 and mora.vowel not in unvoiced]
+    original_center = statistics.median(voiced) if voiced else 5.5
+    # Open JTalk occasionally predicts an implausibly low isolated-word base.
+    # Bring those outliers into Nemo's speaking range before applying the contour.
+    center = max(5.4, original_center) if original_center < 5.1 else original_center
+    for index, mora in enumerate(phrase.moras):
+        if mora.vowel in unvoiced:
+            mora.pitch = 0.0
+            continue
+        high = index > 0 and (accent == 0 or index < accent)
+        if accent == 1:
+            high = index == 0
+        # VOICEVOX uses log F0. A 0.36 log-unit gap stays audible after smoothing.
+        residual = mora.pitch - original_center if mora.pitch > 0 else 0
+        mora.pitch = center + (0.18 if high else -0.18) + 0.04 * residual
+
+
 def encode(wav, target):
     with tempfile.TemporaryDirectory() as temporary:
         source = Path(temporary) / 'clip.wav'
@@ -81,6 +102,8 @@ def main():
     parser.add_argument('--voice-name', default='VOICEVOX Nemo 女声5')
     parser.add_argument('--speed', type=float, default=1.0)
     parser.add_argument('--overrides', type=Path, help='JSON map from MP3 filename to synthesis text')
+    parser.add_argument('--only-file', action='append', help='Generate just this filename; repeat for samples')
+    parser.add_argument('--inspect', action='store_true', help='Check segmentation and pitch without generating audio')
     args = parser.parse_args()
     args.stage.mkdir(parents=True, exist_ok=True)
     checkpoint_path = args.stage / 'checkpoint.json'
@@ -98,26 +121,47 @@ def main():
     with VoiceModelFile.open(str(args.model)) as model:
         synthesizer.load_voice_model(model)
     cache = {}
-    selected = list(entries())
+    selected = [(manifest, entry) for manifest, entry in entries() if entry['kana'] in pitch]
+    if args.only_file:
+        wanted = set(args.only_file)
+        selected = [(manifest, entry) for manifest, entry in selected if entry['file'] in wanted]
+        if {entry['file'] for _, entry in selected} != wanted:
+            raise ValueError(f'unknown or unpitched file(s): {wanted - {entry["file"] for _, entry in selected}}')
+    failures = []
     for index, (manifest, entry) in enumerate(selected, 1):
         filename = entry['file']
         spoken = overrides.get(filename, entry['kana'])
         query = synthesizer.create_audio_query(spoken, args.style_id)
         query.speed_scale = args.speed
-        target_pitch = pitch.get(entry['kana'])
-        pitch_aligned = False
-        if target_pitch and len(query.accent_phrases) == 1:
-            phrase = query.accent_phrases[0]
-            if len(phrase.moras) == len(moras(entry['kana'])):
-                accent = target_pitch['accents'][0]
-                phrase.accent = accent or len(phrase.moras)
-                pitch_aligned = True
+        target_pitch = pitch[entry['kana']]
+        if len(query.accent_phrases) != 1 or len(query.accent_phrases[0].moras) != len(moras(entry['kana'])):
+            failures.append((filename, spoken, [len(phrase.moras) for phrase in query.accent_phrases], len(moras(entry['kana']))))
+            print(f'{index}/{len(selected)} UNALIGNED {failures[-1]}', flush=True)
+            continue
+        phrase = query.accent_phrases[0]
+        target_accent = target_pitch['accents'][0]
+        phrase.accent = target_accent or len(phrase.moras)
+        # AudioQuery already contains mora pitches. Changing only the accent
+        # number leaves the old contour in place; recalculate it explicitly.
+        query.accent_phrases = synthesizer.replace_mora_pitch(query.accent_phrases, args.style_id)
+        set_pitch_contour(query.accent_phrases[0], target_accent)
         pronunciation = '/'.join(''.join(mora.text for mora in phrase.moras) for phrase in query.accent_phrases)
         accents = [phrase.accent for phrase in query.accent_phrases]
-        signature = json.dumps(['course-dictionary-v1', spoken, args.style_id, args.speed, accents, pronunciation], ensure_ascii=False)
+        mora_pitch = [round(mora.pitch, 4) for mora in query.accent_phrases[0].moras]
+        mora_timing = [round((mora.consonant_length or 0) + mora.vowel_length, 4) for mora in query.accent_phrases[0].moras]
+        mora_consonants = [round(mora.consonant_length or 0, 4) for mora in query.accent_phrases[0].moras]
+        mora_vowels = [round(mora.vowel_length, 4) for mora in query.accent_phrases[0].moras]
+        signature = json.dumps(['course-dictionary-v2', spoken, args.style_id, args.speed, target_accent, pronunciation, mora_pitch], ensure_ascii=False)
+        if args.inspect:
+            print(f'{index}/{len(selected)} {filename} {spoken} [{pronunciation}] target={target_accent} query={accents} pitches={mora_pitch} timing={mora_timing}', flush=True)
+            continue
         target = args.stage / filename
         old = checkpoint.get(filename)
-        if old and old.get('signature') == signature and target.exists() and old.get('sha256') == hashlib.sha256(target.read_bytes()).hexdigest():
+        if old and old.get('signature') == signature and old.get('mora_timing') == mora_timing and target.exists() and old.get('sha256') == hashlib.sha256(target.read_bytes()).hexdigest():
+            old.update({'mora_consonants': mora_consonants, 'mora_vowels': mora_vowels,
+                        'pre_phoneme_length': round(query.pre_phoneme_length, 4),
+                        'post_phoneme_length': round(query.post_phoneme_length, 4)})
+            checkpoint_path.write_text(json.dumps(checkpoint, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
             cache[signature] = target
             print(f'{index}/{len(selected)} keep {filename}', flush=True)
             continue
@@ -130,12 +174,20 @@ def main():
         checkpoint[filename] = {
             'manifest': manifest, 'file': filename, 'kana': entry['kana'],
             'synthesis_text': spoken, 'pronunciation': pronunciation, 'accents': accents,
-            'pitch_aligned': pitch_aligned, 'signature': signature, 'seconds': seconds,
+            'pitch_aligned': True, 'target_accent': target_accent,
+            'pitch_source': target_pitch['source'], 'mora_pitch': mora_pitch,
+            'mora_timing': mora_timing,
+            'mora_consonants': mora_consonants, 'mora_vowels': mora_vowels,
+            'pre_phoneme_length': round(query.pre_phoneme_length, 4),
+            'post_phoneme_length': round(query.post_phoneme_length, 4),
+            'signature': signature, 'seconds': seconds,
             'sha256': hashlib.sha256(target.read_bytes()).hexdigest(),
             'engine': 'voicevox-core-0.17.0', 'voice': args.voice_name,
         }
         checkpoint_path.write_text(json.dumps(checkpoint, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         print(f'{index}/{len(selected)} {filename} {spoken} [{pronunciation}] {accents}', flush=True)
+    if failures:
+        raise ValueError(f'{len(failures)} word(s) could not be aligned; add explicit synthesis overrides')
 
 
 if __name__ == '__main__':

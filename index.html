@@ -13,13 +13,13 @@
   <script src="course-data.js?v=20261009-guide1" defer></script>
   <script src="pitch-data.js" defer></script>
   <script src="pitch-core.js?v=20261009-pitchclarity1" defer></script>
-  <script src="pitch-ui.js?v=20261009-pitchclarity1" defer></script>
+  <script src="pitch-ui.js?v=20261009-pitchaudio1" defer></script>
   <script src="vocab-core.js" defer></script>
   <script src="core.js" defer></script>
   <script src="course-core.js" defer></script>
   <script src="course-ui.js?v=20261009-guide1" defer></script>
   <script src="vocab-ui.js?v=20261009-pitchclarity1" defer></script>
-  <script src="app.js?v=20261009-interface1" defer></script>
+  <script src="app.js?v=20261009-pitchaudio1" defer></script>
 </head>
 <body>
   <div class="app-shell">
@@ -124,7 +124,7 @@
         <div class="converter-layout"><div class="converter-input"><div class="converter-head"><label for="convertInput">罗马字输入</label><div class="mini-switch" role="group" aria-label="转换目标"><button type="button" data-convert-script="hiragana">平假名</button><button type="button" data-convert-script="katakana">片假名</button></div></div><textarea id="convertInput" rows="6" autocapitalize="off" spellcheck="false" placeholder="试试输入：konnichiha / juusu"></textarea></div><div class="converter-output"><span>转换结果</span><div id="convertOutput" aria-live="polite">ここに表示</div><p id="convertCandidates"></p><small>长音和同音异形可能有不同写法；练习题以题目所示字形判定。</small></div></div>
       </section>
       <section class="view" id="vocabView" aria-labelledby="vocabTitle" hidden>
-        <div class="section-heading"><div><p class="section-kicker">VOCABULARY / 每课单词</p><h2 id="vocabTitle">一章一页，把新词练熟。</h2><p>播放按钮提供合成读音，适合认词和跟读。词卡下方可展开辞典音调参考；两者尚未逐词校准，请不要把音频当作高低音图的示范。熟悉的词可标记“已经学会”。</p></div><div class="course-speed"><span>单词发音速度</span><div class="audio-speed-control" role="group" aria-label="单词发音速度"><button type="button" data-audio-speed="normal" aria-pressed="true">正常 1×</button><button type="button" data-audio-speed="slow" aria-pressed="false">慢速 0.78×</button></div></div></div>
+        <div class="section-heading"><div><p class="section-kicker">VOCABULARY / 每课单词</p><h2 id="vocabTitle">一章一页，把新词练熟。</h2><p>单词音频按词卡标出的第一种东京式音调逐拍合成；展开音调图可对照高低。熟悉的词可标记“已经学会”。</p></div><div class="course-speed"><span>单词发音速度</span><div class="audio-speed-control" role="group" aria-label="单词发音速度"><button type="button" data-audio-speed="normal" aria-pressed="true">正常 1×</button><button type="button" data-audio-speed="slow" aria-pressed="false">慢速 0.78×</button></div></div></div>
         <div class="vocab-toolbar"><label for="vocabChapter">选择章节 <select id="vocabChapter"></select></label><p id="vocabSummary"></p></div>
         <div id="vocabGrid" class="vocab-grid"></div>
         <p id="vocabAudioMessage" class="audio-message" role="status"></p>
@@ -140,7 +140,7 @@
         <p class="course-source">课程练习与例句为本站原创；主题参考<a href="https://www.pep.com.cn/products/jc/dwhytsh/201711/t20171107_1920490.shtml" target="_blank" rel="noopener noreferrer">《新版中日交流标准日本语》初级的分单元学习方式</a>及<a href="https://www.irodori.jpf.go.jp/assets/data/Grammar_all.pdf" target="_blank" rel="noopener noreferrer">日本国际交流基金《いろどり》入门与初级语法</a>。</p>
       </section>
     </main>
-    <footer class="site-footer"><span>日语起步 · 音频离线可用 · 正常或慢速跟读</span><span>字表依据 <a href="https://www.irodori.jpf.go.jp/assets/data/Kana_all.pdf" target="_blank" rel="noopener noreferrer">日本国际交流基金《いろどり》</a></span></footer>
+    <footer class="site-footer"><span>日语起步 · 音频离线可用 · 单词声音：<a href="https://voicevox.hiroshiba.jp/nemo/" target="_blank" rel="noopener noreferrer">VOICEVOX Nemo</a></span><span>字表依据 <a href="https://www.irodori.jpf.go.jp/assets/data/Kana_all.pdf" target="_blank" rel="noopener noreferrer">日本国际交流基金《いろどり》</a></span></footer>
   </div>
 
   <dialog id="detailDialog" class="detail-dialog" aria-labelledby="detailTitle">

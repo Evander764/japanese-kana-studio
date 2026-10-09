@@ -4,6 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
 const data = require('../kana-data.js');
+const pitch = require('../pitch-data.js');
 
 test('every kana and word has a packaged local MP3', () => {
   const references = new Set(data.items.map(item => item.audio));
@@ -33,9 +34,16 @@ test('every rebuilt audio file matches its recorded content hash and engine', ()
   assert.equal(entries.length, 527);
   assert.equal(new Set(entries.map(entry => entry.file)).size, 527);
   for (const entry of entries) {
-    assert.ok(['kokoro-82m', 'qwen3-tts-voice-design', 'qwen3-tts-custom-voice', 'windows-sapi5'].includes(entry.engine), entry.file);
+    assert.ok(['kokoro-82m', 'qwen3-tts-voice-design', 'qwen3-tts-custom-voice', 'windows-sapi5', 'voicevox-core-0.17.0'].includes(entry.engine), entry.file);
     assert.ok(entry.seconds > 0.2, entry.file);
     const file = fs.readFileSync(path.join(__dirname, '..', 'audio', entry.file));
     assert.equal(crypto.createHash('sha256').update(file).digest('hex'), entry.sha256, entry.file);
+  }
+  const aligned = entries.filter(entry => entry.engine === 'voicevox-core-0.17.0');
+  assert.equal(aligned.length, 272);
+  for (const entry of aligned) {
+    assert.equal(entry.pitchAccent, pitch[entry.kana].accents[0], entry.file);
+    assert.equal(entry.pitchSource, pitch[entry.kana].source, entry.file);
+    assert.equal(entry.pitchControl, 'explicit-mora-f0-v1', entry.file);
   }
 });
