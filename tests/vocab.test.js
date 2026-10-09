@@ -7,8 +7,9 @@ const core = require('../core.js');
 
 test('each sentence lesson has a vocabulary page with playable audio', () => {
   assert.deepEqual(vocab.chapters.map(chapter => chapter.id), Array.from({ length: 14 }, (_, index) => String(index + 1).padStart(2, '0')));
-  assert.equal(vocab.chapters.reduce((count, chapter) => count + chapter.words.length, 0), 70);
-  assert.equal(vocab.byId.size, 63);
+  assert.equal(vocab.chapters.reduce((count, chapter) => count + chapter.words.length, 0), 238);
+  assert.equal(vocab.byId.size, 221);
+  assert.ok(vocab.chapters.every(chapter => chapter.words.length >= 16));
   const readings = new Map();
   for (const chapter of vocab.chapters) {
     for (const word of chapter.words) {

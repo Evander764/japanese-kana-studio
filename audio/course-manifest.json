@@ -2,589 +2,3529 @@
   {
     "file": "course-01-example.mp3",
     "kana": "わたしは がくせいです。",
-    "phonemes": "βataɕi βa ɡakɯ seː desɨ.",
-    "seconds": 1.621
+    "seconds": 2.0,
+    "sha256": "8a63eeccf4fa816f09fe017c3baea31316868f99a7534d6501a0a6d95b21d894",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "わたしは がくせいです。"
+  },
+  {
+    "file": "course-01-example-2.mp3",
+    "kana": "わたしは だいがくせいです。",
+    "seconds": 2.32,
+    "sha256": "dd778d2229e87a76d78a2f341bed98833a715f2b2d3c854d93f93899fac8f40d",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "わたしは だいがくせいです。"
+  },
+  {
+    "file": "course-01-example-3.mp3",
+    "kana": "ともだちは エンジニアです。",
+    "seconds": 2.48,
+    "sha256": "9ff3f51e0195bb3ff9398392028bdfd822944840674b1254ef46be2672d3a005",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ともだちは エンジニアです。"
   },
   {
     "file": "course-01-v1.mp3",
     "kana": "わたし",
-    "phonemes": "βataɕi",
-    "seconds": 0.704
+    "seconds": 1.459,
+    "sha256": "c1bd0520765cdd990f8ca5e385c3b29ef8b9bc1cca29cb21902b19d9b7e43cd5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "わたし"
   },
   {
     "file": "course-01-v2.mp3",
     "kana": "がくせい",
-    "phonemes": "ɡakɯ seː",
-    "seconds": 0.768
+    "seconds": 1.499,
+    "sha256": "ba2ff12bbae27e1dd695ef39269dd2c10c3550d0370f5431a36cfa4329e85271",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "がくせい"
   },
   {
     "file": "course-01-v3.mp3",
     "kana": "せんせい",
-    "phonemes": "seɴseː",
-    "seconds": 0.747
+    "seconds": 1.514,
+    "sha256": "0367598780c64b3764c9d9f2f080ef270fbfb4c3a6c23a886b96ce5ad412f70a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "せんせい"
   },
   {
     "file": "course-01-v4.mp3",
     "kana": "かいしゃいん",
-    "phonemes": "kai ɕa iɴ",
-    "seconds": 0.96
+    "seconds": 1.599,
+    "sha256": "571c0c532637a0a817af0b5a46a0247731a1dcc1281a69db9fa40afa6fb51ad3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かいしゃいん"
+  },
+  {
+    "file": "course-01-v5.mp3",
+    "kana": "あなた",
+    "seconds": 1.339,
+    "sha256": "0066f10493422161f5b1c71e6950536c0112565dfb6068198c63f290990e1966",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あなた"
+  },
+  {
+    "file": "course-01-v6.mp3",
+    "kana": "ともだち",
+    "seconds": 1.589,
+    "sha256": "3a08df8e83803784124479cba03322db63a27def6cea326aedaa09f579e3862b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ともだち"
+  },
+  {
+    "file": "course-01-v7.mp3",
+    "kana": "なまえ",
+    "seconds": 1.345,
+    "sha256": "6acc1613f9f613837bffccefbb44a839135369b72a95d0b62c77af9c042cb26b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "なまえ"
+  },
+  {
+    "file": "course-01-v8.mp3",
+    "kana": "にほん",
+    "seconds": 1.314,
+    "sha256": "443ef10379f3ad6e9755c23e2e5cdd139e2ef9d15ef77429d8f1e2fc0a884fbe",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "にほん"
+  },
+  {
+    "file": "course-01-v9.mp3",
+    "kana": "ちゅうごく",
+    "seconds": 1.504,
+    "sha256": "394cf65bee35a2e0a4a0d3ac375f43e3cade4fe4a7bedfcb4a29d68b8804bdd5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ちゅうごく"
+  },
+  {
+    "file": "course-01-v10.mp3",
+    "kana": "にほんじん",
+    "seconds": 1.579,
+    "sha256": "2abb86aaf0906493dc5fca77402d1675eeb254c2f82258c80254bb7ffeb3c45d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "にほんじん"
+  },
+  {
+    "file": "course-01-v11.mp3",
+    "kana": "ちゅうごくじん",
+    "seconds": 1.705,
+    "sha256": "e297c1bb6b199ca482a854f8a6e4dbe5d551c6752f27d35f47b939fc36ecd997",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ちゅうごくじん"
+  },
+  {
+    "file": "course-01-v12.mp3",
+    "kana": "だいがくせい",
+    "seconds": 1.739,
+    "sha256": "7acfddb88bab9efeb468f5462a96ab452325ab6a0701668277b6ddffeea4be05",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "だいがくせい"
+  },
+  {
+    "file": "course-01-v13.mp3",
+    "kana": "いしゃ",
+    "seconds": 1.279,
+    "sha256": "868f4b6bc0fc31110306b1d9628b522af5326a822f46aafad942fe7e10e7c4aa",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いしゃ"
+  },
+  {
+    "file": "course-01-v14.mp3",
+    "kana": "かんごし",
+    "seconds": 1.594,
+    "sha256": "724c5b574d8e917be7332f7fe8db0d2d93978f56d21d9a4cf4555cf1a16512e4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かんごし"
+  },
+  {
+    "file": "course-01-v15.mp3",
+    "kana": "エンジニア",
+    "seconds": 1.534,
+    "sha256": "959ab8c9f71b49e55b185ef1c589797c01dba1316bce5c9b751cc1e7f3c75f7f",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "エンジニア"
+  },
+  {
+    "file": "course-01-v16.mp3",
+    "kana": "ひと",
+    "seconds": 1.199,
+    "sha256": "934e5d123ba9702fc246b823964f30786a2493456fb19a56e556f16721adf48e",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ひと"
+  },
+  {
+    "file": "course-01-q1.mp3",
+    "kana": "わたしは せんせいじゃありません。",
+    "seconds": 3.12,
+    "sha256": "b40d7e4cc69ff194d74f4cb81237e6beb3da172f4b98bab06b8e9104d16cf8a1",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "わたしは せんせいじゃありません。"
+  },
+  {
+    "file": "course-01-q2.mp3",
+    "kana": "わたしはかいしゃいんです。",
+    "seconds": 4.24,
+    "sha256": "7192d58ede9194646213c01d5b6f1f3379aaf271b153030b915eafb8bbad067b",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "わたしはかいしゃいんです。"
+  },
+  {
+    "file": "course-01-q3.mp3",
+    "kana": "わたしは がくせいです。",
+    "seconds": 2.0,
+    "sha256": "8a63eeccf4fa816f09fe017c3baea31316868f99a7534d6501a0a6d95b21d894",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "わたしは がくせいです。"
+  },
+  {
+    "file": "course-01-q4.mp3",
+    "kana": "がくせい",
+    "seconds": 1.499,
+    "sha256": "ba2ff12bbae27e1dd695ef39269dd2c10c3550d0370f5431a36cfa4329e85271",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "がくせい"
   },
   {
     "file": "course-01-listen.mp3",
     "kana": "わたしは かいしゃいんです。",
-    "phonemes": "βataɕi βakai ɕa iɴ desɨ.",
-    "seconds": 1.643
+    "seconds": 2.32,
+    "sha256": "e352aad816ed5e1fd8e96647e76eaa9fcae9aebc187aef891c5aed927f630e28",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "わたしは かいしゃいんです。"
+  },
+  {
+    "file": "course-01-q6.mp3",
+    "kana": "わたしは だいがくせいです。",
+    "seconds": 2.32,
+    "sha256": "dd778d2229e87a76d78a2f341bed98833a715f2b2d3c854d93f93899fac8f40d",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "わたしは だいがくせいです。"
+  },
+  {
+    "file": "course-01-q7.mp3",
+    "kana": "ともだちは エンジニアです。",
+    "seconds": 2.48,
+    "sha256": "9ff3f51e0195bb3ff9398392028bdfd822944840674b1254ef46be2672d3a005",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ともだちは エンジニアです。"
+  },
+  {
+    "file": "course-01-q8.mp3",
+    "kana": "なまえ",
+    "seconds": 1.345,
+    "sha256": "6acc1613f9f613837bffccefbb44a839135369b72a95d0b62c77af9c042cb26b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "なまえ"
   },
   {
     "file": "course-02-example.mp3",
     "kana": "これは わたしの ほんです。",
-    "phonemes": "koɾe βa βataɕi no hoɴ desɨ.",
-    "seconds": 1.664
+    "seconds": 2.16,
+    "sha256": "183a274cfd271802a2dd47094549009dfdbb2e2a9a480b053378ef768939fd78",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "これは わたしの ほんです。"
+  },
+  {
+    "file": "course-02-example-2.mp3",
+    "kana": "それは だれの かぎですか。",
+    "seconds": 1.84,
+    "sha256": "f258799f1081423a0557f4237a23f6ad784eb794670cfa8f97d9dc55f0d17bd2",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "それは だれの かぎですか。"
+  },
+  {
+    "file": "course-02-example-3.mp3",
+    "kana": "この ペンは わたしのです。",
+    "seconds": 2.16,
+    "sha256": "8d79bb1b0daa8ab0a8a9711f9ca467239d82193e397b2ce19c8a10b320478931",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この ペンは わたしのです。"
   },
   {
     "file": "course-02-v1.mp3",
     "kana": "ほん",
-    "phonemes": "hoɴ",
-    "seconds": 0.491
+    "seconds": 1.154,
+    "sha256": "094b15d940074036e83a8331468927857418a2b1abb1f7232897e40c00123eef",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ほん"
   },
   {
     "file": "course-02-v2.mp3",
     "kana": "かさ",
-    "phonemes": "kasa",
-    "seconds": 0.533
+    "seconds": 1.259,
+    "sha256": "752a93cb7c7c44b90ce6bc410b6be90cac43a62e587eb9c837ed667724e30c7d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かさ"
   },
   {
     "file": "course-02-v3.mp3",
     "kana": "かばん",
-    "phonemes": "kabaɴ",
-    "seconds": 0.576
+    "seconds": 1.309,
+    "sha256": "59167d4b6d875fa8d4a86dcd89e8485d09f24f9b92fa0f8dbd6463c911f5cdbc",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かばん"
   },
   {
     "file": "course-02-v4.mp3",
     "kana": "ノート",
-    "phonemes": "noːto",
-    "seconds": 0.619
+    "seconds": 1.249,
+    "sha256": "8fecf23a7e88d6fcb4ae7521145c1124634793ecd44915975254e704c4abe92a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ノート"
   },
   {
     "file": "course-02-v5.mp3",
     "kana": "これ",
-    "phonemes": "koɾe",
-    "seconds": 0.512
+    "seconds": 1.225,
+    "sha256": "cada8c4bcdad84981d73baa846d69ed32f5f672a97117c9441aadb3c3b86b8e1",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "これ"
+  },
+  {
+    "file": "course-02-v6.mp3",
+    "kana": "それ",
+    "seconds": 1.264,
+    "sha256": "11fe780259eff4b71c40e77829d23f3a72ba27d9ecefa2b8fb1a18a2d7af09b6",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "それ"
+  },
+  {
+    "file": "course-02-v7.mp3",
+    "kana": "あれ",
+    "seconds": 1.199,
+    "sha256": "b9b0deae7b0c2a893b08d2cfbfcbc120deed81b5767c10e061995b7a7cf7ce02",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あれ"
+  },
+  {
+    "file": "course-02-v8.mp3",
+    "kana": "この",
+    "seconds": 1.199,
+    "sha256": "ad744547f76982b448a715b7cfdf1023b49b8d8e3c2a66589534d35585e85b03",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "この"
+  },
+  {
+    "file": "course-02-v9.mp3",
+    "kana": "その",
+    "seconds": 1.209,
+    "sha256": "09797cf2f7b70dea36fe85807f38fcecbad2c28b638c9f3feb593503c6a4a554",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "その"
+  },
+  {
+    "file": "course-02-v10.mp3",
+    "kana": "あの",
+    "seconds": 1.174,
+    "sha256": "4c6ce07d8627095db4e4dcb003e9fb9ddd1fa2b6430310a42024934f5b9cb6b4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あの"
+  },
+  {
+    "file": "course-02-v11.mp3",
+    "kana": "だれ",
+    "seconds": 1.189,
+    "sha256": "ffede6382cb6acadf20e1b8b98af2f59fad5a2bc5ccfeb7390e63be63a5f7bb2",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "だれ"
+  },
+  {
+    "file": "course-02-v12.mp3",
+    "kana": "じしょ",
+    "seconds": 1.324,
+    "sha256": "2003683b91625b78604f962bc8cebf144c69dbd1a1d3554bba6e4470ff27f84f",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "じしょ"
+  },
+  {
+    "file": "course-02-v13.mp3",
+    "kana": "えんぴつ",
+    "seconds": 1.529,
+    "sha256": "59f6d2624ae10f7b0114b924b19861dfcacca57bfd95e69316b572a00d7d4896",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "えんぴつ"
+  },
+  {
+    "file": "course-02-v14.mp3",
+    "kana": "ペン",
+    "seconds": 1.389,
+    "sha256": "1206da04b6fa1adf2c5f9f3390d5bc370d6d5370585cafcde34e1426c1cf2f36",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ペン"
+  },
+  {
+    "file": "course-02-v15.mp3",
+    "kana": "けしゴム",
+    "seconds": 1.529,
+    "sha256": "53d6cfeee9a2cfbad7beecdaa0e7ef976e27e5d42d3288569c66b7ecaaa036b8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "けしゴム"
+  },
+  {
+    "file": "course-02-v16.mp3",
+    "kana": "くつ",
+    "seconds": 1.284,
+    "sha256": "269230a5c6047996a6c63fadd78713b792d072c5d250d19807b77602f26c8eae",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "くつ"
+  },
+  {
+    "file": "course-02-v17.mp3",
+    "kana": "かぎ",
+    "seconds": 1.274,
+    "sha256": "146ddcf9063645851f275b53b8685af2fc9638bf8094e24cdac3987e646d28f8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かぎ"
+  },
+  {
+    "file": "course-02-q1.mp3",
+    "kana": "それは かさです。",
+    "seconds": 1.12,
+    "sha256": "2ad43ab9fc6e568f3e0c40204c36c141272b7c77598f05b5bcd93aacecb3cd57",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "それは かさです。"
+  },
+  {
+    "file": "course-02-q2.mp3",
+    "kana": "これは わたしのほんです。",
+    "seconds": 2.0,
+    "sha256": "58c74edd69d9082ab192b90d391f3f81db3bc0a6fd9c0c5c3712a6b16909772b",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "これは わたしのほんです。"
+  },
+  {
+    "file": "course-02-q3.mp3",
+    "kana": "あれは わたしの かばんです。",
+    "seconds": 2.4,
+    "sha256": "1dd1125b30a39e668b1ac9edb2a55f994c2ee55bbd6394e8b0887ce234c73cce",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あれは わたしの かばんです。"
+  },
+  {
+    "file": "course-02-q4.mp3",
+    "kana": "かばん",
+    "seconds": 1.309,
+    "sha256": "59167d4b6d875fa8d4a86dcd89e8485d09f24f9b92fa0f8dbd6463c911f5cdbc",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かばん"
   },
   {
     "file": "course-02-listen.mp3",
     "kana": "これは ノートです。",
-    "phonemes": "koɾe βa noːto desɨ.",
-    "seconds": 1.408
+    "seconds": 3.04,
+    "sha256": "94cac88849f8a93b3834b8ee7ccd898c8a8c3aa263db12327d1c6ba7845bbb49",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "これはノートです。"
+  },
+  {
+    "file": "course-02-q6.mp3",
+    "kana": "それは だれの かぎですか。",
+    "seconds": 1.84,
+    "sha256": "f258799f1081423a0557f4237a23f6ad784eb794670cfa8f97d9dc55f0d17bd2",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "それは だれの かぎですか。"
+  },
+  {
+    "file": "course-02-q7.mp3",
+    "kana": "この ペンは わたしのです。",
+    "seconds": 2.16,
+    "sha256": "8d79bb1b0daa8ab0a8a9711f9ca467239d82193e397b2ce19c8a10b320478931",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この ペンは わたしのです。"
+  },
+  {
+    "file": "course-02-q8.mp3",
+    "kana": "かぎ",
+    "seconds": 1.274,
+    "sha256": "146ddcf9063645851f275b53b8685af2fc9638bf8094e24cdac3987e646d28f8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かぎ"
   },
   {
     "file": "course-03-example.mp3",
     "kana": "えきは あそこです。",
-    "phonemes": "ekʲi βa asoko desɨ.",
-    "seconds": 1.387
+    "seconds": 1.92,
+    "sha256": "a29e9f573aca40b9cf9fd10587fa26d57664bdcef0dc030722d1839bc59171d7",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "えきは あそこです。"
+  },
+  {
+    "file": "course-03-example-2.mp3",
+    "kana": "ぎんこうは どこですか。",
+    "seconds": 2.48,
+    "sha256": "ae094eef73b5bdd1eae792ca7c513338a6b0b5580a88912677beb9512b8ec1ab",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ぎんこうは どこですか。"
+  },
+  {
+    "file": "course-03-example-3.mp3",
+    "kana": "スーパーは あそこです。",
+    "seconds": 2.88,
+    "sha256": "ccf59b89131e21170588ed2456d5d59fe43fc8a984b599bf1d36839df3655f96",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "スーパーは あそこです。"
   },
   {
     "file": "course-03-v1.mp3",
     "kana": "えき",
-    "phonemes": "ekʲi",
-    "seconds": 0.704
+    "seconds": 1.229,
+    "sha256": "d10ec3fe89db10f368d45b87705cb6f0bf53b947234249cd3c205878fce39edd",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "えき"
   },
   {
     "file": "course-03-v2.mp3",
     "kana": "トイレ",
-    "phonemes": "toiɾe",
-    "seconds": 0.64
+    "seconds": 1.339,
+    "sha256": "9db8c233f19eceab3b767d4ec2b7d16151b012b60d670988da93c4961ec3280c",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "トイレ"
   },
   {
     "file": "course-03-v3.mp3",
     "kana": "としょかん",
-    "phonemes": "toɕokaɴ",
-    "seconds": 0.725
+    "seconds": 1.519,
+    "sha256": "b1430f8798ea5bf04b6757b032ad0330ca4ddafc230fe9dee111129c1a4931b5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "としょかん"
   },
   {
     "file": "course-03-v4.mp3",
     "kana": "どこ",
-    "phonemes": "doko",
-    "seconds": 0.555
+    "seconds": 1.214,
+    "sha256": "6855cd21056646321b3f25210f0ecbb28a3620bdadac9e56ff356962a66e881c",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "どこ"
   },
   {
     "file": "course-03-v5.mp3",
     "kana": "ここ",
-    "phonemes": "koko",
-    "seconds": 0.491
+    "seconds": 1.254,
+    "sha256": "d4eb3a2a2d256700bcc9a4f1b67a646e40218e6f042133029668023545877f86",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ここ"
+  },
+  {
+    "file": "course-03-v6.mp3",
+    "kana": "そこ",
+    "seconds": 1.274,
+    "sha256": "4a2218047da46c1cedf79bc308c6ad3135d0d50b5ba9c124a0b8ab00e6fba4fc",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "そこ"
+  },
+  {
+    "file": "course-03-v7.mp3",
+    "kana": "あそこ",
+    "seconds": 1.419,
+    "sha256": "23e39001163063efeac33cbabb4c0ff26e93a267ba98be4602c3af5577a767fe",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あそこ"
+  },
+  {
+    "file": "course-03-v8.mp3",
+    "kana": "こちら",
+    "seconds": 1.379,
+    "sha256": "7911245de119b7dabe9d38c09caeb8d8aa64a2a963bcc2d8ffbfa202b7beb879",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "こちら"
+  },
+  {
+    "file": "course-03-v9.mp3",
+    "kana": "みぎ",
+    "seconds": 1.249,
+    "sha256": "1df7da50f627d575ab1b03578f88a612cd6b6604a8a8e5e81f3c3ce02f96b9c1",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みぎ"
+  },
+  {
+    "file": "course-03-v10.mp3",
+    "kana": "ひだり",
+    "seconds": 1.334,
+    "sha256": "3bcc59ab276991fa89ae8b3a399c3823f73d51218f08bc49b53e03f1b2243cdb",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ひだり"
+  },
+  {
+    "file": "course-03-v11.mp3",
+    "kana": "まえ",
+    "seconds": 1.204,
+    "sha256": "5593350c4ed2d5048c63f51d52c5aeb5ad34455965d48d50c3ec903ab6b59bb1",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "まえ"
+  },
+  {
+    "file": "course-03-v12.mp3",
+    "kana": "うしろ",
+    "seconds": 1.334,
+    "sha256": "de4d3e9deff12b0f136847dc76373b29bd745d7cfeec65aeb4dbb89806e04a92",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "うしろ"
+  },
+  {
+    "file": "course-03-v13.mp3",
+    "kana": "となり",
+    "seconds": 1.334,
+    "sha256": "22a34e437283a2efcc08a4b6244aee88558789904c0938bed775d501749aef22",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "となり"
+  },
+  {
+    "file": "course-03-v14.mp3",
+    "kana": "がっこう",
+    "seconds": 1.494,
+    "sha256": "37b062b0b79abb69076034da5c79c39105ee58456679f2af9f3ad3326973cfd3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "がっこう"
+  },
+  {
+    "file": "course-03-v15.mp3",
+    "kana": "びょういん",
+    "seconds": 1.404,
+    "sha256": "d063585747a408eed6e908dbc140fdc2177b4e09e55f610f87ebb0cd60038665",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "びょういん"
+  },
+  {
+    "file": "course-03-v16.mp3",
+    "kana": "ぎんこう",
+    "seconds": 1.479,
+    "sha256": "356eb4073357a50d60f46498004b683cae9ec62d8e01c36cfde815d8b1945e0b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ぎんこう"
+  },
+  {
+    "file": "course-03-v17.mp3",
+    "kana": "スーパー",
+    "seconds": 1.519,
+    "sha256": "b86f4dc65cd71e6d75681a1675df370d36a1c3269cd282f45b3bf6a46c0f1835",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "スーパー"
+  },
+  {
+    "file": "course-03-q1.mp3",
+    "kana": "としょかんは ここです。",
+    "seconds": 1.6,
+    "sha256": "83e7fb81d874ae0e9ac3f609dc6eeb5f017e6ea0b2dcf23e55844e7c08484555",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "としょかんは ここです。"
+  },
+  {
+    "file": "course-03-q2.mp3",
+    "kana": "えきはどこですか。",
+    "seconds": 1.44,
+    "sha256": "7d0f635b8a7aae4a9991a9e69754ebd7842d7ae4f187794e89c40040b7e1c762",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "えきはどこですか。"
+  },
+  {
+    "file": "course-03-q3.mp3",
+    "kana": "トイレは あそこです。",
+    "seconds": 1.28,
+    "sha256": "c9a376b88775b8ef7af7df1d2454241ada6fe536fbe8bc792a8dbf53bdd21a62",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "トイレは あそこです。"
+  },
+  {
+    "file": "course-03-q4.mp3",
+    "kana": "としょかん",
+    "seconds": 1.519,
+    "sha256": "b1430f8798ea5bf04b6757b032ad0330ca4ddafc230fe9dee111129c1a4931b5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "としょかん"
   },
   {
     "file": "course-03-listen.mp3",
     "kana": "トイレは そこです。",
-    "phonemes": "toiɾe βa soko desɨ.",
-    "seconds": 1.408
+    "seconds": 1.12,
+    "sha256": "24bdd9681b6fc6146e61274dbcbc50f4d4bdfc9778ed26d1e29e3774161e170e",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "トイレは そこです。"
+  },
+  {
+    "file": "course-03-q6.mp3",
+    "kana": "ぎんこうは どこですか。",
+    "seconds": 2.48,
+    "sha256": "ae094eef73b5bdd1eae792ca7c513338a6b0b5580a88912677beb9512b8ec1ab",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ぎんこうは どこですか。"
+  },
+  {
+    "file": "course-03-q7.mp3",
+    "kana": "スーパーは あそこです。",
+    "seconds": 2.88,
+    "sha256": "ccf59b89131e21170588ed2456d5d59fe43fc8a984b599bf1d36839df3655f96",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "スーパーは あそこです。"
+  },
+  {
+    "file": "course-03-q8.mp3",
+    "kana": "みぎ",
+    "seconds": 1.249,
+    "sha256": "1df7da50f627d575ab1b03578f88a612cd6b6604a8a8e5e81f3c3ce02f96b9c1",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みぎ"
   },
   {
     "file": "course-04-example.mp3",
     "kana": "じゅぎょうは くじからです。",
-    "phonemes": "ʥɨɡʲoː βa kɯʥi kaɾa desɨ.",
-    "seconds": 1.621
+    "seconds": 2.155,
+    "sha256": "927a3f5c47cacd05b2852a1c88925fa6700c35e9128c7c2b3cdb230d3c082634",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥɨɡʲoː βa kɯʥi kaɾa desɨ."
+  },
+  {
+    "file": "course-04-example-2.mp3",
+    "kana": "いまは はちじはんです。",
+    "seconds": 1.52,
+    "sha256": "fb1b5229dd7909796a7cadfec74c3dde630948fcbe1c0f307a34e2899fa53795",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "今は 八時半です。"
+  },
+  {
+    "file": "course-04-example-3.mp3",
+    "kana": "じゅぎょうは よじまでです。",
+    "seconds": 1.68,
+    "sha256": "a7de29de71e322375b7165c40a2126e81042a92166075a18478f4bb4b0d1863d",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "じゅぎょうは よじまでです。"
   },
   {
     "file": "course-04-v1.mp3",
     "kana": "いま",
-    "phonemes": "ima",
-    "seconds": 0.533
+    "seconds": 1.159,
+    "sha256": "84454a02dbef9c949b290c4b1aba59575eaa41cc83b6a9e1537abfc3e61950e4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いま"
   },
   {
     "file": "course-04-v2.mp3",
     "kana": "なんじ",
-    "phonemes": "naɴ ʥi",
-    "seconds": 0.704
+    "seconds": 1.349,
+    "sha256": "2eecfcd526e6c2055b443fa7d2adaa10f21f13a61765e5b30726d4b35e3866e4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "なんじ"
   },
   {
     "file": "course-04-v3.mp3",
     "kana": "くじ",
-    "phonemes": "kɯʥi",
-    "seconds": 0.597
+    "seconds": 1.229,
+    "sha256": "6ecc458f6a6aa07bb685399143aa398a02a71de98cb863593afd9a59ab6a54b6",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "くじ"
   },
   {
     "file": "course-04-v4.mp3",
     "kana": "じゅうじ",
-    "phonemes": "ʥɨː ʥi",
-    "seconds": 0.768
+    "seconds": 1.384,
+    "sha256": "1d66ecf128c8e2b15b1e419df2acd54b9f341eb9fa6d9cb9aaf5169c9a38fdb4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "じゅうじ"
   },
   {
     "file": "course-04-v5.mp3",
     "kana": "じゅぎょう",
-    "phonemes": "ʥɨɡʲoː",
-    "seconds": 0.725
+    "seconds": 1.429,
+    "sha256": "7707b3ccc05a445e629819d4e9310b4f4f149efb567bd61f75f74fdfcc9b35b3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "じゅぎょう"
+  },
+  {
+    "file": "course-04-v6.mp3",
+    "kana": "いちじ",
+    "seconds": 1.374,
+    "sha256": "761f0214f537b6e6bf5cb589c0f8668759bc31315818ea58326c2c462eb8014c",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いちじ"
+  },
+  {
+    "file": "course-04-v7.mp3",
+    "kana": "にじ",
+    "seconds": 1.204,
+    "sha256": "fa38515eb70ba55131301f18269c738789950cfc5171be84a83a744e40dca9fd",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "にじ"
+  },
+  {
+    "file": "course-04-v8.mp3",
+    "kana": "さんじ",
+    "seconds": 1.419,
+    "sha256": "6cbe53f3883fc578b09350121080ef6a387e4270af315d456b16e06c64bb6418",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "さんじ"
+  },
+  {
+    "file": "course-04-v9.mp3",
+    "kana": "よじ",
+    "seconds": 1.234,
+    "sha256": "897b7b70c04c3c3e2cde42726f5e07818b709573ead37d49329708e826e62dae",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "よじ"
+  },
+  {
+    "file": "course-04-v10.mp3",
+    "kana": "ごじ",
+    "seconds": 1.239,
+    "sha256": "ffb21b86a6cd5f5305a76e99337bc0a56d801b72aa477d30a126218ae450badf",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ごじ"
+  },
+  {
+    "file": "course-04-v11.mp3",
+    "kana": "ろくじ",
+    "seconds": 1.339,
+    "sha256": "13856ff4eaf6b0e4eb2d5f1ae6ede4e4b8439d6f36cc65dc47e211b3e7d38b8a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ろくじ"
+  },
+  {
+    "file": "course-04-v12.mp3",
+    "kana": "しちじ",
+    "seconds": 1.449,
+    "sha256": "cba0ac14dc5af269b2914426fa4588bc51ae8a075f6cbdba04e644fa290fe00a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しちじ"
+  },
+  {
+    "file": "course-04-v13.mp3",
+    "kana": "はちじ",
+    "seconds": 1.439,
+    "sha256": "c4ac5c0f5afc5ee69595de3933653b0ec65739c605bcc2beabc6f9f9539580d9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "はちじ"
+  },
+  {
+    "file": "course-04-v14.mp3",
+    "kana": "なんぷん",
+    "seconds": 1.369,
+    "sha256": "e89ea41498a3a013c5d47d62ac01c20de449aefb2f3abdfefd558614be9fad9e",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "なんぷん"
+  },
+  {
+    "file": "course-04-v15.mp3",
+    "kana": "はん",
+    "seconds": 1.169,
+    "sha256": "532c6850e6934cee12512a6c106244e164dafe0a496bb8dc2056712ed504cb5d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "はん"
+  },
+  {
+    "file": "course-04-v16.mp3",
+    "kana": "あさ",
+    "seconds": 1.234,
+    "sha256": "04bceeaee5d8a3acd8db9421e974eb11fead60aa32c740891fa53c5eb7b7ea34",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あさ"
+  },
+  {
+    "file": "course-04-v17.mp3",
+    "kana": "よる",
+    "seconds": 1.204,
+    "sha256": "6a2e0d50a4b57d506f4efe4f0b8b4a6ed6204493f0778b024e976052f37ae1b9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "よる"
+  },
+  {
+    "file": "course-04-q1.mp3",
+    "kana": "いま じゅうじです。",
+    "seconds": 0.88,
+    "sha256": "55a738efee058180336af7de930047f30da8aa7e3975915785c28b820af8a2fe",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "いま じゅうじです。"
+  },
+  {
+    "file": "course-04-q2.mp3",
+    "kana": "じゅぎょうは くじからです。",
+    "seconds": 2.155,
+    "sha256": "927a3f5c47cacd05b2852a1c88925fa6700c35e9128c7c2b3cdb230d3c082634",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥɨɡʲoː βa kɯʥi kaɾa desɨ."
+  },
+  {
+    "file": "course-04-q3.mp3",
+    "kana": "じゅぎょうは じゅうじまでです。",
+    "seconds": 2.64,
+    "sha256": "c012b8f68928b645d13d67732d047f26ab62a4236f6d16546e38324d45b29d56",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "じゅぎょうは じゅうじまでです。"
+  },
+  {
+    "file": "course-04-q4.mp3",
+    "kana": "なんじ",
+    "seconds": 1.349,
+    "sha256": "2eecfcd526e6c2055b443fa7d2adaa10f21f13a61765e5b30726d4b35e3866e4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "なんじ"
   },
   {
     "file": "course-04-listen.mp3",
     "kana": "じゅぎょうは くじからです。",
-    "phonemes": "ʥɨɡʲoː βa kɯʥi kaɾa desɨ.",
-    "seconds": 1.621
+    "seconds": 2.155,
+    "sha256": "927a3f5c47cacd05b2852a1c88925fa6700c35e9128c7c2b3cdb230d3c082634",
+    "engine": "kokoro-82m",
+    "voice": "jf_gongitsune",
+    "phonemes": "ʥɨɡʲoː βa kɯʥi kaɾa desɨ."
+  },
+  {
+    "file": "course-04-q6.mp3",
+    "kana": "いまは はちじはんです。",
+    "seconds": 1.52,
+    "sha256": "fb1b5229dd7909796a7cadfec74c3dde630948fcbe1c0f307a34e2899fa53795",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "今は 八時半です。"
+  },
+  {
+    "file": "course-04-q7.mp3",
+    "kana": "じゅぎょうは よじまでです。",
+    "seconds": 1.68,
+    "sha256": "a7de29de71e322375b7165c40a2126e81042a92166075a18478f4bb4b0d1863d",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "じゅぎょうは よじまでです。"
+  },
+  {
+    "file": "course-04-q8.mp3",
+    "kana": "よじ",
+    "seconds": 1.234,
+    "sha256": "897b7b70c04c3c3e2cde42726f5e07818b709573ead37d49329708e826e62dae",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "よじ"
   },
   {
     "file": "course-05-example.mp3",
     "kana": "おちゃを のみます。",
-    "phonemes": "oʨa o nomʲimasɨ.",
-    "seconds": 1.28
+    "seconds": 1.44,
+    "sha256": "b34dc70be76ed6b10a1fc44f87c3d02cf076a57f3f6d84cdf440121c7212ccee",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "お茶を飲みます。"
+  },
+  {
+    "file": "course-05-example-2.mp3",
+    "kana": "あさは パンを たべます。",
+    "seconds": 2.4,
+    "sha256": "fec73c62679b1f3ca5d70a33967e0003b6d61b01a6f38bdf06c400d283fe3804",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あさは パンを たべます。"
+  },
+  {
+    "file": "course-05-example-3.mp3",
+    "kana": "しんぶんを よみません。",
+    "seconds": 1.36,
+    "sha256": "840907996aba54c9962751d28350c814b33e336602c9a31d5c009c5be31c8b27",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "しんぶんを よみません。"
   },
   {
     "file": "course-05-v1.mp3",
     "kana": "おちゃ",
-    "phonemes": "oʨa",
-    "seconds": 0.64
+    "seconds": 1.239,
+    "sha256": "cbc1d1231b2df47002b4b62c9d09ef84d76662f484afb0d66c2e44850595661f",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おちゃ"
   },
   {
     "file": "course-05-v2.mp3",
     "kana": "みず",
-    "phonemes": "mʲizɨ",
-    "seconds": 0.597
+    "seconds": 1.244,
+    "sha256": "377fccf376e6a6c597606010238c503fefd78e409d5e5de3e18b3fa533a569e9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みず"
   },
   {
     "file": "course-05-v3.mp3",
     "kana": "ほん",
-    "phonemes": "hoɴ",
-    "seconds": 0.491
+    "seconds": 1.154,
+    "sha256": "094b15d940074036e83a8331468927857418a2b1abb1f7232897e40c00123eef",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ほん"
   },
   {
     "file": "course-05-v4.mp3",
     "kana": "のみます",
-    "phonemes": "nomʲimasɨ",
-    "seconds": 0.853
+    "seconds": 1.624,
+    "sha256": "b36d11a104f083e177682c66c6d6c78c8d042bf1d23267940cc625a65eea00d3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "のみます"
   },
   {
     "file": "course-05-v5.mp3",
     "kana": "よみます",
-    "phonemes": "jomʲimasɨ",
-    "seconds": 0.939
+    "seconds": 1.624,
+    "sha256": "dd28eb345bea757393c8a695b8023babf74070f2dcae84db590f84425b9bc558",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "よみます"
+  },
+  {
+    "file": "course-05-v6.mp3",
+    "kana": "たべます",
+    "seconds": 1.574,
+    "sha256": "2cfcc0703948e7b462edeb4313abf0fa276822a2fafc1df9544066364f2f9464",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たべます"
+  },
+  {
+    "file": "course-05-v7.mp3",
+    "kana": "かいます",
+    "seconds": 1.599,
+    "sha256": "75445efbdcb198e34be89229db1a37f34d01a1c34fe3a2f8101d40693578f3a5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かいます"
+  },
+  {
+    "file": "course-05-v8.mp3",
+    "kana": "みます",
+    "seconds": 1.444,
+    "sha256": "258e83e2ebb587aced451c0eebeff9780417c281d78555fd2382e9a9d2a9447d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みます"
+  },
+  {
+    "file": "course-05-v9.mp3",
+    "kana": "ききます",
+    "seconds": 1.585,
+    "sha256": "d1013fccbca45e53631132719c2851751cad6ec07e33710985c2ad0002c1cdf8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ききます"
+  },
+  {
+    "file": "course-05-v10.mp3",
+    "kana": "かきます",
+    "seconds": 1.659,
+    "sha256": "0bcc5b8b5fd9b9bc16d104d6809587f9e04ff8bb93462616011854efc54c186d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かきます"
+  },
+  {
+    "file": "course-05-v11.mp3",
+    "kana": "します",
+    "seconds": 1.534,
+    "sha256": "ef1d92ccf76c502616636e55649b023e9123f658f09cbd4dbc64cb950485bab8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "します"
+  },
+  {
+    "file": "course-05-v12.mp3",
+    "kana": "コーヒー",
+    "seconds": 1.479,
+    "sha256": "c4b629a3f6f0aa4230b4dd57ce5196c784e0f64afe1a05959b88ecc93c7e21d0",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "コーヒー"
+  },
+  {
+    "file": "course-05-v13.mp3",
+    "kana": "ごはん",
+    "seconds": 1.339,
+    "sha256": "cab8d4b6ac9afb6089e9bf2ea5f2447dc4f7ca8acd5bc5779e156e662e077fb5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ごはん"
+  },
+  {
+    "file": "course-05-v14.mp3",
+    "kana": "パン",
+    "seconds": 1.134,
+    "sha256": "b6e0e722bf14f766e5531bec07f4c467e00bd28f9cea41575a287d000dfa3236",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "パン"
+  },
+  {
+    "file": "course-05-v15.mp3",
+    "kana": "りんご",
+    "seconds": 1.314,
+    "sha256": "a2885759b76fefe5ee2165144a7700dbbf8226fd44ecb5f4b97faaec9b752b20",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "りんご"
+  },
+  {
+    "file": "course-05-v16.mp3",
+    "kana": "しんぶん",
+    "seconds": 1.459,
+    "sha256": "a7224b7ec37e0b970420813f25f74b7330bd742a96fd7b9ebe7132982238fb3a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しんぶん"
+  },
+  {
+    "file": "course-05-v17.mp3",
+    "kana": "てがみ",
+    "seconds": 1.354,
+    "sha256": "a480056c36bd2989522829ca490199817046cde85c593260d1a4a60fa7fc4089",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "てがみ"
+  },
+  {
+    "file": "course-05-q1.mp3",
+    "kana": "みずを のみません。",
+    "seconds": 1.44,
+    "sha256": "b477eb9ed8f7b74ca227b5d68d9fe7325953619b71c9c30e5bd3d13f43afc591",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "みずを のみません。"
+  },
+  {
+    "file": "course-05-q2.mp3",
+    "kana": "おちゃをのみます。",
+    "seconds": 1.28,
+    "sha256": "9f3f9bc2fb0b184e93905c8a7003d3c42fc47ff0cfad605f867ab94b28eaef17",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "おちゃをのみます。"
+  },
+  {
+    "file": "course-05-q3.mp3",
+    "kana": "わたしは おちゃを のみます。",
+    "seconds": 2.56,
+    "sha256": "4a804eee71cc543bb18bcc7c36059a2e07cfc3b29429d8176d3f33ec69b6e4de",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "わたしは おちゃを のみます。"
+  },
+  {
+    "file": "course-05-q4.mp3",
+    "kana": "よみます",
+    "seconds": 1.624,
+    "sha256": "dd28eb345bea757393c8a695b8023babf74070f2dcae84db590f84425b9bc558",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "よみます"
   },
   {
     "file": "course-05-listen.mp3",
     "kana": "ほんを よみます。",
-    "phonemes": "hoɴ o jomʲimasɨ.",
-    "seconds": 1.259
+    "seconds": 5.76,
+    "sha256": "5e368386cd94b422c33d150ebfa043945c637fe9e6fa1ea3f9077137daf59cac",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ほんを よみます。"
+  },
+  {
+    "file": "course-05-q6.mp3",
+    "kana": "あさは パンを たべます。",
+    "seconds": 2.4,
+    "sha256": "fec73c62679b1f3ca5d70a33967e0003b6d61b01a6f38bdf06c400d283fe3804",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あさは パンを たべます。"
+  },
+  {
+    "file": "course-05-q7.mp3",
+    "kana": "しんぶんを よみません。",
+    "seconds": 1.36,
+    "sha256": "840907996aba54c9962751d28350c814b33e336602c9a31d5c009c5be31c8b27",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "しんぶんを よみません。"
+  },
+  {
+    "file": "course-05-q8.mp3",
+    "kana": "りんご",
+    "seconds": 1.314,
+    "sha256": "a2885759b76fefe5ee2165144a7700dbbf8226fd44ecb5f4b97faaec9b752b20",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "りんご"
   },
   {
     "file": "course-06-example.mp3",
     "kana": "バスで えきへ いきます。",
-    "phonemes": "basɨ de ekʲi e ikʲimasɨ.",
-    "seconds": 1.579
+    "seconds": 1.36,
+    "sha256": "4bbb572cb2066fcf31ef02919cda5b39d0b9b38d255403782d2905210f91b900",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "バスで駅へ行きます。"
+  },
+  {
+    "file": "course-06-example-2.mp3",
+    "kana": "じてんしゃで がっこうへ いきます。",
+    "seconds": 2.56,
+    "sha256": "c322b2f72ed794592edebdcd8d58068e09cd972da2fa878b9297884ab1b3b5c2",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "じてんしゃで がっこうへ いきます。"
+  },
+  {
+    "file": "course-06-example-3.mp3",
+    "kana": "タクシーで うちへ かえります。",
+    "seconds": 1.68,
+    "sha256": "26e26ba91deeb88267386a50e39c19c4c087fe9afb907c358f0613262931e58c",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "タクシーで うちへ かえります。"
   },
   {
     "file": "course-06-v1.mp3",
     "kana": "バス",
-    "phonemes": "basɨ",
-    "seconds": 0.491
+    "seconds": 1.294,
+    "sha256": "33d11e499f55005cedcadf39938b092103db14fc4c02adb8fed88fd450d61515",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "バス"
   },
   {
     "file": "course-06-v2.mp3",
     "kana": "でんしゃ",
-    "phonemes": "deɴɕa",
-    "seconds": 0.661
+    "seconds": 1.404,
+    "sha256": "7f43ee27241f6d36eb95dfe2368b1940149e753d49fd99b6087e3f4b79067f27",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "でんしゃ"
   },
   {
     "file": "course-06-v3.mp3",
     "kana": "えき",
-    "phonemes": "ekʲi",
-    "seconds": 0.704
+    "seconds": 1.229,
+    "sha256": "d10ec3fe89db10f368d45b87705cb6f0bf53b947234249cd3c205878fce39edd",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "えき"
   },
   {
     "file": "course-06-v4.mp3",
     "kana": "こうえん",
-    "phonemes": "koːeɴ",
-    "seconds": 0.683
+    "seconds": 1.399,
+    "sha256": "bab71baabdd99a70d3a3df2c42e379ed6e81e6eb79994cd38a191037781f4b1f",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "こうえん"
   },
   {
     "file": "course-06-v5.mp3",
     "kana": "いきます",
-    "phonemes": "ikʲimasɨ",
-    "seconds": 0.896
+    "seconds": 1.589,
+    "sha256": "4f04fc67d42ad83318b108fa6eaf38f65fadb3b426cfd548da8ea3946bae8012",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いきます"
+  },
+  {
+    "file": "course-06-v6.mp3",
+    "kana": "あるきます",
+    "seconds": 1.724,
+    "sha256": "94984112e7faed68ce5a5320b5396e28f04fa97997ddcc30c732eda791215fd8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あるきます"
+  },
+  {
+    "file": "course-06-v7.mp3",
+    "kana": "じてんしゃ",
+    "seconds": 1.554,
+    "sha256": "756823537ef827209247fca0e49afd4d0d647aaae3147e365aaa11899811e2c0",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "じてんしゃ"
+  },
+  {
+    "file": "course-06-v8.mp3",
+    "kana": "タクシー",
+    "seconds": 1.519,
+    "sha256": "324b113cfe3482c1328d41cbefb7846cce73b44a17b359bc73064e6c9d9a3de0",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "タクシー"
+  },
+  {
+    "file": "course-06-v9.mp3",
+    "kana": "くるま",
+    "seconds": 1.329,
+    "sha256": "91ca3d05b1d316902e1b260abdbcd158970e24770bd72682442e1d5e13abbe60",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "くるま"
+  },
+  {
+    "file": "course-06-v10.mp3",
+    "kana": "ちかてつ",
+    "seconds": 1.619,
+    "sha256": "76950207b248f81789b48da1094e793577121110019a2cacf0571308590c97ba",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ちかてつ"
+  },
+  {
+    "file": "course-06-v11.mp3",
+    "kana": "ひこうき",
+    "seconds": 1.504,
+    "sha256": "2e9478b1e660eb1498889a1e1a93a0aa8efb7367b2003fdc9758ddc6d810548b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ひこうき"
+  },
+  {
+    "file": "course-06-v12.mp3",
+    "kana": "がっこう",
+    "seconds": 1.494,
+    "sha256": "37b062b0b79abb69076034da5c79c39105ee58456679f2af9f3ad3326973cfd3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "がっこう"
+  },
+  {
+    "file": "course-06-v13.mp3",
+    "kana": "うち",
+    "seconds": 1.254,
+    "sha256": "e18548ac5a1e38ba99b6b315e6943c695f1b4e771ae9e72645c0ecf38968c26d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "うち"
+  },
+  {
+    "file": "course-06-v14.mp3",
+    "kana": "みせ",
+    "seconds": 1.249,
+    "sha256": "fd231ae835baff0f98c23f63440cf140f6a2c73a4e19f6cc0f0be4f341c56b51",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みせ"
+  },
+  {
+    "file": "course-06-v15.mp3",
+    "kana": "かえります",
+    "seconds": 1.759,
+    "sha256": "09c8ec1b3eaf95e225a7feb13c1f9217279be7af0c6487463397d411b89d27d5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かえります"
+  },
+  {
+    "file": "course-06-v16.mp3",
+    "kana": "きます",
+    "seconds": 1.474,
+    "sha256": "f8e8508d1f45bc29ac5d00b7b8c73aceb7a60059fbc6b54429197c927655e71c",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "きます"
+  },
+  {
+    "file": "course-06-v17.mp3",
+    "kana": "まっすぐ",
+    "seconds": 1.474,
+    "sha256": "0821507014596e1f4969897edc08d67caf94c82a62e827821938779231f2c6b5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "まっすぐ"
+  },
+  {
+    "file": "course-06-q1.mp3",
+    "kana": "バスで えきへ いきます。",
+    "seconds": 1.36,
+    "sha256": "4bbb572cb2066fcf31ef02919cda5b39d0b9b38d255403782d2905210f91b900",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "バスで駅へ行きます。"
+  },
+  {
+    "file": "course-06-q2.mp3",
+    "kana": "でんしゃでこうえんへ いきます。",
+    "seconds": 2.16,
+    "sha256": "d8e6f8c82adbaca6d7e3b9e6646a25d03bcc96e55304d3dd24e460a8ba895053",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "でんしゃでこうえんへ いきます。"
+  },
+  {
+    "file": "course-06-q3.mp3",
+    "kana": "バスで こうえんへ いきます。",
+    "seconds": 2.32,
+    "sha256": "ebf7cd9aaa4f2e61913a412e398c42a6ad50dddb41e007e6c076615dc39b4a0a",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "バスで こうえんへ いきます。"
+  },
+  {
+    "file": "course-06-q4.mp3",
+    "kana": "でんしゃ",
+    "seconds": 1.404,
+    "sha256": "7f43ee27241f6d36eb95dfe2368b1940149e753d49fd99b6087e3f4b79067f27",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "でんしゃ"
   },
   {
     "file": "course-06-listen.mp3",
     "kana": "でんしゃで えきへ いきます。",
-    "phonemes": "deɴɕa de ekʲi e ikʲimasɨ.",
-    "seconds": 1.664
+    "seconds": 2.64,
+    "sha256": "6f6a364ff8a6f30b55c6f129910d77cefe5bd31ea27c45aecc13a6853c43b170",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "でんしゃで えきへ いきます。"
+  },
+  {
+    "file": "course-06-q6.mp3",
+    "kana": "じてんしゃで がっこうへ いきます。",
+    "seconds": 2.56,
+    "sha256": "c322b2f72ed794592edebdcd8d58068e09cd972da2fa878b9297884ab1b3b5c2",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "じてんしゃで がっこうへ いきます。"
+  },
+  {
+    "file": "course-06-q7.mp3",
+    "kana": "タクシーで うちへ かえります。",
+    "seconds": 1.68,
+    "sha256": "26e26ba91deeb88267386a50e39c19c4c087fe9afb907c358f0613262931e58c",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "タクシーで うちへ かえります。"
+  },
+  {
+    "file": "course-06-q8.mp3",
+    "kana": "うち",
+    "seconds": 1.254,
+    "sha256": "e18548ac5a1e38ba99b6b315e6943c695f1b4e771ae9e72645c0ecf38968c26d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "うち"
   },
   {
     "file": "course-07-example.mp3",
     "kana": "へやに ねこが います。",
-    "phonemes": "heja ɲi neko ɡa imasɨ.",
-    "seconds": 1.493
+    "seconds": 1.68,
+    "sha256": "7222d19feb9ac47563890efcde49fe475d3691fb00975e1b28dad4e26fa5c2da",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "へやに ねこが います。"
+  },
+  {
+    "file": "course-07-example-2.mp3",
+    "kana": "にわに とりが います。",
+    "seconds": 1.6,
+    "sha256": "a4eac9b6b6fa359fa62644ddfc86fdb7e6338802ba521378aa8bc1b53ec18b89",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "にわに とりが います。"
+  },
+  {
+    "file": "course-07-example-3.mp3",
+    "kana": "へやに テレビが あります。",
+    "seconds": 2.16,
+    "sha256": "d1dc90cff61bf31fead59d52dc9e7070bb5d5b99565087501d79e2467d466a45",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "へやに テレビが あります。"
   },
   {
     "file": "course-07-v1.mp3",
     "kana": "ねこ",
-    "phonemes": "neko",
-    "seconds": 0.555
+    "seconds": 1.209,
+    "sha256": "8d23ee57581f99aa6b820e4171f44c87c105a8b905c073a7f9c11f0722e8c58d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ねこ"
   },
   {
     "file": "course-07-v2.mp3",
     "kana": "いぬ",
-    "phonemes": "inɯ",
-    "seconds": 0.661
+    "seconds": 1.189,
+    "sha256": "b6a1c6a697b9a29c37e1a7b4749c2ed7d0d03aa28dc28c43d64bb859737b5e00",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いぬ"
   },
   {
     "file": "course-07-v3.mp3",
     "kana": "へや",
-    "phonemes": "heja",
-    "seconds": 0.533
+    "seconds": 1.225,
+    "sha256": "8a822a17ab8ca0a511d2481834e09b739da14fe0e0c5a0189c97e8119ab66ce6",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "へや"
   },
   {
     "file": "course-07-v4.mp3",
     "kana": "つくえ",
-    "phonemes": "ʦɨkɯe",
-    "seconds": 0.64
+    "seconds": 1.73,
+    "sha256": "6070b8bc8adb16832b7563840b68d4e0d40f9a50ab08125bca0d824f854f6b7c",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "つくえ"
   },
   {
     "file": "course-07-v5.mp3",
     "kana": "いす",
-    "phonemes": "isɨ",
-    "seconds": 0.597
+    "seconds": 1.234,
+    "sha256": "2737a58090c19343d1531b2b97ae1e8aaf8cefe03abcc53d8d345a0eef1d326a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いす"
+  },
+  {
+    "file": "course-07-v6.mp3",
+    "kana": "こども",
+    "seconds": 1.349,
+    "sha256": "ffe29dc1ffc7217322b72a807c12cdbde5d296e1e158f6184b7411c737eab69a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "こども"
+  },
+  {
+    "file": "course-07-v7.mp3",
+    "kana": "おとこ",
+    "seconds": 1.345,
+    "sha256": "6b50d98bc1a097dcffcf22fb1e7a7eb57cfd5f50afb1396f3c82587d54bdb223",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おとこ"
+  },
+  {
+    "file": "course-07-v8.mp3",
+    "kana": "おんな",
+    "seconds": 1.229,
+    "sha256": "13400fa1a4461b963e08c72f928941559830dfccb336dd935a97c717512b9a1b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おんな"
+  },
+  {
+    "file": "course-07-v9.mp3",
+    "kana": "さかな",
+    "seconds": 1.379,
+    "sha256": "98ae0b09653c5622bab5613d96aac4174774e4b240ab48d8a8cc097e8991cb56",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "さかな"
+  },
+  {
+    "file": "course-07-v10.mp3",
+    "kana": "とり",
+    "seconds": 1.189,
+    "sha256": "9ae22a52df37e9a8c28315187ca55b408c6ad0c36b7723320c80753148409d9f",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "とり"
+  },
+  {
+    "file": "course-07-v11.mp3",
+    "kana": "ベッド",
+    "seconds": 1.294,
+    "sha256": "37134380607c1bb6ad5b8f1fe346f3a36ce6750267acb5db283858d2006bbdc9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ベッド"
+  },
+  {
+    "file": "course-07-v12.mp3",
+    "kana": "ドア",
+    "seconds": 1.204,
+    "sha256": "d9aa25fd3c750646d82447983e7ec24d4c376a644f52c3f58b511c0dde4dd1d8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ドア"
+  },
+  {
+    "file": "course-07-v13.mp3",
+    "kana": "まど",
+    "seconds": 1.184,
+    "sha256": "13c17f5392cabb4689522a826053e23d7c05d23997b2c838feb8de13e40411d4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "まど"
+  },
+  {
+    "file": "course-07-v14.mp3",
+    "kana": "でんわ",
+    "seconds": 1.309,
+    "sha256": "bd1bd1f501029772bcb36e89286eee9295a68842b4515b5e5ab358744ccddad0",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "でんわ"
+  },
+  {
+    "file": "course-07-v15.mp3",
+    "kana": "テレビ",
+    "seconds": 1.359,
+    "sha256": "41cc2fd3c783cb8757be5e905f310f40735a7ea5783b5a695fc79ac53c276e08",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "テレビ"
+  },
+  {
+    "file": "course-07-v16.mp3",
+    "kana": "ほんだな",
+    "seconds": 1.449,
+    "sha256": "1727b0ee9a829b5055ff0f394d73e9c3de9c1e1b74e911d0f324219bd61182a2",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ほんだな"
+  },
+  {
+    "file": "course-07-v17.mp3",
+    "kana": "にわ",
+    "seconds": 1.169,
+    "sha256": "6cee04198a12d28b546c6c7f16b3f1287210b85487dcd1100761a991ec8335c7",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "にわ"
+  },
+  {
+    "file": "course-07-q1.mp3",
+    "kana": "へやに いぬが います。",
+    "seconds": 1.68,
+    "sha256": "d26d12dfa91cc0bef5453825e856f75bb18aad64e2673488da57ca8f4afd99a8",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "へやに いぬが います。"
+  },
+  {
+    "file": "course-07-q2.mp3",
+    "kana": "へやにねこが います。",
+    "seconds": 5.92,
+    "sha256": "1053a7a08033136ed54b89b2bf6befbe7ec3fa399934567be5f4a85c5239b534",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "へやにねこが います。"
+  },
+  {
+    "file": "course-07-q3.mp3",
+    "kana": "へやに つくえが あります。",
+    "seconds": 2.24,
+    "sha256": "ce85e83b350fd7c9fe7b69c70e05b21588a2b1c1b9a256b1592acd8e24751c78",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "へやに つくえが あります。"
+  },
+  {
+    "file": "course-07-q4.mp3",
+    "kana": "つくえ",
+    "seconds": 1.73,
+    "sha256": "6070b8bc8adb16832b7563840b68d4e0d40f9a50ab08125bca0d824f854f6b7c",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "つくえ"
   },
   {
     "file": "course-07-listen.mp3",
     "kana": "へやに いすが あります。",
-    "phonemes": "heja ɲi isɨɡa aɾʲimasɨ.",
-    "seconds": 1.536
+    "seconds": 2.4,
+    "sha256": "3fe493f01fc41e7316fb2cafc21750c06569862a2b0243decfcceea0053eca7b",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "へやに いすが あります。"
+  },
+  {
+    "file": "course-07-q6.mp3",
+    "kana": "にわに とりが います。",
+    "seconds": 1.6,
+    "sha256": "a4eac9b6b6fa359fa62644ddfc86fdb7e6338802ba521378aa8bc1b53ec18b89",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "にわに とりが います。"
+  },
+  {
+    "file": "course-07-q7.mp3",
+    "kana": "へやに テレビが あります。",
+    "seconds": 2.16,
+    "sha256": "d1dc90cff61bf31fead59d52dc9e7070bb5d5b99565087501d79e2467d466a45",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "へやに テレビが あります。"
+  },
+  {
+    "file": "course-07-q8.mp3",
+    "kana": "まど",
+    "seconds": 1.184,
+    "sha256": "13c17f5392cabb4689522a826053e23d7c05d23997b2c838feb8de13e40411d4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "まど"
   },
   {
     "file": "course-08-example.mp3",
     "kana": "この まちは しずかです。",
-    "phonemes": "kono maʨi βa ɕizɨka desɨ.",
-    "seconds": 1.621
+    "seconds": 1.52,
+    "sha256": "7166bb67e15d80f8bf038dd41492f0818a185a891ac0b48d5f394abf0abfad6f",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この まちは しずかです。"
+  },
+  {
+    "file": "course-08-example-2.mp3",
+    "kana": "この まちは にぎやかです。",
+    "seconds": 2.64,
+    "sha256": "af04efe3f35bae8eb0172340e84aa710a6e63024d3722aef98b8c9ca9f57b52c",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この まちは にぎやかです。"
+  },
+  {
+    "file": "course-08-example-3.mp3",
+    "kana": "この ケーキは あまいです。",
+    "seconds": 2.08,
+    "sha256": "415294f805c1e99d99ca7b6db11d49a5d2f5de3d6f28639cb0a8442632585523",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この ケーキは あまいです。"
   },
   {
     "file": "course-08-v1.mp3",
     "kana": "おおきい",
-    "phonemes": "oːkʲiː",
-    "seconds": 0.832
+    "seconds": 1.479,
+    "sha256": "3fe9cbb34d773871d0aed6cea85d00b4a89b5e0263de2b6559742c55bf1aa3e6",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おおきい"
   },
   {
     "file": "course-08-v2.mp3",
     "kana": "ちいさい",
-    "phonemes": "ʨiːsai",
-    "seconds": 0.725
+    "seconds": 1.494,
+    "sha256": "105773cea5a82fdbc00814d913ca3c08ff1d3a56819d838f390a60843b07abad",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ちいさい"
   },
   {
     "file": "course-08-v3.mp3",
     "kana": "おいしい",
-    "phonemes": "oiɕiː",
-    "seconds": 0.853
+    "seconds": 1.479,
+    "sha256": "ca865c9358ba136bee63c4f5d3ceb2dcbd0239ae650beea32c3cd0b1a361b9b9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おいしい"
   },
   {
     "file": "course-08-v4.mp3",
     "kana": "しずか",
-    "phonemes": "ɕizɨka",
-    "seconds": 0.661
+    "seconds": 1.449,
+    "sha256": "e2bbea70ec2db4a2f54a586bbebdcc959a71e603c222fbcabc58b36877f19ff3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しずか"
   },
   {
     "file": "course-08-v5.mp3",
     "kana": "まち",
-    "phonemes": "maʨi",
-    "seconds": 0.576
+    "seconds": 1.264,
+    "sha256": "bd0ceb85bb2369cc8de21279522321f1731c66641d323fad2f2694aa1df9c9e0",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "まち"
   },
   {
     "file": "course-08-v6.mp3",
     "kana": "ケーキ",
-    "phonemes": "keːkʲi",
-    "seconds": 0.64
+    "seconds": 1.549,
+    "sha256": "3da34374131339334be3f21d05469605094b316ef508d9259eae7665034ae8f7",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Sayaka",
+    "synthesisText": "ケーキ"
+  },
+  {
+    "file": "course-08-v7.mp3",
+    "kana": "あつい",
+    "seconds": 1.359,
+    "sha256": "ed0d4df20939d0f26e765cc181819206e895797d3d0c13909fe27e813573e62f",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あつい"
+  },
+  {
+    "file": "course-08-v8.mp3",
+    "kana": "さむい",
+    "seconds": 1.369,
+    "sha256": "ec6d74d7e228aaf409509a308b8bf6bd83575195c8590cba6a70c5fed8f58753",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "さむい"
+  },
+  {
+    "file": "course-08-v9.mp3",
+    "kana": "たかい",
+    "seconds": 1.324,
+    "sha256": "5a1e8015cf6bff7893539f6dfa6f10f23df41b348408a04fb19848df01fd26ec",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たかい"
+  },
+  {
+    "file": "course-08-v10.mp3",
+    "kana": "ひくい",
+    "seconds": 1.304,
+    "sha256": "914f8c22bf072fd916c92aaec85e3ee1913ead75bbb17e6eae8a2a4a4fb77d16",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ひくい"
+  },
+  {
+    "file": "course-08-v11.mp3",
+    "kana": "きれい",
+    "seconds": 1.329,
+    "sha256": "cfa973496c830f78b42939a541683a756e0c18ada2c80f07463bfba3567f0736",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "きれい"
+  },
+  {
+    "file": "course-08-v12.mp3",
+    "kana": "にぎやか",
+    "seconds": 1.469,
+    "sha256": "5b96998a3dc6e0aebda0b9c1e8f410916701d701ccc3c2127da38233a750e768",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "にぎやか"
+  },
+  {
+    "file": "course-08-v13.mp3",
+    "kana": "べんり",
+    "seconds": 1.299,
+    "sha256": "980c8769371383b01bb22eca0d1d1ea9f9b5e219ad4cac8f0be64abea873dfe2",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "べんり"
+  },
+  {
+    "file": "course-08-v14.mp3",
+    "kana": "むずかしい",
+    "seconds": 1.719,
+    "sha256": "b019145f7ea8dc6c336ece4717b95ca8907b307ad9e9ba7d994b316550a782f8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "むずかしい"
+  },
+  {
+    "file": "course-08-v15.mp3",
+    "kana": "やさしい",
+    "seconds": 1.604,
+    "sha256": "73846bc437c80f652d5fcbccf17397a72d0594e97a48a7a3ad031029f8f32c70",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "やさしい"
+  },
+  {
+    "file": "course-08-v16.mp3",
+    "kana": "たのしい",
+    "seconds": 1.549,
+    "sha256": "fc958be96b9d46b29ea42164ac58a51ae32a397ad7a55244816d09c8f44a8c86",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たのしい"
+  },
+  {
+    "file": "course-08-v17.mp3",
+    "kana": "つまらない",
+    "seconds": 1.674,
+    "sha256": "67eccd1023900419a2c46541b265a03f91e313998c35b115ef471d506b846d37",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "つまらない"
+  },
+  {
+    "file": "course-08-v18.mp3",
+    "kana": "あまい",
+    "seconds": 1.324,
+    "sha256": "f0d192aa60cb908ed23e47dd15577ae5daf6faf4e0bb4d600944167bd7ae1847",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あまい"
+  },
+  {
+    "file": "course-08-q1.mp3",
+    "kana": "この へやは おおきいです。",
+    "seconds": 2.24,
+    "sha256": "91cb323ce8ce5e6a69debcfa7f25a8e67e0cfff6697b2827c1c2aff7117e374f",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この へやは おおきいです。"
+  },
+  {
+    "file": "course-08-q2.mp3",
+    "kana": "この まちはしずかです。",
+    "seconds": 1.68,
+    "sha256": "87bde5ba8f63d80c71451aad847beca7f1653dc8e228efd8f42e4fad5d964225",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この まちはしずかです。"
+  },
+  {
+    "file": "course-08-q3.mp3",
+    "kana": "この かばんは ちいさいです。",
+    "seconds": 1.84,
+    "sha256": "cdacb6f15cf2b46f901c1b53308321d2de800c70f5161656512bed36258c2076",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この かばんは ちいさいです。"
+  },
+  {
+    "file": "course-08-q4.mp3",
+    "kana": "おいしい",
+    "seconds": 1.479,
+    "sha256": "ca865c9358ba136bee63c4f5d3ceb2dcbd0239ae650beea32c3cd0b1a361b9b9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おいしい"
   },
   {
     "file": "course-08-listen.mp3",
     "kana": "この ケーキは おいしいです。",
-    "phonemes": "kono keːkʲi βa oiɕiː desɨ.",
-    "seconds": 1.749
+    "seconds": 3.12,
+    "sha256": "0bc8b808813646e1d4947d26f822fe09da933be727ad98f44b35d3eebe863c92",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この ケーキは おいしいです。"
+  },
+  {
+    "file": "course-08-q6.mp3",
+    "kana": "この まちは にぎやかです。",
+    "seconds": 2.64,
+    "sha256": "af04efe3f35bae8eb0172340e84aa710a6e63024d3722aef98b8c9ca9f57b52c",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この まちは にぎやかです。"
+  },
+  {
+    "file": "course-08-q7.mp3",
+    "kana": "この ケーキは あまいです。",
+    "seconds": 2.08,
+    "sha256": "415294f805c1e99d99ca7b6db11d49a5d2f5de3d6f28639cb0a8442632585523",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この ケーキは あまいです。"
+  },
+  {
+    "file": "course-08-q8.mp3",
+    "kana": "あまい",
+    "seconds": 1.324,
+    "sha256": "f0d192aa60cb908ed23e47dd15577ae5daf6faf4e0bb4d600944167bd7ae1847",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あまい"
   },
   {
     "file": "course-09-example.mp3",
     "kana": "きのうは えいがを みました。",
-    "phonemes": "kʲinoː βa eːɡa o mʲimaɕi ta.",
-    "seconds": 1.856
+    "seconds": 1.6,
+    "sha256": "6e013c18f52831a95844a6167b15a31578c875dc5ac57c3a4998583b40464bc3",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "きのうは えいがを みました。"
+  },
+  {
+    "file": "course-09-example-2.mp3",
+    "kana": "せんしゅうは えいがを みませんでした。",
+    "seconds": 2.8,
+    "sha256": "49701ee3903e6b0e1c859381874bb1ab6668eec30bc5eca37f607500b97568e5",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "せんしゅうは えいがを みませんでした。"
+  },
+  {
+    "file": "course-09-example-3.mp3",
+    "kana": "きのうは パンを たべました。",
+    "seconds": 1.6,
+    "sha256": "23f7d4531d9dcbf5223aa79123fac48ee9fe535ecc14cfcbedde68a367253e96",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "きのうは パンを たべました。"
   },
   {
     "file": "course-09-v1.mp3",
     "kana": "きのう",
-    "phonemes": "kʲinoː",
-    "seconds": 0.64
+    "seconds": 1.334,
+    "sha256": "d03596f7b55a29c9e8b3c56a5e0a279cac6a750d8f6edfb658c997a3ca471187",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "きのう"
   },
   {
     "file": "course-09-v2.mp3",
     "kana": "えいが",
-    "phonemes": "eːɡa",
-    "seconds": 0.704
+    "seconds": 1.279,
+    "sha256": "dc7418d7f366ddddf798654a3b9df508ed352e9677fdb61764ec9110fea04ed6",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "えいが"
   },
   {
     "file": "course-09-v3.mp3",
     "kana": "みました",
-    "phonemes": "mʲimaɕi ta",
-    "seconds": 0.981
+    "seconds": 1.504,
+    "sha256": "542c75672fa66604271c4b7dfbe516a3ba0fbff51032f25cec5db22276f9df16",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みました"
   },
   {
     "file": "course-09-v4.mp3",
     "kana": "よみました",
-    "phonemes": "jomʲi maɕita",
-    "seconds": 1.088
+    "seconds": 1.659,
+    "sha256": "3b9ea3abcc73e02833121006f67d7210900c305d4adeb3c1d1f548cd268608c7",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "よみました"
   },
   {
     "file": "course-09-v5.mp3",
     "kana": "のみませんでした",
-    "phonemes": "nomʲi maseɴ deɕi ta",
-    "seconds": 1.472
+    "seconds": 2.044,
+    "sha256": "83b92bcde7e1cf10869d431ebab4fb65e65e309047317455db2086f9ffff5d62",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "のみませんでした"
+  },
+  {
+    "file": "course-09-v6.mp3",
+    "kana": "おととい",
+    "seconds": 1.439,
+    "sha256": "781ef22092aada848b491f8f7408bfb823751f7bb648acc011c7c7c89890a8d8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おととい"
+  },
+  {
+    "file": "course-09-v7.mp3",
+    "kana": "せんしゅう",
+    "seconds": 1.569,
+    "sha256": "e7a7f36f0eea112204538bcfc6aae175176456db75af9407dede17dfabe7933f",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "せんしゅう"
+  },
+  {
+    "file": "course-09-v8.mp3",
+    "kana": "せんげつ",
+    "seconds": 1.629,
+    "sha256": "9ed205163fb256551b2236a2bd8dd1d7c253fdf0739811160d9aeefb0c735d6e",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "せんげつ"
+  },
+  {
+    "file": "course-09-v9.mp3",
+    "kana": "いきました",
+    "seconds": 1.619,
+    "sha256": "86b71913062866c71f5e0602484e9d5868622c6dd9390b2774ab9bc4bc7771ee",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いきました"
+  },
+  {
+    "file": "course-09-v10.mp3",
+    "kana": "きました",
+    "seconds": 1.499,
+    "sha256": "ae2218882ab67121c5305448964a8623d6c20c7c3275032030cbe523354cc81b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "きました"
+  },
+  {
+    "file": "course-09-v11.mp3",
+    "kana": "たべました",
+    "seconds": 1.644,
+    "sha256": "9bbbdadc1738313ee9e0084c0398f3cdc8218fd0cfc1d36b2d38830ce17e6d1a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たべました"
+  },
+  {
+    "file": "course-09-v12.mp3",
+    "kana": "かいました",
+    "seconds": 1.679,
+    "sha256": "a481a9a294c2460299f6e685a790f4d7600e9ee46941f39a909e9bb0ee43bec2",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かいました"
+  },
+  {
+    "file": "course-09-v13.mp3",
+    "kana": "ききました",
+    "seconds": 1.614,
+    "sha256": "1ec3e8f5dcd1d8d1286af55cd54bd558e4c4477cbe3adfcef85b57a28f607ebb",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ききました"
+  },
+  {
+    "file": "course-09-v14.mp3",
+    "kana": "しました",
+    "seconds": 1.564,
+    "sha256": "1d5492832f374e2c570b9c1432e8ab7456841440c415247fce96ce6256980019",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しました"
+  },
+  {
+    "file": "course-09-v15.mp3",
+    "kana": "みませんでした",
+    "seconds": 1.934,
+    "sha256": "0144eb4c149a947b7d49a5f0630ed154a4b0a82fb458affa058c70b33275b1a9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みませんでした"
+  },
+  {
+    "file": "course-09-v16.mp3",
+    "kana": "たべませんでした",
+    "seconds": 2.064,
+    "sha256": "06af292068d22f128c9e1f4f7ace75d070eed12ca75ed137420f9710f6350af1",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たべませんでした"
+  },
+  {
+    "file": "course-09-v17.mp3",
+    "kana": "かえりました",
+    "seconds": 1.789,
+    "sha256": "7ee1809a62441cfc8cb5bc848abe78c05bc1ff2700c5538d5268026d841496de",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かえりました"
+  },
+  {
+    "file": "course-09-q1.mp3",
+    "kana": "きのうは ほんを よみませんでした。",
+    "seconds": 3.6,
+    "sha256": "76bd70b0d2e7563e126bd9817a19aa0db360891dbf5a295e0f82bef36c0ecd0b",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "きのうは ほんを よみませんでした。"
+  },
+  {
+    "file": "course-09-q2.mp3",
+    "kana": "きのうは みずをのみませんでした。",
+    "seconds": 2.56,
+    "sha256": "218e51929f0eea3ee24330fa54afc19fda7e1cbb57f3d56d81085a41916527f5",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "きのうは みずをのみませんでした。"
+  },
+  {
+    "file": "course-09-q3.mp3",
+    "kana": "きのうは えいがを みました。",
+    "seconds": 1.6,
+    "sha256": "6e013c18f52831a95844a6167b15a31578c875dc5ac57c3a4998583b40464bc3",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "きのうは えいがを みました。"
+  },
+  {
+    "file": "course-09-q4.mp3",
+    "kana": "みました",
+    "seconds": 1.504,
+    "sha256": "542c75672fa66604271c4b7dfbe516a3ba0fbff51032f25cec5db22276f9df16",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みました"
   },
   {
     "file": "course-09-listen.mp3",
     "kana": "きのうは おちゃを のみました。",
-    "phonemes": "kʲinoː βa oʨa o nomʲi maɕita.",
-    "seconds": 1.856
+    "seconds": 2.0,
+    "sha256": "8bcdf0c00b98311004a04ec3d6e9ff99f390e51504783a9ba72238d51ef9b3d6",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "きのうは おちゃを のみました。"
+  },
+  {
+    "file": "course-09-q6.mp3",
+    "kana": "せんしゅうは えいがを みませんでした。",
+    "seconds": 2.8,
+    "sha256": "49701ee3903e6b0e1c859381874bb1ab6668eec30bc5eca37f607500b97568e5",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "せんしゅうは えいがを みませんでした。"
+  },
+  {
+    "file": "course-09-q7.mp3",
+    "kana": "きのうは パンを たべました。",
+    "seconds": 1.6,
+    "sha256": "23f7d4531d9dcbf5223aa79123fac48ee9fe535ecc14cfcbedde68a367253e96",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "きのうは パンを たべました。"
+  },
+  {
+    "file": "course-09-q8.mp3",
+    "kana": "おととい",
+    "seconds": 1.439,
+    "sha256": "781ef22092aada848b491f8f7408bfb823751f7bb648acc011c7c7c89890a8d8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おととい"
   },
   {
     "file": "course-10-example.mp3",
     "kana": "あさごはんを たべて、えきへ いきます。",
-    "phonemes": "asaɡohaɴ o tabete, ekʲi e ikʲimasɨ.",
-    "seconds": 2.389
+    "seconds": 3.36,
+    "sha256": "4c5671683803237e7765025c011cc00d9b6716309f8b1aa80036136908245ad8",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あさごはんを たべて、えきへ いきます。"
+  },
+  {
+    "file": "course-10-example-2.mp3",
+    "kana": "あさ おきて、かおを あらいます。",
+    "seconds": 3.44,
+    "sha256": "b9fad02827ff47bd075a9eb53508f4c989f00b3e74c3cd4816b17089f9707d1f",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あさ おきて、かおを あらいます。"
+  },
+  {
+    "file": "course-10-example-3.mp3",
+    "kana": "パンを かって うちへ かえります。",
+    "seconds": 1.92,
+    "sha256": "f9783baca24bd88aa722b4b3fd3957fe8c35947cb3202b9d4d933f8a0a5f9f46",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "パンを かって うちへ かえります。"
   },
   {
     "file": "course-10-v1.mp3",
     "kana": "あさごはん",
-    "phonemes": "asaɡohaɴ",
-    "seconds": 0.981
+    "seconds": 1.674,
+    "sha256": "3b552d7a623f95e902ef7b9e5082a74584136e9386ec9cbf7fb9f633e374c697",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あさごはん"
   },
   {
     "file": "course-10-v2.mp3",
     "kana": "たべて",
-    "phonemes": "tabete",
-    "seconds": 0.683
+    "seconds": 1.379,
+    "sha256": "bec6be88d64ab8a1c484bf8fd24501b37a1913f1fd4528ae2459910a94fb7944",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たべて"
   },
   {
     "file": "course-10-v3.mp3",
     "kana": "のんで",
-    "phonemes": "nonde",
-    "seconds": 0.619
+    "seconds": 1.304,
+    "sha256": "be124e74b3a6408d87ff2dfc6e5cf190a3206e917ebccfb9ec2128ff9fab0da9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "のんで"
   },
   {
     "file": "course-10-v4.mp3",
     "kana": "よんで",
-    "phonemes": "jonde",
-    "seconds": 0.64
+    "seconds": 1.314,
+    "sha256": "fb58910d2d4a0ef890ef198fcf8a1bf671e9375a7fb29352ba8024bb53edca40",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "よんで"
   },
   {
     "file": "course-10-v5.mp3",
     "kana": "いきます",
-    "phonemes": "ikʲimasɨ",
-    "seconds": 0.896
+    "seconds": 1.589,
+    "sha256": "4f04fc67d42ad83318b108fa6eaf38f65fadb3b426cfd548da8ea3946bae8012",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いきます"
+  },
+  {
+    "file": "course-10-v6.mp3",
+    "kana": "おきて",
+    "seconds": 1.334,
+    "sha256": "e2ce5288bd7717d219582c9d266e024d59946d200653b56785f5c1c268768829",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おきて"
+  },
+  {
+    "file": "course-10-v7.mp3",
+    "kana": "あらって",
+    "seconds": 1.474,
+    "sha256": "3fb0e6d72616e861bc8ab583c1a8c46473cca4851fe8b6277afa81a209ac37eb",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あらって"
+  },
+  {
+    "file": "course-10-v8.mp3",
+    "kana": "かいて",
+    "seconds": 1.399,
+    "sha256": "8ad4f595ff5e460bd90a6f1fd9fbffe6bbbf7b8cebc251502b842f3644d8b2c4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かいて"
+  },
+  {
+    "file": "course-10-v9.mp3",
+    "kana": "きいて",
+    "seconds": 1.339,
+    "sha256": "7d1493cd0951bb2b9be9bef5c81695615503c89a7a4e6586f840d189964d3399",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "きいて"
+  },
+  {
+    "file": "course-10-v10.mp3",
+    "kana": "かって",
+    "seconds": 1.379,
+    "sha256": "bec8f86ccdaaf36a6c805c8308aaf1f7b8e4a9752de0fd669ce4c31de10f4698",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かって"
+  },
+  {
+    "file": "course-10-v11.mp3",
+    "kana": "まって",
+    "seconds": 1.319,
+    "sha256": "ffe3fc5e3739446bb0bc6bfd83c512eeab1e15b1e404bd6f25b4087d86c35e57",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "まって"
+  },
+  {
+    "file": "course-10-v12.mp3",
+    "kana": "はなして",
+    "seconds": 1.514,
+    "sha256": "3161483ca02d3038f4b3cbcbe86fe1c59025fe1c86678b52e1cca7860e32db1b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "はなして"
+  },
+  {
+    "file": "course-10-v13.mp3",
+    "kana": "して",
+    "seconds": 1.254,
+    "sha256": "9cc4db9c863c138918eba945b1e9b31d5bfea4cddc46183fadb8757f0a925fa3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "して"
+  },
+  {
+    "file": "course-10-v14.mp3",
+    "kana": "きて",
+    "seconds": 1.189,
+    "sha256": "3da7dbbc1119f385b564194108014d612448e981db2f4253fc8d9dfd41855c9d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "きて"
+  },
+  {
+    "file": "course-10-v15.mp3",
+    "kana": "いって",
+    "seconds": 1.299,
+    "sha256": "4cc0f3e0398c87008dab6e31d2e88d342e8fc10ba128bd9ffd116b6c1149182c",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いって"
+  },
+  {
+    "file": "course-10-v16.mp3",
+    "kana": "でかけます",
+    "seconds": 1.754,
+    "sha256": "f14f1eb43010942fab8de0b4cca92aa6b3fcab7ca4eefca23c13dc0c412dd013",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "でかけます"
+  },
+  {
+    "file": "course-10-v17.mp3",
+    "kana": "しごと",
+    "seconds": 1.414,
+    "sha256": "765beaaa3b4cfee48626955dca79485196ae7fe49f2b8a6ef695da9494f9cce6",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しごと"
+  },
+  {
+    "file": "course-10-q1.mp3",
+    "kana": "おちゃを のんで、ほんを よみます。",
+    "seconds": 3.04,
+    "sha256": "c09a1571bde5a702420b33fdf7832b4ec20a1ae9788fbe6bcd51d812b69010a8",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "おちゃを のんで、ほんを よみます。"
+  },
+  {
+    "file": "course-10-q2.mp3",
+    "kana": "ほんをよんで、えきへ いきます。",
+    "seconds": 2.72,
+    "sha256": "c409e7c47661a0dee6dbeb5da043a009b7c16e1fdffebe1ae43e49c93a741624",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "本を読んで、駅へ行きます。"
+  },
+  {
+    "file": "course-10-q3.mp3",
+    "kana": "あさごはんを たべて おちゃを のみます。",
+    "seconds": 2.88,
+    "sha256": "a02a8fd659e9e7a1a9701bcd3dd60f49b4010d03dd9c233d84027f954969f73e",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あさごはんを たべて おちゃを のみます。"
+  },
+  {
+    "file": "course-10-q4.mp3",
+    "kana": "のんで",
+    "seconds": 1.304,
+    "sha256": "be124e74b3a6408d87ff2dfc6e5cf190a3206e917ebccfb9ec2128ff9fab0da9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "のんで"
   },
   {
     "file": "course-10-listen.mp3",
     "kana": "ほんを よんで、こうえんへ いきます。",
-    "phonemes": "hoɴ o jonde, koːeɴ e ikʲimasɨ.",
-    "seconds": 2.027
+    "seconds": 2.16,
+    "sha256": "1fbb5d4c49f30e00f49abd956767ef874f82ce8dd2918eeef63bd873ee8e2332",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "本を読んで、公園へ行きます。"
+  },
+  {
+    "file": "course-10-q6.mp3",
+    "kana": "あさ おきて、かおを あらいます。",
+    "seconds": 3.44,
+    "sha256": "b9fad02827ff47bd075a9eb53508f4c989f00b3e74c3cd4816b17089f9707d1f",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あさ おきて、かおを あらいます。"
+  },
+  {
+    "file": "course-10-q7.mp3",
+    "kana": "パンを かって うちへ かえります。",
+    "seconds": 1.92,
+    "sha256": "f9783baca24bd88aa722b4b3fd3957fe8c35947cb3202b9d4d933f8a0a5f9f46",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "パンを かって うちへ かえります。"
+  },
+  {
+    "file": "course-10-q8.mp3",
+    "kana": "まって",
+    "seconds": 1.319,
+    "sha256": "ffe3fc5e3739446bb0bc6bfd83c512eeab1e15b1e404bd6f25b4087d86c35e57",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "まって"
   },
   {
     "file": "course-11-example.mp3",
     "kana": "アニメを みたいです。",
-    "phonemes": "aɲime o mʲitai desɨ.",
-    "seconds": 1.429
+    "seconds": 1.84,
+    "sha256": "2cb2587b8573f1dba9af99a4518f9b21126663e0983e4332dbfee42b172db10b",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "アニメを みたいです。"
+  },
+  {
+    "file": "course-11-example-2.mp3",
+    "kana": "あたらしい くつが ほしいです。",
+    "seconds": 2.56,
+    "sha256": "037fa81b0abe52645104619dc527e91e9e04a8c4312474f296622bf54ebd3266",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あたらしい くつが ほしいです。"
+  },
+  {
+    "file": "course-11-example-3.mp3",
+    "kana": "にほんへ いきたいです。",
+    "seconds": 1.2,
+    "sha256": "f2fe6fd87599a07d58d9b4c097f58a8cd7d0dc8f15e915e2aefb149662f23ac1",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "にほんへ いきたいです。"
   },
   {
     "file": "course-11-v1.mp3",
     "kana": "アニメ",
-    "phonemes": "aɲime",
-    "seconds": 0.832
+    "seconds": 1.345,
+    "sha256": "840f06c0240f223b0d25599d2ea7c125d11173b405c37539f5ffe1aa69a6a89a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "アニメ"
   },
   {
     "file": "course-11-v2.mp3",
     "kana": "みたい",
-    "phonemes": "mʲitai",
-    "seconds": 0.704
+    "seconds": 1.329,
+    "sha256": "8cc67a88862a598fce590ee3e87a028b994e2084f09481ed56b9d1b028ccc033",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みたい"
   },
   {
     "file": "course-11-v3.mp3",
     "kana": "ほしい",
-    "phonemes": "hoɕiː",
-    "seconds": 0.683
+    "seconds": 1.429,
+    "sha256": "2433a39dd8376a5a27180d928b85234a2b197ab905533c520f102235607d8833",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ほしい"
   },
   {
     "file": "course-11-v4.mp3",
     "kana": "あたらしい",
-    "phonemes": "ataɾaɕiː",
-    "seconds": 1.045
+    "seconds": 1.659,
+    "sha256": "6f29a0655b4f86f464a5acb9f2d84e136c33639685c9a609b8456efc126d144b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あたらしい"
   },
   {
     "file": "course-11-v5.mp3",
     "kana": "じてんしゃ",
-    "phonemes": "ʥiteɴɕa",
-    "seconds": 0.789
+    "seconds": 1.554,
+    "sha256": "756823537ef827209247fca0e49afd4d0d647aaae3147e365aaa11899811e2c0",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "じてんしゃ"
+  },
+  {
+    "file": "course-11-v6.mp3",
+    "kana": "たべたい",
+    "seconds": 1.474,
+    "sha256": "53e26bff94d1bdd092b2e7f29e3b95471979d3c1034306ba5b70c5f0aaaee3ae",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たべたい"
+  },
+  {
+    "file": "course-11-v7.mp3",
+    "kana": "のみたい",
+    "seconds": 1.469,
+    "sha256": "73da4b62e4f2da25b1cee1a093862d5a5f131233c356a6d7fc09ce43c02d2ae0",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "のみたい"
+  },
+  {
+    "file": "course-11-v8.mp3",
+    "kana": "いきたい",
+    "seconds": 1.429,
+    "sha256": "5cc5fdceb21ae8ff4a02816dae8b8e11cd4a224c7830ab46926b96a6836e95be",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いきたい"
+  },
+  {
+    "file": "course-11-v9.mp3",
+    "kana": "よみたい",
+    "seconds": 1.459,
+    "sha256": "d5bb4ed86aa5a5ede210ddbc2e8dd4a5b85464a0783ffb6172b67a1a3bf924c3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "よみたい"
+  },
+  {
+    "file": "course-11-v10.mp3",
+    "kana": "あそびたい",
+    "seconds": 1.649,
+    "sha256": "accc61b6677220bbbb42dc4e42821cee471e129c7866c79ac9c321b6087d08ff",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あそびたい"
+  },
+  {
+    "file": "course-11-v11.mp3",
+    "kana": "ねたい",
+    "seconds": 1.334,
+    "sha256": "71e5a7314759cbe82d7e90314e8a532b873c4542d9aadf6295b0581a2d70b50f",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ねたい"
+  },
+  {
+    "file": "course-11-v12.mp3",
+    "kana": "りょこう",
+    "seconds": 1.116,
+    "sha256": "bcf3790103f9c55e85dc3c590d7bf32030201513b7613a0866570b487c3ae5ab",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "りょこう"
+  },
+  {
+    "file": "course-11-v13.mp3",
+    "kana": "くつ",
+    "seconds": 1.284,
+    "sha256": "269230a5c6047996a6c63fadd78713b792d072c5d250d19807b77602f26c8eae",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "くつ"
+  },
+  {
+    "file": "course-11-v14.mp3",
+    "kana": "パソコン",
+    "seconds": 1.514,
+    "sha256": "d72976d295e574cdace92d417ffc3f6fb85b633e7a7d50a502311b5a585cebdc",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "パソコン"
+  },
+  {
+    "file": "course-11-v15.mp3",
+    "kana": "スマートフォン",
+    "seconds": 1.804,
+    "sha256": "567bf7385c4a3e2d0ee56a9c227cf894d3e5fef769e3c40ca583afa59f029a66",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "スマートフォン"
+  },
+  {
+    "file": "course-11-v16.mp3",
+    "kana": "えいが",
+    "seconds": 1.279,
+    "sha256": "dc7418d7f366ddddf798654a3b9df508ed352e9677fdb61764ec9110fea04ed6",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "えいが"
+  },
+  {
+    "file": "course-11-v17.mp3",
+    "kana": "おかね",
+    "seconds": 1.314,
+    "sha256": "215a79e4b22aa8d4849fa179ad7458001989c1542428e50f0a59c3422ff96819",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おかね"
+  },
+  {
+    "file": "course-11-q1.mp3",
+    "kana": "あたらしい かばんが ほしいです。",
+    "seconds": 2.56,
+    "sha256": "2f528dbefedc6d3128ffae3dad62d47a98f2816a076d9a15cd4e82876f2afcc2",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あたらしい かばんが ほしいです。"
+  },
+  {
+    "file": "course-11-q2.mp3",
+    "kana": "アニメをみたいです。",
+    "seconds": 2.64,
+    "sha256": "17d0fc6cb728371eb8e80643cee42e7d21d04df4f667651e373f1bf4cfd6f949",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "アニメをみたいです。"
+  },
+  {
+    "file": "course-11-q3.mp3",
+    "kana": "あたらしい じてんしゃが ほしいです。",
+    "seconds": 2.56,
+    "sha256": "01f66d05eeb3f8ac1690c1ac9be841ec559559ab5a9770ac3565c402be69cdf2",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あたらしい じてんしゃが ほしいです。"
+  },
+  {
+    "file": "course-11-q4.mp3",
+    "kana": "じてんしゃ",
+    "seconds": 1.554,
+    "sha256": "756823537ef827209247fca0e49afd4d0d647aaae3147e365aaa11899811e2c0",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "じてんしゃ"
   },
   {
     "file": "course-11-listen.mp3",
     "kana": "おちゃを のみたいです。",
-    "phonemes": "oʨa o nomʲi tai desɨ.",
-    "seconds": 1.472
+    "seconds": 1.6,
+    "sha256": "e239da3283a47d14f5e57781dee53d65e6d760c710ed935de1f08520c89f0957",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "おちゃを のみたいです。"
+  },
+  {
+    "file": "course-11-q6.mp3",
+    "kana": "あたらしい くつが ほしいです。",
+    "seconds": 2.56,
+    "sha256": "037fa81b0abe52645104619dc527e91e9e04a8c4312474f296622bf54ebd3266",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あたらしい くつが ほしいです。"
+  },
+  {
+    "file": "course-11-q7.mp3",
+    "kana": "にほんへ いきたいです。",
+    "seconds": 1.2,
+    "sha256": "f2fe6fd87599a07d58d9b4c097f58a8cd7d0dc8f15e915e2aefb149662f23ac1",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "にほんへ いきたいです。"
+  },
+  {
+    "file": "course-11-q8.mp3",
+    "kana": "ねたい",
+    "seconds": 1.334,
+    "sha256": "71e5a7314759cbe82d7e90314e8a532b873c4542d9aadf6295b0581a2d70b50f",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ねたい"
   },
   {
     "file": "course-12-example.mp3",
     "kana": "でんしゃは バスより はやいです。",
-    "phonemes": "deɴɕa βa basɨ joɾʲi hajai desɨ.",
-    "seconds": 1.963
+    "seconds": 2.4,
+    "sha256": "3a218613bb19ddaaec553e63113eda9a05dc37e8e05d18a516fdb4a9c71fccfa",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "でんしゃは バスより はやいです。"
+  },
+  {
+    "file": "course-12-example-2.mp3",
+    "kana": "この くつは あの くつより やすいです。",
+    "seconds": 3.28,
+    "sha256": "bd5ba9d630eab26deb10c5883bc9d41b0fb5c38cc64f565766e0ddb550052bd6",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この くつは あの くつより やすいです。"
+  },
+  {
+    "file": "course-12-example-3.mp3",
+    "kana": "この みせのほうが ちかいです。",
+    "seconds": 2.0,
+    "sha256": "c913c57367747fcb487d510425d33c2a9146b9fa8dbbe5d956fe5d6e990ec1d8",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この みせのほうが ちかいです。"
   },
   {
     "file": "course-12-v1.mp3",
     "kana": "はやい",
-    "phonemes": "hajai",
-    "seconds": 0.576
+    "seconds": 1.374,
+    "sha256": "8c91b11c5d8a077730204b4c5435271948deefc63138189bb17aed2a840ffe56",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "はやい"
   },
   {
     "file": "course-12-v2.mp3",
     "kana": "やすい",
-    "phonemes": "jasɨi",
-    "seconds": 0.64
+    "seconds": 1.379,
+    "sha256": "cb8982f5ee494450fac5538cce629f6c47c99094db9836ca030043c4855bc1c5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "やすい"
   },
   {
     "file": "course-12-v3.mp3",
     "kana": "バス",
-    "phonemes": "basɨ",
-    "seconds": 0.491
+    "seconds": 1.294,
+    "sha256": "33d11e499f55005cedcadf39938b092103db14fc4c02adb8fed88fd450d61515",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "バス"
   },
   {
     "file": "course-12-v4.mp3",
     "kana": "でんしゃ",
-    "phonemes": "deɴɕa",
-    "seconds": 0.661
+    "seconds": 1.404,
+    "sha256": "7f43ee27241f6d36eb95dfe2368b1940149e753d49fd99b6087e3f4b79067f27",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "でんしゃ"
   },
   {
     "file": "course-12-v5.mp3",
     "kana": "あの",
-    "phonemes": "ano",
-    "seconds": 0.597
+    "seconds": 1.174,
+    "sha256": "4c6ce07d8627095db4e4dcb003e9fb9ddd1fa2b6430310a42024934f5b9cb6b4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あの"
+  },
+  {
+    "file": "course-12-v6.mp3",
+    "kana": "たかい",
+    "seconds": 1.324,
+    "sha256": "5a1e8015cf6bff7893539f6dfa6f10f23df41b348408a04fb19848df01fd26ec",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たかい"
+  },
+  {
+    "file": "course-12-v7.mp3",
+    "kana": "おそい",
+    "seconds": 1.324,
+    "sha256": "4b510d8acbc9d5121690c15d2d50a84b2c878ecbf32c4eb726071752b1f0fe65",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おそい"
+  },
+  {
+    "file": "course-12-v8.mp3",
+    "kana": "ちかい",
+    "seconds": 1.334,
+    "sha256": "a074ea5aa21b3e2f90d87ba6d377d98b7ab1badcf68e7803f2257bb823c54527",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ちかい"
+  },
+  {
+    "file": "course-12-v9.mp3",
+    "kana": "とおい",
+    "seconds": 1.289,
+    "sha256": "6442e1d914f41afc1be311c61240390b8a8525fd262d4d80e5d9a11d85bbb345",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "とおい"
+  },
+  {
+    "file": "course-12-v10.mp3",
+    "kana": "おおい",
+    "seconds": 1.259,
+    "sha256": "14b910f83fde7c477c9943fad15fe9c1587077572aec98cdf79cb22d307ba5a3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おおい"
+  },
+  {
+    "file": "course-12-v11.mp3",
+    "kana": "すくない",
+    "seconds": 1.484,
+    "sha256": "67ecfe8f6a4cfd12b2fbb71950d66920c531d45adb9cf174d0d68dcb0f7c7be4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "すくない"
+  },
+  {
+    "file": "course-12-v12.mp3",
+    "kana": "ながい",
+    "seconds": 1.334,
+    "sha256": "eaa96f571fd81ff65581614624bd6e1caeec60c3827664306538b33fef79a40b",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ながい"
+  },
+  {
+    "file": "course-12-v13.mp3",
+    "kana": "みじかい",
+    "seconds": 1.479,
+    "sha256": "02dcb95191605653c29fb7ab7f64fea5bcd41510760750da25be257f2e9a23b3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みじかい"
+  },
+  {
+    "file": "course-12-v14.mp3",
+    "kana": "おおきい",
+    "seconds": 1.479,
+    "sha256": "3fe9cbb34d773871d0aed6cea85d00b4a89b5e0263de2b6559742c55bf1aa3e6",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おおきい"
+  },
+  {
+    "file": "course-12-v15.mp3",
+    "kana": "ちいさい",
+    "seconds": 1.494,
+    "sha256": "105773cea5a82fdbc00814d913ca3c08ff1d3a56819d838f390a60843b07abad",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ちいさい"
+  },
+  {
+    "file": "course-12-v16.mp3",
+    "kana": "どちら",
+    "seconds": 1.345,
+    "sha256": "5b92e06b77e8b30ecfea5839b584adc68140bea63165933feee9fecb2952bf25",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "どちら"
+  },
+  {
+    "file": "course-12-v17.mp3",
+    "kana": "ほう",
+    "seconds": 1.334,
+    "sha256": "2c294a6863129d7e94b25461784bafdbdef450aa556c63c68d6e8d7e6506ce1c",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Sayaka",
+    "synthesisText": "ほう"
+  },
+  {
+    "file": "course-12-q1.mp3",
+    "kana": "バスは でんしゃより やすいです。",
+    "seconds": 2.32,
+    "sha256": "bd30fa43d6cf7605a7fcd8f78ed24da632da273efa7193e0223277cbfeba289d",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "バスは でんしゃより やすいです。"
+  },
+  {
+    "file": "course-12-q2.mp3",
+    "kana": "でんしゃは バスよりはやいです。",
+    "seconds": 2.8,
+    "sha256": "9f735df19a3654481bfe40cb9c5569bda1eed924dacde72e1b60c1953ac00408",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "でんしゃは バスよりはやいです。"
+  },
+  {
+    "file": "course-12-q3.mp3",
+    "kana": "でんしゃのほうが バスより はやいです。",
+    "seconds": 2.56,
+    "sha256": "5e8d66b5d68448dda846e838d706f2be17bb96d82f7d83e18db3fe3da46b79c2",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "でんしゃのほうが バスより はやいです。"
+  },
+  {
+    "file": "course-12-q4.mp3",
+    "kana": "はやい",
+    "seconds": 1.374,
+    "sha256": "8c91b11c5d8a077730204b4c5435271948deefc63138189bb17aed2a840ffe56",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "はやい"
   },
   {
     "file": "course-12-listen.mp3",
     "kana": "この かばんの ほうが あの かばんより やすいです。",
-    "phonemes": "kono kabaɴ no hoː ɡa ano kabaɴ joɾʲi jasɨi desɨ.",
-    "seconds": 2.859
+    "seconds": 3.28,
+    "sha256": "a60501319b90fe1bb69bc2a80821da006f6f6dfed323755705a235004656474e",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この かばんの ほうが あの かばんより やすいです。"
+  },
+  {
+    "file": "course-12-q6.mp3",
+    "kana": "この くつは あの くつより やすいです。",
+    "seconds": 3.28,
+    "sha256": "bd5ba9d630eab26deb10c5883bc9d41b0fb5c38cc64f565766e0ddb550052bd6",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この くつは あの くつより やすいです。"
+  },
+  {
+    "file": "course-12-q7.mp3",
+    "kana": "この みせのほうが ちかいです。",
+    "seconds": 2.0,
+    "sha256": "c913c57367747fcb487d510425d33c2a9146b9fa8dbbe5d956fe5d6e990ec1d8",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この みせのほうが ちかいです。"
+  },
+  {
+    "file": "course-12-q8.mp3",
+    "kana": "とおい",
+    "seconds": 1.289,
+    "sha256": "6442e1d914f41afc1be311c61240390b8a8525fd262d4d80e5d9a11d85bbb345",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "とおい"
   },
   {
     "file": "course-13-example.mp3",
     "kana": "ここで しゃしんを とっても いいですか。",
-    "phonemes": "koko de ɕaɕiɴ o toʔte mo iː desɨ ka.",
-    "seconds": 2.389
+    "seconds": 2.64,
+    "sha256": "2721744c6ce63a8df091bfbc3e1f1d22846519f10dbdbedcce5bfbed08fbb115",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ここで しゃしんを とっても いいですか。"
+  },
+  {
+    "file": "course-13-example-2.mp3",
+    "kana": "ここで たべても いいですか。",
+    "seconds": 1.76,
+    "sha256": "54b034a227179c06622576af44f12503a42d79646e719124f57be88bb96805d4",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ここで たべても いいですか。"
+  },
+  {
+    "file": "course-13-example-3.mp3",
+    "kana": "この ドアを あけては いけません。",
+    "seconds": 2.32,
+    "sha256": "2095562f8f38c1099aee3668551dbd59390c77f5ce3890754b0e2c3b77ebbd86",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この ドアを あけては いけません。"
   },
   {
     "file": "course-13-v1.mp3",
     "kana": "しゃしん",
-    "phonemes": "ɕaɕiɴ",
-    "seconds": 0.619
+    "seconds": 1.434,
+    "sha256": "c5b8edee74c5bb819697d09e052bfe7a715fefc6799c1e250dca9cd2afa06067",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しゃしん"
   },
   {
     "file": "course-13-v2.mp3",
     "kana": "とって",
-    "phonemes": "toʔte",
-    "seconds": 0.661
+    "seconds": 1.349,
+    "sha256": "8a0800d8bcec1e4169393f1e545bd2c4dbc53b72268fae6e6fda17f3ff73d23d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "とって"
   },
   {
     "file": "course-13-v3.mp3",
     "kana": "ここ",
-    "phonemes": "koko",
-    "seconds": 0.491
+    "seconds": 1.254,
+    "sha256": "d4eb3a2a2d256700bcc9a4f1b67a646e40218e6f042133029668023545877f86",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ここ"
   },
   {
     "file": "course-13-v4.mp3",
     "kana": "のんで",
-    "phonemes": "nonde",
-    "seconds": 0.619
+    "seconds": 1.304,
+    "sha256": "be124e74b3a6408d87ff2dfc6e5cf190a3206e917ebccfb9ec2128ff9fab0da9",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "のんで"
   },
   {
     "file": "course-13-v5.mp3",
     "kana": "はいって",
-    "phonemes": "haiʔte",
-    "seconds": 0.683
+    "seconds": 1.474,
+    "sha256": "c560bc8f72918231b27dbcf4fdd807e1e8c6946b3f46d9e41cc052ea1455d876",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "はいって"
+  },
+  {
+    "file": "course-13-v6.mp3",
+    "kana": "すわって",
+    "seconds": 1.529,
+    "sha256": "4eacd72c0ffd423def7b3c909976bd3058c00f5889d6e0f58d21d0fe0dcc51a8",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "すわって"
+  },
+  {
+    "file": "course-13-v7.mp3",
+    "kana": "たって",
+    "seconds": 1.339,
+    "sha256": "464f152b39ecee90bea04e23787c8779ea80f9f48138354e5160485dfb072c09",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たって"
+  },
+  {
+    "file": "course-13-v8.mp3",
+    "kana": "つかって",
+    "seconds": 1.534,
+    "sha256": "1e20c9a17179e2c575738305010a01c2407707c614f5bcacf5616e9e48b33aa4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "つかって"
+  },
+  {
+    "file": "course-13-v9.mp3",
+    "kana": "あけて",
+    "seconds": 1.379,
+    "sha256": "aa46b058093a378f2d3cc66726970003341071513c9b00f2735b664768d2ced2",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あけて"
+  },
+  {
+    "file": "course-13-v10.mp3",
+    "kana": "しめて",
+    "seconds": 1.439,
+    "sha256": "e5b0d3608658bb89071c95370eefc4cf96a3cf3aa611c0ec66d951a55f29758a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しめて"
+  },
+  {
+    "file": "course-13-v11.mp3",
+    "kana": "おいて",
+    "seconds": 1.319,
+    "sha256": "f5ff00ded77ef6ab32b338290348d64dff070bcbb0a564c7e2c8d2e3c8e54b2a",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "おいて"
+  },
+  {
+    "file": "course-13-v12.mp3",
+    "kana": "たべて",
+    "seconds": 1.379,
+    "sha256": "bec6be88d64ab8a1c484bf8fd24501b37a1913f1fd4528ae2459910a94fb7944",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たべて"
+  },
+  {
+    "file": "course-13-v13.mp3",
+    "kana": "さわって",
+    "seconds": 1.539,
+    "sha256": "e96cda1dba4e85b0cf455beab4978e9e713b13ba03ac179c3e8f589a3e443433",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "さわって"
+  },
+  {
+    "file": "course-13-v14.mp3",
+    "kana": "およいで",
+    "seconds": 1.404,
+    "sha256": "33f8446faeebc64a79b280e75d763807c48f3bacc5deba51631750b74ca860d5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "およいで"
+  },
+  {
+    "file": "course-13-v15.mp3",
+    "kana": "きんし",
+    "seconds": 1.399,
+    "sha256": "c8be12dc76e96b5998583b3dfa99b7a1654d0a0b918713f670cff27784add97d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "きんし"
+  },
+  {
+    "file": "course-13-v16.mp3",
+    "kana": "だいじょうぶ",
+    "seconds": 1.629,
+    "sha256": "e00dfeb087ef9f7ecb1c6d5175092b4fd50f433188c85b5cba379255fce89167",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "だいじょうぶ"
+  },
+  {
+    "file": "course-13-v17.mp3",
+    "kana": "みせ",
+    "seconds": 1.249,
+    "sha256": "fd231ae835baff0f98c23f63440cf140f6a2c73a4e19f6cc0f0be4f341c56b51",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みせ"
+  },
+  {
+    "file": "course-13-q1.mp3",
+    "kana": "ここで みずを のんでは いけません。",
+    "seconds": 2.32,
+    "sha256": "2f445269312bf00bee407a9ebc58cd4153ca2f14ddec03fe61f1bfb4874f1a16",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ここで みずを のんでは いけません。"
+  },
+  {
+    "file": "course-13-q2.mp3",
+    "kana": "しゃしんを とってもいいですか。",
+    "seconds": 1.6,
+    "sha256": "640823b69d620115b70329f2e824020260da67168af339e50c05cec2cb918877",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "しゃしんを とってもいいですか。"
+  },
+  {
+    "file": "course-13-q3.mp3",
+    "kana": "ここで しゃしんを とっては いけません。",
+    "seconds": 2.64,
+    "sha256": "f4fb8b68f4f031c4e1ab842f2e6709c43d25cff5ffd8b722933be022f8b8e9d5",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ここで しゃしんを とっては いけません。"
+  },
+  {
+    "file": "course-13-q4.mp3",
+    "kana": "しゃしん",
+    "seconds": 1.434,
+    "sha256": "c5b8edee74c5bb819697d09e052bfe7a715fefc6799c1e250dca9cd2afa06067",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しゃしん"
   },
   {
     "file": "course-13-listen.mp3",
     "kana": "ここに はいっても いいです。",
-    "phonemes": "koko ɲi haiʔte mo iː desɨ.",
-    "seconds": 1.728
+    "seconds": 2.32,
+    "sha256": "42aee2d7a88601e8ae316cd1b582a78a1c84d6822e90e108178b29384331b8d2",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ここに はいっても いいです。"
+  },
+  {
+    "file": "course-13-q6.mp3",
+    "kana": "ここで たべても いいですか。",
+    "seconds": 1.76,
+    "sha256": "54b034a227179c06622576af44f12503a42d79646e719124f57be88bb96805d4",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "ここで たべても いいですか。"
+  },
+  {
+    "file": "course-13-q7.mp3",
+    "kana": "この ドアを あけては いけません。",
+    "seconds": 2.32,
+    "sha256": "2095562f8f38c1099aee3668551dbd59390c77f5ce3890754b0e2c3b77ebbd86",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "この ドアを あけては いけません。"
+  },
+  {
+    "file": "course-13-q8.mp3",
+    "kana": "きんし",
+    "seconds": 1.399,
+    "sha256": "c8be12dc76e96b5998583b3dfa99b7a1654d0a0b918713f670cff27784add97d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "きんし"
   },
   {
     "file": "course-14-example.mp3",
     "kana": "あした、いっしょに こうえんへ いきませんか。",
-    "phonemes": "aɕita, iʔɕoɲi koːeɴ e ikʲi maseɴ ka.",
-    "seconds": 2.517
+    "seconds": 4.0,
+    "sha256": "f03422daaacb22771fee8cbb2f32f3dea66d480d588de8adb87ee02601a46b8b",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あした、いっしょに こうえんへ いきませんか。"
+  },
+  {
+    "file": "course-14-example-2.mp3",
+    "kana": "しゅうまつ、いっしょに えいがを みませんか。",
+    "seconds": 2.4,
+    "sha256": "c6039b141cb0eb9b8876282bd24c642a0f5bdcddcb18c69955fa761b3207692b",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "しゅうまつ、いっしょに えいがを みませんか。"
+  },
+  {
+    "file": "course-14-example-3.mp3",
+    "kana": "あさって こうえんで あいましょう。",
+    "seconds": 2.0,
+    "sha256": "8b5cf6d39666d20701338f7b4a4d5e908adf715e607b221e70e403f23ef98a14",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あさって こうえんで あいましょう。"
   },
   {
     "file": "course-14-v1.mp3",
     "kana": "あした",
-    "phonemes": "aɕita",
-    "seconds": 0.683
+    "seconds": 1.379,
+    "sha256": "c9bd5f8281c2a0ab4f0a9d21dd56cecb6c0aec8b03e13a67609a7be8c9f1fee4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あした"
   },
   {
     "file": "course-14-v2.mp3",
     "kana": "いっしょに",
-    "phonemes": "iʔɕoɲi",
-    "seconds": 0.96
+    "seconds": 1.514,
+    "sha256": "8f798c132493c3603feab53625d6c66109ac3fd85fec5577821b699bfe222909",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いっしょに"
   },
   {
     "file": "course-14-v3.mp3",
     "kana": "いきませんか",
-    "phonemes": "ikʲi maseɴ ka",
-    "seconds": 1.237
+    "seconds": 1.764,
+    "sha256": "3bfc1fe4fca3634d437afda19898c15b9986f2197cdae748ead6a5a0f3d8c9c3",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いきませんか"
   },
   {
     "file": "course-14-v4.mp3",
     "kana": "いきましょう",
-    "phonemes": "ikʲi maɕoː",
-    "seconds": 1.024
+    "seconds": 1.709,
+    "sha256": "1cf18773a1f14a2a755de6734f8a9acac8daaf3217754157cc189fec9da910c5",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いきましょう"
   },
   {
     "file": "course-14-v5.mp3",
     "kana": "たべましょう",
-    "phonemes": "tabe maɕoː",
-    "seconds": 1.088
+    "seconds": 1.739,
+    "sha256": "e4779e881ab0b4081b631ec2595b976aeb26cef709208bc010df7f29d6088e26",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "たべましょう"
+  },
+  {
+    "file": "course-14-v6.mp3",
+    "kana": "きょう",
+    "seconds": 1.214,
+    "sha256": "7a6d3171af94dcc68e9f605811c4a0e4a410f80bcbce6206c63a95fa8fabff22",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "きょう"
+  },
+  {
+    "file": "course-14-v7.mp3",
+    "kana": "あさって",
+    "seconds": 1.544,
+    "sha256": "8479b2452c6cc78a6b653d8369e46f5a1ef081e55ac252a7e22c6e72a790048d",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あさって"
+  },
+  {
+    "file": "course-14-v8.mp3",
+    "kana": "こんしゅう",
+    "seconds": 1.574,
+    "sha256": "64df11a960630a4d2374847cd66aa85090ffd70855cb6719615245bdc94bad41",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "こんしゅう"
+  },
+  {
+    "file": "course-14-v9.mp3",
+    "kana": "しゅうまつ",
+    "seconds": 1.654,
+    "sha256": "b167c43dd2e92ef4107b5b85d594fe7c01129ad388c82d71240969da28280835",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しゅうまつ"
+  },
+  {
+    "file": "course-14-v10.mp3",
+    "kana": "こんど",
+    "seconds": 1.334,
+    "sha256": "8f4979f96c1ec838742da1a585add8da6bd455e8ac0eb195d3c23bb7605e44ce",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "こんど"
+  },
+  {
+    "file": "course-14-v11.mp3",
+    "kana": "あいましょう",
+    "seconds": 1.714,
+    "sha256": "9c3e46d90938467022ebe9e6c17d9b991858800639c0e08542e7804f00b67d72",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あいましょう"
+  },
+  {
+    "file": "course-14-v12.mp3",
+    "kana": "のみましょう",
+    "seconds": 1.729,
+    "sha256": "c932e7a70476433735221790d37047f4344394ef41ac3824efc2b43ff275dac4",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "のみましょう"
+  },
+  {
+    "file": "course-14-v13.mp3",
+    "kana": "みましょう",
+    "seconds": 1.589,
+    "sha256": "82bb2db83c1ac215cd9e89706bc018f49fd14fcbeca2455cc4ea3b4346778002",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "みましょう"
+  },
+  {
+    "file": "course-14-v14.mp3",
+    "kana": "あそびましょう",
+    "seconds": 1.919,
+    "sha256": "06d9ea0b20c5a9bb66a8c1ee3cea0863acbc877625f97792c53900ea378b5c05",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "あそびましょう"
+  },
+  {
+    "file": "course-14-v15.mp3",
+    "kana": "かえりましょう",
+    "seconds": 1.864,
+    "sha256": "e71d24ddd3d3bb20efbbc4bd4bb98d197d840917e5baa31588929570c300d9fe",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "かえりましょう"
+  },
+  {
+    "file": "course-14-v16.mp3",
+    "kana": "ひま",
+    "seconds": 1.204,
+    "sha256": "a24ad4c0c53ed74bc7abbcfac49fcbec59e23dcc312773d8e88a726117d34de2",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "ひま"
+  },
+  {
+    "file": "course-14-v17.mp3",
+    "kana": "やくそく",
+    "seconds": 1.559,
+    "sha256": "50399d8b6d596ef5f35c60e8ea01783baef2bd718d9933a4e0a28e36cee1d281",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "やくそく"
+  },
+  {
+    "file": "course-14-q1.mp3",
+    "kana": "いっしょに おちゃを のみませんか。",
+    "seconds": 2.64,
+    "sha256": "00568e682f12022279e7f8081f5d15c83f52315333efae96a0c69cee62382d27",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "いっしょに おちゃを のみませんか。"
+  },
+  {
+    "file": "course-14-q2.mp3",
+    "kana": "いっしょに こうえんへいきませんか。",
+    "seconds": 2.16,
+    "sha256": "72264a108760863252c2666c8c16ef2afca424086f173d546db3231d0d70d5e0",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "いっしょに こうえんへいきませんか。"
+  },
+  {
+    "file": "course-14-q3.mp3",
+    "kana": "あした いっしょに えきへ いきましょう。",
+    "seconds": 2.48,
+    "sha256": "4b5d757591b3066e40638ab0986b30de47104205aac7c4a5ef7887ef215c0e0b",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あした いっしょに えきへ いきましょう。"
+  },
+  {
+    "file": "course-14-q4.mp3",
+    "kana": "いっしょに",
+    "seconds": 1.514,
+    "sha256": "8f798c132493c3603feab53625d6c66109ac3fd85fec5577821b699bfe222909",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "いっしょに"
   },
   {
     "file": "course-14-listen.mp3",
     "kana": "いっしょに ケーキを たべましょう。",
-    "phonemes": "iʔɕoɲi keːkʲi o tabe maɕoː.",
-    "seconds": 1.92
+    "seconds": 1.84,
+    "sha256": "d3758acffdb084e8a6809342a29c351545d6448d8bfce5b04d3bbdda3b4efa67",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "いっしょに ケーキを たべましょう。"
+  },
+  {
+    "file": "course-14-q6.mp3",
+    "kana": "しゅうまつ、いっしょに えいがを みませんか。",
+    "seconds": 2.4,
+    "sha256": "c6039b141cb0eb9b8876282bd24c642a0f5bdcddcb18c69955fa761b3207692b",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "しゅうまつ、いっしょに えいがを みませんか。"
+  },
+  {
+    "file": "course-14-q7.mp3",
+    "kana": "あさって こうえんで あいましょう。",
+    "seconds": 2.0,
+    "sha256": "8b5cf6d39666d20701338f7b4a4d5e908adf715e607b221e70e403f23ef98a14",
+    "engine": "qwen3-tts-voice-design",
+    "voice": "Japanese tutor prompt v1",
+    "synthesisText": "あさって こうえんで あいましょう。"
+  },
+  {
+    "file": "course-14-q8.mp3",
+    "kana": "しゅうまつ",
+    "seconds": 1.654,
+    "sha256": "b167c43dd2e92ef4107b5b85d594fe7c01129ad388c82d71240969da28280835",
+    "engine": "windows-sapi5",
+    "voice": "Microsoft Ayumi",
+    "synthesisText": "しゅうまつ"
   }
 ]

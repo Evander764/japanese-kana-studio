@@ -179,7 +179,7 @@
     ], ['でんしゃは バスより はやいです。', 'densha wa basu yori hayai desu', '电车比巴士快。'], [
       ['はやい', 'hayai', '快的'], ['やすい', 'yasui', '便宜的'],
       ['バス', 'basu', '巴士'], ['でんしゃ', 'densha', '电车'],
-      ['あの', 'ano', '那个：接名词，指双方远处的事物']
+      ['あの', 'ano', '那个：接名词，离双方都远']
     ], [
       { type: 'meaning', prompt: '这句话中，哪个更便宜？', display: 'バスは でんしゃより やすいです。', options: ['巴士比电车便宜。', '电车比巴士便宜。', '巴士比电车快。'], answer: '巴士比电车便宜。', explain: 'より前的でんしゃ是比较基准；话题バス是更便宜的一方。' },
       { type: 'particle', prompt: '补成“电车比巴士快”。', display: 'でんしゃは バス ＿ はやいです。', options: ['より', 'から', 'まで'], answer: 'より', explain: 'バスより表示“比巴士”；から和まで用于起点与终点，不表示比较。' },
@@ -217,6 +217,41 @@
       { type: 'listen', prompt: '听发音，选择句子的意思。', kana: 'いっしょに ケーキを たべましょう。', options: ['一起吃蛋糕吧。', '不一起吃蛋糕。', '一起去买蛋糕吧。'], answer: '一起吃蛋糕吧。', explain: 'ケーキ是蛋糕；たべましょう提议一起吃，没有表达购买。' }
     ])
   ];
+
+  const enrichment = root.CourseEnrichment || (typeof require === 'function' ? require('./course-enrichment.js') : {});
+  for (const entry of lessons) {
+    const extra = enrichment[entry.id];
+    if (!extra) continue;
+    const originalWords = entry.vocabulary.length;
+    entry.vocabulary.push(...extra.words.map(([kana, romaji, meaning], index) => ({
+      kana, romaji, meaning, kind: 'word', audio: `audio/course-${entry.id}-v${originalWords + index + 1}.mp3`
+    })));
+    const [choiceExample, orderExample] = extra.examples;
+    const orderTiles = orderExample[0];
+    entry.examples = [
+      entry.example,
+      { kana: choiceExample[0], romaji: choiceExample[1], meaning: choiceExample[2], kind: 'word', audio: `audio/course-${entry.id}-example-2.mp3` },
+      { kana: `${orderTiles.join(' ')}。`, romaji: orderExample[1], meaning: orderExample[2], kind: 'word', audio: `audio/course-${entry.id}-example-3.mp3` }
+    ];
+    const readWord = entry.vocabulary.find(word => word.kana === extra.read);
+    if (!readWord) throw new Error(`Missing reading word for lesson ${entry.id}`);
+    entry.questions.push(
+      { id: `${entry.id}-q6`, type: 'meaning', prompt: '这句话是什么意思？', display: choiceExample[0], options: [choiceExample[2], choiceExample[3], choiceExample[4]], answer: choiceExample[2], explain: extra.note },
+      { id: `${entry.id}-q7`, type: 'order', prompt: `把词块排成“${orderExample[2]}”`, tiles: [...orderTiles].reverse(), answer: orderTiles.join(' '), explain: extra.note },
+      { id: `${entry.id}-q8`, type: 'read', prompt: '输入这个新词的罗马字读音。', display: readWord.kana, answers: [readWord.romaji], explain: `${readWord.kana}是“${readWord.meaning}”。` }
+    );
+  }
+
+  // Every quiz item has a replayable Japanese utterance. Fill-in and ordering
+  // answers become audible only after submission so the clip cannot solve them.
+  for (const entry of lessons) {
+    for (const question of entry.questions) {
+      question.spoken = question.type === 'listen' ? question.kana
+        : question.type === 'particle' ? question.display.replace(/\s*＿\s*/, question.answer)
+          : question.type === 'order' ? `${question.answer}。` : question.display;
+      if (!question.audio) question.audio = `audio/course-${entry.id}-${question.id.slice(3)}.mp3`;
+    }
+  }
 
   const roadmap = [];
 

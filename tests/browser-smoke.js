@@ -206,7 +206,7 @@ async function main() {
     HTMLMediaElement.prototype.play = originalPlay;
     return { preview: document.getElementById('detailPreview').textContent, audioVisible: !document.getElementById('detailTestAudio').hidden, answerHidden: document.getElementById('detailAnswer').hidden, focused: document.activeElement === input, input: input.value, source };
   })()`);
-  assert.deepEqual({ ...detailPrepared, source: detailPrepared.source.endsWith('/audio/base-a.mp3') }, { preview: 'あ', audioVisible: true, answerHidden: true, focused: true, input: 'a', source: true });
+  assert.deepEqual({ ...detailPrepared, source: new URL(detailPrepared.source).pathname.endsWith('/audio/base-a.mp3') }, { preview: 'あ', audioVisible: true, answerHidden: true, focused: true, input: 'a', source: true });
   await pressEnter();
   const detailAdvanced = await evaluate(`({ glyph: document.getElementById('detailGlyph').textContent, focused: document.activeElement === document.getElementById('detailInput'), saved: JSON.parse(localStorage.getItem('kana-studio-progress-v1')).records['hiragana:base:a'].attemptCount })`);
   assert.deepEqual(detailAdvanced, { glyph: 'い', focused: true, saved: 1 });
@@ -224,7 +224,7 @@ async function main() {
     HTMLMediaElement.prototype.play = originalPlay;
     return { glyph, preview: document.getElementById('practicePreview').textContent, audioVisible: !document.getElementById('questionAudio').hidden, focused: document.activeElement === input, input: input.value, source };
   })()`);
-  assert.deepEqual({ ...practicePrepared, source: practicePrepared.source.endsWith('/audio/base-a.mp3') }, { glyph: 'あ', preview: 'あ', audioVisible: true, focused: true, input: 'a', source: true });
+  assert.deepEqual({ ...practicePrepared, source: new URL(practicePrepared.source).pathname.endsWith('/audio/base-a.mp3') }, { glyph: 'あ', preview: 'あ', audioVisible: true, focused: true, input: 'a', source: true });
   await pressEnter();
   const practiceAdvanced = await evaluate(`({ counter: document.getElementById('questionCounter').textContent, feedback: document.getElementById('practiceFeedback').textContent, focused: document.activeElement === document.getElementById('practiceInput'), audioHidden: document.getElementById('questionAudio').hidden, previous: document.getElementById('previousReading').textContent, previousShown: !document.getElementById('previousAnswer').hidden })`);
   assert.equal(practiceAdvanced.counter, '第 3 题');
@@ -345,6 +345,8 @@ async function main() {
   assert.equal(mobile.width, 390);
   assert.equal(mobile.cardCount, 46);
   assert.ok(mobile.scrollWidth <= mobile.width, `horizontal overflow: ${mobile.scrollWidth} > ${mobile.width}`);
+  const mobileToggle = await evaluate(`(() => { const el = document.getElementById('romajiToggle'); const box = el.getBoundingClientRect(); const brand = document.querySelector('.brand').getBoundingClientRect(); return {x:box.x,y:box.y,width:box.width,height:box.height,display:getComputedStyle(el).display,brandRight:brand.right,topElement:document.elementFromPoint(box.x+box.width/2,box.y+box.height/2)?.id}; })()`);
+  assert.ok(mobileToggle.x >= 0 && mobileToggle.x + mobileToggle.width <= 390 && mobileToggle.y >= 0 && mobileToggle.y < 100 && mobileToggle.topElement === 'romajiToggle' && mobileToggle.x >= mobileToggle.brandRight, 'romaji toggle visible in mobile header: ' + JSON.stringify(mobileToggle));
   const mobileShot = path.join(os.tmpdir(), 'kana-mobile-cdp.png');
   await screenshot(mobileShot);
   await evaluate('document.getElementById("learnView").scrollIntoView({block:"start",behavior:"instant"})');
@@ -406,22 +408,45 @@ async function main() {
   })()`);
   assert.deepEqual(foundationNavigation, {hiragana:true, katakana:true, practice:true, nextTitle:'介绍自己'});
   const speedControl = await evaluate(`(() => {
-    const button = document.querySelector('#courseView [data-audio-speed]');
-    button.click();
-    const normal = JSON.parse(localStorage.getItem('kana-studio-progress-v1')).audioSpeed;
-    button.click();
+    const normalButton = document.querySelector('#courseView [data-audio-speed="normal"]');
+    const slowButton = document.querySelector('#courseView [data-audio-speed="slow"]');
+    const initial = JSON.parse(localStorage.getItem('kana-studio-progress-v1')).audioSpeed;
+    slowButton.click();
     const slow = JSON.parse(localStorage.getItem('kana-studio-progress-v1')).audioSpeed;
-    return {normal, slow};
+    normalButton.click();
+    const normal = JSON.parse(localStorage.getItem('kana-studio-progress-v1')).audioSpeed;
+    return {initial, slow, normal};
   })()`);
-  assert.deepEqual(speedControl, {normal: 'normal', slow: 'slow'});
+  assert.deepEqual(speedControl, {initial: 'normal', slow: 'slow', normal: 'normal'});
+  const sentencePlayCount = await evaluate(`(async () => {
+    const originalPlay = HTMLMediaElement.prototype.play;
+    let count = 0; let clip;
+    HTMLMediaElement.prototype.play = function () { count += 1; clip = this; return Promise.resolve(); };
+    document.querySelector('[data-course-audio="example0"]').click();
+    clip.dispatchEvent(new Event('ended'));
+    await new Promise(resolve => setTimeout(resolve, 480));
+    HTMLMediaElement.prototype.play = originalPlay;
+    return count;
+  })()`);
+  assert.equal(sentencePlayCount, 1, 'course sentences play once at the selected speed');
   await evaluate('document.getElementById("courseView").scrollIntoView({block:"start",behavior:"instant"})');
   const courseDesktopShot = path.join(os.tmpdir(), 'kana-course-desktop-cdp.png');
   await screenshot(courseDesktopShot);
   const courseRun = await evaluate(`(() => {
     document.querySelector('[data-course-start="full"]').click();
     const lesson = window.CourseData.lessons[0];
+    const originalPlay = HTMLMediaElement.prototype.play;
+    let played = '';
+    HTMLMediaElement.prototype.play = function () { played = this.src; return Promise.resolve(); };
     for (const question of lesson.questions) {
-      if (question.type === 'meaning') document.getElementById('courseView').dispatchEvent(new KeyboardEvent('keydown', {key:'2', bubbles:true}));
+      const promptAudio = document.querySelector('[data-course-audio="question"], [data-course-audio="listen"]');
+      if (['meaning', 'read', 'listen'].includes(question.type)) {
+        if (!promptAudio) throw new Error('Missing question audio button: ' + question.id);
+        promptAudio.click();
+        if (!new URL(played).pathname.endsWith('/' + question.audio)) throw new Error('Wrong prompt audio: ' + question.id);
+      } else if (promptAudio) throw new Error('Answer revealed by audio before submission: ' + question.id);
+      if (question.id === '01-q1') document.getElementById('courseView').dispatchEvent(new KeyboardEvent('keydown', {key:'2', bubbles:true}));
+      else if (question.type === 'meaning') document.querySelector('[data-course-choice="' + question.options.indexOf(question.answer) + '"]').click();
       else if (question.type === 'particle' || question.type === 'listen') {
         const index = question.options.indexOf(question.answer);
         document.querySelector('[data-course-choice="' + index + '"]').click();
@@ -440,8 +465,13 @@ async function main() {
         document.getElementById('courseReadInput').value = question.answers[0];
         document.getElementById('courseReadForm').requestSubmit();
       }
+      if (['particle', 'order'].includes(question.type)) {
+        document.querySelector('.course-answer [data-course-audio="question"]').click();
+        if (!new URL(played).pathname.endsWith('/' + question.audio)) throw new Error('Wrong answer audio: ' + question.id);
+      }
       document.querySelector('[data-course-next]').click();
     }
+    HTMLMediaElement.prototype.play = originalPlay;
     const state = JSON.parse(localStorage.getItem('kana-studio-progress-v1'));
     const mastered = window.CourseCore.getStatus(state, '01');
     const reviewCount = document.querySelector('[data-course-start="review"]')?.textContent;
@@ -483,7 +513,7 @@ async function main() {
     const completed = [];
     for (const lesson of window.CourseData.lessons.slice(8)) {
       document.querySelector('[data-course-select="' + lesson.id + '"]').click();
-      for (const item of [lesson.example, ...lesson.vocabulary, lesson.questions[4]]) {
+      for (const item of [...lesson.examples, ...lesson.vocabulary, ...lesson.questions]) {
         await new Promise((resolve, reject) => {
           const audio = new Audio(item.audio);
           audio.onloadedmetadata = () => audio.duration > 0.2 ? resolve() : reject(new Error('Empty audio: ' + item.audio));
@@ -564,15 +594,16 @@ async function main() {
     HTMLMediaElement.prototype.play = function () { audio = this.src; return Promise.resolve(); };
     document.querySelector('[data-vocab-audio="ほん"]').click();
     HTMLMediaElement.prototype.play = originalPlay;
-    return {visible:!document.getElementById('vocabView').hidden, chapter:document.getElementById('vocabChapter').value, chapters:document.getElementById('vocabChapter').options.length, cards:document.querySelectorAll('.vocab-card').length, audio:audio.endsWith('/audio/course-02-v1.mp3')};
+    const bookCard = document.querySelector('[data-vocab-audio="ほん"]').closest('.vocab-card');
+    return {visible:!document.getElementById('vocabView').hidden, chapter:document.getElementById('vocabChapter').value, chapters:document.getElementById('vocabChapter').options.length, cards:document.querySelectorAll('.vocab-card').length, audio:new URL(audio).pathname.endsWith('/audio/course-02-v1.mp3'), pitch:bookCard.querySelector('.pitch-type').textContent, levels:[...bookCard.querySelectorAll('.pitch-mora')].map(node=>node.classList.contains('high')?'high':'low'), fall:bookCard.querySelectorAll('.pitch-fall').length};
   })()`);
-  assert.deepEqual(vocabIntro, {visible:true, chapter:'02', chapters:14, cards:5, audio:true});
+  assert.deepEqual(vocabIntro, {visible:true, chapter:'02', chapters:14, cards:17, audio:true, pitch:'1 型 · 第 1 拍后下降', levels:['high','low'], fall:1});
   await evaluate(`document.getElementById('vocabView').scrollIntoView({block:'start',behavior:'instant'})`);
   const vocabDesktopShot = path.join(os.tmpdir(), 'kana-vocab-desktop-cdp.png');
   await screenshot(vocabDesktopShot);
   await viewport(390, 844, true);
   const vocabMobile = await evaluate(`({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,cards:document.querySelectorAll('.vocab-card').length})`);
-  assert.deepEqual(vocabMobile, {width:390,scrollWidth:390,cards:5});
+  assert.deepEqual(vocabMobile, {width:390,scrollWidth:390,cards:17});
   const vocabMobileShot = path.join(os.tmpdir(), 'kana-vocab-mobile-cdp.png');
   await screenshot(vocabMobileShot);
   await evaluate(`document.getElementById('vocabGrid').scrollIntoView({block:'start',behavior:'instant'})`);
@@ -585,7 +616,7 @@ async function main() {
     const shared = document.querySelector('[data-vocab-master="ほん"]').getAttribute('aria-pressed') === 'true';
     document.getElementById('vocabStart').click();
     let answered = 0;
-    while (!document.querySelector('.vocab-practice-done') && answered < 20) {
+    while (!document.querySelector('.vocab-practice-done') && answered < 40) {
       const panel = document.getElementById('vocabPractice');
       const kana = panel.querySelector('.vocab-practice-question strong').textContent;
       if (kana === 'ほん') throw new Error('Mastered word was repeated');
@@ -603,7 +634,7 @@ async function main() {
     const saved = JSON.parse(localStorage.getItem('kana-studio-progress-v1'));
     return {shared,answered,done:!!document.querySelector('.vocab-practice-done'),mastered:saved.vocabRecords['ほん'].manualMastered,uniqueRecords:Object.keys(saved.vocabRecords).length,courseSaved:window.CourseCore.getStatus(saved,'14')};
   })()`);
-  assert.deepEqual(vocabRun, {shared:true,answered:8,done:true,mastered:true,uniqueRecords:5,courseSaved:'mastered'});
+  assert.deepEqual(vocabRun, {shared:true,answered:32,done:true,mastered:true,uniqueRecords:17,courseSaved:'mastered'});
   await evaluate(`document.querySelector('[data-vocab-restart]').click(); document.getElementById('vocabPractice').scrollIntoView({block:'start',behavior:'instant'})`);
   const vocabMobilePracticeShot = path.join(os.tmpdir(), 'kana-vocab-mobile-practice-cdp.png');
   await screenshot(vocabMobilePracticeShot);
@@ -656,10 +687,10 @@ async function main() {
 
 main().catch(error => { console.error(error); process.exitCode = 1; }).finally(async () => {
   browser.kill();
-  await sleep(1500);
+  await sleep(1000);
   const temp = path.resolve(os.tmpdir()) + path.sep;
   if (path.resolve(profile).startsWith(temp)) {
-    try { fs.rmSync(profile, { recursive: true, force: true, maxRetries: 10, retryDelay: 200 }); }
+    try { fs.rmSync(profile, { recursive: true, force: true, maxRetries: 15, retryDelay: 200 }); }
     catch (error) { if (!['EPERM', 'EBUSY'].includes(error.code)) throw error; }
   }
 });

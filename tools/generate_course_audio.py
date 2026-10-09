@@ -28,10 +28,12 @@ def entries(lesson_ids=None):
         if lesson_ids is not None and lesson["id"] not in lesson_ids:
             continue
         yield f'course-{lesson["id"]}-example.mp3', lesson["example"]["kana"]
+        for number, example in enumerate(lesson.get("examples", [])[1:], 2):
+            yield f'course-{lesson["id"]}-example-{number}.mp3', example["kana"]
         for word in lesson["vocabulary"]:
             yield Path(word["audio"]).name, word["kana"]
-        listening = next(question for question in lesson["questions"] if question["type"] == "listen")
-        yield Path(listening["audio"]).name, listening["kana"]
+        for question in lesson["questions"]:
+            yield Path(question["audio"]).name, question["spoken"]
 
 
 def main():
@@ -42,6 +44,7 @@ def main():
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--lessons", nargs="+", help="Only render these lesson IDs, e.g. 09 10; preserve the other manifest entries")
+    parser.add_argument("--missing-only", action="store_true", help="Keep matching existing clips and render only added or changed content")
     args = parser.parse_args()
     all_entries = list(entries())
     if args.lessons:
@@ -54,12 +57,15 @@ def main():
     if args.limit:
         work = work[:args.limit]
     manifest_path = args.output / "course-manifest.json"
-    previous = json.loads(manifest_path.read_text(encoding="utf-8")) if args.lessons and manifest_path.exists() else []
+    previous = json.loads(manifest_path.read_text(encoding="utf-8")) if (args.lessons or args.missing_only) and manifest_path.exists() else []
     manifest = {entry["file"]: entry for entry in previous}
-    cache = {}
+    cache = {entry["kana"]: entry for entry in previous if (args.output / entry["file"]).exists()}
     for number, (filename, kana) in enumerate(work, 1):
         target = args.output / filename
-        if kana in cache:
+        if args.missing_only and target.exists() and manifest.get(filename, {}).get("kana") == kana:
+            print(f"{number}/{len(work)} keep {kana}", flush=True)
+            continue
+        if kana in cache and (args.output / cache[kana]["file"]).exists():
             shutil.copyfile(args.output / cache[kana]["file"], target)
             phonemes = cache[kana]["phonemes"]
             duration = cache[kana]["seconds"]
