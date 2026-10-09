@@ -31,7 +31,9 @@
       group: 'base',
       filter: 'all',
       records: {},
+      foundationCompleted: false,
       courseRecords: {},
+      vocabRecords: {},
       questionCount: 0,
       journeyTurns: 0,
       journeyStreak: 0,
@@ -240,6 +242,7 @@
     clean.audioSpeed = ['slow', 'normal'].includes(raw.audioSpeed) ? raw.audioSpeed : clean.audioSpeed;
     clean.group = GROUPS.includes(raw.group) ? raw.group : clean.group;
     clean.filter = FILTERS.includes(raw.filter) ? raw.filter : clean.filter;
+    clean.foundationCompleted = raw.foundationCompleted === true;
     clean.questionCount = Number.isSafeInteger(raw.questionCount) ? clamp(raw.questionCount, 0, 1000000000) : 0;
     clean.journeyTurns = Number.isSafeInteger(raw.journeyTurns) ? clamp(raw.journeyTurns, 0, clean.questionCount) : 0;
     clean.journeyStreak = Number.isSafeInteger(raw.journeyStreak) ? clamp(raw.journeyStreak, 0, clean.journeyTurns) : 0;
@@ -261,6 +264,8 @@
     clean.recentQuestionIds = Array.isArray(raw.recentQuestionIds) ? raw.recentQuestionIds.filter(id => byId.has(id)).slice(-2) : [];
     const courseCore = root.CourseCore || (typeof require === 'function' ? require('./course-core.js') : null);
     clean.courseRecords = courseCore ? courseCore.sanitizeRecords(raw.courseRecords) : {};
+    const vocabCore = root.VocabCore || (typeof require === 'function' ? require('./vocab-core.js') : null);
+    clean.vocabRecords = vocabCore ? vocabCore.sanitizeRecords(raw.vocabRecords) : {};
     return clean;
   }
 

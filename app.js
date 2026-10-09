@@ -6,7 +6,7 @@
   const labels = { hiragana: '平假名', katakana: '片假名', mixed: '混合', base: '清音', voiced: '浊音·半浊音', yoon: '拗音', special: '促音·长音', unseen: '未学', learning: '学习中', mastered: '自动学会', retired: '确认学会' };
   const storageKey = 'kana-studio-progress-v1';
   let state = readStoredState();
-  let view = 'course';
+  let view = 'home';
   let convertScript = state.mode === 'mixed' ? 'hiragana' : state.mode;
   let detailItem = null;
   let selfTestActive = false;
@@ -22,7 +22,8 @@
   let pausedAt = 0;
   let pausedDuration = 0;
   let practiceGroup = null;
-  const courseUI = window.CourseUI.create({ getState: () => state, onStateChange: next => { state = next; persist(); renderOverview(); renderLearn(); renderStats(); }, onFoundationNavigate, speak });
+  const courseUI = window.CourseUI.create({ getState: () => state, onStateChange: next => { state = next; persist(); renderHome(); renderOverview(); renderLearn(); renderStats(); }, onFoundationNavigate, onVocabNavigate, onLessonNavigate: id => setView('lesson', id), speak });
+  const vocabUI = window.VocabUI.create({ getState: () => state, onStateChange: next => { state = next; persist(); }, speak });
 
   function readStoredState() {
     try { return core.sanitizeState(JSON.parse(localStorage.getItem(storageKey) || 'null')); }
@@ -31,16 +32,39 @@
   function persist() {
     try { localStorage.setItem(storageKey, JSON.stringify(state)); $('storageMessage').textContent = ''; }
     catch (_) { $('storageMessage').textContent = '此浏览器无法保存本机进度；请使用“导出进度”备份。'; }
+    renderHome();
   }
   function modeItems() { return items.filter(item => state.mode === 'mixed' || item.script === state.mode); }
   function describe(item) { return `${item.group === 'special' ? item.row : labels[item.group]} · ${labels[item.script]}`; }
+  function foundationComplete() {
+    const basics = items.filter(item => item.group === 'base');
+    return state.foundationCompleted || basics.every(item => core.getStatus(state, item.id) !== 'unseen');
+  }
+  function homeLesson() {
+    if (!foundationComplete() && !Object.keys(state.courseRecords || {}).length) return { id: '00', title: '五十音入门' };
+    return window.CourseCore.recommendedLesson(state) || { id: '14', title: '回顾学习路线', review: true };
+  }
+  function renderHome() {
+    const lesson = homeLesson();
+    $('heroLessonNumber').textContent = lesson.id;
+    $('heroLessonTitle').textContent = lesson.title;
+    $('heroCourse').dataset.lesson = lesson.id;
+    $('heroCourse').innerHTML = `${lesson.review ? '回看课程' : lesson.id === '00' ? '开始第 00 课' : `继续第 ${lesson.id} 课`} <span aria-hidden="true">→</span>`;
+    $('heroLead').textContent = lesson.id === '00'
+      ? '第 00 课认识平假名和片假名。学完后，它仍在课程里供你回看，首页会带你继续往下走。'
+      : lesson.review
+        ? '已经走过全部课程。选择想回看的章节，继续巩固。'
+        : `接下来是第 ${lesson.id} 课「${lesson.title}」。选择课程，继续自己的学习路线。`;
+  }
   function renderControls() {
-    $('headerPath').hidden = view !== 'course';
-    $('modeSwitch').hidden = view === 'course';
-    document.querySelector('.overview').hidden = view === 'course';
+    const courseArea = ['home', 'course', 'lesson', 'vocab'].includes(view);
+    $('homeHero').hidden = view !== 'home';
+    $('headerPath').hidden = !courseArea;
+    $('modeSwitch').hidden = courseArea;
+    document.querySelector('.overview').hidden = courseArea;
     document.querySelectorAll('[data-mode]').forEach(button => { button.classList.toggle('active', button.dataset.mode === state.mode); button.setAttribute('aria-pressed', String(button.dataset.mode === state.mode)); });
     document.querySelectorAll('[data-group]').forEach(button => { button.classList.toggle('active', button.dataset.group === state.group); button.setAttribute('aria-pressed', String(button.dataset.group === state.group)); });
-    document.querySelectorAll('[data-view]').forEach(button => { button.classList.toggle('active', button.dataset.view === view); button.setAttribute('aria-current', button.dataset.view === view ? 'page' : 'false'); });
+    document.querySelectorAll('[data-view]').forEach(button => { const active = button.dataset.view === (view === 'lesson' ? 'course' : view); button.classList.toggle('active', active); button.setAttribute('aria-current', active ? 'page' : 'false'); });
     document.querySelectorAll('[data-convert-script]').forEach(button => { button.classList.toggle('active', button.dataset.convertScript === convertScript); button.setAttribute('aria-pressed', String(button.dataset.convertScript === convertScript)); });
     $('learnFilter').value = state.filter;
     $('practicePool').value = state.practicePool;
@@ -53,7 +77,19 @@
       button.setAttribute('aria-label', slow ? '当前慢速，点击切换正常语速' : '当前正常语速，点击切换慢速');
       button.title = slow ? '点击切换正常语速' : '点击切换慢速';
     });
-    for (const name of ['learn', 'practice', 'stats', 'convert', 'course']) $(`${name}View`).hidden = view !== name;
+    for (const name of ['learn', 'practice', 'stats', 'convert', 'vocab']) $(`${name}View`).hidden = view !== name;
+    $('courseView').hidden = view !== 'course' && view !== 'lesson';
+    $('courseView').classList.toggle('route-catalog', view === 'course');
+    $('courseView').classList.toggle('route-lesson', view === 'lesson');
+    if (view === 'lesson') {
+      const active = document.querySelector('#courseList [aria-current="true"]');
+      $('lessonBreadcrumb').textContent = active ? `第 ${active.dataset.courseSelect} 课 · ${active.querySelector('strong').textContent}` : '';
+      $('courseView').removeAttribute('aria-labelledby');
+      $('courseView').setAttribute('aria-label', $('lessonBreadcrumb').textContent || '课程内容');
+    } else {
+      $('courseView').setAttribute('aria-labelledby', 'courseTitle');
+      $('courseView').removeAttribute('aria-label');
+    }
   }
   function renderOverview() {
     const list = modeItems();
@@ -167,14 +203,39 @@
     bar.setAttribute('aria-valuemax', String(items.length));
     bar.setAttribute('aria-valuenow', String(started));
   }
-  function renderAll() { renderControls(); renderOverview(); renderJourneyProgress(); renderLearn(); renderStats(); renderConvert(); courseUI.render(); }
-  function setView(next) {
+  function renderAll() { renderHome(); renderControls(); renderOverview(); renderJourneyProgress(); renderLearn(); renderStats(); renderConvert(); courseUI.render(); vocabUI.render(); }
+  function routeHash(next, detail) {
+    return ({ home: '#home', course: '#courses', lesson: `#lesson/${detail}`, vocab: `#vocab/${detail || $('vocabChapter').value || '01'}`, learn: '#kana', practice: '#practice', stats: '#progress', convert: '#convert' })[next] || '#home';
+  }
+  function setView(next, detail = null, updateUrl = true) {
+    if (next === 'lesson') courseUI.select(detail || '00');
+    if (next === 'vocab' && detail) vocabUI.select(detail);
     view = next;
     renderControls();
+    document.querySelector('.tools-menu').open = false;
     if (next === 'practice') setQuestion();
     if (next === 'stats') renderStats();
-    if (next === 'course') courseUI.render();
-    document.querySelector('.section-nav').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (next === 'course' || next === 'lesson') courseUI.render();
+    if (next === 'vocab') vocabUI.render();
+    const routeDetail = next === 'lesson'
+      ? detail || document.querySelector('#courseList [aria-current="true"]')?.dataset.courseSelect || '00'
+      : next === 'vocab' ? detail || $('vocabChapter').value || '01' : null;
+    const hash = routeHash(next, routeDetail);
+    if (updateUrl && location.hash !== hash) history.pushState(null, '', hash);
+    currentRouteHash = location.hash;
+    const lessonName = view === 'lesson' ? document.querySelector('.course-panel-head h3')?.textContent || `第 ${routeDetail} 课` : '';
+    document.title = ({ home: '日语起步 · 从零开始学日语', course: '课程路线 · 日语起步', lesson: `${lessonName} · 日语起步`, vocab: '单词本 · 日语起步', learn: '五十音表 · 日语起步', practice: '识读练习 · 日语起步', stats: '学习进度 · 日语起步', convert: '罗马字转换 · 日语起步' })[view];
+    window.scrollTo(0, 0);
+  }
+  let currentRouteHash = '';
+  function syncRoute() {
+    if (location.hash === currentRouteHash) return;
+    const hash = location.hash.slice(1);
+    const lesson = /^lesson\/(0[0-9]|1[0-4])$/.exec(hash);
+    const vocab = /^vocab\/(0[1-9]|1[0-4])$/.exec(hash);
+    if (lesson) setView('lesson', lesson[1], false);
+    else if (vocab) setView('vocab', vocab[1], false);
+    else setView(({ courses: 'course', kana: 'learn', progress: 'stats' })[hash] || (['home', 'practice', 'convert', 'vocab'].includes(hash) ? hash : 'home'), null, false);
   }
 
   function onFoundationNavigate(destination) {
@@ -188,6 +249,10 @@
     state.group = 'base';
     state.filter = 'all';
     persist(); renderAll(); setView('learn');
+  }
+
+  function onVocabNavigate(lessonId) {
+    setView('vocab', lessonId);
   }
 
   function openDetail(id) {
@@ -391,6 +456,11 @@
     if (view === 'practice') setQuestion();
   }));
   document.querySelectorAll('[data-view]').forEach(button => button.addEventListener('click', () => setView(button.dataset.view)));
+  $('brandHome').addEventListener('click', () => setView('home'));
+  $('lessonBack').addEventListener('click', () => setView('course'));
+  window.addEventListener('popstate', syncRoute);
+  window.addEventListener('hashchange', syncRoute);
+  document.addEventListener('click', event => { if (!event.target.closest('.tools-menu')) document.querySelector('.tools-menu').open = false; });
   document.querySelectorAll('[data-group]').forEach(button => button.addEventListener('click', () => { state.group = button.dataset.group; $('learnActionMessage').textContent = ''; persist(); renderControls(); renderLearn(); }));
   document.querySelectorAll('[data-convert-script]').forEach(button => button.addEventListener('click', () => { convertScript = button.dataset.convertScript; renderControls(); renderConvert(); }));
   $('learnFilter').addEventListener('change', event => { state.filter = event.target.value; $('learnActionMessage').textContent = ''; persist(); renderLearn(); });
@@ -406,7 +476,8 @@
   $('practiceGroup').addEventListener('change', event => { practiceGroup = event.target.value === 'all' ? null : event.target.value; previousItem = null; setQuestion(); });
   $('heroLearn').addEventListener('click', () => setView('learn'));
   $('heroPractice').addEventListener('click', () => { state.practicePool = 'all'; persist(); setView('practice'); });
-  $('heroCourse').addEventListener('click', () => { courseUI.select('00'); setView('course'); });
+  $('heroCourse').addEventListener('click', () => setView('lesson', $('heroCourse').dataset.lesson || '00'));
+  $('heroRoute').addEventListener('click', () => setView('course'));
   $('heroJourney').addEventListener('click', () => {
     state.mode = 'mixed'; state.practicePool = 'journey'; practiceGroup = null; previousItem = null;
     persist(); renderAll(); setView('practice');
@@ -492,7 +563,7 @@
       const raw = JSON.parse(await file.text());
       if (raw.version !== core.VERSION || !raw.records || typeof raw.records !== 'object') throw new Error('格式或版本不匹配');
       if (!confirm('导入会覆盖这个浏览器当前的学习进度。确定导入吗？')) return;
-      state = core.sanitizeState(raw); previousItem = null; courseUI.reset(); persist(); renderAll(); if (view === 'practice') setQuestion();
+      state = core.sanitizeState(raw); previousItem = null; courseUI.reset(); vocabUI.reset(); persist(); renderAll(); if (view === 'practice') setQuestion();
       $('storageMessage').textContent = '进度已导入。';
     } catch (error) { $('storageMessage').textContent = `导入失败：${error.message}`; }
     finally { event.target.value = ''; }
@@ -503,10 +574,11 @@
     const selectedPool = state.practicePool;
     state = core.newState(); state.mode = selectedMode;
     if (selectedMode === 'mixed' && selectedPool === 'journey') state.practicePool = 'journey';
-    previousItem = null; courseUI.reset();
+    previousItem = null; courseUI.reset(); vocabUI.reset();
     persist(); renderAll(); if (view === 'practice') setQuestion();
     $('storageMessage').textContent = '学习记录已重置。';
   });
 
   renderAll();
+  syncRoute();
 })();
